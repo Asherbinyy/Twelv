@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "230355512956",
+    "project_id": "twelv-auth",
+    "storage_bucket": "twelv-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230355512956:android:80919617ef4dcb9a8123f9",
+        "android_client_info": {
+          "package_name": "love.twelv.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANFehN0A3xfdPFqRwviVkMMMxcjtV7YTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230355512956:android:b8e79b47c5ba2cd38123f9",
+        "android_client_info": {
+          "package_name": "love.twelv.hotfix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANFehN0A3xfdPFqRwviVkMMMxcjtV7YTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230355512956:android:25ff1fa5a43868698123f9",
+        "android_client_info": {
+          "package_name": "love.twelv.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANFehN0A3xfdPFqRwviVkMMMxcjtV7YTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230355512956:android:72d040c70d46f1e68123f9",
+        "android_client_info": {
+          "package_name": "love.twelv.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANFehN0A3xfdPFqRwviVkMMMxcjtV7YTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230355512956-jdg2m8e9jvhle4o788orcbprm1cf77jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,188 @@
+name: twelv
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.1+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  async: ^2.6.1
+  dio: ^4.0.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^7.0.1
+  flutter_localizations:
+    sdk: flutter
+  firebase_core: ^1.6.0
+  firebase_auth: ^3.1.0
+  firebase_crashlytics: ^2.2.1
+  firebase_messaging: ^10.0.6
+  firebase_analytics: ^8.3.1
+  flutter_facebook_auth: ^3.5.0
+  sign_in_with_apple: ^3.3.0
+  crypto: ^3.0.1
+  freezed: ^0.14.1+2
+  freezed_annotation: ^0.14.1
+  get_it: ^6.1.1
+  intl: ^0.17.0
+  jiffy: any
+  logger: ^1.0.0
+  retrofit: ^2.0.1
+  rxdart: ^0.27.1
+  stream_chat_flutter: ^3.1.1
+  stream_chat_localizations: ^2.0.0
+  virgil_e3kit:
+    path: virgil-e3kit-flutter
+  hive: ^2.0.4
+  hive_flutter: ^1.0.0
+  uuid: ^3.0.4
+  photo_view: ^0.12.0
+  image_picker: ^0.8.3+3
+  url_launcher: ^6.0.4
+  flutter_html: ^2.0.0
+  carousel_slider: ^4.0.0
+  flutter_inapp_purchase: ^5.0.3
+  app_tracking_transparency: ^2.0.1
+  permission_handler: ^8.1.2
+  app_settings: ^4.1.1
+  adjust_sdk: ^4.29.1
+  flutter_local_notifications: ^8.1.1+2
+  cached_network_image: ^3.1.0
+
+dev_dependencies:
+  build_runner: ^1.12.2
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^8.0.0
+  lint: ^1.5.3
+  mockito: ^5.0.5
+  retrofit_generator: ^2.0.0-beta3
+  json_serializable: ^4.1.1
+  geolocator: ^7.0.3
+  flutter_native_splash: ^1.2.0
+  golden_toolkit: ^0.9.0
+  dart_code_metrics: ^4.0.1
+  hive_generator: ^1.1.0
+  flutter_launcher_icons: ^0.9.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/images/logo_header.png
+    - lib/assets/images/logo_twelv_big.png
+    - lib/assets/images/facebook_logo.png
+    - lib/assets/images/apple_logo.png
+    - lib/assets/images/back.png
+    - lib/assets/images/splash_background.png
+    - lib/assets/images/onboarding_background.png
+    - lib/assets/images/onboarding_tutorial_1_background.png
+    - lib/assets/images/onboarding_tutorial_1_image.png
+    - lib/assets/images/onboarding_tutorial_2_background.png
+    - lib/assets/images/onboarding_tutorial_2_image.png
+    - lib/assets/images/onboarding_tutorial_3_background.png
+    - lib/assets/images/onboarding_tutorial_3_image.png
+    - lib/assets/images/onboarding_tutorial_4_background.png
+    - lib/assets/images/onboarding_tutorial_4_image.png
+    - lib/assets/images/onboarding_tutorial_5_background.png
+    - lib/assets/images/onboarding_tutorial_5_image.png
+    - lib/assets/images/onboarding_tutorial_gradient_image.png
+    - lib/assets/images/planet_gradient.png
+    - lib/assets/images/location_white_icon.png
+    - lib/assets/images/superlike_icon.png
+    - lib/assets/images/placeholder_image.png
+    - lib/assets/images/like_icon.png
+    - lib/assets/images/next_icon.png
+    - lib/assets/images/no_profiles.png
+    - lib/assets/images/filters_icon.png
+    - lib/assets/images/likes_icon.png
+    - lib/assets/images/likes_list_item.png
+    - lib/assets/images/home_bg.png
+    - lib/assets/images/explorer_inactive.png
+    - lib/assets/images/horoscope_inactive.png
+    - lib/assets/images/matches_inactive.png
+    - lib/assets/images/profile_inactive.png
+    - lib/assets/images/powered_by_google.png
+    - lib/assets/images/location_small.png
+    - lib/assets/images/close_white.png
+    - lib/assets/images/zodiac_aquarius.png
+    - lib/assets/images/zodiac_pisces.png
+    - lib/assets/images/zodiac_aries.png
+    - lib/assets/images/zodiac_taurus.png
+    - lib/assets/images/zodiac_gemini.png
+    - lib/assets/images/zodiac_cancer.png
+    - lib/assets/images/zodiac_leo.png
+    - lib/assets/images/zodiac_virgo.png
+    - lib/assets/images/zodiac_libra.png
+    - lib/assets/images/zodiac_scorpio.png
+    - lib/assets/images/zodiac_sagittarius.png
+    - lib/assets/images/zodiac_capricorn.png
+    - lib/assets/images/like_card.png
+    - lib/assets/images/dislike_card.png
+    - lib/assets/images/camera.png
+    - lib/assets/images/camera_disabled.png
+    - lib/assets/images/delete.png
+    - lib/assets/images/stars_match.png
+    - lib/assets/images/b_g_overlay.png
+    - lib/assets/images/logo_header_white.png
+    - lib/assets/images/close.png
+    - lib/assets/images/location_background.png
+    - lib/assets/images/check.png
+    - lib/assets/images/uncheck.png
+    - lib/assets/images/notifications_background.png
+    - lib/assets/images/check.png
+    - lib/assets/images/uncheck.png
+    - lib/assets/images/edit.png
+    - lib/assets/images/profile_credits.png
+    - lib/assets/images/profile_subscription.png
+    - lib/assets/images/settings.png
+    - lib/assets/images/chevron.png
+    - lib/assets/images/b_g_profile.png
+    - lib/assets/images/conversation_bg.png
+    - lib/assets/images/three_dots_icon.png
+    - lib/assets/images/icon_unmatch.png
+    - lib/assets/images/icon_reportprofile.png
+    - lib/assets/images/profile_test_compatibility.png
+    - lib/assets/images/horoscope_background.png
+    - lib/assets/images/icon_promotional_like.png
+    - lib/assets/images/icon_promotional_profileslikedme.png
+    - lib/assets/images/icon_promotional_superlike.png
+    - lib/assets/images/icon_promotional_totalitycompatibilities.png
+    - lib/assets/images/icon_promotional_withoutlimit.png
+    - lib/assets/images/profile_bg_no_pictures.png
+
+  fonts:
+    - family: Didot
+      fonts:
+        - asset: lib/assets/fonts/DidotLTStd-Bold.otf
+    - family: Roboto
+      fonts:
+        - asset: lib/assets/fonts/Roboto-Regular.ttf
+        - asset: lib/assets/fonts/Roboto-Bold.ttf
+        - asset: lib/assets/fonts/Roboto-Medium.ttf
+    - family: SFProDisplay
+      fonts:
+        - asset: lib/assets/fonts/SFProDisplay-Regular.ttf
+        - asset: lib/assets/fonts/SFProDisplay-Bold.otf
+        - asset: lib/assets/fonts/SFProDisplay-Medium.otf
+
+flutter_intl:
+  enabled: true
+  class_name: Str
+  main_locale: fr
+
+flutter_native_splash:
+  background_image: "lib/assets/images/4.0x/splashscreen_large.png"
+  web: false
+  android_gravity: clip_vertical
+  ios_content_mode: scaleAspectFill
+  fullscreen: true
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/assets/icon/main_icon.png"
+  remove_alpha_ios: true

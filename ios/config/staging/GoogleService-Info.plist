@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>230355512956-p8beiuhb5l3e86bj5m9jbdeqpc5250f0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.230355512956-p8beiuhb5l3e86bj5m9jbdeqpc5250f0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDwBZjMbe9KHNcxH4RWAtGVQqExkMJ2xHY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>230355512956</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>love.twelv.staging</string>
+	<key>PROJECT_ID</key>
+	<string>twelv-auth</string>
+	<key>STORAGE_BUCKET</key>
+	<string>twelv-auth.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:230355512956:ios:875f1136b2a0c8828123f9</string>
+</dict>
+</plist>
