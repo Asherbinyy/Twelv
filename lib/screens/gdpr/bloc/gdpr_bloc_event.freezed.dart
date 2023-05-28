@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gdpr_bloc_event.dart';
 
@@ -10,25 +12,7 @@ part of 'gdpr_bloc_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GdprEventTearOff {
-  const _$GdprEventTearOff();
-
-  Check check() {
-    return const Check();
-  }
-
-  UserDecided userDecided({required bool accepted}) {
-    return UserDecided(
-      accepted: accepted,
-    );
-  }
-}
-
-/// @nodoc
-const $GdprEvent = _$GdprEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GdprEvent {
@@ -36,6 +20,12 @@ mixin _$GdprEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() check,
     required TResult Function(bool accepted) userDecided,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? check,
+    TResult? Function(bool accepted)? userDecided,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -52,6 +42,12 @@ mixin _$GdprEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Check value)? check,
+    TResult? Function(UserDecided value)? userDecided,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Check value)? check,
     TResult Function(UserDecided value)? userDecided,
@@ -63,35 +59,35 @@ mixin _$GdprEvent {
 /// @nodoc
 abstract class $GdprEventCopyWith<$Res> {
   factory $GdprEventCopyWith(GdprEvent value, $Res Function(GdprEvent) then) =
-      _$GdprEventCopyWithImpl<$Res>;
+      _$GdprEventCopyWithImpl<$Res, GdprEvent>;
 }
 
 /// @nodoc
-class _$GdprEventCopyWithImpl<$Res> implements $GdprEventCopyWith<$Res> {
+class _$GdprEventCopyWithImpl<$Res, $Val extends GdprEvent>
+    implements $GdprEventCopyWith<$Res> {
   _$GdprEventCopyWithImpl(this._value, this._then);
 
-  final GdprEvent _value;
   // ignore: unused_field
-  final $Res Function(GdprEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $CheckCopyWith<$Res> {
-  factory $CheckCopyWith(Check value, $Res Function(Check) then) =
-      _$CheckCopyWithImpl<$Res>;
+abstract class _$$CheckCopyWith<$Res> {
+  factory _$$CheckCopyWith(_$Check value, $Res Function(_$Check) then) =
+      __$$CheckCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$CheckCopyWithImpl<$Res> extends _$GdprEventCopyWithImpl<$Res>
-    implements $CheckCopyWith<$Res> {
-  _$CheckCopyWithImpl(Check _value, $Res Function(Check) _then)
-      : super(_value, (v) => _then(v as Check));
-
-  @override
-  Check get _value => super._value as Check;
+class __$$CheckCopyWithImpl<$Res> extends _$GdprEventCopyWithImpl<$Res, _$Check>
+    implements _$$CheckCopyWith<$Res> {
+  __$$CheckCopyWithImpl(_$Check _value, $Res Function(_$Check) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Check implements Check {
   const _$Check();
 
@@ -102,7 +98,8 @@ class _$Check implements Check {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Check);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Check);
   }
 
   @override
@@ -115,6 +112,15 @@ class _$Check implements Check {
     required TResult Function(bool accepted) userDecided,
   }) {
     return check();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? check,
+    TResult? Function(bool accepted)? userDecided,
+  }) {
+    return check?.call();
   }
 
   @override
@@ -141,6 +147,15 @@ class _$Check implements Check {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Check value)? check,
+    TResult? Function(UserDecided value)? userDecided,
+  }) {
+    return check?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Check value)? check,
     TResult Function(UserDecided value)? userDecided,
@@ -158,29 +173,29 @@ abstract class Check implements GdprEvent {
 }
 
 /// @nodoc
-abstract class $UserDecidedCopyWith<$Res> {
-  factory $UserDecidedCopyWith(
-          UserDecided value, $Res Function(UserDecided) then) =
-      _$UserDecidedCopyWithImpl<$Res>;
+abstract class _$$UserDecidedCopyWith<$Res> {
+  factory _$$UserDecidedCopyWith(
+          _$UserDecided value, $Res Function(_$UserDecided) then) =
+      __$$UserDecidedCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool accepted});
 }
 
 /// @nodoc
-class _$UserDecidedCopyWithImpl<$Res> extends _$GdprEventCopyWithImpl<$Res>
-    implements $UserDecidedCopyWith<$Res> {
-  _$UserDecidedCopyWithImpl(
-      UserDecided _value, $Res Function(UserDecided) _then)
-      : super(_value, (v) => _then(v as UserDecided));
+class __$$UserDecidedCopyWithImpl<$Res>
+    extends _$GdprEventCopyWithImpl<$Res, _$UserDecided>
+    implements _$$UserDecidedCopyWith<$Res> {
+  __$$UserDecidedCopyWithImpl(
+      _$UserDecided _value, $Res Function(_$UserDecided) _then)
+      : super(_value, _then);
 
-  @override
-  UserDecided get _value => super._value as UserDecided;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accepted = freezed,
+    Object? accepted = null,
   }) {
-    return _then(UserDecided(
-      accepted: accepted == freezed
+    return _then(_$UserDecided(
+      accepted: null == accepted
           ? _value.accepted
           : accepted // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -189,6 +204,7 @@ class _$UserDecidedCopyWithImpl<$Res> extends _$GdprEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$UserDecided implements UserDecided {
   const _$UserDecided({required this.accepted});
 
@@ -203,20 +219,20 @@ class _$UserDecided implements UserDecided {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is UserDecided &&
+        (other.runtimeType == runtimeType &&
+            other is _$UserDecided &&
             (identical(other.accepted, accepted) ||
-                const DeepCollectionEquality()
-                    .equals(other.accepted, accepted)));
+                other.accepted == accepted));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(accepted);
+  int get hashCode => Object.hash(runtimeType, accepted);
 
   @JsonKey(ignore: true)
   @override
-  $UserDecidedCopyWith<UserDecided> get copyWith =>
-      _$UserDecidedCopyWithImpl<UserDecided>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UserDecidedCopyWith<_$UserDecided> get copyWith =>
+      __$$UserDecidedCopyWithImpl<_$UserDecided>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -225,6 +241,15 @@ class _$UserDecided implements UserDecided {
     required TResult Function(bool accepted) userDecided,
   }) {
     return userDecided(accepted);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? check,
+    TResult? Function(bool accepted)? userDecided,
+  }) {
+    return userDecided?.call(accepted);
   }
 
   @override
@@ -251,6 +276,15 @@ class _$UserDecided implements UserDecided {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Check value)? check,
+    TResult? Function(UserDecided value)? userDecided,
+  }) {
+    return userDecided?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Check value)? check,
     TResult Function(UserDecided value)? userDecided,
@@ -264,10 +298,10 @@ class _$UserDecided implements UserDecided {
 }
 
 abstract class UserDecided implements GdprEvent {
-  const factory UserDecided({required bool accepted}) = _$UserDecided;
+  const factory UserDecided({required final bool accepted}) = _$UserDecided;
 
-  bool get accepted => throw _privateConstructorUsedError;
+  bool get accepted;
   @JsonKey(ignore: true)
-  $UserDecidedCopyWith<UserDecided> get copyWith =>
+  _$$UserDecidedCopyWith<_$UserDecided> get copyWith =>
       throw _privateConstructorUsedError;
 }

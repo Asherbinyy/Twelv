@@ -10,13 +10,13 @@ part 'likes_event.freezed.dart';
 abstract class LikesEvent with _$LikesEvent {
   const factory LikesEvent.fetch() = FetchData;
 
-  @Implements(LikeActionEvent)
+  @Implements()
   const factory LikesEvent.like({required Profile user, bool? useCredit}) = Like;
 
-  @Implements(LikeActionEvent)
+  @Implements()
   const factory LikesEvent.dislike({required Profile user, bool? useCredit}) = Dislike;
 
-  @Implements(LikeActionEvent)
+  @Implements()
   const factory LikesEvent.superlike({required Profile user, bool? useCredit}) = Superlike;
 
   const factory LikesEvent.reportProfile({required Profile user}) = ReportProfile;

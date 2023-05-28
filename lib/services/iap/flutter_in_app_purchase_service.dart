@@ -56,7 +56,7 @@ class FlutterInAppPurchaseService implements InAppPurchaseService {
   // region Connection
 
   Future<void> _initConnection() async {
-    final String? connection = await FlutterInappPurchase.instance.initConnection;
+    final String? connection = await FlutterInappPurchase.instance.initialize();
     if (!_validateStoreConnection(connection)) {
       _streamController.addError(InAppPurchaseError(
           responseCode: InAppPurchaseErrorCode.connection,
@@ -110,7 +110,7 @@ class FlutterInAppPurchaseService implements InAppPurchaseService {
     if (_purchaseUpdatedSubscription != null) {
       _purchaseUpdatedSubscription?.cancel();
     }
-    FlutterInappPurchase.instance.endConnection;
+    FlutterInappPurchase.instance.finalize();
   }
 
   // endregion
@@ -294,14 +294,14 @@ class FlutterInAppPurchaseService implements InAppPurchaseService {
               salesRegion: Platform.localeName,
               transactionDate: purchasedItem.transactionDate ?? DateTime.now());
         } else if (Platform.isAndroid &&
-            purchasedItem.orderId != null &&
+            purchasedItem.productId != null &&
             purchasedItem.signatureAndroid != null &&
             purchasedItem.purchaseToken != null) {
           tracker.trackPurchaseSubscriptionPlayStore(
               price: price,
               currency: currency,
               sku: productId,
-              orderId: purchasedItem.orderId!,
+              orderId: purchasedItem.productId!,
               signature: purchasedItem.signatureAndroid!,
               purchaseToken: purchasedItem.purchaseToken!,
               transactionDate: purchasedItem.transactionDate ?? DateTime.now());

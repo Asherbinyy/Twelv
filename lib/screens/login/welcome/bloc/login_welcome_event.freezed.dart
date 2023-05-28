@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'login_welcome_event.dart';
 
@@ -10,29 +12,7 @@ part of 'login_welcome_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LoginWelcomeEventTearOff {
-  const _$LoginWelcomeEventTearOff();
-
-  PhoneNumberProvided phoneNumberProvided({required String phoneNumber}) {
-    return PhoneNumberProvided(
-      phoneNumber: phoneNumber,
-    );
-  }
-
-  FacebookClicked facebookClicked() {
-    return const FacebookClicked();
-  }
-
-  AppleSignInClicked appleSignInClicked() {
-    return const AppleSignInClicked();
-  }
-}
-
-/// @nodoc
-const $LoginWelcomeEvent = _$LoginWelcomeEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LoginWelcomeEvent {
@@ -41,6 +21,13 @@ mixin _$LoginWelcomeEvent {
     required TResult Function(String phoneNumber) phoneNumberProvided,
     required TResult Function() facebookClicked,
     required TResult Function() appleSignInClicked,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? phoneNumberProvided,
+    TResult? Function()? facebookClicked,
+    TResult? Function()? appleSignInClicked,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -59,6 +46,13 @@ mixin _$LoginWelcomeEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(PhoneNumberProvided value)? phoneNumberProvided,
+    TResult? Function(FacebookClicked value)? facebookClicked,
+    TResult? Function(AppleSignInClicked value)? appleSignInClicked,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(PhoneNumberProvided value)? phoneNumberProvided,
     TResult Function(FacebookClicked value)? facebookClicked,
@@ -72,44 +66,44 @@ mixin _$LoginWelcomeEvent {
 abstract class $LoginWelcomeEventCopyWith<$Res> {
   factory $LoginWelcomeEventCopyWith(
           LoginWelcomeEvent value, $Res Function(LoginWelcomeEvent) then) =
-      _$LoginWelcomeEventCopyWithImpl<$Res>;
+      _$LoginWelcomeEventCopyWithImpl<$Res, LoginWelcomeEvent>;
 }
 
 /// @nodoc
-class _$LoginWelcomeEventCopyWithImpl<$Res>
+class _$LoginWelcomeEventCopyWithImpl<$Res, $Val extends LoginWelcomeEvent>
     implements $LoginWelcomeEventCopyWith<$Res> {
   _$LoginWelcomeEventCopyWithImpl(this._value, this._then);
 
-  final LoginWelcomeEvent _value;
   // ignore: unused_field
-  final $Res Function(LoginWelcomeEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $PhoneNumberProvidedCopyWith<$Res> {
-  factory $PhoneNumberProvidedCopyWith(
-          PhoneNumberProvided value, $Res Function(PhoneNumberProvided) then) =
-      _$PhoneNumberProvidedCopyWithImpl<$Res>;
+abstract class _$$PhoneNumberProvidedCopyWith<$Res> {
+  factory _$$PhoneNumberProvidedCopyWith(_$PhoneNumberProvided value,
+          $Res Function(_$PhoneNumberProvided) then) =
+      __$$PhoneNumberProvidedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String phoneNumber});
 }
 
 /// @nodoc
-class _$PhoneNumberProvidedCopyWithImpl<$Res>
-    extends _$LoginWelcomeEventCopyWithImpl<$Res>
-    implements $PhoneNumberProvidedCopyWith<$Res> {
-  _$PhoneNumberProvidedCopyWithImpl(
-      PhoneNumberProvided _value, $Res Function(PhoneNumberProvided) _then)
-      : super(_value, (v) => _then(v as PhoneNumberProvided));
+class __$$PhoneNumberProvidedCopyWithImpl<$Res>
+    extends _$LoginWelcomeEventCopyWithImpl<$Res, _$PhoneNumberProvided>
+    implements _$$PhoneNumberProvidedCopyWith<$Res> {
+  __$$PhoneNumberProvidedCopyWithImpl(
+      _$PhoneNumberProvided _value, $Res Function(_$PhoneNumberProvided) _then)
+      : super(_value, _then);
 
-  @override
-  PhoneNumberProvided get _value => super._value as PhoneNumberProvided;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? phoneNumber = freezed,
+    Object? phoneNumber = null,
   }) {
-    return _then(PhoneNumberProvided(
-      phoneNumber: phoneNumber == freezed
+    return _then(_$PhoneNumberProvided(
+      phoneNumber: null == phoneNumber
           ? _value.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
               as String,
@@ -118,6 +112,7 @@ class _$PhoneNumberProvidedCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PhoneNumberProvided implements PhoneNumberProvided {
   const _$PhoneNumberProvided({required this.phoneNumber});
 
@@ -132,20 +127,21 @@ class _$PhoneNumberProvided implements PhoneNumberProvided {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PhoneNumberProvided &&
+        (other.runtimeType == runtimeType &&
+            other is _$PhoneNumberProvided &&
             (identical(other.phoneNumber, phoneNumber) ||
-                const DeepCollectionEquality()
-                    .equals(other.phoneNumber, phoneNumber)));
+                other.phoneNumber == phoneNumber));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(phoneNumber);
+  int get hashCode => Object.hash(runtimeType, phoneNumber);
 
   @JsonKey(ignore: true)
   @override
-  $PhoneNumberProvidedCopyWith<PhoneNumberProvided> get copyWith =>
-      _$PhoneNumberProvidedCopyWithImpl<PhoneNumberProvided>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhoneNumberProvidedCopyWith<_$PhoneNumberProvided> get copyWith =>
+      __$$PhoneNumberProvidedCopyWithImpl<_$PhoneNumberProvided>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -155,6 +151,16 @@ class _$PhoneNumberProvided implements PhoneNumberProvided {
     required TResult Function() appleSignInClicked,
   }) {
     return phoneNumberProvided(phoneNumber);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? phoneNumberProvided,
+    TResult? Function()? facebookClicked,
+    TResult? Function()? appleSignInClicked,
+  }) {
+    return phoneNumberProvided?.call(phoneNumber);
   }
 
   @override
@@ -183,6 +189,16 @@ class _$PhoneNumberProvided implements PhoneNumberProvided {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(PhoneNumberProvided value)? phoneNumberProvided,
+    TResult? Function(FacebookClicked value)? facebookClicked,
+    TResult? Function(AppleSignInClicked value)? appleSignInClicked,
+  }) {
+    return phoneNumberProvided?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(PhoneNumberProvided value)? phoneNumberProvided,
     TResult Function(FacebookClicked value)? facebookClicked,
@@ -197,35 +213,33 @@ class _$PhoneNumberProvided implements PhoneNumberProvided {
 }
 
 abstract class PhoneNumberProvided implements LoginWelcomeEvent {
-  const factory PhoneNumberProvided({required String phoneNumber}) =
+  const factory PhoneNumberProvided({required final String phoneNumber}) =
       _$PhoneNumberProvided;
 
-  String get phoneNumber => throw _privateConstructorUsedError;
+  String get phoneNumber;
   @JsonKey(ignore: true)
-  $PhoneNumberProvidedCopyWith<PhoneNumberProvided> get copyWith =>
+  _$$PhoneNumberProvidedCopyWith<_$PhoneNumberProvided> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FacebookClickedCopyWith<$Res> {
-  factory $FacebookClickedCopyWith(
-          FacebookClicked value, $Res Function(FacebookClicked) then) =
-      _$FacebookClickedCopyWithImpl<$Res>;
+abstract class _$$FacebookClickedCopyWith<$Res> {
+  factory _$$FacebookClickedCopyWith(
+          _$FacebookClicked value, $Res Function(_$FacebookClicked) then) =
+      __$$FacebookClickedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$FacebookClickedCopyWithImpl<$Res>
-    extends _$LoginWelcomeEventCopyWithImpl<$Res>
-    implements $FacebookClickedCopyWith<$Res> {
-  _$FacebookClickedCopyWithImpl(
-      FacebookClicked _value, $Res Function(FacebookClicked) _then)
-      : super(_value, (v) => _then(v as FacebookClicked));
-
-  @override
-  FacebookClicked get _value => super._value as FacebookClicked;
+class __$$FacebookClickedCopyWithImpl<$Res>
+    extends _$LoginWelcomeEventCopyWithImpl<$Res, _$FacebookClicked>
+    implements _$$FacebookClickedCopyWith<$Res> {
+  __$$FacebookClickedCopyWithImpl(
+      _$FacebookClicked _value, $Res Function(_$FacebookClicked) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$FacebookClicked implements FacebookClicked {
   const _$FacebookClicked();
 
@@ -236,7 +250,8 @@ class _$FacebookClicked implements FacebookClicked {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is FacebookClicked);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$FacebookClicked);
   }
 
   @override
@@ -250,6 +265,16 @@ class _$FacebookClicked implements FacebookClicked {
     required TResult Function() appleSignInClicked,
   }) {
     return facebookClicked();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? phoneNumberProvided,
+    TResult? Function()? facebookClicked,
+    TResult? Function()? appleSignInClicked,
+  }) {
+    return facebookClicked?.call();
   }
 
   @override
@@ -278,6 +303,16 @@ class _$FacebookClicked implements FacebookClicked {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(PhoneNumberProvided value)? phoneNumberProvided,
+    TResult? Function(FacebookClicked value)? facebookClicked,
+    TResult? Function(AppleSignInClicked value)? appleSignInClicked,
+  }) {
+    return facebookClicked?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(PhoneNumberProvided value)? phoneNumberProvided,
     TResult Function(FacebookClicked value)? facebookClicked,
@@ -296,25 +331,23 @@ abstract class FacebookClicked implements LoginWelcomeEvent {
 }
 
 /// @nodoc
-abstract class $AppleSignInClickedCopyWith<$Res> {
-  factory $AppleSignInClickedCopyWith(
-          AppleSignInClicked value, $Res Function(AppleSignInClicked) then) =
-      _$AppleSignInClickedCopyWithImpl<$Res>;
+abstract class _$$AppleSignInClickedCopyWith<$Res> {
+  factory _$$AppleSignInClickedCopyWith(_$AppleSignInClicked value,
+          $Res Function(_$AppleSignInClicked) then) =
+      __$$AppleSignInClickedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AppleSignInClickedCopyWithImpl<$Res>
-    extends _$LoginWelcomeEventCopyWithImpl<$Res>
-    implements $AppleSignInClickedCopyWith<$Res> {
-  _$AppleSignInClickedCopyWithImpl(
-      AppleSignInClicked _value, $Res Function(AppleSignInClicked) _then)
-      : super(_value, (v) => _then(v as AppleSignInClicked));
-
-  @override
-  AppleSignInClicked get _value => super._value as AppleSignInClicked;
+class __$$AppleSignInClickedCopyWithImpl<$Res>
+    extends _$LoginWelcomeEventCopyWithImpl<$Res, _$AppleSignInClicked>
+    implements _$$AppleSignInClickedCopyWith<$Res> {
+  __$$AppleSignInClickedCopyWithImpl(
+      _$AppleSignInClicked _value, $Res Function(_$AppleSignInClicked) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$AppleSignInClicked implements AppleSignInClicked {
   const _$AppleSignInClicked();
 
@@ -325,7 +358,8 @@ class _$AppleSignInClicked implements AppleSignInClicked {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is AppleSignInClicked);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$AppleSignInClicked);
   }
 
   @override
@@ -339,6 +373,16 @@ class _$AppleSignInClicked implements AppleSignInClicked {
     required TResult Function() appleSignInClicked,
   }) {
     return appleSignInClicked();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? phoneNumberProvided,
+    TResult? Function()? facebookClicked,
+    TResult? Function()? appleSignInClicked,
+  }) {
+    return appleSignInClicked?.call();
   }
 
   @override
@@ -363,6 +407,16 @@ class _$AppleSignInClicked implements AppleSignInClicked {
     required TResult Function(AppleSignInClicked value) appleSignInClicked,
   }) {
     return appleSignInClicked(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(PhoneNumberProvided value)? phoneNumberProvided,
+    TResult? Function(FacebookClicked value)? facebookClicked,
+    TResult? Function(AppleSignInClicked value)? appleSignInClicked,
+  }) {
+    return appleSignInClicked?.call(this);
   }
 
   @override

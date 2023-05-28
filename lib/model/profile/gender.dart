@@ -30,7 +30,7 @@ extension GenderHelper on Gender {
       .toList();
 
   static Gender? fromString(BuildContext context, String? name, {required bool isMe}) =>
-      Gender.values.firstWhereOrNull(
+      Gender.values.firstWhere(
           (Gender element) => getLocalizedDescription(context, element, isMe: isMe) == name);
 
   static String? genderToString(BuildContext context, Gender? gender, {required bool isMe}) {

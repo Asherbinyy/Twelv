@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'authorization_state.dart';
 
@@ -10,25 +12,7 @@ part of 'authorization_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AuthorizationStateTearOff {
-  const _$AuthorizationStateTearOff();
-
-  Unauthorized unauthorized() {
-    return const Unauthorized();
-  }
-
-  Authorized authorized({required bool isOnboarded}) {
-    return Authorized(
-      isOnboarded: isOnboarded,
-    );
-  }
-}
-
-/// @nodoc
-const $AuthorizationState = _$AuthorizationStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$AuthorizationState {
@@ -36,6 +20,12 @@ mixin _$AuthorizationState {
   TResult when<TResult extends Object?>({
     required TResult Function() unauthorized,
     required TResult Function(bool isOnboarded) authorized,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? unauthorized,
+    TResult? Function(bool isOnboarded)? authorized,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -52,6 +42,12 @@ mixin _$AuthorizationState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(Authorized value)? authorized,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Unauthorized value)? unauthorized,
     TResult Function(Authorized value)? authorized,
@@ -64,39 +60,38 @@ mixin _$AuthorizationState {
 abstract class $AuthorizationStateCopyWith<$Res> {
   factory $AuthorizationStateCopyWith(
           AuthorizationState value, $Res Function(AuthorizationState) then) =
-      _$AuthorizationStateCopyWithImpl<$Res>;
+      _$AuthorizationStateCopyWithImpl<$Res, AuthorizationState>;
 }
 
 /// @nodoc
-class _$AuthorizationStateCopyWithImpl<$Res>
+class _$AuthorizationStateCopyWithImpl<$Res, $Val extends AuthorizationState>
     implements $AuthorizationStateCopyWith<$Res> {
   _$AuthorizationStateCopyWithImpl(this._value, this._then);
 
-  final AuthorizationState _value;
   // ignore: unused_field
-  final $Res Function(AuthorizationState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $UnauthorizedCopyWith<$Res> {
-  factory $UnauthorizedCopyWith(
-          Unauthorized value, $Res Function(Unauthorized) then) =
-      _$UnauthorizedCopyWithImpl<$Res>;
+abstract class _$$UnauthorizedCopyWith<$Res> {
+  factory _$$UnauthorizedCopyWith(
+          _$Unauthorized value, $Res Function(_$Unauthorized) then) =
+      __$$UnauthorizedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$UnauthorizedCopyWithImpl<$Res>
-    extends _$AuthorizationStateCopyWithImpl<$Res>
-    implements $UnauthorizedCopyWith<$Res> {
-  _$UnauthorizedCopyWithImpl(
-      Unauthorized _value, $Res Function(Unauthorized) _then)
-      : super(_value, (v) => _then(v as Unauthorized));
-
-  @override
-  Unauthorized get _value => super._value as Unauthorized;
+class __$$UnauthorizedCopyWithImpl<$Res>
+    extends _$AuthorizationStateCopyWithImpl<$Res, _$Unauthorized>
+    implements _$$UnauthorizedCopyWith<$Res> {
+  __$$UnauthorizedCopyWithImpl(
+      _$Unauthorized _value, $Res Function(_$Unauthorized) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Unauthorized implements Unauthorized {
   const _$Unauthorized();
 
@@ -107,7 +102,8 @@ class _$Unauthorized implements Unauthorized {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Unauthorized);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Unauthorized);
   }
 
   @override
@@ -120,6 +116,15 @@ class _$Unauthorized implements Unauthorized {
     required TResult Function(bool isOnboarded) authorized,
   }) {
     return unauthorized();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? unauthorized,
+    TResult? Function(bool isOnboarded)? authorized,
+  }) {
+    return unauthorized?.call();
   }
 
   @override
@@ -146,6 +151,15 @@ class _$Unauthorized implements Unauthorized {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(Authorized value)? authorized,
+  }) {
+    return unauthorized?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Unauthorized value)? unauthorized,
     TResult Function(Authorized value)? authorized,
@@ -163,29 +177,29 @@ abstract class Unauthorized implements AuthorizationState {
 }
 
 /// @nodoc
-abstract class $AuthorizedCopyWith<$Res> {
-  factory $AuthorizedCopyWith(
-          Authorized value, $Res Function(Authorized) then) =
-      _$AuthorizedCopyWithImpl<$Res>;
+abstract class _$$AuthorizedCopyWith<$Res> {
+  factory _$$AuthorizedCopyWith(
+          _$Authorized value, $Res Function(_$Authorized) then) =
+      __$$AuthorizedCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool isOnboarded});
 }
 
 /// @nodoc
-class _$AuthorizedCopyWithImpl<$Res>
-    extends _$AuthorizationStateCopyWithImpl<$Res>
-    implements $AuthorizedCopyWith<$Res> {
-  _$AuthorizedCopyWithImpl(Authorized _value, $Res Function(Authorized) _then)
-      : super(_value, (v) => _then(v as Authorized));
+class __$$AuthorizedCopyWithImpl<$Res>
+    extends _$AuthorizationStateCopyWithImpl<$Res, _$Authorized>
+    implements _$$AuthorizedCopyWith<$Res> {
+  __$$AuthorizedCopyWithImpl(
+      _$Authorized _value, $Res Function(_$Authorized) _then)
+      : super(_value, _then);
 
-  @override
-  Authorized get _value => super._value as Authorized;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isOnboarded = freezed,
+    Object? isOnboarded = null,
   }) {
-    return _then(Authorized(
-      isOnboarded: isOnboarded == freezed
+    return _then(_$Authorized(
+      isOnboarded: null == isOnboarded
           ? _value.isOnboarded
           : isOnboarded // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -194,6 +208,7 @@ class _$AuthorizedCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Authorized implements Authorized {
   const _$Authorized({required this.isOnboarded});
 
@@ -208,20 +223,20 @@ class _$Authorized implements Authorized {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Authorized &&
+        (other.runtimeType == runtimeType &&
+            other is _$Authorized &&
             (identical(other.isOnboarded, isOnboarded) ||
-                const DeepCollectionEquality()
-                    .equals(other.isOnboarded, isOnboarded)));
+                other.isOnboarded == isOnboarded));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(isOnboarded);
+  int get hashCode => Object.hash(runtimeType, isOnboarded);
 
   @JsonKey(ignore: true)
   @override
-  $AuthorizedCopyWith<Authorized> get copyWith =>
-      _$AuthorizedCopyWithImpl<Authorized>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AuthorizedCopyWith<_$Authorized> get copyWith =>
+      __$$AuthorizedCopyWithImpl<_$Authorized>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -230,6 +245,15 @@ class _$Authorized implements Authorized {
     required TResult Function(bool isOnboarded) authorized,
   }) {
     return authorized(isOnboarded);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? unauthorized,
+    TResult? Function(bool isOnboarded)? authorized,
+  }) {
+    return authorized?.call(isOnboarded);
   }
 
   @override
@@ -256,6 +280,15 @@ class _$Authorized implements Authorized {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(Authorized value)? authorized,
+  }) {
+    return authorized?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Unauthorized value)? unauthorized,
     TResult Function(Authorized value)? authorized,
@@ -269,10 +302,10 @@ class _$Authorized implements Authorized {
 }
 
 abstract class Authorized implements AuthorizationState {
-  const factory Authorized({required bool isOnboarded}) = _$Authorized;
+  const factory Authorized({required final bool isOnboarded}) = _$Authorized;
 
-  bool get isOnboarded => throw _privateConstructorUsedError;
+  bool get isOnboarded;
   @JsonKey(ignore: true)
-  $AuthorizedCopyWith<Authorized> get copyWith =>
+  _$$AuthorizedCopyWith<_$Authorized> get copyWith =>
       throw _privateConstructorUsedError;
 }

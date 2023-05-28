@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'pricing_event.dart';
 
@@ -10,29 +12,7 @@ part of 'pricing_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PricingEventTearOff {
-  const _$PricingEventTearOff();
-
-  Fetch fetch() {
-    return const Fetch();
-  }
-
-  ChangePage changePage({required PremiumPopupPage page}) {
-    return ChangePage(
-      page: page,
-    );
-  }
-
-  Back back() {
-    return const Back();
-  }
-}
-
-/// @nodoc
-const $PricingEvent = _$PricingEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$PricingEvent {
@@ -41,6 +21,13 @@ mixin _$PricingEvent {
     required TResult Function() fetch,
     required TResult Function(PremiumPopupPage page) changePage,
     required TResult Function() back,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(PremiumPopupPage page)? changePage,
+    TResult? Function()? back,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -59,6 +46,13 @@ mixin _$PricingEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Fetch value)? fetch,
+    TResult? Function(ChangePage value)? changePage,
+    TResult? Function(Back value)? back,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Fetch value)? fetch,
     TResult Function(ChangePage value)? changePage,
@@ -72,35 +66,36 @@ mixin _$PricingEvent {
 abstract class $PricingEventCopyWith<$Res> {
   factory $PricingEventCopyWith(
           PricingEvent value, $Res Function(PricingEvent) then) =
-      _$PricingEventCopyWithImpl<$Res>;
+      _$PricingEventCopyWithImpl<$Res, PricingEvent>;
 }
 
 /// @nodoc
-class _$PricingEventCopyWithImpl<$Res> implements $PricingEventCopyWith<$Res> {
+class _$PricingEventCopyWithImpl<$Res, $Val extends PricingEvent>
+    implements $PricingEventCopyWith<$Res> {
   _$PricingEventCopyWithImpl(this._value, this._then);
 
-  final PricingEvent _value;
   // ignore: unused_field
-  final $Res Function(PricingEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $FetchCopyWith<$Res> {
-  factory $FetchCopyWith(Fetch value, $Res Function(Fetch) then) =
-      _$FetchCopyWithImpl<$Res>;
+abstract class _$$FetchCopyWith<$Res> {
+  factory _$$FetchCopyWith(_$Fetch value, $Res Function(_$Fetch) then) =
+      __$$FetchCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$FetchCopyWithImpl<$Res> extends _$PricingEventCopyWithImpl<$Res>
-    implements $FetchCopyWith<$Res> {
-  _$FetchCopyWithImpl(Fetch _value, $Res Function(Fetch) _then)
-      : super(_value, (v) => _then(v as Fetch));
-
-  @override
-  Fetch get _value => super._value as Fetch;
+class __$$FetchCopyWithImpl<$Res>
+    extends _$PricingEventCopyWithImpl<$Res, _$Fetch>
+    implements _$$FetchCopyWith<$Res> {
+  __$$FetchCopyWithImpl(_$Fetch _value, $Res Function(_$Fetch) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Fetch implements Fetch {
   const _$Fetch();
 
@@ -111,7 +106,8 @@ class _$Fetch implements Fetch {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Fetch);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Fetch);
   }
 
   @override
@@ -125,6 +121,16 @@ class _$Fetch implements Fetch {
     required TResult Function() back,
   }) {
     return fetch();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(PremiumPopupPage page)? changePage,
+    TResult? Function()? back,
+  }) {
+    return fetch?.call();
   }
 
   @override
@@ -153,6 +159,16 @@ class _$Fetch implements Fetch {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Fetch value)? fetch,
+    TResult? Function(ChangePage value)? changePage,
+    TResult? Function(Back value)? back,
+  }) {
+    return fetch?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Fetch value)? fetch,
     TResult Function(ChangePage value)? changePage,
@@ -171,28 +187,29 @@ abstract class Fetch implements PricingEvent {
 }
 
 /// @nodoc
-abstract class $ChangePageCopyWith<$Res> {
-  factory $ChangePageCopyWith(
-          ChangePage value, $Res Function(ChangePage) then) =
-      _$ChangePageCopyWithImpl<$Res>;
+abstract class _$$ChangePageCopyWith<$Res> {
+  factory _$$ChangePageCopyWith(
+          _$ChangePage value, $Res Function(_$ChangePage) then) =
+      __$$ChangePageCopyWithImpl<$Res>;
+  @useResult
   $Res call({PremiumPopupPage page});
 }
 
 /// @nodoc
-class _$ChangePageCopyWithImpl<$Res> extends _$PricingEventCopyWithImpl<$Res>
-    implements $ChangePageCopyWith<$Res> {
-  _$ChangePageCopyWithImpl(ChangePage _value, $Res Function(ChangePage) _then)
-      : super(_value, (v) => _then(v as ChangePage));
+class __$$ChangePageCopyWithImpl<$Res>
+    extends _$PricingEventCopyWithImpl<$Res, _$ChangePage>
+    implements _$$ChangePageCopyWith<$Res> {
+  __$$ChangePageCopyWithImpl(
+      _$ChangePage _value, $Res Function(_$ChangePage) _then)
+      : super(_value, _then);
 
-  @override
-  ChangePage get _value => super._value as ChangePage;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? page = freezed,
+    Object? page = null,
   }) {
-    return _then(ChangePage(
-      page: page == freezed
+    return _then(_$ChangePage(
+      page: null == page
           ? _value.page
           : page // ignore: cast_nullable_to_non_nullable
               as PremiumPopupPage,
@@ -201,6 +218,7 @@ class _$ChangePageCopyWithImpl<$Res> extends _$PricingEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ChangePage implements ChangePage {
   const _$ChangePage({required this.page});
 
@@ -215,19 +233,19 @@ class _$ChangePage implements ChangePage {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ChangePage &&
-            (identical(other.page, page) ||
-                const DeepCollectionEquality().equals(other.page, page)));
+        (other.runtimeType == runtimeType &&
+            other is _$ChangePage &&
+            (identical(other.page, page) || other.page == page));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(page);
+  int get hashCode => Object.hash(runtimeType, page);
 
   @JsonKey(ignore: true)
   @override
-  $ChangePageCopyWith<ChangePage> get copyWith =>
-      _$ChangePageCopyWithImpl<ChangePage>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ChangePageCopyWith<_$ChangePage> get copyWith =>
+      __$$ChangePageCopyWithImpl<_$ChangePage>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -237,6 +255,16 @@ class _$ChangePage implements ChangePage {
     required TResult Function() back,
   }) {
     return changePage(page);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(PremiumPopupPage page)? changePage,
+    TResult? Function()? back,
+  }) {
+    return changePage?.call(page);
   }
 
   @override
@@ -265,6 +293,16 @@ class _$ChangePage implements ChangePage {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Fetch value)? fetch,
+    TResult? Function(ChangePage value)? changePage,
+    TResult? Function(Back value)? back,
+  }) {
+    return changePage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Fetch value)? fetch,
     TResult Function(ChangePage value)? changePage,
@@ -279,31 +317,31 @@ class _$ChangePage implements ChangePage {
 }
 
 abstract class ChangePage implements PricingEvent {
-  const factory ChangePage({required PremiumPopupPage page}) = _$ChangePage;
+  const factory ChangePage({required final PremiumPopupPage page}) =
+      _$ChangePage;
 
-  PremiumPopupPage get page => throw _privateConstructorUsedError;
+  PremiumPopupPage get page;
   @JsonKey(ignore: true)
-  $ChangePageCopyWith<ChangePage> get copyWith =>
+  _$$ChangePageCopyWith<_$ChangePage> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $BackCopyWith<$Res> {
-  factory $BackCopyWith(Back value, $Res Function(Back) then) =
-      _$BackCopyWithImpl<$Res>;
+abstract class _$$BackCopyWith<$Res> {
+  factory _$$BackCopyWith(_$Back value, $Res Function(_$Back) then) =
+      __$$BackCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$BackCopyWithImpl<$Res> extends _$PricingEventCopyWithImpl<$Res>
-    implements $BackCopyWith<$Res> {
-  _$BackCopyWithImpl(Back _value, $Res Function(Back) _then)
-      : super(_value, (v) => _then(v as Back));
-
-  @override
-  Back get _value => super._value as Back;
+class __$$BackCopyWithImpl<$Res>
+    extends _$PricingEventCopyWithImpl<$Res, _$Back>
+    implements _$$BackCopyWith<$Res> {
+  __$$BackCopyWithImpl(_$Back _value, $Res Function(_$Back) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Back implements Back {
   const _$Back();
 
@@ -314,7 +352,8 @@ class _$Back implements Back {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Back);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Back);
   }
 
   @override
@@ -328,6 +367,16 @@ class _$Back implements Back {
     required TResult Function() back,
   }) {
     return back();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(PremiumPopupPage page)? changePage,
+    TResult? Function()? back,
+  }) {
+    return back?.call();
   }
 
   @override
@@ -352,6 +401,16 @@ class _$Back implements Back {
     required TResult Function(Back value) back,
   }) {
     return back(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Fetch value)? fetch,
+    TResult? Function(ChangePage value)? changePage,
+    TResult? Function(Back value)? back,
+  }) {
+    return back?.call(this);
   }
 
   @override

@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'onboarding_zodiac_event.dart';
 
@@ -10,25 +12,18 @@ part of 'onboarding_zodiac_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$OnboardingZodiacEventTearOff {
-  const _$OnboardingZodiacEventTearOff();
-
-  GetZodiac getZodiac() {
-    return const GetZodiac();
-  }
-}
-
-/// @nodoc
-const $OnboardingZodiacEvent = _$OnboardingZodiacEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$OnboardingZodiacEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() getZodiac,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getZodiac,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -43,6 +38,11 @@ mixin _$OnboardingZodiacEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetZodiac value)? getZodiac,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(GetZodiac value)? getZodiac,
     required TResult orElse(),
@@ -54,37 +54,39 @@ mixin _$OnboardingZodiacEvent {
 abstract class $OnboardingZodiacEventCopyWith<$Res> {
   factory $OnboardingZodiacEventCopyWith(OnboardingZodiacEvent value,
           $Res Function(OnboardingZodiacEvent) then) =
-      _$OnboardingZodiacEventCopyWithImpl<$Res>;
+      _$OnboardingZodiacEventCopyWithImpl<$Res, OnboardingZodiacEvent>;
 }
 
 /// @nodoc
-class _$OnboardingZodiacEventCopyWithImpl<$Res>
+class _$OnboardingZodiacEventCopyWithImpl<$Res,
+        $Val extends OnboardingZodiacEvent>
     implements $OnboardingZodiacEventCopyWith<$Res> {
   _$OnboardingZodiacEventCopyWithImpl(this._value, this._then);
 
-  final OnboardingZodiacEvent _value;
   // ignore: unused_field
-  final $Res Function(OnboardingZodiacEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $GetZodiacCopyWith<$Res> {
-  factory $GetZodiacCopyWith(GetZodiac value, $Res Function(GetZodiac) then) =
-      _$GetZodiacCopyWithImpl<$Res>;
+abstract class _$$GetZodiacCopyWith<$Res> {
+  factory _$$GetZodiacCopyWith(
+          _$GetZodiac value, $Res Function(_$GetZodiac) then) =
+      __$$GetZodiacCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$GetZodiacCopyWithImpl<$Res>
-    extends _$OnboardingZodiacEventCopyWithImpl<$Res>
-    implements $GetZodiacCopyWith<$Res> {
-  _$GetZodiacCopyWithImpl(GetZodiac _value, $Res Function(GetZodiac) _then)
-      : super(_value, (v) => _then(v as GetZodiac));
-
-  @override
-  GetZodiac get _value => super._value as GetZodiac;
+class __$$GetZodiacCopyWithImpl<$Res>
+    extends _$OnboardingZodiacEventCopyWithImpl<$Res, _$GetZodiac>
+    implements _$$GetZodiacCopyWith<$Res> {
+  __$$GetZodiacCopyWithImpl(
+      _$GetZodiac _value, $Res Function(_$GetZodiac) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$GetZodiac implements GetZodiac {
   const _$GetZodiac();
 
@@ -95,7 +97,8 @@ class _$GetZodiac implements GetZodiac {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is GetZodiac);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetZodiac);
   }
 
   @override
@@ -107,6 +110,14 @@ class _$GetZodiac implements GetZodiac {
     required TResult Function() getZodiac,
   }) {
     return getZodiac();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getZodiac,
+  }) {
+    return getZodiac?.call();
   }
 
   @override
@@ -127,6 +138,14 @@ class _$GetZodiac implements GetZodiac {
     required TResult Function(GetZodiac value) getZodiac,
   }) {
     return getZodiac(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetZodiac value)? getZodiac,
+  }) {
+    return getZodiac?.call(this);
   }
 
   @override

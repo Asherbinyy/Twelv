@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'document_event.dart';
 
@@ -10,29 +12,19 @@ part of 'document_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DocumentEventTearOff {
-  const _$DocumentEventTearOff();
-
-  Show show(HtmlDocumentType type) {
-    return Show(
-      type,
-    );
-  }
-}
-
-/// @nodoc
-const $DocumentEvent = _$DocumentEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$DocumentEvent {
   HtmlDocumentType get type => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(HtmlDocumentType type) show,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(HtmlDocumentType type)? show,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -44,6 +36,11 @@ mixin _$DocumentEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Show value) show,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Show value)? show,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -62,55 +59,58 @@ mixin _$DocumentEvent {
 abstract class $DocumentEventCopyWith<$Res> {
   factory $DocumentEventCopyWith(
           DocumentEvent value, $Res Function(DocumentEvent) then) =
-      _$DocumentEventCopyWithImpl<$Res>;
+      _$DocumentEventCopyWithImpl<$Res, DocumentEvent>;
+  @useResult
   $Res call({HtmlDocumentType type});
 }
 
 /// @nodoc
-class _$DocumentEventCopyWithImpl<$Res>
+class _$DocumentEventCopyWithImpl<$Res, $Val extends DocumentEvent>
     implements $DocumentEventCopyWith<$Res> {
   _$DocumentEventCopyWithImpl(this._value, this._then);
 
-  final DocumentEvent _value;
   // ignore: unused_field
-  final $Res Function(DocumentEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as HtmlDocumentType,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class $ShowCopyWith<$Res> implements $DocumentEventCopyWith<$Res> {
-  factory $ShowCopyWith(Show value, $Res Function(Show) then) =
-      _$ShowCopyWithImpl<$Res>;
+abstract class _$$ShowCopyWith<$Res> implements $DocumentEventCopyWith<$Res> {
+  factory _$$ShowCopyWith(_$Show value, $Res Function(_$Show) then) =
+      __$$ShowCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({HtmlDocumentType type});
 }
 
 /// @nodoc
-class _$ShowCopyWithImpl<$Res> extends _$DocumentEventCopyWithImpl<$Res>
-    implements $ShowCopyWith<$Res> {
-  _$ShowCopyWithImpl(Show _value, $Res Function(Show) _then)
-      : super(_value, (v) => _then(v as Show));
+class __$$ShowCopyWithImpl<$Res>
+    extends _$DocumentEventCopyWithImpl<$Res, _$Show>
+    implements _$$ShowCopyWith<$Res> {
+  __$$ShowCopyWithImpl(_$Show _value, $Res Function(_$Show) _then)
+      : super(_value, _then);
 
-  @override
-  Show get _value => super._value as Show;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? type = freezed,
+    Object? type = null,
   }) {
-    return _then(Show(
-      type == freezed
+    return _then(_$Show(
+      null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as HtmlDocumentType,
@@ -119,6 +119,7 @@ class _$ShowCopyWithImpl<$Res> extends _$DocumentEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Show implements Show {
   const _$Show(this.type);
 
@@ -133,19 +134,19 @@ class _$Show implements Show {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Show &&
-            (identical(other.type, type) ||
-                const DeepCollectionEquality().equals(other.type, type)));
+        (other.runtimeType == runtimeType &&
+            other is _$Show &&
+            (identical(other.type, type) || other.type == type));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(type);
+  int get hashCode => Object.hash(runtimeType, type);
 
   @JsonKey(ignore: true)
   @override
-  $ShowCopyWith<Show> get copyWith =>
-      _$ShowCopyWithImpl<Show>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ShowCopyWith<_$Show> get copyWith =>
+      __$$ShowCopyWithImpl<_$Show>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -153,6 +154,14 @@ class _$Show implements Show {
     required TResult Function(HtmlDocumentType type) show,
   }) {
     return show(type);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(HtmlDocumentType type)? show,
+  }) {
+    return show?.call(type);
   }
 
   @override
@@ -177,6 +186,14 @@ class _$Show implements Show {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Show value)? show,
+  }) {
+    return show?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Show value)? show,
     required TResult orElse(),
@@ -189,11 +206,11 @@ class _$Show implements Show {
 }
 
 abstract class Show implements DocumentEvent {
-  const factory Show(HtmlDocumentType type) = _$Show;
+  const factory Show(final HtmlDocumentType type) = _$Show;
 
   @override
-  HtmlDocumentType get type => throw _privateConstructorUsedError;
+  HtmlDocumentType get type;
   @override
   @JsonKey(ignore: true)
-  $ShowCopyWith<Show> get copyWith => throw _privateConstructorUsedError;
+  _$$ShowCopyWith<_$Show> get copyWith => throw _privateConstructorUsedError;
 }

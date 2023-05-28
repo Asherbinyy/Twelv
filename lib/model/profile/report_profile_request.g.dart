@@ -6,11 +6,11 @@ part of 'report_profile_request.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-ReportProfileRequest _$ReportProfileRequestFromJson(Map<String, dynamic> json) {
-  return ReportProfileRequest(
-    userId: json['reported_user'] as int,
-  );
-}
+ReportProfileRequest _$ReportProfileRequestFromJson(
+        Map<String, dynamic> json) =>
+    ReportProfileRequest(
+      userId: json['reported_user'] as int,
+    );
 
 Map<String, dynamic> _$ReportProfileRequestToJson(
         ReportProfileRequest instance) =>

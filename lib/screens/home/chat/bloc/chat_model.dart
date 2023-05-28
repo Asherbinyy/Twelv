@@ -163,7 +163,7 @@ class ChatModel {
 
 extension _ChatChannelExt on Channel {
   Future<QueryMembersResponse> get membersWithoutMe =>
-      queryMembers(filter: Filter.notEqual('id', client.state.user!.id));
+      queryMembers(filter: Filter.notEqual('id', client.state.currentUser!.id));
 
   Future<List<String>> get membersUuids async =>
       (await queryMembers()).members.map((Member member) => member.userId).withNullifyer.toList();

@@ -34,7 +34,7 @@ class AppTextHtml extends StatelessWidget {
         if (style != null)
           "p": Style(
               color: style.color,
-              fontSize: FontSize(style.fontSize, units: "px"),
+              fontSize: FontSize(style.fontSize??10),
               fontWeight: style.fontWeight,
               fontFamily: style.fontFamily,
               textAlign: textAlign),
@@ -46,14 +46,15 @@ class AppTextHtml extends StatelessWidget {
             textAlign: textAlign)
       },
       onLinkTap: onLinkTap,
-      customRender: {
-        "table": (context, child) {
-          return SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: (context.tree as TableLayoutElement).toWidget(context),
-          );
-        },
-      },
+      ///ToDO: customRender
+      // customRenders: {
+      //   "table": (RenderContext randerCtx, CustomRender) {
+      //     return SingleChildScrollView(
+      //       scrollDirection: Axis.horizontal,
+      //       child: (context.tree as TableLayoutElement).toWidget(context),
+      //     );
+      //   },
+      // },
     );
   }
 }

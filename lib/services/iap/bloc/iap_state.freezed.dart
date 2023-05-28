@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'iap_state.dart';
 
@@ -10,63 +12,7 @@ part of 'iap_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$IAPStateTearOff {
-  const _$IAPStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Products products({required List<InAppPurchaseItem> products}) {
-    return Products(
-      products: products,
-    );
-  }
-
-  Finished finished({required bool success, required String productId}) {
-    return Finished(
-      success: success,
-      productId: productId,
-    );
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  Error error({required dynamic error}) {
-    return Error(
-      error: error,
-    );
-  }
-
-  PurchaseRestored purchaseRestored({required int count}) {
-    return PurchaseRestored(
-      count: count,
-    );
-  }
-
-  PurchaseFinished purchaseFinished(
-      {required InAppPurchaseResponse? response,
-      required dynamic backendResponse}) {
-    return PurchaseFinished(
-      response: response,
-      backendResponse: backendResponse,
-    );
-  }
-
-  PurchaseError purchaseError({required InAppPurchaseError error}) {
-    return PurchaseError(
-      error: error,
-    );
-  }
-}
-
-/// @nodoc
-const $IAPState = _$IAPStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$IAPState {
@@ -82,6 +28,19 @@ mixin _$IAPState {
             InAppPurchaseResponse? response, dynamic backendResponse)
         purchaseFinished,
     required TResult Function(InAppPurchaseError error) purchaseError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -111,6 +70,18 @@ mixin _$IAPState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -128,35 +99,36 @@ mixin _$IAPState {
 /// @nodoc
 abstract class $IAPStateCopyWith<$Res> {
   factory $IAPStateCopyWith(IAPState value, $Res Function(IAPState) then) =
-      _$IAPStateCopyWithImpl<$Res>;
+      _$IAPStateCopyWithImpl<$Res, IAPState>;
 }
 
 /// @nodoc
-class _$IAPStateCopyWithImpl<$Res> implements $IAPStateCopyWith<$Res> {
+class _$IAPStateCopyWithImpl<$Res, $Val extends IAPState>
+    implements $IAPStateCopyWith<$Res> {
   _$IAPStateCopyWithImpl(this._value, this._then);
 
-  final IAPState _value;
   // ignore: unused_field
-  final $Res Function(IAPState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$IAPStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -167,7 +139,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -188,6 +161,22 @@ class _$Initial implements Initial {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -227,6 +216,21 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -250,28 +254,29 @@ abstract class Initial implements IAPState {
 }
 
 /// @nodoc
-abstract class $ProductsCopyWith<$Res> {
-  factory $ProductsCopyWith(Products value, $Res Function(Products) then) =
-      _$ProductsCopyWithImpl<$Res>;
+abstract class _$$ProductsCopyWith<$Res> {
+  factory _$$ProductsCopyWith(
+          _$Products value, $Res Function(_$Products) then) =
+      __$$ProductsCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<InAppPurchaseItem> products});
 }
 
 /// @nodoc
-class _$ProductsCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $ProductsCopyWith<$Res> {
-  _$ProductsCopyWithImpl(Products _value, $Res Function(Products) _then)
-      : super(_value, (v) => _then(v as Products));
+class __$$ProductsCopyWithImpl<$Res>
+    extends _$IAPStateCopyWithImpl<$Res, _$Products>
+    implements _$$ProductsCopyWith<$Res> {
+  __$$ProductsCopyWithImpl(_$Products _value, $Res Function(_$Products) _then)
+      : super(_value, _then);
 
-  @override
-  Products get _value => super._value as Products;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? products = freezed,
+    Object? products = null,
   }) {
-    return _then(Products(
-      products: products == freezed
-          ? _value.products
+    return _then(_$Products(
+      products: null == products
+          ? _value._products
           : products // ignore: cast_nullable_to_non_nullable
               as List<InAppPurchaseItem>,
     ));
@@ -279,11 +284,17 @@ class _$ProductsCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-class _$Products implements Products {
-  const _$Products({required this.products});
 
+class _$Products implements Products {
+  const _$Products({required final List<InAppPurchaseItem> products})
+      : _products = products;
+
+  final List<InAppPurchaseItem> _products;
   @override
-  final List<InAppPurchaseItem> products;
+  List<InAppPurchaseItem> get products {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_products);
+  }
 
   @override
   String toString() {
@@ -293,20 +304,20 @@ class _$Products implements Products {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Products &&
-            (identical(other.products, products) ||
-                const DeepCollectionEquality()
-                    .equals(other.products, products)));
+        (other.runtimeType == runtimeType &&
+            other is _$Products &&
+            const DeepCollectionEquality().equals(other._products, _products));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(products);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_products));
 
   @JsonKey(ignore: true)
   @override
-  $ProductsCopyWith<Products> get copyWith =>
-      _$ProductsCopyWithImpl<Products>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ProductsCopyWith<_$Products> get copyWith =>
+      __$$ProductsCopyWithImpl<_$Products>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -323,6 +334,22 @@ class _$Products implements Products {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return products(this.products);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return products?.call(this.products);
   }
 
   @override
@@ -362,6 +389,21 @@ class _$Products implements Products {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return products?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -381,42 +423,43 @@ class _$Products implements Products {
 }
 
 abstract class Products implements IAPState {
-  const factory Products({required List<InAppPurchaseItem> products}) =
+  const factory Products({required final List<InAppPurchaseItem> products}) =
       _$Products;
 
-  List<InAppPurchaseItem> get products => throw _privateConstructorUsedError;
+  List<InAppPurchaseItem> get products;
   @JsonKey(ignore: true)
-  $ProductsCopyWith<Products> get copyWith =>
+  _$$ProductsCopyWith<_$Products> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FinishedCopyWith<$Res> {
-  factory $FinishedCopyWith(Finished value, $Res Function(Finished) then) =
-      _$FinishedCopyWithImpl<$Res>;
+abstract class _$$FinishedCopyWith<$Res> {
+  factory _$$FinishedCopyWith(
+          _$Finished value, $Res Function(_$Finished) then) =
+      __$$FinishedCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool success, String productId});
 }
 
 /// @nodoc
-class _$FinishedCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $FinishedCopyWith<$Res> {
-  _$FinishedCopyWithImpl(Finished _value, $Res Function(Finished) _then)
-      : super(_value, (v) => _then(v as Finished));
+class __$$FinishedCopyWithImpl<$Res>
+    extends _$IAPStateCopyWithImpl<$Res, _$Finished>
+    implements _$$FinishedCopyWith<$Res> {
+  __$$FinishedCopyWithImpl(_$Finished _value, $Res Function(_$Finished) _then)
+      : super(_value, _then);
 
-  @override
-  Finished get _value => super._value as Finished;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? success = freezed,
-    Object? productId = freezed,
+    Object? success = null,
+    Object? productId = null,
   }) {
-    return _then(Finished(
-      success: success == freezed
+    return _then(_$Finished(
+      success: null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool,
-      productId: productId == freezed
+      productId: null == productId
           ? _value.productId
           : productId // ignore: cast_nullable_to_non_nullable
               as String,
@@ -425,6 +468,7 @@ class _$FinishedCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Finished implements Finished {
   const _$Finished({required this.success, required this.productId});
 
@@ -441,25 +485,21 @@ class _$Finished implements Finished {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Finished &&
-            (identical(other.success, success) ||
-                const DeepCollectionEquality()
-                    .equals(other.success, success)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$Finished &&
+            (identical(other.success, success) || other.success == success) &&
             (identical(other.productId, productId) ||
-                const DeepCollectionEquality()
-                    .equals(other.productId, productId)));
+                other.productId == productId));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(success) ^
-      const DeepCollectionEquality().hash(productId);
+  int get hashCode => Object.hash(runtimeType, success, productId);
 
   @JsonKey(ignore: true)
   @override
-  $FinishedCopyWith<Finished> get copyWith =>
-      _$FinishedCopyWithImpl<Finished>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FinishedCopyWith<_$Finished> get copyWith =>
+      __$$FinishedCopyWithImpl<_$Finished>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -476,6 +516,22 @@ class _$Finished implements Finished {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return finished(success, productId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return finished?.call(success, productId);
   }
 
   @override
@@ -515,6 +571,21 @@ class _$Finished implements Finished {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return finished?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -534,33 +605,33 @@ class _$Finished implements Finished {
 }
 
 abstract class Finished implements IAPState {
-  const factory Finished({required bool success, required String productId}) =
-      _$Finished;
+  const factory Finished(
+      {required final bool success,
+      required final String productId}) = _$Finished;
 
-  bool get success => throw _privateConstructorUsedError;
-  String get productId => throw _privateConstructorUsedError;
+  bool get success;
+  String get productId;
   @JsonKey(ignore: true)
-  $FinishedCopyWith<Finished> get copyWith =>
+  _$$FinishedCopyWith<_$Finished> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$IAPStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -571,7 +642,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -592,6 +664,22 @@ class _$Loading implements Loading {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -631,6 +719,21 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -654,27 +757,26 @@ abstract class Loading implements IAPState {
 }
 
 /// @nodoc
-abstract class $ErrorCopyWith<$Res> {
-  factory $ErrorCopyWith(Error value, $Res Function(Error) then) =
-      _$ErrorCopyWithImpl<$Res>;
+abstract class _$$ErrorCopyWith<$Res> {
+  factory _$$ErrorCopyWith(_$Error value, $Res Function(_$Error) then) =
+      __$$ErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({dynamic error});
 }
 
 /// @nodoc
-class _$ErrorCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $ErrorCopyWith<$Res> {
-  _$ErrorCopyWithImpl(Error _value, $Res Function(Error) _then)
-      : super(_value, (v) => _then(v as Error));
+class __$$ErrorCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res, _$Error>
+    implements _$$ErrorCopyWith<$Res> {
+  __$$ErrorCopyWithImpl(_$Error _value, $Res Function(_$Error) _then)
+      : super(_value, _then);
 
-  @override
-  Error get _value => super._value as Error;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(Error(
-      error: error == freezed
+    return _then(_$Error(
+      error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as dynamic,
@@ -683,6 +785,7 @@ class _$ErrorCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Error implements Error {
   const _$Error({required this.error});
 
@@ -697,19 +800,20 @@ class _$Error implements Error {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Error &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$Error &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
-  $ErrorCopyWith<Error> get copyWith =>
-      _$ErrorCopyWithImpl<Error>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorCopyWith<_$Error> get copyWith =>
+      __$$ErrorCopyWithImpl<_$Error>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -726,6 +830,22 @@ class _$Error implements Error {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return error(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return error?.call(this.error);
   }
 
   @override
@@ -765,6 +885,21 @@ class _$Error implements Error {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -784,37 +919,37 @@ class _$Error implements Error {
 }
 
 abstract class Error implements IAPState {
-  const factory Error({required dynamic error}) = _$Error;
+  const factory Error({required final dynamic error}) = _$Error;
 
-  dynamic get error => throw _privateConstructorUsedError;
+  dynamic get error;
   @JsonKey(ignore: true)
-  $ErrorCopyWith<Error> get copyWith => throw _privateConstructorUsedError;
+  _$$ErrorCopyWith<_$Error> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PurchaseRestoredCopyWith<$Res> {
-  factory $PurchaseRestoredCopyWith(
-          PurchaseRestored value, $Res Function(PurchaseRestored) then) =
-      _$PurchaseRestoredCopyWithImpl<$Res>;
+abstract class _$$PurchaseRestoredCopyWith<$Res> {
+  factory _$$PurchaseRestoredCopyWith(
+          _$PurchaseRestored value, $Res Function(_$PurchaseRestored) then) =
+      __$$PurchaseRestoredCopyWithImpl<$Res>;
+  @useResult
   $Res call({int count});
 }
 
 /// @nodoc
-class _$PurchaseRestoredCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $PurchaseRestoredCopyWith<$Res> {
-  _$PurchaseRestoredCopyWithImpl(
-      PurchaseRestored _value, $Res Function(PurchaseRestored) _then)
-      : super(_value, (v) => _then(v as PurchaseRestored));
+class __$$PurchaseRestoredCopyWithImpl<$Res>
+    extends _$IAPStateCopyWithImpl<$Res, _$PurchaseRestored>
+    implements _$$PurchaseRestoredCopyWith<$Res> {
+  __$$PurchaseRestoredCopyWithImpl(
+      _$PurchaseRestored _value, $Res Function(_$PurchaseRestored) _then)
+      : super(_value, _then);
 
-  @override
-  PurchaseRestored get _value => super._value as PurchaseRestored;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? count = freezed,
+    Object? count = null,
   }) {
-    return _then(PurchaseRestored(
-      count: count == freezed
+    return _then(_$PurchaseRestored(
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
@@ -823,6 +958,7 @@ class _$PurchaseRestoredCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PurchaseRestored implements PurchaseRestored {
   const _$PurchaseRestored({required this.count});
 
@@ -837,19 +973,19 @@ class _$PurchaseRestored implements PurchaseRestored {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PurchaseRestored &&
-            (identical(other.count, count) ||
-                const DeepCollectionEquality().equals(other.count, count)));
+        (other.runtimeType == runtimeType &&
+            other is _$PurchaseRestored &&
+            (identical(other.count, count) || other.count == count));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(count);
+  int get hashCode => Object.hash(runtimeType, count);
 
   @JsonKey(ignore: true)
   @override
-  $PurchaseRestoredCopyWith<PurchaseRestored> get copyWith =>
-      _$PurchaseRestoredCopyWithImpl<PurchaseRestored>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PurchaseRestoredCopyWith<_$PurchaseRestored> get copyWith =>
+      __$$PurchaseRestoredCopyWithImpl<_$PurchaseRestored>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -866,6 +1002,22 @@ class _$PurchaseRestored implements PurchaseRestored {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return purchaseRestored(count);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return purchaseRestored?.call(count);
   }
 
   @override
@@ -905,6 +1057,21 @@ class _$PurchaseRestored implements PurchaseRestored {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return purchaseRestored?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -924,43 +1091,44 @@ class _$PurchaseRestored implements PurchaseRestored {
 }
 
 abstract class PurchaseRestored implements IAPState {
-  const factory PurchaseRestored({required int count}) = _$PurchaseRestored;
+  const factory PurchaseRestored({required final int count}) =
+      _$PurchaseRestored;
 
-  int get count => throw _privateConstructorUsedError;
+  int get count;
   @JsonKey(ignore: true)
-  $PurchaseRestoredCopyWith<PurchaseRestored> get copyWith =>
+  _$$PurchaseRestoredCopyWith<_$PurchaseRestored> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PurchaseFinishedCopyWith<$Res> {
-  factory $PurchaseFinishedCopyWith(
-          PurchaseFinished value, $Res Function(PurchaseFinished) then) =
-      _$PurchaseFinishedCopyWithImpl<$Res>;
+abstract class _$$PurchaseFinishedCopyWith<$Res> {
+  factory _$$PurchaseFinishedCopyWith(
+          _$PurchaseFinished value, $Res Function(_$PurchaseFinished) then) =
+      __$$PurchaseFinishedCopyWithImpl<$Res>;
+  @useResult
   $Res call({InAppPurchaseResponse? response, dynamic backendResponse});
 }
 
 /// @nodoc
-class _$PurchaseFinishedCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $PurchaseFinishedCopyWith<$Res> {
-  _$PurchaseFinishedCopyWithImpl(
-      PurchaseFinished _value, $Res Function(PurchaseFinished) _then)
-      : super(_value, (v) => _then(v as PurchaseFinished));
+class __$$PurchaseFinishedCopyWithImpl<$Res>
+    extends _$IAPStateCopyWithImpl<$Res, _$PurchaseFinished>
+    implements _$$PurchaseFinishedCopyWith<$Res> {
+  __$$PurchaseFinishedCopyWithImpl(
+      _$PurchaseFinished _value, $Res Function(_$PurchaseFinished) _then)
+      : super(_value, _then);
 
-  @override
-  PurchaseFinished get _value => super._value as PurchaseFinished;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? response = freezed,
-    Object? backendResponse = freezed,
+    Object? backendResponse = null,
   }) {
-    return _then(PurchaseFinished(
-      response: response == freezed
+    return _then(_$PurchaseFinished(
+      response: freezed == response
           ? _value.response
           : response // ignore: cast_nullable_to_non_nullable
               as InAppPurchaseResponse?,
-      backendResponse: backendResponse == freezed
+      backendResponse: null == backendResponse
           ? _value.backendResponse
           : backendResponse // ignore: cast_nullable_to_non_nullable
               as dynamic,
@@ -969,6 +1137,7 @@ class _$PurchaseFinishedCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PurchaseFinished implements PurchaseFinished {
   const _$PurchaseFinished(
       {required this.response, required this.backendResponse});
@@ -986,25 +1155,23 @@ class _$PurchaseFinished implements PurchaseFinished {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PurchaseFinished &&
+        (other.runtimeType == runtimeType &&
+            other is _$PurchaseFinished &&
             (identical(other.response, response) ||
-                const DeepCollectionEquality()
-                    .equals(other.response, response)) &&
-            (identical(other.backendResponse, backendResponse) ||
-                const DeepCollectionEquality()
-                    .equals(other.backendResponse, backendResponse)));
+                other.response == response) &&
+            const DeepCollectionEquality()
+                .equals(other.backendResponse, backendResponse));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(response) ^
-      const DeepCollectionEquality().hash(backendResponse);
+  int get hashCode => Object.hash(runtimeType, response,
+      const DeepCollectionEquality().hash(backendResponse));
 
   @JsonKey(ignore: true)
   @override
-  $PurchaseFinishedCopyWith<PurchaseFinished> get copyWith =>
-      _$PurchaseFinishedCopyWithImpl<PurchaseFinished>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PurchaseFinishedCopyWith<_$PurchaseFinished> get copyWith =>
+      __$$PurchaseFinishedCopyWithImpl<_$PurchaseFinished>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1021,6 +1188,22 @@ class _$PurchaseFinished implements PurchaseFinished {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return purchaseFinished(response, backendResponse);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return purchaseFinished?.call(response, backendResponse);
   }
 
   @override
@@ -1060,6 +1243,21 @@ class _$PurchaseFinished implements PurchaseFinished {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return purchaseFinished?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -1080,40 +1278,40 @@ class _$PurchaseFinished implements PurchaseFinished {
 
 abstract class PurchaseFinished implements IAPState {
   const factory PurchaseFinished(
-      {required InAppPurchaseResponse? response,
-      required dynamic backendResponse}) = _$PurchaseFinished;
+      {required final InAppPurchaseResponse? response,
+      required final dynamic backendResponse}) = _$PurchaseFinished;
 
-  InAppPurchaseResponse? get response => throw _privateConstructorUsedError;
-  dynamic get backendResponse => throw _privateConstructorUsedError;
+  InAppPurchaseResponse? get response;
+  dynamic get backendResponse;
   @JsonKey(ignore: true)
-  $PurchaseFinishedCopyWith<PurchaseFinished> get copyWith =>
+  _$$PurchaseFinishedCopyWith<_$PurchaseFinished> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PurchaseErrorCopyWith<$Res> {
-  factory $PurchaseErrorCopyWith(
-          PurchaseError value, $Res Function(PurchaseError) then) =
-      _$PurchaseErrorCopyWithImpl<$Res>;
+abstract class _$$PurchaseErrorCopyWith<$Res> {
+  factory _$$PurchaseErrorCopyWith(
+          _$PurchaseError value, $Res Function(_$PurchaseError) then) =
+      __$$PurchaseErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({InAppPurchaseError error});
 }
 
 /// @nodoc
-class _$PurchaseErrorCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
-    implements $PurchaseErrorCopyWith<$Res> {
-  _$PurchaseErrorCopyWithImpl(
-      PurchaseError _value, $Res Function(PurchaseError) _then)
-      : super(_value, (v) => _then(v as PurchaseError));
+class __$$PurchaseErrorCopyWithImpl<$Res>
+    extends _$IAPStateCopyWithImpl<$Res, _$PurchaseError>
+    implements _$$PurchaseErrorCopyWith<$Res> {
+  __$$PurchaseErrorCopyWithImpl(
+      _$PurchaseError _value, $Res Function(_$PurchaseError) _then)
+      : super(_value, _then);
 
-  @override
-  PurchaseError get _value => super._value as PurchaseError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(PurchaseError(
-      error: error == freezed
+    return _then(_$PurchaseError(
+      error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as InAppPurchaseError,
@@ -1122,6 +1320,7 @@ class _$PurchaseErrorCopyWithImpl<$Res> extends _$IAPStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PurchaseError implements PurchaseError {
   const _$PurchaseError({required this.error});
 
@@ -1136,19 +1335,19 @@ class _$PurchaseError implements PurchaseError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PurchaseError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$PurchaseError &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $PurchaseErrorCopyWith<PurchaseError> get copyWith =>
-      _$PurchaseErrorCopyWithImpl<PurchaseError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PurchaseErrorCopyWith<_$PurchaseError> get copyWith =>
+      __$$PurchaseErrorCopyWithImpl<_$PurchaseError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1165,6 +1364,22 @@ class _$PurchaseError implements PurchaseError {
     required TResult Function(InAppPurchaseError error) purchaseError,
   }) {
     return purchaseError(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(List<InAppPurchaseItem> products)? products,
+    TResult? Function(bool success, String productId)? finished,
+    TResult? Function()? loading,
+    TResult? Function(dynamic error)? error,
+    TResult? Function(int count)? purchaseRestored,
+    TResult? Function(InAppPurchaseResponse? response, dynamic backendResponse)?
+        purchaseFinished,
+    TResult? Function(InAppPurchaseError error)? purchaseError,
+  }) {
+    return purchaseError?.call(this.error);
   }
 
   @override
@@ -1204,6 +1419,21 @@ class _$PurchaseError implements PurchaseError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Products value)? products,
+    TResult? Function(Finished value)? finished,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(PurchaseRestored value)? purchaseRestored,
+    TResult? Function(PurchaseFinished value)? purchaseFinished,
+    TResult? Function(PurchaseError value)? purchaseError,
+  }) {
+    return purchaseError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Products value)? products,
@@ -1223,11 +1453,11 @@ class _$PurchaseError implements PurchaseError {
 }
 
 abstract class PurchaseError implements IAPState {
-  const factory PurchaseError({required InAppPurchaseError error}) =
+  const factory PurchaseError({required final InAppPurchaseError error}) =
       _$PurchaseError;
 
-  InAppPurchaseError get error => throw _privateConstructorUsedError;
+  InAppPurchaseError get error;
   @JsonKey(ignore: true)
-  $PurchaseErrorCopyWith<PurchaseError> get copyWith =>
+  _$$PurchaseErrorCopyWith<_$PurchaseError> get copyWith =>
       throw _privateConstructorUsedError;
 }

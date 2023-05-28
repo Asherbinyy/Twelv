@@ -21,6 +21,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   StreamSubscription<explorer.ExplorerState>? _explorerSub;
   StreamSubscription<likes.LikesState>? _likesSub;
 
+
   final StreamSubscription<AuthorizationState> _authSub;
 
   ChatBloc(this._chatModel, AuthorizationBloc authenticationBloc)
@@ -33,6 +34,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
 
   late ExplorerBloc explorerBloc;
   late LikesBloc likesBloc;
+
 
   ChannelsSettings get settings => _chatModel.createChannelsSettings();
 

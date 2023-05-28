@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'likes_state.dart';
 
@@ -10,49 +12,7 @@ part of 'likes_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LikesStateTearOff {
-  const _$LikesStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  FetchedData fetchedData(List<Profile> users,
-      {bool isAfterReportingProfile = false}) {
-    return FetchedData(
-      users,
-      isAfterReportingProfile: isAfterReportingProfile,
-    );
-  }
-
-  LikesError likesError(Exception error, LikesEvent event) {
-    return LikesError(
-      error,
-      event,
-    );
-  }
-
-  Match match(SwipeMatch swipeMatch, BaseUser userRecommended) {
-    return Match(
-      swipeMatch,
-      userRecommended,
-    );
-  }
-
-  Superliked superliked() {
-    return const Superliked();
-  }
-}
-
-/// @nodoc
-const $LikesState = _$LikesStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LikesState {
@@ -66,6 +26,17 @@ mixin _$LikesState {
     required TResult Function(SwipeMatch swipeMatch, BaseUser userRecommended)
         match,
     required TResult Function() superliked,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Profile> users, bool isAfterReportingProfile)?
+        fetchedData,
+    TResult? Function(Exception error, LikesEvent event)? likesError,
+    TResult? Function(SwipeMatch swipeMatch, BaseUser userRecommended)? match,
+    TResult? Function()? superliked,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -91,6 +62,16 @@ mixin _$LikesState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(FetchedData value)? fetchedData,
+    TResult? Function(LikesError value)? likesError,
+    TResult? Function(Match value)? match,
+    TResult? Function(Superliked value)? superliked,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -107,35 +88,36 @@ mixin _$LikesState {
 abstract class $LikesStateCopyWith<$Res> {
   factory $LikesStateCopyWith(
           LikesState value, $Res Function(LikesState) then) =
-      _$LikesStateCopyWithImpl<$Res>;
+      _$LikesStateCopyWithImpl<$Res, LikesState>;
 }
 
 /// @nodoc
-class _$LikesStateCopyWithImpl<$Res> implements $LikesStateCopyWith<$Res> {
+class _$LikesStateCopyWithImpl<$Res, $Val extends LikesState>
+    implements $LikesStateCopyWith<$Res> {
   _$LikesStateCopyWithImpl(this._value, this._then);
 
-  final LikesState _value;
   // ignore: unused_field
-  final $Res Function(LikesState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$LikesStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -146,7 +128,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -165,6 +148,20 @@ class _$Initial implements Initial {
     required TResult Function() superliked,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Profile> users, bool isAfterReportingProfile)?
+        fetchedData,
+    TResult? Function(Exception error, LikesEvent event)? likesError,
+    TResult? Function(SwipeMatch swipeMatch, BaseUser userRecommended)? match,
+    TResult? Function()? superliked,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -200,6 +197,19 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(FetchedData value)? fetchedData,
+    TResult? Function(LikesError value)? likesError,
+    TResult? Function(Match value)? match,
+    TResult? Function(Superliked value)? superliked,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -221,22 +231,21 @@ abstract class Initial implements LikesState {
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$LikesStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -247,7 +256,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -266,6 +276,20 @@ class _$Loading implements Loading {
     required TResult Function() superliked,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Profile> users, bool isAfterReportingProfile)?
+        fetchedData,
+    TResult? Function(Exception error, LikesEvent event)? likesError,
+    TResult? Function(SwipeMatch swipeMatch, BaseUser userRecommended)? match,
+    TResult? Function()? superliked,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -301,6 +325,19 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(FetchedData value)? fetchedData,
+    TResult? Function(LikesError value)? likesError,
+    TResult? Function(Match value)? match,
+    TResult? Function(Superliked value)? superliked,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -322,34 +359,34 @@ abstract class Loading implements LikesState {
 }
 
 /// @nodoc
-abstract class $FetchedDataCopyWith<$Res> {
-  factory $FetchedDataCopyWith(
-          FetchedData value, $Res Function(FetchedData) then) =
-      _$FetchedDataCopyWithImpl<$Res>;
+abstract class _$$FetchedDataCopyWith<$Res> {
+  factory _$$FetchedDataCopyWith(
+          _$FetchedData value, $Res Function(_$FetchedData) then) =
+      __$$FetchedDataCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<Profile> users, bool isAfterReportingProfile});
 }
 
 /// @nodoc
-class _$FetchedDataCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
-    implements $FetchedDataCopyWith<$Res> {
-  _$FetchedDataCopyWithImpl(
-      FetchedData _value, $Res Function(FetchedData) _then)
-      : super(_value, (v) => _then(v as FetchedData));
+class __$$FetchedDataCopyWithImpl<$Res>
+    extends _$LikesStateCopyWithImpl<$Res, _$FetchedData>
+    implements _$$FetchedDataCopyWith<$Res> {
+  __$$FetchedDataCopyWithImpl(
+      _$FetchedData _value, $Res Function(_$FetchedData) _then)
+      : super(_value, _then);
 
-  @override
-  FetchedData get _value => super._value as FetchedData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? users = freezed,
-    Object? isAfterReportingProfile = freezed,
+    Object? users = null,
+    Object? isAfterReportingProfile = null,
   }) {
-    return _then(FetchedData(
-      users == freezed
-          ? _value.users
+    return _then(_$FetchedData(
+      null == users
+          ? _value._users
           : users // ignore: cast_nullable_to_non_nullable
               as List<Profile>,
-      isAfterReportingProfile: isAfterReportingProfile == freezed
+      isAfterReportingProfile: null == isAfterReportingProfile
           ? _value.isAfterReportingProfile
           : isAfterReportingProfile // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -358,13 +395,21 @@ class _$FetchedDataCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$FetchedData implements FetchedData {
-  const _$FetchedData(this.users, {this.isAfterReportingProfile = false});
+  const _$FetchedData(final List<Profile> users,
+      {this.isAfterReportingProfile = false})
+      : _users = users;
+
+  final List<Profile> _users;
+  @override
+  List<Profile> get users {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_users);
+  }
 
   @override
-  final List<Profile> users;
-  @JsonKey(defaultValue: false)
-  @override
+  @JsonKey()
   final bool isAfterReportingProfile;
 
   @override
@@ -375,25 +420,23 @@ class _$FetchedData implements FetchedData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is FetchedData &&
-            (identical(other.users, users) ||
-                const DeepCollectionEquality().equals(other.users, users)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$FetchedData &&
+            const DeepCollectionEquality().equals(other._users, _users) &&
             (identical(
                     other.isAfterReportingProfile, isAfterReportingProfile) ||
-                const DeepCollectionEquality().equals(
-                    other.isAfterReportingProfile, isAfterReportingProfile)));
+                other.isAfterReportingProfile == isAfterReportingProfile));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(users) ^
-      const DeepCollectionEquality().hash(isAfterReportingProfile);
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_users), isAfterReportingProfile);
 
   @JsonKey(ignore: true)
   @override
-  $FetchedDataCopyWith<FetchedData> get copyWith =>
-      _$FetchedDataCopyWithImpl<FetchedData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FetchedDataCopyWith<_$FetchedData> get copyWith =>
+      __$$FetchedDataCopyWithImpl<_$FetchedData>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -408,6 +451,20 @@ class _$FetchedData implements FetchedData {
     required TResult Function() superliked,
   }) {
     return fetchedData(users, isAfterReportingProfile);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Profile> users, bool isAfterReportingProfile)?
+        fetchedData,
+    TResult? Function(Exception error, LikesEvent event)? likesError,
+    TResult? Function(SwipeMatch swipeMatch, BaseUser userRecommended)? match,
+    TResult? Function()? superliked,
+  }) {
+    return fetchedData?.call(users, isAfterReportingProfile);
   }
 
   @override
@@ -443,6 +500,19 @@ class _$FetchedData implements FetchedData {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(FetchedData value)? fetchedData,
+    TResult? Function(LikesError value)? likesError,
+    TResult? Function(Match value)? match,
+    TResult? Function(Superliked value)? superliked,
+  }) {
+    return fetchedData?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -460,46 +530,47 @@ class _$FetchedData implements FetchedData {
 }
 
 abstract class FetchedData implements LikesState {
-  const factory FetchedData(List<Profile> users,
-      {bool isAfterReportingProfile}) = _$FetchedData;
+  const factory FetchedData(final List<Profile> users,
+      {final bool isAfterReportingProfile}) = _$FetchedData;
 
-  List<Profile> get users => throw _privateConstructorUsedError;
-  bool get isAfterReportingProfile => throw _privateConstructorUsedError;
+  List<Profile> get users;
+  bool get isAfterReportingProfile;
   @JsonKey(ignore: true)
-  $FetchedDataCopyWith<FetchedData> get copyWith =>
+  _$$FetchedDataCopyWith<_$FetchedData> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LikesErrorCopyWith<$Res> {
-  factory $LikesErrorCopyWith(
-          LikesError value, $Res Function(LikesError) then) =
-      _$LikesErrorCopyWithImpl<$Res>;
+abstract class _$$LikesErrorCopyWith<$Res> {
+  factory _$$LikesErrorCopyWith(
+          _$LikesError value, $Res Function(_$LikesError) then) =
+      __$$LikesErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error, LikesEvent event});
 
   $LikesEventCopyWith<$Res> get event;
 }
 
 /// @nodoc
-class _$LikesErrorCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
-    implements $LikesErrorCopyWith<$Res> {
-  _$LikesErrorCopyWithImpl(LikesError _value, $Res Function(LikesError) _then)
-      : super(_value, (v) => _then(v as LikesError));
+class __$$LikesErrorCopyWithImpl<$Res>
+    extends _$LikesStateCopyWithImpl<$Res, _$LikesError>
+    implements _$$LikesErrorCopyWith<$Res> {
+  __$$LikesErrorCopyWithImpl(
+      _$LikesError _value, $Res Function(_$LikesError) _then)
+      : super(_value, _then);
 
-  @override
-  LikesError get _value => super._value as LikesError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
-    Object? event = freezed,
+    Object? error = null,
+    Object? event = null,
   }) {
-    return _then(LikesError(
-      error == freezed
+    return _then(_$LikesError(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
-      event == freezed
+      null == event
           ? _value.event
           : event // ignore: cast_nullable_to_non_nullable
               as LikesEvent,
@@ -507,6 +578,7 @@ class _$LikesErrorCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $LikesEventCopyWith<$Res> get event {
     return $LikesEventCopyWith<$Res>(_value.event, (value) {
       return _then(_value.copyWith(event: value));
@@ -515,6 +587,7 @@ class _$LikesErrorCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$LikesError implements LikesError {
   const _$LikesError(this.error, this.event);
 
@@ -531,23 +604,20 @@ class _$LikesError implements LikesError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is LikesError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)) &&
-            (identical(other.event, event) ||
-                const DeepCollectionEquality().equals(other.event, event)));
+        (other.runtimeType == runtimeType &&
+            other is _$LikesError &&
+            (identical(other.error, error) || other.error == error) &&
+            (identical(other.event, event) || other.event == event));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(error) ^
-      const DeepCollectionEquality().hash(event);
+  int get hashCode => Object.hash(runtimeType, error, event);
 
   @JsonKey(ignore: true)
   @override
-  $LikesErrorCopyWith<LikesError> get copyWith =>
-      _$LikesErrorCopyWithImpl<LikesError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LikesErrorCopyWith<_$LikesError> get copyWith =>
+      __$$LikesErrorCopyWithImpl<_$LikesError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -562,6 +632,20 @@ class _$LikesError implements LikesError {
     required TResult Function() superliked,
   }) {
     return likesError(error, event);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Profile> users, bool isAfterReportingProfile)?
+        fetchedData,
+    TResult? Function(Exception error, LikesEvent event)? likesError,
+    TResult? Function(SwipeMatch swipeMatch, BaseUser userRecommended)? match,
+    TResult? Function()? superliked,
+  }) {
+    return likesError?.call(error, event);
   }
 
   @override
@@ -597,6 +681,19 @@ class _$LikesError implements LikesError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(FetchedData value)? fetchedData,
+    TResult? Function(LikesError value)? likesError,
+    TResult? Function(Match value)? match,
+    TResult? Function(Superliked value)? superliked,
+  }) {
+    return likesError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -614,42 +711,43 @@ class _$LikesError implements LikesError {
 }
 
 abstract class LikesError implements LikesState {
-  const factory LikesError(Exception error, LikesEvent event) = _$LikesError;
+  const factory LikesError(final Exception error, final LikesEvent event) =
+      _$LikesError;
 
-  Exception get error => throw _privateConstructorUsedError;
-  LikesEvent get event => throw _privateConstructorUsedError;
+  Exception get error;
+  LikesEvent get event;
   @JsonKey(ignore: true)
-  $LikesErrorCopyWith<LikesError> get copyWith =>
+  _$$LikesErrorCopyWith<_$LikesError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $MatchCopyWith<$Res> {
-  factory $MatchCopyWith(Match value, $Res Function(Match) then) =
-      _$MatchCopyWithImpl<$Res>;
+abstract class _$$MatchCopyWith<$Res> {
+  factory _$$MatchCopyWith(_$Match value, $Res Function(_$Match) then) =
+      __$$MatchCopyWithImpl<$Res>;
+  @useResult
   $Res call({SwipeMatch swipeMatch, BaseUser userRecommended});
 }
 
 /// @nodoc
-class _$MatchCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
-    implements $MatchCopyWith<$Res> {
-  _$MatchCopyWithImpl(Match _value, $Res Function(Match) _then)
-      : super(_value, (v) => _then(v as Match));
+class __$$MatchCopyWithImpl<$Res>
+    extends _$LikesStateCopyWithImpl<$Res, _$Match>
+    implements _$$MatchCopyWith<$Res> {
+  __$$MatchCopyWithImpl(_$Match _value, $Res Function(_$Match) _then)
+      : super(_value, _then);
 
-  @override
-  Match get _value => super._value as Match;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? swipeMatch = freezed,
-    Object? userRecommended = freezed,
+    Object? swipeMatch = null,
+    Object? userRecommended = null,
   }) {
-    return _then(Match(
-      swipeMatch == freezed
+    return _then(_$Match(
+      null == swipeMatch
           ? _value.swipeMatch
           : swipeMatch // ignore: cast_nullable_to_non_nullable
               as SwipeMatch,
-      userRecommended == freezed
+      null == userRecommended
           ? _value.userRecommended
           : userRecommended // ignore: cast_nullable_to_non_nullable
               as BaseUser,
@@ -658,6 +756,7 @@ class _$MatchCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Match implements Match {
   const _$Match(this.swipeMatch, this.userRecommended);
 
@@ -674,25 +773,22 @@ class _$Match implements Match {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Match &&
+        (other.runtimeType == runtimeType &&
+            other is _$Match &&
             (identical(other.swipeMatch, swipeMatch) ||
-                const DeepCollectionEquality()
-                    .equals(other.swipeMatch, swipeMatch)) &&
+                other.swipeMatch == swipeMatch) &&
             (identical(other.userRecommended, userRecommended) ||
-                const DeepCollectionEquality()
-                    .equals(other.userRecommended, userRecommended)));
+                other.userRecommended == userRecommended));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(swipeMatch) ^
-      const DeepCollectionEquality().hash(userRecommended);
+  int get hashCode => Object.hash(runtimeType, swipeMatch, userRecommended);
 
   @JsonKey(ignore: true)
   @override
-  $MatchCopyWith<Match> get copyWith =>
-      _$MatchCopyWithImpl<Match>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MatchCopyWith<_$Match> get copyWith =>
+      __$$MatchCopyWithImpl<_$Match>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -707,6 +803,20 @@ class _$Match implements Match {
     required TResult Function() superliked,
   }) {
     return match(swipeMatch, userRecommended);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Profile> users, bool isAfterReportingProfile)?
+        fetchedData,
+    TResult? Function(Exception error, LikesEvent event)? likesError,
+    TResult? Function(SwipeMatch swipeMatch, BaseUser userRecommended)? match,
+    TResult? Function()? superliked,
+  }) {
+    return match?.call(swipeMatch, userRecommended);
   }
 
   @override
@@ -742,6 +852,19 @@ class _$Match implements Match {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(FetchedData value)? fetchedData,
+    TResult? Function(LikesError value)? likesError,
+    TResult? Function(Match value)? match,
+    TResult? Function(Superliked value)? superliked,
+  }) {
+    return match?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -759,33 +882,33 @@ class _$Match implements Match {
 }
 
 abstract class Match implements LikesState {
-  const factory Match(SwipeMatch swipeMatch, BaseUser userRecommended) =
-      _$Match;
+  const factory Match(
+      final SwipeMatch swipeMatch, final BaseUser userRecommended) = _$Match;
 
-  SwipeMatch get swipeMatch => throw _privateConstructorUsedError;
-  BaseUser get userRecommended => throw _privateConstructorUsedError;
+  SwipeMatch get swipeMatch;
+  BaseUser get userRecommended;
   @JsonKey(ignore: true)
-  $MatchCopyWith<Match> get copyWith => throw _privateConstructorUsedError;
+  _$$MatchCopyWith<_$Match> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SuperlikedCopyWith<$Res> {
-  factory $SuperlikedCopyWith(
-          Superliked value, $Res Function(Superliked) then) =
-      _$SuperlikedCopyWithImpl<$Res>;
+abstract class _$$SuperlikedCopyWith<$Res> {
+  factory _$$SuperlikedCopyWith(
+          _$Superliked value, $Res Function(_$Superliked) then) =
+      __$$SuperlikedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SuperlikedCopyWithImpl<$Res> extends _$LikesStateCopyWithImpl<$Res>
-    implements $SuperlikedCopyWith<$Res> {
-  _$SuperlikedCopyWithImpl(Superliked _value, $Res Function(Superliked) _then)
-      : super(_value, (v) => _then(v as Superliked));
-
-  @override
-  Superliked get _value => super._value as Superliked;
+class __$$SuperlikedCopyWithImpl<$Res>
+    extends _$LikesStateCopyWithImpl<$Res, _$Superliked>
+    implements _$$SuperlikedCopyWith<$Res> {
+  __$$SuperlikedCopyWithImpl(
+      _$Superliked _value, $Res Function(_$Superliked) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Superliked implements Superliked {
   const _$Superliked();
 
@@ -796,7 +919,8 @@ class _$Superliked implements Superliked {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Superliked);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Superliked);
   }
 
   @override
@@ -815,6 +939,20 @@ class _$Superliked implements Superliked {
     required TResult Function() superliked,
   }) {
     return superliked();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Profile> users, bool isAfterReportingProfile)?
+        fetchedData,
+    TResult? Function(Exception error, LikesEvent event)? likesError,
+    TResult? Function(SwipeMatch swipeMatch, BaseUser userRecommended)? match,
+    TResult? Function()? superliked,
+  }) {
+    return superliked?.call();
   }
 
   @override
@@ -846,6 +984,19 @@ class _$Superliked implements Superliked {
     required TResult Function(Superliked value) superliked,
   }) {
     return superliked(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(FetchedData value)? fetchedData,
+    TResult? Function(LikesError value)? likesError,
+    TResult? Function(Match value)? match,
+    TResult? Function(Superliked value)? superliked,
+  }) {
+    return superliked?.call(this);
   }
 
   @override

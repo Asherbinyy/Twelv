@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'channels_settings.dart';
 
@@ -10,24 +12,7 @@ part of 'channels_settings.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ChannelsSettingsTearOff {
-  const _$ChannelsSettingsTearOff();
-
-  _ChannelsSettings call(
-      {required Filter filter,
-      required List<SortOption<ChannelModel>> sortOptions}) {
-    return _ChannelsSettings(
-      filter: filter,
-      sortOptions: sortOptions,
-    );
-  }
-}
-
-/// @nodoc
-const $ChannelsSettings = _$ChannelsSettingsTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$ChannelsSettings {
@@ -44,70 +29,72 @@ mixin _$ChannelsSettings {
 abstract class $ChannelsSettingsCopyWith<$Res> {
   factory $ChannelsSettingsCopyWith(
           ChannelsSettings value, $Res Function(ChannelsSettings) then) =
-      _$ChannelsSettingsCopyWithImpl<$Res>;
+      _$ChannelsSettingsCopyWithImpl<$Res, ChannelsSettings>;
+  @useResult
   $Res call({Filter filter, List<SortOption<ChannelModel>> sortOptions});
 }
 
 /// @nodoc
-class _$ChannelsSettingsCopyWithImpl<$Res>
+class _$ChannelsSettingsCopyWithImpl<$Res, $Val extends ChannelsSettings>
     implements $ChannelsSettingsCopyWith<$Res> {
   _$ChannelsSettingsCopyWithImpl(this._value, this._then);
 
-  final ChannelsSettings _value;
   // ignore: unused_field
-  final $Res Function(ChannelsSettings) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? filter = freezed,
-    Object? sortOptions = freezed,
+    Object? filter = null,
+    Object? sortOptions = null,
   }) {
     return _then(_value.copyWith(
-      filter: filter == freezed
+      filter: null == filter
           ? _value.filter
           : filter // ignore: cast_nullable_to_non_nullable
               as Filter,
-      sortOptions: sortOptions == freezed
+      sortOptions: null == sortOptions
           ? _value.sortOptions
           : sortOptions // ignore: cast_nullable_to_non_nullable
               as List<SortOption<ChannelModel>>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ChannelsSettingsCopyWith<$Res>
+abstract class _$$_ChannelsSettingsCopyWith<$Res>
     implements $ChannelsSettingsCopyWith<$Res> {
-  factory _$ChannelsSettingsCopyWith(
-          _ChannelsSettings value, $Res Function(_ChannelsSettings) then) =
-      __$ChannelsSettingsCopyWithImpl<$Res>;
+  factory _$$_ChannelsSettingsCopyWith(
+          _$_ChannelsSettings value, $Res Function(_$_ChannelsSettings) then) =
+      __$$_ChannelsSettingsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({Filter filter, List<SortOption<ChannelModel>> sortOptions});
 }
 
 /// @nodoc
-class __$ChannelsSettingsCopyWithImpl<$Res>
-    extends _$ChannelsSettingsCopyWithImpl<$Res>
-    implements _$ChannelsSettingsCopyWith<$Res> {
-  __$ChannelsSettingsCopyWithImpl(
-      _ChannelsSettings _value, $Res Function(_ChannelsSettings) _then)
-      : super(_value, (v) => _then(v as _ChannelsSettings));
+class __$$_ChannelsSettingsCopyWithImpl<$Res>
+    extends _$ChannelsSettingsCopyWithImpl<$Res, _$_ChannelsSettings>
+    implements _$$_ChannelsSettingsCopyWith<$Res> {
+  __$$_ChannelsSettingsCopyWithImpl(
+      _$_ChannelsSettings _value, $Res Function(_$_ChannelsSettings) _then)
+      : super(_value, _then);
 
-  @override
-  _ChannelsSettings get _value => super._value as _ChannelsSettings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? filter = freezed,
-    Object? sortOptions = freezed,
+    Object? filter = null,
+    Object? sortOptions = null,
   }) {
-    return _then(_ChannelsSettings(
-      filter: filter == freezed
+    return _then(_$_ChannelsSettings(
+      filter: null == filter
           ? _value.filter
           : filter // ignore: cast_nullable_to_non_nullable
               as Filter,
-      sortOptions: sortOptions == freezed
-          ? _value.sortOptions
+      sortOptions: null == sortOptions
+          ? _value._sortOptions
           : sortOptions // ignore: cast_nullable_to_non_nullable
               as List<SortOption<ChannelModel>>,
     ));
@@ -115,13 +102,21 @@ class __$ChannelsSettingsCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_ChannelsSettings implements _ChannelsSettings {
-  const _$_ChannelsSettings({required this.filter, required this.sortOptions});
+  const _$_ChannelsSettings(
+      {required this.filter,
+      required final List<SortOption<ChannelModel>> sortOptions})
+      : _sortOptions = sortOptions;
 
   @override
   final Filter filter;
+  final List<SortOption<ChannelModel>> _sortOptions;
   @override
-  final List<SortOption<ChannelModel>> sortOptions;
+  List<SortOption<ChannelModel>> get sortOptions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_sortOptions);
+  }
 
   @override
   String toString() {
@@ -131,39 +126,36 @@ class _$_ChannelsSettings implements _ChannelsSettings {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ChannelsSettings &&
-            (identical(other.filter, filter) ||
-                const DeepCollectionEquality().equals(other.filter, filter)) &&
-            (identical(other.sortOptions, sortOptions) ||
-                const DeepCollectionEquality()
-                    .equals(other.sortOptions, sortOptions)));
+        (other.runtimeType == runtimeType &&
+            other is _$_ChannelsSettings &&
+            (identical(other.filter, filter) || other.filter == filter) &&
+            const DeepCollectionEquality()
+                .equals(other._sortOptions, _sortOptions));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(filter) ^
-      const DeepCollectionEquality().hash(sortOptions);
+  int get hashCode => Object.hash(
+      runtimeType, filter, const DeepCollectionEquality().hash(_sortOptions));
 
   @JsonKey(ignore: true)
   @override
-  _$ChannelsSettingsCopyWith<_ChannelsSettings> get copyWith =>
-      __$ChannelsSettingsCopyWithImpl<_ChannelsSettings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_ChannelsSettingsCopyWith<_$_ChannelsSettings> get copyWith =>
+      __$$_ChannelsSettingsCopyWithImpl<_$_ChannelsSettings>(this, _$identity);
 }
 
 abstract class _ChannelsSettings implements ChannelsSettings {
   const factory _ChannelsSettings(
-          {required Filter filter,
-          required List<SortOption<ChannelModel>> sortOptions}) =
+          {required final Filter filter,
+          required final List<SortOption<ChannelModel>> sortOptions}) =
       _$_ChannelsSettings;
 
   @override
-  Filter get filter => throw _privateConstructorUsedError;
+  Filter get filter;
   @override
-  List<SortOption<ChannelModel>> get sortOptions =>
-      throw _privateConstructorUsedError;
+  List<SortOption<ChannelModel>> get sortOptions;
   @override
   @JsonKey(ignore: true)
-  _$ChannelsSettingsCopyWith<_ChannelsSettings> get copyWith =>
+  _$$_ChannelsSettingsCopyWith<_$_ChannelsSettings> get copyWith =>
       throw _privateConstructorUsedError;
 }

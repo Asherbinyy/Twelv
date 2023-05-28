@@ -1,7 +1,7 @@
 // ignore_for_file: no-magic-number
 
 import 'package:flutter/material.dart';
-import 'package:flutter_html/shims/dart_ui_fake.dart';
+// import 'package:flutter_html/shims/dart_ui_fake.dart';
 import 'package:twelv/assets/theme/app_theme.dart';
 import 'package:twelv/assets/theme/app_theme_asset_images.dart';
 

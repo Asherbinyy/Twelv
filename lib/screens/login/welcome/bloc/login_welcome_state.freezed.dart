@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'login_welcome_state.dart';
 
@@ -10,25 +12,7 @@ part of 'login_welcome_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LoginWelcomeStateTearOff {
-  const _$LoginWelcomeStateTearOff();
-
-  Initial initial(List<String> availablePrefixes) {
-    return Initial(
-      availablePrefixes,
-    );
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-}
-
-/// @nodoc
-const $LoginWelcomeState = _$LoginWelcomeStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LoginWelcomeState {
@@ -36,6 +20,12 @@ mixin _$LoginWelcomeState {
   TResult when<TResult extends Object?>({
     required TResult Function(List<String> availablePrefixes) initial,
     required TResult Function() loading,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(List<String> availablePrefixes)? initial,
+    TResult? Function()? loading,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -52,6 +42,12 @@ mixin _$LoginWelcomeState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -64,42 +60,43 @@ mixin _$LoginWelcomeState {
 abstract class $LoginWelcomeStateCopyWith<$Res> {
   factory $LoginWelcomeStateCopyWith(
           LoginWelcomeState value, $Res Function(LoginWelcomeState) then) =
-      _$LoginWelcomeStateCopyWithImpl<$Res>;
+      _$LoginWelcomeStateCopyWithImpl<$Res, LoginWelcomeState>;
 }
 
 /// @nodoc
-class _$LoginWelcomeStateCopyWithImpl<$Res>
+class _$LoginWelcomeStateCopyWithImpl<$Res, $Val extends LoginWelcomeState>
     implements $LoginWelcomeStateCopyWith<$Res> {
   _$LoginWelcomeStateCopyWithImpl(this._value, this._then);
 
-  final LoginWelcomeState _value;
   // ignore: unused_field
-  final $Res Function(LoginWelcomeState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<String> availablePrefixes});
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$LoginWelcomeStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
+class __$$InitialCopyWithImpl<$Res>
+    extends _$LoginWelcomeStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 
-  @override
-  Initial get _value => super._value as Initial;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? availablePrefixes = freezed,
+    Object? availablePrefixes = null,
   }) {
-    return _then(Initial(
-      availablePrefixes == freezed
-          ? _value.availablePrefixes
+    return _then(_$Initial(
+      null == availablePrefixes
+          ? _value._availablePrefixes
           : availablePrefixes // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
@@ -107,11 +104,17 @@ class _$InitialCopyWithImpl<$Res> extends _$LoginWelcomeStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-class _$Initial implements Initial {
-  const _$Initial(this.availablePrefixes);
 
+class _$Initial implements Initial {
+  const _$Initial(final List<String> availablePrefixes)
+      : _availablePrefixes = availablePrefixes;
+
+  final List<String> _availablePrefixes;
   @override
-  final List<String> availablePrefixes;
+  List<String> get availablePrefixes {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_availablePrefixes);
+  }
 
   @override
   String toString() {
@@ -121,21 +124,21 @@ class _$Initial implements Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Initial &&
-            (identical(other.availablePrefixes, availablePrefixes) ||
-                const DeepCollectionEquality()
-                    .equals(other.availablePrefixes, availablePrefixes)));
+        (other.runtimeType == runtimeType &&
+            other is _$Initial &&
+            const DeepCollectionEquality()
+                .equals(other._availablePrefixes, _availablePrefixes));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(availablePrefixes);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_availablePrefixes));
 
   @JsonKey(ignore: true)
   @override
-  $InitialCopyWith<Initial> get copyWith =>
-      _$InitialCopyWithImpl<Initial>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InitialCopyWith<_$Initial> get copyWith =>
+      __$$InitialCopyWithImpl<_$Initial>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -144,6 +147,15 @@ class _$Initial implements Initial {
     required TResult Function() loading,
   }) {
     return initial(availablePrefixes);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(List<String> availablePrefixes)? initial,
+    TResult? Function()? loading,
+  }) {
+    return initial?.call(availablePrefixes);
   }
 
   @override
@@ -170,6 +182,15 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -183,30 +204,30 @@ class _$Initial implements Initial {
 }
 
 abstract class Initial implements LoginWelcomeState {
-  const factory Initial(List<String> availablePrefixes) = _$Initial;
+  const factory Initial(final List<String> availablePrefixes) = _$Initial;
 
-  List<String> get availablePrefixes => throw _privateConstructorUsedError;
+  List<String> get availablePrefixes;
   @JsonKey(ignore: true)
-  $InitialCopyWith<Initial> get copyWith => throw _privateConstructorUsedError;
+  _$$InitialCopyWith<_$Initial> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$LoginWelcomeStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$LoginWelcomeStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -217,7 +238,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -230,6 +252,15 @@ class _$Loading implements Loading {
     required TResult Function() loading,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(List<String> availablePrefixes)? initial,
+    TResult? Function()? loading,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -252,6 +283,15 @@ class _$Loading implements Loading {
     required TResult Function(Loading value) loading,
   }) {
     return loading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+  }) {
+    return loading?.call(this);
   }
 
   @override

@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'onboarding_zodiac_state.dart';
 
@@ -10,35 +12,7 @@ part of 'onboarding_zodiac_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$OnboardingZodiacStateTearOff {
-  const _$OnboardingZodiacStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  Error error(Exception error) {
-    return Error(
-      error,
-    );
-  }
-
-  Succeeded succeeded(ZodiacResponse zodiac) {
-    return Succeeded(
-      zodiac,
-    );
-  }
-}
-
-/// @nodoc
-const $OnboardingZodiacState = _$OnboardingZodiacStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$OnboardingZodiacState {
@@ -48,6 +22,14 @@ mixin _$OnboardingZodiacState {
     required TResult Function() loading,
     required TResult Function(Exception error) error,
     required TResult Function(ZodiacResponse zodiac) succeeded,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? error,
+    TResult? Function(ZodiacResponse zodiac)? succeeded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,6 +50,14 @@ mixin _$OnboardingZodiacState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(Succeeded value)? succeeded,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -82,37 +72,37 @@ mixin _$OnboardingZodiacState {
 abstract class $OnboardingZodiacStateCopyWith<$Res> {
   factory $OnboardingZodiacStateCopyWith(OnboardingZodiacState value,
           $Res Function(OnboardingZodiacState) then) =
-      _$OnboardingZodiacStateCopyWithImpl<$Res>;
+      _$OnboardingZodiacStateCopyWithImpl<$Res, OnboardingZodiacState>;
 }
 
 /// @nodoc
-class _$OnboardingZodiacStateCopyWithImpl<$Res>
+class _$OnboardingZodiacStateCopyWithImpl<$Res,
+        $Val extends OnboardingZodiacState>
     implements $OnboardingZodiacStateCopyWith<$Res> {
   _$OnboardingZodiacStateCopyWithImpl(this._value, this._then);
 
-  final OnboardingZodiacState _value;
   // ignore: unused_field
-  final $Res Function(OnboardingZodiacState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res>
-    extends _$OnboardingZodiacStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$OnboardingZodiacStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -123,7 +113,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -138,6 +129,17 @@ class _$Initial implements Initial {
     required TResult Function(ZodiacResponse zodiac) succeeded,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? error,
+    TResult? Function(ZodiacResponse zodiac)? succeeded,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -168,6 +170,17 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(Succeeded value)? succeeded,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -187,23 +200,21 @@ abstract class Initial implements OnboardingZodiacState {
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res>
-    extends _$OnboardingZodiacStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$OnboardingZodiacStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -214,7 +225,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -229,6 +241,17 @@ class _$Loading implements Loading {
     required TResult Function(ZodiacResponse zodiac) succeeded,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? error,
+    TResult? Function(ZodiacResponse zodiac)? succeeded,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -259,6 +282,17 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(Succeeded value)? succeeded,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -278,28 +312,27 @@ abstract class Loading implements OnboardingZodiacState {
 }
 
 /// @nodoc
-abstract class $ErrorCopyWith<$Res> {
-  factory $ErrorCopyWith(Error value, $Res Function(Error) then) =
-      _$ErrorCopyWithImpl<$Res>;
+abstract class _$$ErrorCopyWith<$Res> {
+  factory _$$ErrorCopyWith(_$Error value, $Res Function(_$Error) then) =
+      __$$ErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class _$ErrorCopyWithImpl<$Res>
-    extends _$OnboardingZodiacStateCopyWithImpl<$Res>
-    implements $ErrorCopyWith<$Res> {
-  _$ErrorCopyWithImpl(Error _value, $Res Function(Error) _then)
-      : super(_value, (v) => _then(v as Error));
+class __$$ErrorCopyWithImpl<$Res>
+    extends _$OnboardingZodiacStateCopyWithImpl<$Res, _$Error>
+    implements _$$ErrorCopyWith<$Res> {
+  __$$ErrorCopyWithImpl(_$Error _value, $Res Function(_$Error) _then)
+      : super(_value, _then);
 
-  @override
-  Error get _value => super._value as Error;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(Error(
-      error == freezed
+    return _then(_$Error(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -308,6 +341,7 @@ class _$ErrorCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Error implements Error {
   const _$Error(this.error);
 
@@ -322,19 +356,19 @@ class _$Error implements Error {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Error &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$Error &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $ErrorCopyWith<Error> get copyWith =>
-      _$ErrorCopyWithImpl<Error>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorCopyWith<_$Error> get copyWith =>
+      __$$ErrorCopyWithImpl<_$Error>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -345,6 +379,17 @@ class _$Error implements Error {
     required TResult Function(ZodiacResponse zodiac) succeeded,
   }) {
     return error(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? error,
+    TResult? Function(ZodiacResponse zodiac)? succeeded,
+  }) {
+    return error?.call(this.error);
   }
 
   @override
@@ -375,6 +420,17 @@ class _$Error implements Error {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(Succeeded value)? succeeded,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -390,36 +446,37 @@ class _$Error implements Error {
 }
 
 abstract class Error implements OnboardingZodiacState {
-  const factory Error(Exception error) = _$Error;
+  const factory Error(final Exception error) = _$Error;
 
-  Exception get error => throw _privateConstructorUsedError;
+  Exception get error;
   @JsonKey(ignore: true)
-  $ErrorCopyWith<Error> get copyWith => throw _privateConstructorUsedError;
+  _$$ErrorCopyWith<_$Error> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SucceededCopyWith<$Res> {
-  factory $SucceededCopyWith(Succeeded value, $Res Function(Succeeded) then) =
-      _$SucceededCopyWithImpl<$Res>;
+abstract class _$$SucceededCopyWith<$Res> {
+  factory _$$SucceededCopyWith(
+          _$Succeeded value, $Res Function(_$Succeeded) then) =
+      __$$SucceededCopyWithImpl<$Res>;
+  @useResult
   $Res call({ZodiacResponse zodiac});
 }
 
 /// @nodoc
-class _$SucceededCopyWithImpl<$Res>
-    extends _$OnboardingZodiacStateCopyWithImpl<$Res>
-    implements $SucceededCopyWith<$Res> {
-  _$SucceededCopyWithImpl(Succeeded _value, $Res Function(Succeeded) _then)
-      : super(_value, (v) => _then(v as Succeeded));
+class __$$SucceededCopyWithImpl<$Res>
+    extends _$OnboardingZodiacStateCopyWithImpl<$Res, _$Succeeded>
+    implements _$$SucceededCopyWith<$Res> {
+  __$$SucceededCopyWithImpl(
+      _$Succeeded _value, $Res Function(_$Succeeded) _then)
+      : super(_value, _then);
 
-  @override
-  Succeeded get _value => super._value as Succeeded;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? zodiac = freezed,
+    Object? zodiac = null,
   }) {
-    return _then(Succeeded(
-      zodiac == freezed
+    return _then(_$Succeeded(
+      null == zodiac
           ? _value.zodiac
           : zodiac // ignore: cast_nullable_to_non_nullable
               as ZodiacResponse,
@@ -428,6 +485,7 @@ class _$SucceededCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Succeeded implements Succeeded {
   const _$Succeeded(this.zodiac);
 
@@ -442,19 +500,19 @@ class _$Succeeded implements Succeeded {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Succeeded &&
-            (identical(other.zodiac, zodiac) ||
-                const DeepCollectionEquality().equals(other.zodiac, zodiac)));
+        (other.runtimeType == runtimeType &&
+            other is _$Succeeded &&
+            (identical(other.zodiac, zodiac) || other.zodiac == zodiac));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(zodiac);
+  int get hashCode => Object.hash(runtimeType, zodiac);
 
   @JsonKey(ignore: true)
   @override
-  $SucceededCopyWith<Succeeded> get copyWith =>
-      _$SucceededCopyWithImpl<Succeeded>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SucceededCopyWith<_$Succeeded> get copyWith =>
+      __$$SucceededCopyWithImpl<_$Succeeded>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -465,6 +523,17 @@ class _$Succeeded implements Succeeded {
     required TResult Function(ZodiacResponse zodiac) succeeded,
   }) {
     return succeeded(zodiac);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? error,
+    TResult? Function(ZodiacResponse zodiac)? succeeded,
+  }) {
+    return succeeded?.call(zodiac);
   }
 
   @override
@@ -495,6 +564,17 @@ class _$Succeeded implements Succeeded {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Error value)? error,
+    TResult? Function(Succeeded value)? succeeded,
+  }) {
+    return succeeded?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -510,10 +590,10 @@ class _$Succeeded implements Succeeded {
 }
 
 abstract class Succeeded implements OnboardingZodiacState {
-  const factory Succeeded(ZodiacResponse zodiac) = _$Succeeded;
+  const factory Succeeded(final ZodiacResponse zodiac) = _$Succeeded;
 
-  ZodiacResponse get zodiac => throw _privateConstructorUsedError;
+  ZodiacResponse get zodiac;
   @JsonKey(ignore: true)
-  $SucceededCopyWith<Succeeded> get copyWith =>
+  _$$SucceededCopyWith<_$Succeeded> get copyWith =>
       throw _privateConstructorUsedError;
 }

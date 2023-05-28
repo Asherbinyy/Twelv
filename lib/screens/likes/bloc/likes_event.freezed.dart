@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'likes_event.dart';
 
@@ -10,46 +12,7 @@ part of 'likes_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LikesEventTearOff {
-  const _$LikesEventTearOff();
-
-  FetchData fetch() {
-    return const FetchData();
-  }
-
-  Like like({required Profile user, bool? useCredit}) {
-    return Like(
-      user: user,
-      useCredit: useCredit,
-    );
-  }
-
-  Dislike dislike({required Profile user, bool? useCredit}) {
-    return Dislike(
-      user: user,
-      useCredit: useCredit,
-    );
-  }
-
-  Superlike superlike({required Profile user, bool? useCredit}) {
-    return Superlike(
-      user: user,
-      useCredit: useCredit,
-    );
-  }
-
-  ReportProfile reportProfile({required Profile user}) {
-    return ReportProfile(
-      user: user,
-    );
-  }
-}
-
-/// @nodoc
-const $LikesEvent = _$LikesEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LikesEvent {
@@ -60,6 +23,15 @@ mixin _$LikesEvent {
     required TResult Function(Profile user, bool? useCredit) dislike,
     required TResult Function(Profile user, bool? useCredit) superlike,
     required TResult Function(Profile user) reportProfile,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(Profile user, bool? useCredit)? like,
+    TResult? Function(Profile user, bool? useCredit)? dislike,
+    TResult? Function(Profile user, bool? useCredit)? superlike,
+    TResult? Function(Profile user)? reportProfile,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -82,6 +54,15 @@ mixin _$LikesEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FetchData value)? fetch,
+    TResult? Function(Like value)? like,
+    TResult? Function(Dislike value)? dislike,
+    TResult? Function(Superlike value)? superlike,
+    TResult? Function(ReportProfile value)? reportProfile,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FetchData value)? fetch,
     TResult Function(Like value)? like,
@@ -97,35 +78,38 @@ mixin _$LikesEvent {
 abstract class $LikesEventCopyWith<$Res> {
   factory $LikesEventCopyWith(
           LikesEvent value, $Res Function(LikesEvent) then) =
-      _$LikesEventCopyWithImpl<$Res>;
+      _$LikesEventCopyWithImpl<$Res, LikesEvent>;
 }
 
 /// @nodoc
-class _$LikesEventCopyWithImpl<$Res> implements $LikesEventCopyWith<$Res> {
+class _$LikesEventCopyWithImpl<$Res, $Val extends LikesEvent>
+    implements $LikesEventCopyWith<$Res> {
   _$LikesEventCopyWithImpl(this._value, this._then);
 
-  final LikesEvent _value;
   // ignore: unused_field
-  final $Res Function(LikesEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $FetchDataCopyWith<$Res> {
-  factory $FetchDataCopyWith(FetchData value, $Res Function(FetchData) then) =
-      _$FetchDataCopyWithImpl<$Res>;
+abstract class _$$FetchDataCopyWith<$Res> {
+  factory _$$FetchDataCopyWith(
+          _$FetchData value, $Res Function(_$FetchData) then) =
+      __$$FetchDataCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$FetchDataCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
-    implements $FetchDataCopyWith<$Res> {
-  _$FetchDataCopyWithImpl(FetchData _value, $Res Function(FetchData) _then)
-      : super(_value, (v) => _then(v as FetchData));
-
-  @override
-  FetchData get _value => super._value as FetchData;
+class __$$FetchDataCopyWithImpl<$Res>
+    extends _$LikesEventCopyWithImpl<$Res, _$FetchData>
+    implements _$$FetchDataCopyWith<$Res> {
+  __$$FetchDataCopyWithImpl(
+      _$FetchData _value, $Res Function(_$FetchData) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$FetchData implements FetchData {
   const _$FetchData();
 
@@ -136,7 +120,8 @@ class _$FetchData implements FetchData {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is FetchData);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$FetchData);
   }
 
   @override
@@ -152,6 +137,18 @@ class _$FetchData implements FetchData {
     required TResult Function(Profile user) reportProfile,
   }) {
     return fetch();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(Profile user, bool? useCredit)? like,
+    TResult? Function(Profile user, bool? useCredit)? dislike,
+    TResult? Function(Profile user, bool? useCredit)? superlike,
+    TResult? Function(Profile user)? reportProfile,
+  }) {
+    return fetch?.call();
   }
 
   @override
@@ -184,6 +181,18 @@ class _$FetchData implements FetchData {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FetchData value)? fetch,
+    TResult? Function(Like value)? like,
+    TResult? Function(Dislike value)? dislike,
+    TResult? Function(Superlike value)? superlike,
+    TResult? Function(ReportProfile value)? reportProfile,
+  }) {
+    return fetch?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FetchData value)? fetch,
     TResult Function(Like value)? like,
@@ -204,32 +213,31 @@ abstract class FetchData implements LikesEvent {
 }
 
 /// @nodoc
-abstract class $LikeCopyWith<$Res> {
-  factory $LikeCopyWith(Like value, $Res Function(Like) then) =
-      _$LikeCopyWithImpl<$Res>;
+abstract class _$$LikeCopyWith<$Res> {
+  factory _$$LikeCopyWith(_$Like value, $Res Function(_$Like) then) =
+      __$$LikeCopyWithImpl<$Res>;
+  @useResult
   $Res call({Profile user, bool? useCredit});
 }
 
 /// @nodoc
-class _$LikeCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
-    implements $LikeCopyWith<$Res> {
-  _$LikeCopyWithImpl(Like _value, $Res Function(Like) _then)
-      : super(_value, (v) => _then(v as Like));
+class __$$LikeCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res, _$Like>
+    implements _$$LikeCopyWith<$Res> {
+  __$$LikeCopyWithImpl(_$Like _value, $Res Function(_$Like) _then)
+      : super(_value, _then);
 
-  @override
-  Like get _value => super._value as Like;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? user = freezed,
+    Object? user = null,
     Object? useCredit = freezed,
   }) {
-    return _then(Like(
-      user: user == freezed
+    return _then(_$Like(
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as Profile,
-      useCredit: useCredit == freezed
+      useCredit: freezed == useCredit
           ? _value.useCredit
           : useCredit // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -237,9 +245,8 @@ class _$LikeCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
   }
 }
 
-@Implements(LikeActionEvent)
-
 /// @nodoc
+
 class _$Like implements Like {
   const _$Like({required this.user, this.useCredit});
 
@@ -256,24 +263,21 @@ class _$Like implements Like {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Like &&
-            (identical(other.user, user) ||
-                const DeepCollectionEquality().equals(other.user, user)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$Like &&
+            (identical(other.user, user) || other.user == user) &&
             (identical(other.useCredit, useCredit) ||
-                const DeepCollectionEquality()
-                    .equals(other.useCredit, useCredit)));
+                other.useCredit == useCredit));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(user) ^
-      const DeepCollectionEquality().hash(useCredit);
+  int get hashCode => Object.hash(runtimeType, user, useCredit);
 
   @JsonKey(ignore: true)
   @override
-  $LikeCopyWith<Like> get copyWith =>
-      _$LikeCopyWithImpl<Like>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LikeCopyWith<_$Like> get copyWith =>
+      __$$LikeCopyWithImpl<_$Like>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -285,6 +289,18 @@ class _$Like implements Like {
     required TResult Function(Profile user) reportProfile,
   }) {
     return like(user, useCredit);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(Profile user, bool? useCredit)? like,
+    TResult? Function(Profile user, bool? useCredit)? dislike,
+    TResult? Function(Profile user, bool? useCredit)? superlike,
+    TResult? Function(Profile user)? reportProfile,
+  }) {
+    return like?.call(user, useCredit);
   }
 
   @override
@@ -317,6 +333,18 @@ class _$Like implements Like {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FetchData value)? fetch,
+    TResult? Function(Like value)? like,
+    TResult? Function(Dislike value)? dislike,
+    TResult? Function(Superlike value)? superlike,
+    TResult? Function(ReportProfile value)? reportProfile,
+  }) {
+    return like?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FetchData value)? fetch,
     TResult Function(Like value)? like,
@@ -332,42 +360,46 @@ class _$Like implements Like {
   }
 }
 
-abstract class Like implements LikesEvent, LikeActionEvent {
-  const factory Like({required Profile user, bool? useCredit}) = _$Like;
+abstract class Like implements LikesEvent {
+const factory Like({
+required Profile user,
+bool? useCredit,
+}) = _$Like;
 
-  Profile get user => throw _privateConstructorUsedError;
-  bool? get useCredit => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $LikeCopyWith<Like> get copyWith => throw _privateConstructorUsedError;
+Profile get user;
+bool? get useCredit;
+@JsonKey(ignore: true)
+_$LikeCopyWith<Like> get copyWith => throw _privateConstructorUsedError;
 }
 
+
 /// @nodoc
-abstract class $DislikeCopyWith<$Res> {
-  factory $DislikeCopyWith(Dislike value, $Res Function(Dislike) then) =
-      _$DislikeCopyWithImpl<$Res>;
+abstract class _$$DislikeCopyWith<$Res> {
+  factory _$$DislikeCopyWith(_$Dislike value, $Res Function(_$Dislike) then) =
+      __$$DislikeCopyWithImpl<$Res>;
+  @useResult
   $Res call({Profile user, bool? useCredit});
 }
 
 /// @nodoc
-class _$DislikeCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
-    implements $DislikeCopyWith<$Res> {
-  _$DislikeCopyWithImpl(Dislike _value, $Res Function(Dislike) _then)
-      : super(_value, (v) => _then(v as Dislike));
+class __$$DislikeCopyWithImpl<$Res>
+    extends _$LikesEventCopyWithImpl<$Res, _$Dislike>
+    implements _$$DislikeCopyWith<$Res> {
+  __$$DislikeCopyWithImpl(_$Dislike _value, $Res Function(_$Dislike) _then)
+      : super(_value, _then);
 
-  @override
-  Dislike get _value => super._value as Dislike;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? user = freezed,
+    Object? user = null,
     Object? useCredit = freezed,
   }) {
-    return _then(Dislike(
-      user: user == freezed
+    return _then(_$Dislike(
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as Profile,
-      useCredit: useCredit == freezed
+      useCredit: freezed == useCredit
           ? _value.useCredit
           : useCredit // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -375,9 +407,8 @@ class _$DislikeCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
   }
 }
 
-@Implements(LikeActionEvent)
-
 /// @nodoc
+
 class _$Dislike implements Dislike {
   const _$Dislike({required this.user, this.useCredit});
 
@@ -394,24 +425,21 @@ class _$Dislike implements Dislike {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Dislike &&
-            (identical(other.user, user) ||
-                const DeepCollectionEquality().equals(other.user, user)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$Dislike &&
+            (identical(other.user, user) || other.user == user) &&
             (identical(other.useCredit, useCredit) ||
-                const DeepCollectionEquality()
-                    .equals(other.useCredit, useCredit)));
+                other.useCredit == useCredit));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(user) ^
-      const DeepCollectionEquality().hash(useCredit);
+  int get hashCode => Object.hash(runtimeType, user, useCredit);
 
   @JsonKey(ignore: true)
   @override
-  $DislikeCopyWith<Dislike> get copyWith =>
-      _$DislikeCopyWithImpl<Dislike>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DislikeCopyWith<_$Dislike> get copyWith =>
+      __$$DislikeCopyWithImpl<_$Dislike>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -423,6 +451,18 @@ class _$Dislike implements Dislike {
     required TResult Function(Profile user) reportProfile,
   }) {
     return dislike(user, useCredit);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(Profile user, bool? useCredit)? like,
+    TResult? Function(Profile user, bool? useCredit)? dislike,
+    TResult? Function(Profile user, bool? useCredit)? superlike,
+    TResult? Function(Profile user)? reportProfile,
+  }) {
+    return dislike?.call(user, useCredit);
   }
 
   @override
@@ -455,6 +495,18 @@ class _$Dislike implements Dislike {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FetchData value)? fetch,
+    TResult? Function(Like value)? like,
+    TResult? Function(Dislike value)? dislike,
+    TResult? Function(Superlike value)? superlike,
+    TResult? Function(ReportProfile value)? reportProfile,
+  }) {
+    return dislike?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FetchData value)? fetch,
     TResult Function(Like value)? like,
@@ -470,42 +522,46 @@ class _$Dislike implements Dislike {
   }
 }
 
-abstract class Dislike implements LikesEvent, LikeActionEvent {
-  const factory Dislike({required Profile user, bool? useCredit}) = _$Dislike;
+abstract class Dislike implements LikesEvent, dynamic {
+  const factory Dislike({required final Profile user, final bool? useCredit}) =
+      _$Dislike;
 
-  Profile get user => throw _privateConstructorUsedError;
-  bool? get useCredit => throw _privateConstructorUsedError;
+  Profile get user;
+  bool? get useCredit;
   @JsonKey(ignore: true)
-  $DislikeCopyWith<Dislike> get copyWith => throw _privateConstructorUsedError;
+  _$$DislikeCopyWith<_$Dislike> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SuperlikeCopyWith<$Res> {
-  factory $SuperlikeCopyWith(Superlike value, $Res Function(Superlike) then) =
-      _$SuperlikeCopyWithImpl<$Res>;
+abstract class _$$SuperlikeCopyWith<$Res> {
+  factory _$$SuperlikeCopyWith(
+          _$Superlike value, $Res Function(_$Superlike) then) =
+      __$$SuperlikeCopyWithImpl<$Res>;
+  @useResult
   $Res call({Profile user, bool? useCredit});
 }
 
 /// @nodoc
-class _$SuperlikeCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
-    implements $SuperlikeCopyWith<$Res> {
-  _$SuperlikeCopyWithImpl(Superlike _value, $Res Function(Superlike) _then)
-      : super(_value, (v) => _then(v as Superlike));
+class __$$SuperlikeCopyWithImpl<$Res>
+    extends _$LikesEventCopyWithImpl<$Res, _$Superlike>
+    implements _$$SuperlikeCopyWith<$Res> {
+  __$$SuperlikeCopyWithImpl(
+      _$Superlike _value, $Res Function(_$Superlike) _then)
+      : super(_value, _then);
 
-  @override
-  Superlike get _value => super._value as Superlike;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? user = freezed,
+    Object? user = null,
     Object? useCredit = freezed,
   }) {
-    return _then(Superlike(
-      user: user == freezed
+    return _then(_$Superlike(
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as Profile,
-      useCredit: useCredit == freezed
+      useCredit: freezed == useCredit
           ? _value.useCredit
           : useCredit // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -513,9 +569,8 @@ class _$SuperlikeCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
   }
 }
 
-@Implements(LikeActionEvent)
-
 /// @nodoc
+
 class _$Superlike implements Superlike {
   const _$Superlike({required this.user, this.useCredit});
 
@@ -532,24 +587,21 @@ class _$Superlike implements Superlike {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Superlike &&
-            (identical(other.user, user) ||
-                const DeepCollectionEquality().equals(other.user, user)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$Superlike &&
+            (identical(other.user, user) || other.user == user) &&
             (identical(other.useCredit, useCredit) ||
-                const DeepCollectionEquality()
-                    .equals(other.useCredit, useCredit)));
+                other.useCredit == useCredit));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(user) ^
-      const DeepCollectionEquality().hash(useCredit);
+  int get hashCode => Object.hash(runtimeType, user, useCredit);
 
   @JsonKey(ignore: true)
   @override
-  $SuperlikeCopyWith<Superlike> get copyWith =>
-      _$SuperlikeCopyWithImpl<Superlike>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SuperlikeCopyWith<_$Superlike> get copyWith =>
+      __$$SuperlikeCopyWithImpl<_$Superlike>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -561,6 +613,18 @@ class _$Superlike implements Superlike {
     required TResult Function(Profile user) reportProfile,
   }) {
     return superlike(user, useCredit);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(Profile user, bool? useCredit)? like,
+    TResult? Function(Profile user, bool? useCredit)? dislike,
+    TResult? Function(Profile user, bool? useCredit)? superlike,
+    TResult? Function(Profile user)? reportProfile,
+  }) {
+    return superlike?.call(user, useCredit);
   }
 
   @override
@@ -593,6 +657,18 @@ class _$Superlike implements Superlike {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FetchData value)? fetch,
+    TResult? Function(Like value)? like,
+    TResult? Function(Dislike value)? dislike,
+    TResult? Function(Superlike value)? superlike,
+    TResult? Function(ReportProfile value)? reportProfile,
+  }) {
+    return superlike?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FetchData value)? fetch,
     TResult Function(Like value)? like,
@@ -608,41 +684,41 @@ class _$Superlike implements Superlike {
   }
 }
 
-abstract class Superlike implements LikesEvent, LikeActionEvent {
-  const factory Superlike({required Profile user, bool? useCredit}) =
-      _$Superlike;
+abstract class Superlike implements LikesEvent, dynamic {
+  const factory Superlike(
+      {required final Profile user, final bool? useCredit}) = _$Superlike;
 
-  Profile get user => throw _privateConstructorUsedError;
-  bool? get useCredit => throw _privateConstructorUsedError;
+  Profile get user;
+  bool? get useCredit;
   @JsonKey(ignore: true)
-  $SuperlikeCopyWith<Superlike> get copyWith =>
+  _$$SuperlikeCopyWith<_$Superlike> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ReportProfileCopyWith<$Res> {
-  factory $ReportProfileCopyWith(
-          ReportProfile value, $Res Function(ReportProfile) then) =
-      _$ReportProfileCopyWithImpl<$Res>;
+abstract class _$$ReportProfileCopyWith<$Res> {
+  factory _$$ReportProfileCopyWith(
+          _$ReportProfile value, $Res Function(_$ReportProfile) then) =
+      __$$ReportProfileCopyWithImpl<$Res>;
+  @useResult
   $Res call({Profile user});
 }
 
 /// @nodoc
-class _$ReportProfileCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
-    implements $ReportProfileCopyWith<$Res> {
-  _$ReportProfileCopyWithImpl(
-      ReportProfile _value, $Res Function(ReportProfile) _then)
-      : super(_value, (v) => _then(v as ReportProfile));
+class __$$ReportProfileCopyWithImpl<$Res>
+    extends _$LikesEventCopyWithImpl<$Res, _$ReportProfile>
+    implements _$$ReportProfileCopyWith<$Res> {
+  __$$ReportProfileCopyWithImpl(
+      _$ReportProfile _value, $Res Function(_$ReportProfile) _then)
+      : super(_value, _then);
 
-  @override
-  ReportProfile get _value => super._value as ReportProfile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? user = freezed,
+    Object? user = null,
   }) {
-    return _then(ReportProfile(
-      user: user == freezed
+    return _then(_$ReportProfile(
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as Profile,
@@ -651,6 +727,7 @@ class _$ReportProfileCopyWithImpl<$Res> extends _$LikesEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ReportProfile implements ReportProfile {
   const _$ReportProfile({required this.user});
 
@@ -665,19 +742,19 @@ class _$ReportProfile implements ReportProfile {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ReportProfile &&
-            (identical(other.user, user) ||
-                const DeepCollectionEquality().equals(other.user, user)));
+        (other.runtimeType == runtimeType &&
+            other is _$ReportProfile &&
+            (identical(other.user, user) || other.user == user));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(user);
+  int get hashCode => Object.hash(runtimeType, user);
 
   @JsonKey(ignore: true)
   @override
-  $ReportProfileCopyWith<ReportProfile> get copyWith =>
-      _$ReportProfileCopyWithImpl<ReportProfile>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ReportProfileCopyWith<_$ReportProfile> get copyWith =>
+      __$$ReportProfileCopyWithImpl<_$ReportProfile>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -689,6 +766,18 @@ class _$ReportProfile implements ReportProfile {
     required TResult Function(Profile user) reportProfile,
   }) {
     return reportProfile(user);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? fetch,
+    TResult? Function(Profile user, bool? useCredit)? like,
+    TResult? Function(Profile user, bool? useCredit)? dislike,
+    TResult? Function(Profile user, bool? useCredit)? superlike,
+    TResult? Function(Profile user)? reportProfile,
+  }) {
+    return reportProfile?.call(user);
   }
 
   @override
@@ -721,6 +810,18 @@ class _$ReportProfile implements ReportProfile {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(FetchData value)? fetch,
+    TResult? Function(Like value)? like,
+    TResult? Function(Dislike value)? dislike,
+    TResult? Function(Superlike value)? superlike,
+    TResult? Function(ReportProfile value)? reportProfile,
+  }) {
+    return reportProfile?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(FetchData value)? fetch,
     TResult Function(Like value)? like,
@@ -737,10 +838,10 @@ class _$ReportProfile implements ReportProfile {
 }
 
 abstract class ReportProfile implements LikesEvent {
-  const factory ReportProfile({required Profile user}) = _$ReportProfile;
+  const factory ReportProfile({required final Profile user}) = _$ReportProfile;
 
-  Profile get user => throw _privateConstructorUsedError;
+  Profile get user;
   @JsonKey(ignore: true)
-  $ReportProfileCopyWith<ReportProfile> get copyWith =>
+  _$$ReportProfileCopyWith<_$ReportProfile> get copyWith =>
       throw _privateConstructorUsedError;
 }

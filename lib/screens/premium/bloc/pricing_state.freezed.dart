@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'pricing_state.dart';
 
@@ -10,43 +12,7 @@ part of 'pricing_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PricingStateTearOff {
-  const _$PricingStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  ApiError apiError(Exception error) {
-    return ApiError(
-      error,
-    );
-  }
-
-  Info info({required Pricing pricing}) {
-    return Info(
-      pricing: pricing,
-    );
-  }
-
-  Products products(
-      {required Pricing pricing, required PremiumPopupPage page}) {
-    return Products(
-      pricing: pricing,
-      page: page,
-    );
-  }
-}
-
-/// @nodoc
-const $PricingState = _$PricingStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$PricingState {
@@ -57,6 +23,15 @@ mixin _$PricingState {
     required TResult Function(Exception error) apiError,
     required TResult Function(Pricing pricing) info,
     required TResult Function(Pricing pricing, PremiumPopupPage page) products,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Pricing pricing)? info,
+    TResult? Function(Pricing pricing, PremiumPopupPage page)? products,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -79,6 +54,15 @@ mixin _$PricingState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Info value)? info,
+    TResult? Function(Products value)? products,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -94,35 +78,36 @@ mixin _$PricingState {
 abstract class $PricingStateCopyWith<$Res> {
   factory $PricingStateCopyWith(
           PricingState value, $Res Function(PricingState) then) =
-      _$PricingStateCopyWithImpl<$Res>;
+      _$PricingStateCopyWithImpl<$Res, PricingState>;
 }
 
 /// @nodoc
-class _$PricingStateCopyWithImpl<$Res> implements $PricingStateCopyWith<$Res> {
+class _$PricingStateCopyWithImpl<$Res, $Val extends PricingState>
+    implements $PricingStateCopyWith<$Res> {
   _$PricingStateCopyWithImpl(this._value, this._then);
 
-  final PricingState _value;
   // ignore: unused_field
-  final $Res Function(PricingState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$PricingStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -133,7 +118,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -149,6 +135,18 @@ class _$Initial implements Initial {
     required TResult Function(Pricing pricing, PremiumPopupPage page) products,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Pricing pricing)? info,
+    TResult? Function(Pricing pricing, PremiumPopupPage page)? products,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -181,6 +179,18 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Info value)? info,
+    TResult? Function(Products value)? products,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -201,22 +211,21 @@ abstract class Initial implements PricingState {
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$PricingStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -227,7 +236,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -243,6 +253,18 @@ class _$Loading implements Loading {
     required TResult Function(Pricing pricing, PremiumPopupPage page) products,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Pricing pricing)? info,
+    TResult? Function(Pricing pricing, PremiumPopupPage page)? products,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -275,6 +297,18 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Info value)? info,
+    TResult? Function(Products value)? products,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -295,27 +329,28 @@ abstract class Loading implements PricingState {
 }
 
 /// @nodoc
-abstract class $ApiErrorCopyWith<$Res> {
-  factory $ApiErrorCopyWith(ApiError value, $Res Function(ApiError) then) =
-      _$ApiErrorCopyWithImpl<$Res>;
+abstract class _$$ApiErrorCopyWith<$Res> {
+  factory _$$ApiErrorCopyWith(
+          _$ApiError value, $Res Function(_$ApiError) then) =
+      __$$ApiErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class _$ApiErrorCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
-    implements $ApiErrorCopyWith<$Res> {
-  _$ApiErrorCopyWithImpl(ApiError _value, $Res Function(ApiError) _then)
-      : super(_value, (v) => _then(v as ApiError));
+class __$$ApiErrorCopyWithImpl<$Res>
+    extends _$PricingStateCopyWithImpl<$Res, _$ApiError>
+    implements _$$ApiErrorCopyWith<$Res> {
+  __$$ApiErrorCopyWithImpl(_$ApiError _value, $Res Function(_$ApiError) _then)
+      : super(_value, _then);
 
-  @override
-  ApiError get _value => super._value as ApiError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(ApiError(
-      error == freezed
+    return _then(_$ApiError(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -324,6 +359,7 @@ class _$ApiErrorCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ApiError implements ApiError {
   const _$ApiError(this.error);
 
@@ -338,19 +374,19 @@ class _$ApiError implements ApiError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ApiError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$ApiError &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $ApiErrorCopyWith<ApiError> get copyWith =>
-      _$ApiErrorCopyWithImpl<ApiError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
+      __$$ApiErrorCopyWithImpl<_$ApiError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -362,6 +398,18 @@ class _$ApiError implements ApiError {
     required TResult Function(Pricing pricing, PremiumPopupPage page) products,
   }) {
     return apiError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Pricing pricing)? info,
+    TResult? Function(Pricing pricing, PremiumPopupPage page)? products,
+  }) {
+    return apiError?.call(error);
   }
 
   @override
@@ -394,6 +442,18 @@ class _$ApiError implements ApiError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Info value)? info,
+    TResult? Function(Products value)? products,
+  }) {
+    return apiError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -410,36 +470,36 @@ class _$ApiError implements ApiError {
 }
 
 abstract class ApiError implements PricingState {
-  const factory ApiError(Exception error) = _$ApiError;
+  const factory ApiError(final Exception error) = _$ApiError;
 
-  Exception get error => throw _privateConstructorUsedError;
+  Exception get error;
   @JsonKey(ignore: true)
-  $ApiErrorCopyWith<ApiError> get copyWith =>
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $InfoCopyWith<$Res> {
-  factory $InfoCopyWith(Info value, $Res Function(Info) then) =
-      _$InfoCopyWithImpl<$Res>;
+abstract class _$$InfoCopyWith<$Res> {
+  factory _$$InfoCopyWith(_$Info value, $Res Function(_$Info) then) =
+      __$$InfoCopyWithImpl<$Res>;
+  @useResult
   $Res call({Pricing pricing});
 }
 
 /// @nodoc
-class _$InfoCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
-    implements $InfoCopyWith<$Res> {
-  _$InfoCopyWithImpl(Info _value, $Res Function(Info) _then)
-      : super(_value, (v) => _then(v as Info));
+class __$$InfoCopyWithImpl<$Res>
+    extends _$PricingStateCopyWithImpl<$Res, _$Info>
+    implements _$$InfoCopyWith<$Res> {
+  __$$InfoCopyWithImpl(_$Info _value, $Res Function(_$Info) _then)
+      : super(_value, _then);
 
-  @override
-  Info get _value => super._value as Info;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pricing = freezed,
+    Object? pricing = null,
   }) {
-    return _then(Info(
-      pricing: pricing == freezed
+    return _then(_$Info(
+      pricing: null == pricing
           ? _value.pricing
           : pricing // ignore: cast_nullable_to_non_nullable
               as Pricing,
@@ -448,6 +508,7 @@ class _$InfoCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Info implements Info {
   const _$Info({required this.pricing});
 
@@ -462,19 +523,19 @@ class _$Info implements Info {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Info &&
-            (identical(other.pricing, pricing) ||
-                const DeepCollectionEquality().equals(other.pricing, pricing)));
+        (other.runtimeType == runtimeType &&
+            other is _$Info &&
+            (identical(other.pricing, pricing) || other.pricing == pricing));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(pricing);
+  int get hashCode => Object.hash(runtimeType, pricing);
 
   @JsonKey(ignore: true)
   @override
-  $InfoCopyWith<Info> get copyWith =>
-      _$InfoCopyWithImpl<Info>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InfoCopyWith<_$Info> get copyWith =>
+      __$$InfoCopyWithImpl<_$Info>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -486,6 +547,18 @@ class _$Info implements Info {
     required TResult Function(Pricing pricing, PremiumPopupPage page) products,
   }) {
     return info(pricing);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Pricing pricing)? info,
+    TResult? Function(Pricing pricing, PremiumPopupPage page)? products,
+  }) {
+    return info?.call(pricing);
   }
 
   @override
@@ -518,6 +591,18 @@ class _$Info implements Info {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Info value)? info,
+    TResult? Function(Products value)? products,
+  }) {
+    return info?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -534,40 +619,41 @@ class _$Info implements Info {
 }
 
 abstract class Info implements PricingState {
-  const factory Info({required Pricing pricing}) = _$Info;
+  const factory Info({required final Pricing pricing}) = _$Info;
 
-  Pricing get pricing => throw _privateConstructorUsedError;
+  Pricing get pricing;
   @JsonKey(ignore: true)
-  $InfoCopyWith<Info> get copyWith => throw _privateConstructorUsedError;
+  _$$InfoCopyWith<_$Info> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ProductsCopyWith<$Res> {
-  factory $ProductsCopyWith(Products value, $Res Function(Products) then) =
-      _$ProductsCopyWithImpl<$Res>;
+abstract class _$$ProductsCopyWith<$Res> {
+  factory _$$ProductsCopyWith(
+          _$Products value, $Res Function(_$Products) then) =
+      __$$ProductsCopyWithImpl<$Res>;
+  @useResult
   $Res call({Pricing pricing, PremiumPopupPage page});
 }
 
 /// @nodoc
-class _$ProductsCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
-    implements $ProductsCopyWith<$Res> {
-  _$ProductsCopyWithImpl(Products _value, $Res Function(Products) _then)
-      : super(_value, (v) => _then(v as Products));
+class __$$ProductsCopyWithImpl<$Res>
+    extends _$PricingStateCopyWithImpl<$Res, _$Products>
+    implements _$$ProductsCopyWith<$Res> {
+  __$$ProductsCopyWithImpl(_$Products _value, $Res Function(_$Products) _then)
+      : super(_value, _then);
 
-  @override
-  Products get _value => super._value as Products;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pricing = freezed,
-    Object? page = freezed,
+    Object? pricing = null,
+    Object? page = null,
   }) {
-    return _then(Products(
-      pricing: pricing == freezed
+    return _then(_$Products(
+      pricing: null == pricing
           ? _value.pricing
           : pricing // ignore: cast_nullable_to_non_nullable
               as Pricing,
-      page: page == freezed
+      page: null == page
           ? _value.page
           : page // ignore: cast_nullable_to_non_nullable
               as PremiumPopupPage,
@@ -576,6 +662,7 @@ class _$ProductsCopyWithImpl<$Res> extends _$PricingStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Products implements Products {
   const _$Products({required this.pricing, required this.page});
 
@@ -592,24 +679,20 @@ class _$Products implements Products {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Products &&
-            (identical(other.pricing, pricing) ||
-                const DeepCollectionEquality()
-                    .equals(other.pricing, pricing)) &&
-            (identical(other.page, page) ||
-                const DeepCollectionEquality().equals(other.page, page)));
+        (other.runtimeType == runtimeType &&
+            other is _$Products &&
+            (identical(other.pricing, pricing) || other.pricing == pricing) &&
+            (identical(other.page, page) || other.page == page));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(pricing) ^
-      const DeepCollectionEquality().hash(page);
+  int get hashCode => Object.hash(runtimeType, pricing, page);
 
   @JsonKey(ignore: true)
   @override
-  $ProductsCopyWith<Products> get copyWith =>
-      _$ProductsCopyWithImpl<Products>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ProductsCopyWith<_$Products> get copyWith =>
+      __$$ProductsCopyWithImpl<_$Products>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -621,6 +704,18 @@ class _$Products implements Products {
     required TResult Function(Pricing pricing, PremiumPopupPage page) products,
   }) {
     return products(pricing, page);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Pricing pricing)? info,
+    TResult? Function(Pricing pricing, PremiumPopupPage page)? products,
+  }) {
+    return products?.call(pricing, page);
   }
 
   @override
@@ -653,6 +748,18 @@ class _$Products implements Products {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Info value)? info,
+    TResult? Function(Products value)? products,
+  }) {
+    return products?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -670,11 +777,12 @@ class _$Products implements Products {
 
 abstract class Products implements PricingState {
   const factory Products(
-      {required Pricing pricing, required PremiumPopupPage page}) = _$Products;
+      {required final Pricing pricing,
+      required final PremiumPopupPage page}) = _$Products;
 
-  Pricing get pricing => throw _privateConstructorUsedError;
-  PremiumPopupPage get page => throw _privateConstructorUsedError;
+  Pricing get pricing;
+  PremiumPopupPage get page;
   @JsonKey(ignore: true)
-  $ProductsCopyWith<Products> get copyWith =>
+  _$$ProductsCopyWith<_$Products> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -74,7 +74,6 @@ class HomeViewBlocParent extends StatelessWidget {
                   context.read<ChatBloc>().add(const ChatEvent.initialize());
                   context.read<LocationBloc>().add(const LocationEvent.updateApi(askAgain: false));
                 }
-
                 DependenciesContainer().get<AnalyticsTracker>().currentUser =
                     (state as profile.ProfileCurrentUserState).user;
 

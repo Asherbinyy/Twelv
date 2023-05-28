@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'onboarding_notifications_event.dart';
 
@@ -10,23 +12,7 @@ part of 'onboarding_notifications_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$OnboardingNotificationsEventTearOff {
-  const _$OnboardingNotificationsEventTearOff();
-
-  Activated activated() {
-    return const Activated();
-  }
-
-  Skipped skipped() {
-    return const Skipped();
-  }
-}
-
-/// @nodoc
-const $OnboardingNotificationsEvent = _$OnboardingNotificationsEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$OnboardingNotificationsEvent {
@@ -34,6 +20,12 @@ mixin _$OnboardingNotificationsEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() activated,
     required TResult Function() skipped,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? activated,
+    TResult? Function()? skipped,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +42,12 @@ mixin _$OnboardingNotificationsEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Activated value)? activated,
+    TResult? Function(Skipped value)? skipped,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Activated value)? activated,
     TResult Function(Skipped value)? skipped,
@@ -63,37 +61,40 @@ abstract class $OnboardingNotificationsEventCopyWith<$Res> {
   factory $OnboardingNotificationsEventCopyWith(
           OnboardingNotificationsEvent value,
           $Res Function(OnboardingNotificationsEvent) then) =
-      _$OnboardingNotificationsEventCopyWithImpl<$Res>;
+      _$OnboardingNotificationsEventCopyWithImpl<$Res,
+          OnboardingNotificationsEvent>;
 }
 
 /// @nodoc
-class _$OnboardingNotificationsEventCopyWithImpl<$Res>
+class _$OnboardingNotificationsEventCopyWithImpl<$Res,
+        $Val extends OnboardingNotificationsEvent>
     implements $OnboardingNotificationsEventCopyWith<$Res> {
   _$OnboardingNotificationsEventCopyWithImpl(this._value, this._then);
 
-  final OnboardingNotificationsEvent _value;
   // ignore: unused_field
-  final $Res Function(OnboardingNotificationsEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $ActivatedCopyWith<$Res> {
-  factory $ActivatedCopyWith(Activated value, $Res Function(Activated) then) =
-      _$ActivatedCopyWithImpl<$Res>;
+abstract class _$$ActivatedCopyWith<$Res> {
+  factory _$$ActivatedCopyWith(
+          _$Activated value, $Res Function(_$Activated) then) =
+      __$$ActivatedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ActivatedCopyWithImpl<$Res>
-    extends _$OnboardingNotificationsEventCopyWithImpl<$Res>
-    implements $ActivatedCopyWith<$Res> {
-  _$ActivatedCopyWithImpl(Activated _value, $Res Function(Activated) _then)
-      : super(_value, (v) => _then(v as Activated));
-
-  @override
-  Activated get _value => super._value as Activated;
+class __$$ActivatedCopyWithImpl<$Res>
+    extends _$OnboardingNotificationsEventCopyWithImpl<$Res, _$Activated>
+    implements _$$ActivatedCopyWith<$Res> {
+  __$$ActivatedCopyWithImpl(
+      _$Activated _value, $Res Function(_$Activated) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Activated implements Activated {
   const _$Activated();
 
@@ -104,7 +105,8 @@ class _$Activated implements Activated {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Activated);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Activated);
   }
 
   @override
@@ -117,6 +119,15 @@ class _$Activated implements Activated {
     required TResult Function() skipped,
   }) {
     return activated();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? activated,
+    TResult? Function()? skipped,
+  }) {
+    return activated?.call();
   }
 
   @override
@@ -143,6 +154,15 @@ class _$Activated implements Activated {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Activated value)? activated,
+    TResult? Function(Skipped value)? skipped,
+  }) {
+    return activated?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Activated value)? activated,
     TResult Function(Skipped value)? skipped,
@@ -160,23 +180,21 @@ abstract class Activated implements OnboardingNotificationsEvent {
 }
 
 /// @nodoc
-abstract class $SkippedCopyWith<$Res> {
-  factory $SkippedCopyWith(Skipped value, $Res Function(Skipped) then) =
-      _$SkippedCopyWithImpl<$Res>;
+abstract class _$$SkippedCopyWith<$Res> {
+  factory _$$SkippedCopyWith(_$Skipped value, $Res Function(_$Skipped) then) =
+      __$$SkippedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SkippedCopyWithImpl<$Res>
-    extends _$OnboardingNotificationsEventCopyWithImpl<$Res>
-    implements $SkippedCopyWith<$Res> {
-  _$SkippedCopyWithImpl(Skipped _value, $Res Function(Skipped) _then)
-      : super(_value, (v) => _then(v as Skipped));
-
-  @override
-  Skipped get _value => super._value as Skipped;
+class __$$SkippedCopyWithImpl<$Res>
+    extends _$OnboardingNotificationsEventCopyWithImpl<$Res, _$Skipped>
+    implements _$$SkippedCopyWith<$Res> {
+  __$$SkippedCopyWithImpl(_$Skipped _value, $Res Function(_$Skipped) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Skipped implements Skipped {
   const _$Skipped();
 
@@ -187,7 +205,8 @@ class _$Skipped implements Skipped {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Skipped);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Skipped);
   }
 
   @override
@@ -200,6 +219,15 @@ class _$Skipped implements Skipped {
     required TResult Function() skipped,
   }) {
     return skipped();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? activated,
+    TResult? Function()? skipped,
+  }) {
+    return skipped?.call();
   }
 
   @override
@@ -222,6 +250,15 @@ class _$Skipped implements Skipped {
     required TResult Function(Skipped value) skipped,
   }) {
     return skipped(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Activated value)? activated,
+    TResult? Function(Skipped value)? skipped,
+  }) {
+    return skipped?.call(this);
   }
 
   @override

@@ -64,7 +64,7 @@ class AppModule extends Module {
     await fs.init();
     fs.isEnabled = false;
 
-    final FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics();
+    final FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.instance;
     final FirebaseAnalyticsObserver firebaseAnalyticsObserver =
         FirebaseAnalyticsObserver(analytics: firebaseAnalytics);
 

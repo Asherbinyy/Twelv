@@ -7,11 +7,10 @@ part of 'exchange_tokens_request.dart';
 // **************************************************************************
 
 ExchangeTokensRequest _$ExchangeTokensRequestFromJson(
-    Map<String, dynamic> json) {
-  return ExchangeTokensRequest(
-    authenticationToken: json['tokenId'] as String,
-  );
-}
+        Map<String, dynamic> json) =>
+    ExchangeTokensRequest(
+      authenticationToken: json['tokenId'] as String,
+    );
 
 Map<String, dynamic> _$ExchangeTokensRequestToJson(
         ExchangeTokensRequest instance) =>

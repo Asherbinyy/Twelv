@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'settings_privacy_event.dart';
 
@@ -10,31 +12,7 @@ part of 'settings_privacy_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$SettingsPrivacyEventTearOff {
-  const _$SettingsPrivacyEventTearOff();
-
-  Check check() {
-    return const Check();
-  }
-
-  Update update({bool? analytics, bool? errorTracking, bool? sensitiveData}) {
-    return Update(
-      analytics: analytics,
-      errorTracking: errorTracking,
-      sensitiveData: sensitiveData,
-    );
-  }
-
-  Submit submit() {
-    return const Submit();
-  }
-}
-
-/// @nodoc
-const $SettingsPrivacyEvent = _$SettingsPrivacyEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$SettingsPrivacyEvent {
@@ -45,6 +23,15 @@ mixin _$SettingsPrivacyEvent {
             bool? analytics, bool? errorTracking, bool? sensitiveData)
         update,
     required TResult Function() submit,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? check,
+    TResult? Function(
+            bool? analytics, bool? errorTracking, bool? sensitiveData)?
+        update,
+    TResult? Function()? submit,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -64,6 +51,13 @@ mixin _$SettingsPrivacyEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Check value)? check,
+    TResult? Function(Update value)? update,
+    TResult? Function(Submit value)? submit,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Check value)? check,
     TResult Function(Update value)? update,
@@ -77,36 +71,37 @@ mixin _$SettingsPrivacyEvent {
 abstract class $SettingsPrivacyEventCopyWith<$Res> {
   factory $SettingsPrivacyEventCopyWith(SettingsPrivacyEvent value,
           $Res Function(SettingsPrivacyEvent) then) =
-      _$SettingsPrivacyEventCopyWithImpl<$Res>;
+      _$SettingsPrivacyEventCopyWithImpl<$Res, SettingsPrivacyEvent>;
 }
 
 /// @nodoc
-class _$SettingsPrivacyEventCopyWithImpl<$Res>
+class _$SettingsPrivacyEventCopyWithImpl<$Res,
+        $Val extends SettingsPrivacyEvent>
     implements $SettingsPrivacyEventCopyWith<$Res> {
   _$SettingsPrivacyEventCopyWithImpl(this._value, this._then);
 
-  final SettingsPrivacyEvent _value;
   // ignore: unused_field
-  final $Res Function(SettingsPrivacyEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $CheckCopyWith<$Res> {
-  factory $CheckCopyWith(Check value, $Res Function(Check) then) =
-      _$CheckCopyWithImpl<$Res>;
+abstract class _$$CheckCopyWith<$Res> {
+  factory _$$CheckCopyWith(_$Check value, $Res Function(_$Check) then) =
+      __$$CheckCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$CheckCopyWithImpl<$Res> extends _$SettingsPrivacyEventCopyWithImpl<$Res>
-    implements $CheckCopyWith<$Res> {
-  _$CheckCopyWithImpl(Check _value, $Res Function(Check) _then)
-      : super(_value, (v) => _then(v as Check));
-
-  @override
-  Check get _value => super._value as Check;
+class __$$CheckCopyWithImpl<$Res>
+    extends _$SettingsPrivacyEventCopyWithImpl<$Res, _$Check>
+    implements _$$CheckCopyWith<$Res> {
+  __$$CheckCopyWithImpl(_$Check _value, $Res Function(_$Check) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Check implements Check {
   const _$Check();
 
@@ -117,7 +112,8 @@ class _$Check implements Check {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Check);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Check);
   }
 
   @override
@@ -133,6 +129,18 @@ class _$Check implements Check {
     required TResult Function() submit,
   }) {
     return check();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? check,
+    TResult? Function(
+            bool? analytics, bool? errorTracking, bool? sensitiveData)?
+        update,
+    TResult? Function()? submit,
+  }) {
+    return check?.call();
   }
 
   @override
@@ -162,6 +170,16 @@ class _$Check implements Check {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Check value)? check,
+    TResult? Function(Update value)? update,
+    TResult? Function(Submit value)? submit,
+  }) {
+    return check?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Check value)? check,
     TResult Function(Update value)? update,
@@ -180,38 +198,37 @@ abstract class Check implements SettingsPrivacyEvent {
 }
 
 /// @nodoc
-abstract class $UpdateCopyWith<$Res> {
-  factory $UpdateCopyWith(Update value, $Res Function(Update) then) =
-      _$UpdateCopyWithImpl<$Res>;
+abstract class _$$UpdateCopyWith<$Res> {
+  factory _$$UpdateCopyWith(_$Update value, $Res Function(_$Update) then) =
+      __$$UpdateCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool? analytics, bool? errorTracking, bool? sensitiveData});
 }
 
 /// @nodoc
-class _$UpdateCopyWithImpl<$Res>
-    extends _$SettingsPrivacyEventCopyWithImpl<$Res>
-    implements $UpdateCopyWith<$Res> {
-  _$UpdateCopyWithImpl(Update _value, $Res Function(Update) _then)
-      : super(_value, (v) => _then(v as Update));
+class __$$UpdateCopyWithImpl<$Res>
+    extends _$SettingsPrivacyEventCopyWithImpl<$Res, _$Update>
+    implements _$$UpdateCopyWith<$Res> {
+  __$$UpdateCopyWithImpl(_$Update _value, $Res Function(_$Update) _then)
+      : super(_value, _then);
 
-  @override
-  Update get _value => super._value as Update;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? analytics = freezed,
     Object? errorTracking = freezed,
     Object? sensitiveData = freezed,
   }) {
-    return _then(Update(
-      analytics: analytics == freezed
+    return _then(_$Update(
+      analytics: freezed == analytics
           ? _value.analytics
           : analytics // ignore: cast_nullable_to_non_nullable
               as bool?,
-      errorTracking: errorTracking == freezed
+      errorTracking: freezed == errorTracking
           ? _value.errorTracking
           : errorTracking // ignore: cast_nullable_to_non_nullable
               as bool?,
-      sensitiveData: sensitiveData == freezed
+      sensitiveData: freezed == sensitiveData
           ? _value.sensitiveData
           : sensitiveData // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -220,6 +237,7 @@ class _$UpdateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Update implements Update {
   const _$Update({this.analytics, this.errorTracking, this.sensitiveData});
 
@@ -238,29 +256,25 @@ class _$Update implements Update {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Update &&
+        (other.runtimeType == runtimeType &&
+            other is _$Update &&
             (identical(other.analytics, analytics) ||
-                const DeepCollectionEquality()
-                    .equals(other.analytics, analytics)) &&
+                other.analytics == analytics) &&
             (identical(other.errorTracking, errorTracking) ||
-                const DeepCollectionEquality()
-                    .equals(other.errorTracking, errorTracking)) &&
+                other.errorTracking == errorTracking) &&
             (identical(other.sensitiveData, sensitiveData) ||
-                const DeepCollectionEquality()
-                    .equals(other.sensitiveData, sensitiveData)));
+                other.sensitiveData == sensitiveData));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(analytics) ^
-      const DeepCollectionEquality().hash(errorTracking) ^
-      const DeepCollectionEquality().hash(sensitiveData);
+      Object.hash(runtimeType, analytics, errorTracking, sensitiveData);
 
   @JsonKey(ignore: true)
   @override
-  $UpdateCopyWith<Update> get copyWith =>
-      _$UpdateCopyWithImpl<Update>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpdateCopyWith<_$Update> get copyWith =>
+      __$$UpdateCopyWithImpl<_$Update>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -272,6 +286,18 @@ class _$Update implements Update {
     required TResult Function() submit,
   }) {
     return update(analytics, errorTracking, sensitiveData);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? check,
+    TResult? Function(
+            bool? analytics, bool? errorTracking, bool? sensitiveData)?
+        update,
+    TResult? Function()? submit,
+  }) {
+    return update?.call(analytics, errorTracking, sensitiveData);
   }
 
   @override
@@ -301,6 +327,16 @@ class _$Update implements Update {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Check value)? check,
+    TResult? Function(Update value)? update,
+    TResult? Function(Submit value)? submit,
+  }) {
+    return update?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Check value)? check,
     TResult Function(Update value)? update,
@@ -316,33 +352,34 @@ class _$Update implements Update {
 
 abstract class Update implements SettingsPrivacyEvent {
   const factory Update(
-      {bool? analytics, bool? errorTracking, bool? sensitiveData}) = _$Update;
+      {final bool? analytics,
+      final bool? errorTracking,
+      final bool? sensitiveData}) = _$Update;
 
-  bool? get analytics => throw _privateConstructorUsedError;
-  bool? get errorTracking => throw _privateConstructorUsedError;
-  bool? get sensitiveData => throw _privateConstructorUsedError;
+  bool? get analytics;
+  bool? get errorTracking;
+  bool? get sensitiveData;
   @JsonKey(ignore: true)
-  $UpdateCopyWith<Update> get copyWith => throw _privateConstructorUsedError;
+  _$$UpdateCopyWith<_$Update> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SubmitCopyWith<$Res> {
-  factory $SubmitCopyWith(Submit value, $Res Function(Submit) then) =
-      _$SubmitCopyWithImpl<$Res>;
+abstract class _$$SubmitCopyWith<$Res> {
+  factory _$$SubmitCopyWith(_$Submit value, $Res Function(_$Submit) then) =
+      __$$SubmitCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SubmitCopyWithImpl<$Res>
-    extends _$SettingsPrivacyEventCopyWithImpl<$Res>
-    implements $SubmitCopyWith<$Res> {
-  _$SubmitCopyWithImpl(Submit _value, $Res Function(Submit) _then)
-      : super(_value, (v) => _then(v as Submit));
-
-  @override
-  Submit get _value => super._value as Submit;
+class __$$SubmitCopyWithImpl<$Res>
+    extends _$SettingsPrivacyEventCopyWithImpl<$Res, _$Submit>
+    implements _$$SubmitCopyWith<$Res> {
+  __$$SubmitCopyWithImpl(_$Submit _value, $Res Function(_$Submit) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Submit implements Submit {
   const _$Submit();
 
@@ -353,7 +390,8 @@ class _$Submit implements Submit {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Submit);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Submit);
   }
 
   @override
@@ -369,6 +407,18 @@ class _$Submit implements Submit {
     required TResult Function() submit,
   }) {
     return submit();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? check,
+    TResult? Function(
+            bool? analytics, bool? errorTracking, bool? sensitiveData)?
+        update,
+    TResult? Function()? submit,
+  }) {
+    return submit?.call();
   }
 
   @override
@@ -394,6 +444,16 @@ class _$Submit implements Submit {
     required TResult Function(Submit value) submit,
   }) {
     return submit(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Check value)? check,
+    TResult? Function(Update value)? update,
+    TResult? Function(Submit value)? submit,
+  }) {
+    return submit?.call(this);
   }
 
   @override

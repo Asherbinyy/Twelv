@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'chat_event.dart';
 
@@ -10,55 +12,7 @@ part of 'chat_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ChatEventTearOff {
-  const _$ChatEventTearOff();
-
-  Initialize initialize() {
-    return const Initialize();
-  }
-
-  ChatError error(Object error) {
-    return ChatError(
-      error,
-    );
-  }
-
-  ConnectWithProfile connectWithProfile({required String userId}) {
-    return ConnectWithProfile(
-      userId: userId,
-    );
-  }
-
-  ChatWithProfile onProfileClicked({required String userId}) {
-    return ChatWithProfile(
-      userId: userId,
-    );
-  }
-
-  Unmatch unmatch(Channel channel) {
-    return Unmatch(
-      channel,
-    );
-  }
-
-  ReportProfile reportProfile(Channel channel) {
-    return ReportProfile(
-      channel,
-    );
-  }
-
-  PreviewUserCard previewUserCard(Channel channel) {
-    return PreviewUserCard(
-      channel,
-    );
-  }
-}
-
-/// @nodoc
-const $ChatEvent = _$ChatEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$ChatEvent {
@@ -71,6 +25,17 @@ mixin _$ChatEvent {
     required TResult Function(Channel channel) unmatch,
     required TResult Function(Channel channel) reportProfile,
     required TResult Function(Channel channel) previewUserCard,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -97,6 +62,17 @@ mixin _$ChatEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -113,36 +89,38 @@ mixin _$ChatEvent {
 /// @nodoc
 abstract class $ChatEventCopyWith<$Res> {
   factory $ChatEventCopyWith(ChatEvent value, $Res Function(ChatEvent) then) =
-      _$ChatEventCopyWithImpl<$Res>;
+      _$ChatEventCopyWithImpl<$Res, ChatEvent>;
 }
 
 /// @nodoc
-class _$ChatEventCopyWithImpl<$Res> implements $ChatEventCopyWith<$Res> {
+class _$ChatEventCopyWithImpl<$Res, $Val extends ChatEvent>
+    implements $ChatEventCopyWith<$Res> {
   _$ChatEventCopyWithImpl(this._value, this._then);
 
-  final ChatEvent _value;
   // ignore: unused_field
-  final $Res Function(ChatEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitializeCopyWith<$Res> {
-  factory $InitializeCopyWith(
-          Initialize value, $Res Function(Initialize) then) =
-      _$InitializeCopyWithImpl<$Res>;
+abstract class _$$InitializeCopyWith<$Res> {
+  factory _$$InitializeCopyWith(
+          _$Initialize value, $Res Function(_$Initialize) then) =
+      __$$InitializeCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitializeCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
-    implements $InitializeCopyWith<$Res> {
-  _$InitializeCopyWithImpl(Initialize _value, $Res Function(Initialize) _then)
-      : super(_value, (v) => _then(v as Initialize));
-
-  @override
-  Initialize get _value => super._value as Initialize;
+class __$$InitializeCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$Initialize>
+    implements _$$InitializeCopyWith<$Res> {
+  __$$InitializeCopyWithImpl(
+      _$Initialize _value, $Res Function(_$Initialize) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initialize implements Initialize {
   const _$Initialize();
 
@@ -153,7 +131,8 @@ class _$Initialize implements Initialize {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initialize);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initialize);
   }
 
   @override
@@ -171,6 +150,20 @@ class _$Initialize implements Initialize {
     required TResult Function(Channel channel) previewUserCard,
   }) {
     return initialize();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
+  }) {
+    return initialize?.call();
   }
 
   @override
@@ -207,6 +200,20 @@ class _$Initialize implements Initialize {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) {
+    return initialize?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -229,35 +236,35 @@ abstract class Initialize implements ChatEvent {
 }
 
 /// @nodoc
-abstract class $ChatErrorCopyWith<$Res> {
-  factory $ChatErrorCopyWith(ChatError value, $Res Function(ChatError) then) =
-      _$ChatErrorCopyWithImpl<$Res>;
+abstract class _$$ChatErrorCopyWith<$Res> {
+  factory _$$ChatErrorCopyWith(
+          _$ChatError value, $Res Function(_$ChatError) then) =
+      __$$ChatErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Object error});
 }
 
 /// @nodoc
-class _$ChatErrorCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
-    implements $ChatErrorCopyWith<$Res> {
-  _$ChatErrorCopyWithImpl(ChatError _value, $Res Function(ChatError) _then)
-      : super(_value, (v) => _then(v as ChatError));
+class __$$ChatErrorCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$ChatError>
+    implements _$$ChatErrorCopyWith<$Res> {
+  __$$ChatErrorCopyWithImpl(
+      _$ChatError _value, $Res Function(_$ChatError) _then)
+      : super(_value, _then);
 
-  @override
-  ChatError get _value => super._value as ChatError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(ChatError(
-      error == freezed
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as Object,
+    return _then(_$ChatError(
+      null == error ? _value.error : error,
     ));
   }
 }
 
 /// @nodoc
+
 class _$ChatError implements ChatError {
   const _$ChatError(this.error);
 
@@ -272,19 +279,20 @@ class _$ChatError implements ChatError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ChatError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$ChatError &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
-  $ChatErrorCopyWith<ChatError> get copyWith =>
-      _$ChatErrorCopyWithImpl<ChatError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ChatErrorCopyWith<_$ChatError> get copyWith =>
+      __$$ChatErrorCopyWithImpl<_$ChatError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -298,6 +306,20 @@ class _$ChatError implements ChatError {
     required TResult Function(Channel channel) previewUserCard,
   }) {
     return error(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
+  }) {
+    return error?.call(this.error);
   }
 
   @override
@@ -334,6 +356,20 @@ class _$ChatError implements ChatError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -352,39 +388,38 @@ class _$ChatError implements ChatError {
 }
 
 abstract class ChatError implements ChatEvent {
-  const factory ChatError(Object error) = _$ChatError;
+  const factory ChatError(final Object error) = _$ChatError;
 
-  Object get error => throw _privateConstructorUsedError;
+  Object get error;
   @JsonKey(ignore: true)
-  $ChatErrorCopyWith<ChatError> get copyWith =>
+  _$$ChatErrorCopyWith<_$ChatError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ConnectWithProfileCopyWith<$Res> {
-  factory $ConnectWithProfileCopyWith(
-          ConnectWithProfile value, $Res Function(ConnectWithProfile) then) =
-      _$ConnectWithProfileCopyWithImpl<$Res>;
+abstract class _$$ConnectWithProfileCopyWith<$Res> {
+  factory _$$ConnectWithProfileCopyWith(_$ConnectWithProfile value,
+          $Res Function(_$ConnectWithProfile) then) =
+      __$$ConnectWithProfileCopyWithImpl<$Res>;
+  @useResult
   $Res call({String userId});
 }
 
 /// @nodoc
-class _$ConnectWithProfileCopyWithImpl<$Res>
-    extends _$ChatEventCopyWithImpl<$Res>
-    implements $ConnectWithProfileCopyWith<$Res> {
-  _$ConnectWithProfileCopyWithImpl(
-      ConnectWithProfile _value, $Res Function(ConnectWithProfile) _then)
-      : super(_value, (v) => _then(v as ConnectWithProfile));
+class __$$ConnectWithProfileCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$ConnectWithProfile>
+    implements _$$ConnectWithProfileCopyWith<$Res> {
+  __$$ConnectWithProfileCopyWithImpl(
+      _$ConnectWithProfile _value, $Res Function(_$ConnectWithProfile) _then)
+      : super(_value, _then);
 
-  @override
-  ConnectWithProfile get _value => super._value as ConnectWithProfile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? userId = freezed,
+    Object? userId = null,
   }) {
-    return _then(ConnectWithProfile(
-      userId: userId == freezed
+    return _then(_$ConnectWithProfile(
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as String,
@@ -392,9 +427,8 @@ class _$ConnectWithProfileCopyWithImpl<$Res>
   }
 }
 
-@Implements(ChatEventStartConversation)
-
 /// @nodoc
+
 class _$ConnectWithProfile implements ConnectWithProfile {
   const _$ConnectWithProfile({required this.userId});
 
@@ -409,19 +443,20 @@ class _$ConnectWithProfile implements ConnectWithProfile {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ConnectWithProfile &&
-            (identical(other.userId, userId) ||
-                const DeepCollectionEquality().equals(other.userId, userId)));
+        (other.runtimeType == runtimeType &&
+            other is _$ConnectWithProfile &&
+            (identical(other.userId, userId) || other.userId == userId));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(userId);
+  int get hashCode => Object.hash(runtimeType, userId);
 
   @JsonKey(ignore: true)
   @override
-  $ConnectWithProfileCopyWith<ConnectWithProfile> get copyWith =>
-      _$ConnectWithProfileCopyWithImpl<ConnectWithProfile>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ConnectWithProfileCopyWith<_$ConnectWithProfile> get copyWith =>
+      __$$ConnectWithProfileCopyWithImpl<_$ConnectWithProfile>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -435,6 +470,20 @@ class _$ConnectWithProfile implements ConnectWithProfile {
     required TResult Function(Channel channel) previewUserCard,
   }) {
     return connectWithProfile(userId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
+  }) {
+    return connectWithProfile?.call(userId);
   }
 
   @override
@@ -471,6 +520,20 @@ class _$ConnectWithProfile implements ConnectWithProfile {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) {
+    return connectWithProfile?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -488,41 +551,40 @@ class _$ConnectWithProfile implements ConnectWithProfile {
   }
 }
 
-abstract class ConnectWithProfile
-    implements ChatEvent, ChatEventStartConversation {
-  const factory ConnectWithProfile({required String userId}) =
+abstract class ConnectWithProfile implements ChatEvent, dynamic {
+  const factory ConnectWithProfile({required final String userId}) =
       _$ConnectWithProfile;
 
-  String get userId => throw _privateConstructorUsedError;
+  String get userId;
   @JsonKey(ignore: true)
-  $ConnectWithProfileCopyWith<ConnectWithProfile> get copyWith =>
+  _$$ConnectWithProfileCopyWith<_$ConnectWithProfile> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ChatWithProfileCopyWith<$Res> {
-  factory $ChatWithProfileCopyWith(
-          ChatWithProfile value, $Res Function(ChatWithProfile) then) =
-      _$ChatWithProfileCopyWithImpl<$Res>;
+abstract class _$$ChatWithProfileCopyWith<$Res> {
+  factory _$$ChatWithProfileCopyWith(
+          _$ChatWithProfile value, $Res Function(_$ChatWithProfile) then) =
+      __$$ChatWithProfileCopyWithImpl<$Res>;
+  @useResult
   $Res call({String userId});
 }
 
 /// @nodoc
-class _$ChatWithProfileCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
-    implements $ChatWithProfileCopyWith<$Res> {
-  _$ChatWithProfileCopyWithImpl(
-      ChatWithProfile _value, $Res Function(ChatWithProfile) _then)
-      : super(_value, (v) => _then(v as ChatWithProfile));
+class __$$ChatWithProfileCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$ChatWithProfile>
+    implements _$$ChatWithProfileCopyWith<$Res> {
+  __$$ChatWithProfileCopyWithImpl(
+      _$ChatWithProfile _value, $Res Function(_$ChatWithProfile) _then)
+      : super(_value, _then);
 
-  @override
-  ChatWithProfile get _value => super._value as ChatWithProfile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? userId = freezed,
+    Object? userId = null,
   }) {
-    return _then(ChatWithProfile(
-      userId: userId == freezed
+    return _then(_$ChatWithProfile(
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as String,
@@ -530,9 +592,8 @@ class _$ChatWithProfileCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
   }
 }
 
-@Implements(ChatEventStartConversation)
-
 /// @nodoc
+
 class _$ChatWithProfile implements ChatWithProfile {
   const _$ChatWithProfile({required this.userId});
 
@@ -547,19 +608,19 @@ class _$ChatWithProfile implements ChatWithProfile {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ChatWithProfile &&
-            (identical(other.userId, userId) ||
-                const DeepCollectionEquality().equals(other.userId, userId)));
+        (other.runtimeType == runtimeType &&
+            other is _$ChatWithProfile &&
+            (identical(other.userId, userId) || other.userId == userId));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(userId);
+  int get hashCode => Object.hash(runtimeType, userId);
 
   @JsonKey(ignore: true)
   @override
-  $ChatWithProfileCopyWith<ChatWithProfile> get copyWith =>
-      _$ChatWithProfileCopyWithImpl<ChatWithProfile>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ChatWithProfileCopyWith<_$ChatWithProfile> get copyWith =>
+      __$$ChatWithProfileCopyWithImpl<_$ChatWithProfile>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -573,6 +634,20 @@ class _$ChatWithProfile implements ChatWithProfile {
     required TResult Function(Channel channel) previewUserCard,
   }) {
     return onProfileClicked(userId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
+  }) {
+    return onProfileClicked?.call(userId);
   }
 
   @override
@@ -609,6 +684,20 @@ class _$ChatWithProfile implements ChatWithProfile {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) {
+    return onProfileClicked?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -626,38 +715,38 @@ class _$ChatWithProfile implements ChatWithProfile {
   }
 }
 
-abstract class ChatWithProfile
-    implements ChatEvent, ChatEventStartConversation {
-  const factory ChatWithProfile({required String userId}) = _$ChatWithProfile;
+abstract class ChatWithProfile implements ChatEvent, dynamic {
+  const factory ChatWithProfile({required final String userId}) =
+      _$ChatWithProfile;
 
-  String get userId => throw _privateConstructorUsedError;
+  String get userId;
   @JsonKey(ignore: true)
-  $ChatWithProfileCopyWith<ChatWithProfile> get copyWith =>
+  _$$ChatWithProfileCopyWith<_$ChatWithProfile> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UnmatchCopyWith<$Res> {
-  factory $UnmatchCopyWith(Unmatch value, $Res Function(Unmatch) then) =
-      _$UnmatchCopyWithImpl<$Res>;
+abstract class _$$UnmatchCopyWith<$Res> {
+  factory _$$UnmatchCopyWith(_$Unmatch value, $Res Function(_$Unmatch) then) =
+      __$$UnmatchCopyWithImpl<$Res>;
+  @useResult
   $Res call({Channel channel});
 }
 
 /// @nodoc
-class _$UnmatchCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
-    implements $UnmatchCopyWith<$Res> {
-  _$UnmatchCopyWithImpl(Unmatch _value, $Res Function(Unmatch) _then)
-      : super(_value, (v) => _then(v as Unmatch));
+class __$$UnmatchCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$Unmatch>
+    implements _$$UnmatchCopyWith<$Res> {
+  __$$UnmatchCopyWithImpl(_$Unmatch _value, $Res Function(_$Unmatch) _then)
+      : super(_value, _then);
 
-  @override
-  Unmatch get _value => super._value as Unmatch;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? channel = freezed,
+    Object? channel = null,
   }) {
-    return _then(Unmatch(
-      channel == freezed
+    return _then(_$Unmatch(
+      null == channel
           ? _value.channel
           : channel // ignore: cast_nullable_to_non_nullable
               as Channel,
@@ -666,6 +755,7 @@ class _$UnmatchCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Unmatch implements Unmatch {
   const _$Unmatch(this.channel);
 
@@ -680,19 +770,19 @@ class _$Unmatch implements Unmatch {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Unmatch &&
-            (identical(other.channel, channel) ||
-                const DeepCollectionEquality().equals(other.channel, channel)));
+        (other.runtimeType == runtimeType &&
+            other is _$Unmatch &&
+            (identical(other.channel, channel) || other.channel == channel));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(channel);
+  int get hashCode => Object.hash(runtimeType, channel);
 
   @JsonKey(ignore: true)
   @override
-  $UnmatchCopyWith<Unmatch> get copyWith =>
-      _$UnmatchCopyWithImpl<Unmatch>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnmatchCopyWith<_$Unmatch> get copyWith =>
+      __$$UnmatchCopyWithImpl<_$Unmatch>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -706,6 +796,20 @@ class _$Unmatch implements Unmatch {
     required TResult Function(Channel channel) previewUserCard,
   }) {
     return unmatch(channel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
+  }) {
+    return unmatch?.call(channel);
   }
 
   @override
@@ -742,6 +846,20 @@ class _$Unmatch implements Unmatch {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) {
+    return unmatch?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -760,37 +878,38 @@ class _$Unmatch implements Unmatch {
 }
 
 abstract class Unmatch implements ChatEvent {
-  const factory Unmatch(Channel channel) = _$Unmatch;
+  const factory Unmatch(final Channel channel) = _$Unmatch;
 
-  Channel get channel => throw _privateConstructorUsedError;
+  Channel get channel;
   @JsonKey(ignore: true)
-  $UnmatchCopyWith<Unmatch> get copyWith => throw _privateConstructorUsedError;
+  _$$UnmatchCopyWith<_$Unmatch> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ReportProfileCopyWith<$Res> {
-  factory $ReportProfileCopyWith(
-          ReportProfile value, $Res Function(ReportProfile) then) =
-      _$ReportProfileCopyWithImpl<$Res>;
+abstract class _$$ReportProfileCopyWith<$Res> {
+  factory _$$ReportProfileCopyWith(
+          _$ReportProfile value, $Res Function(_$ReportProfile) then) =
+      __$$ReportProfileCopyWithImpl<$Res>;
+  @useResult
   $Res call({Channel channel});
 }
 
 /// @nodoc
-class _$ReportProfileCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
-    implements $ReportProfileCopyWith<$Res> {
-  _$ReportProfileCopyWithImpl(
-      ReportProfile _value, $Res Function(ReportProfile) _then)
-      : super(_value, (v) => _then(v as ReportProfile));
+class __$$ReportProfileCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$ReportProfile>
+    implements _$$ReportProfileCopyWith<$Res> {
+  __$$ReportProfileCopyWithImpl(
+      _$ReportProfile _value, $Res Function(_$ReportProfile) _then)
+      : super(_value, _then);
 
-  @override
-  ReportProfile get _value => super._value as ReportProfile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? channel = freezed,
+    Object? channel = null,
   }) {
-    return _then(ReportProfile(
-      channel == freezed
+    return _then(_$ReportProfile(
+      null == channel
           ? _value.channel
           : channel // ignore: cast_nullable_to_non_nullable
               as Channel,
@@ -799,6 +918,7 @@ class _$ReportProfileCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ReportProfile implements ReportProfile {
   const _$ReportProfile(this.channel);
 
@@ -813,19 +933,19 @@ class _$ReportProfile implements ReportProfile {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ReportProfile &&
-            (identical(other.channel, channel) ||
-                const DeepCollectionEquality().equals(other.channel, channel)));
+        (other.runtimeType == runtimeType &&
+            other is _$ReportProfile &&
+            (identical(other.channel, channel) || other.channel == channel));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(channel);
+  int get hashCode => Object.hash(runtimeType, channel);
 
   @JsonKey(ignore: true)
   @override
-  $ReportProfileCopyWith<ReportProfile> get copyWith =>
-      _$ReportProfileCopyWithImpl<ReportProfile>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ReportProfileCopyWith<_$ReportProfile> get copyWith =>
+      __$$ReportProfileCopyWithImpl<_$ReportProfile>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -839,6 +959,20 @@ class _$ReportProfile implements ReportProfile {
     required TResult Function(Channel channel) previewUserCard,
   }) {
     return reportProfile(channel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
+  }) {
+    return reportProfile?.call(channel);
   }
 
   @override
@@ -875,6 +1009,20 @@ class _$ReportProfile implements ReportProfile {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) {
+    return reportProfile?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -893,38 +1041,38 @@ class _$ReportProfile implements ReportProfile {
 }
 
 abstract class ReportProfile implements ChatEvent {
-  const factory ReportProfile(Channel channel) = _$ReportProfile;
+  const factory ReportProfile(final Channel channel) = _$ReportProfile;
 
-  Channel get channel => throw _privateConstructorUsedError;
+  Channel get channel;
   @JsonKey(ignore: true)
-  $ReportProfileCopyWith<ReportProfile> get copyWith =>
+  _$$ReportProfileCopyWith<_$ReportProfile> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PreviewUserCardCopyWith<$Res> {
-  factory $PreviewUserCardCopyWith(
-          PreviewUserCard value, $Res Function(PreviewUserCard) then) =
-      _$PreviewUserCardCopyWithImpl<$Res>;
+abstract class _$$PreviewUserCardCopyWith<$Res> {
+  factory _$$PreviewUserCardCopyWith(
+          _$PreviewUserCard value, $Res Function(_$PreviewUserCard) then) =
+      __$$PreviewUserCardCopyWithImpl<$Res>;
+  @useResult
   $Res call({Channel channel});
 }
 
 /// @nodoc
-class _$PreviewUserCardCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
-    implements $PreviewUserCardCopyWith<$Res> {
-  _$PreviewUserCardCopyWithImpl(
-      PreviewUserCard _value, $Res Function(PreviewUserCard) _then)
-      : super(_value, (v) => _then(v as PreviewUserCard));
+class __$$PreviewUserCardCopyWithImpl<$Res>
+    extends _$ChatEventCopyWithImpl<$Res, _$PreviewUserCard>
+    implements _$$PreviewUserCardCopyWith<$Res> {
+  __$$PreviewUserCardCopyWithImpl(
+      _$PreviewUserCard _value, $Res Function(_$PreviewUserCard) _then)
+      : super(_value, _then);
 
-  @override
-  PreviewUserCard get _value => super._value as PreviewUserCard;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? channel = freezed,
+    Object? channel = null,
   }) {
-    return _then(PreviewUserCard(
-      channel == freezed
+    return _then(_$PreviewUserCard(
+      null == channel
           ? _value.channel
           : channel // ignore: cast_nullable_to_non_nullable
               as Channel,
@@ -933,6 +1081,7 @@ class _$PreviewUserCardCopyWithImpl<$Res> extends _$ChatEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PreviewUserCard implements PreviewUserCard {
   const _$PreviewUserCard(this.channel);
 
@@ -947,19 +1096,19 @@ class _$PreviewUserCard implements PreviewUserCard {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PreviewUserCard &&
-            (identical(other.channel, channel) ||
-                const DeepCollectionEquality().equals(other.channel, channel)));
+        (other.runtimeType == runtimeType &&
+            other is _$PreviewUserCard &&
+            (identical(other.channel, channel) || other.channel == channel));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(channel);
+  int get hashCode => Object.hash(runtimeType, channel);
 
   @JsonKey(ignore: true)
   @override
-  $PreviewUserCardCopyWith<PreviewUserCard> get copyWith =>
-      _$PreviewUserCardCopyWithImpl<PreviewUserCard>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PreviewUserCardCopyWith<_$PreviewUserCard> get copyWith =>
+      __$$PreviewUserCardCopyWithImpl<_$PreviewUserCard>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -973,6 +1122,20 @@ class _$PreviewUserCard implements PreviewUserCard {
     required TResult Function(Channel channel) previewUserCard,
   }) {
     return previewUserCard(channel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(Object error)? error,
+    TResult? Function(String userId)? connectWithProfile,
+    TResult? Function(String userId)? onProfileClicked,
+    TResult? Function(Channel channel)? unmatch,
+    TResult? Function(Channel channel)? reportProfile,
+    TResult? Function(Channel channel)? previewUserCard,
+  }) {
+    return previewUserCard?.call(channel);
   }
 
   @override
@@ -1009,6 +1172,20 @@ class _$PreviewUserCard implements PreviewUserCard {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initialize value)? initialize,
+    TResult? Function(ChatError value)? error,
+    TResult? Function(ConnectWithProfile value)? connectWithProfile,
+    TResult? Function(ChatWithProfile value)? onProfileClicked,
+    TResult? Function(Unmatch value)? unmatch,
+    TResult? Function(ReportProfile value)? reportProfile,
+    TResult? Function(PreviewUserCard value)? previewUserCard,
+  }) {
+    return previewUserCard?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initialize value)? initialize,
     TResult Function(ChatError value)? error,
@@ -1027,10 +1204,10 @@ class _$PreviewUserCard implements PreviewUserCard {
 }
 
 abstract class PreviewUserCard implements ChatEvent {
-  const factory PreviewUserCard(Channel channel) = _$PreviewUserCard;
+  const factory PreviewUserCard(final Channel channel) = _$PreviewUserCard;
 
-  Channel get channel => throw _privateConstructorUsedError;
+  Channel get channel;
   @JsonKey(ignore: true)
-  $PreviewUserCardCopyWith<PreviewUserCard> get copyWith =>
+  _$$PreviewUserCardCopyWith<_$PreviewUserCard> get copyWith =>
       throw _privateConstructorUsedError;
 }

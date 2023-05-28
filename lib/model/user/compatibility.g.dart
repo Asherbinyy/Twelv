@@ -6,21 +6,20 @@ part of 'compatibility.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Compatibility _$CompatibilityFromJson(Map<String, dynamic> json) {
-  return Compatibility(
-    (json['mainScore'] as num?)?.toDouble(),
-    (json['complementarityScore'] as num?)?.toDouble(),
-    json['complementarityText'] as String?,
-    (json['sexualityScore'] as num?)?.toDouble(),
-    json['sexualityText'] as String?,
-    (json['solidityScore'] as num?)?.toDouble(),
-    json['solidityText'] as String?,
-    (json['complicityScore'] as num?)?.toDouble(),
-    json['complicityText'] as String?,
-    (json['feelingsScore'] as num?)?.toDouble(),
-    json['feelingsText'] as String?,
-  );
-}
+Compatibility _$CompatibilityFromJson(Map<String, dynamic> json) =>
+    Compatibility(
+      (json['mainScore'] as num?)?.toDouble(),
+      (json['complementarityScore'] as num?)?.toDouble(),
+      json['complementarityText'] as String?,
+      (json['sexualityScore'] as num?)?.toDouble(),
+      json['sexualityText'] as String?,
+      (json['solidityScore'] as num?)?.toDouble(),
+      json['solidityText'] as String?,
+      (json['complicityScore'] as num?)?.toDouble(),
+      json['complicityText'] as String?,
+      (json['feelingsScore'] as num?)?.toDouble(),
+      json['feelingsText'] as String?,
+    );
 
 Map<String, dynamic> _$CompatibilityToJson(Compatibility instance) =>
     <String, dynamic>{

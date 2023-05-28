@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'profile_event.dart';
 
@@ -10,41 +12,7 @@ part of 'profile_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ProfileEventTearOff {
-  const _$ProfileEventTearOff();
-
-  AddPhoto addPhoto(File file) {
-    return AddPhoto(
-      file,
-    );
-  }
-
-  DelPhoto delPhoto(int id) {
-    return DelPhoto(
-      id,
-    );
-  }
-
-  UpdateUser updateUser(CurrentUser currentUser) {
-    return UpdateUser(
-      currentUser,
-    );
-  }
-
-  ReloadUser reloadUser() {
-    return const ReloadUser();
-  }
-
-  Delete delete() {
-    return const Delete();
-  }
-}
-
-/// @nodoc
-const $ProfileEvent = _$ProfileEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$ProfileEvent {
@@ -55,6 +23,15 @@ mixin _$ProfileEvent {
     required TResult Function(CurrentUser currentUser) updateUser,
     required TResult Function() reloadUser,
     required TResult Function() delete,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(File file)? addPhoto,
+    TResult? Function(int id)? delPhoto,
+    TResult? Function(CurrentUser currentUser)? updateUser,
+    TResult? Function()? reloadUser,
+    TResult? Function()? delete,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -77,6 +54,15 @@ mixin _$ProfileEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AddPhoto value)? addPhoto,
+    TResult? Function(DelPhoto value)? delPhoto,
+    TResult? Function(UpdateUser value)? updateUser,
+    TResult? Function(ReloadUser value)? reloadUser,
+    TResult? Function(Delete value)? delete,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AddPhoto value)? addPhoto,
     TResult Function(DelPhoto value)? delPhoto,
@@ -92,40 +78,43 @@ mixin _$ProfileEvent {
 abstract class $ProfileEventCopyWith<$Res> {
   factory $ProfileEventCopyWith(
           ProfileEvent value, $Res Function(ProfileEvent) then) =
-      _$ProfileEventCopyWithImpl<$Res>;
+      _$ProfileEventCopyWithImpl<$Res, ProfileEvent>;
 }
 
 /// @nodoc
-class _$ProfileEventCopyWithImpl<$Res> implements $ProfileEventCopyWith<$Res> {
+class _$ProfileEventCopyWithImpl<$Res, $Val extends ProfileEvent>
+    implements $ProfileEventCopyWith<$Res> {
   _$ProfileEventCopyWithImpl(this._value, this._then);
 
-  final ProfileEvent _value;
   // ignore: unused_field
-  final $Res Function(ProfileEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $AddPhotoCopyWith<$Res> {
-  factory $AddPhotoCopyWith(AddPhoto value, $Res Function(AddPhoto) then) =
-      _$AddPhotoCopyWithImpl<$Res>;
+abstract class _$$AddPhotoCopyWith<$Res> {
+  factory _$$AddPhotoCopyWith(
+          _$AddPhoto value, $Res Function(_$AddPhoto) then) =
+      __$$AddPhotoCopyWithImpl<$Res>;
+  @useResult
   $Res call({File file});
 }
 
 /// @nodoc
-class _$AddPhotoCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
-    implements $AddPhotoCopyWith<$Res> {
-  _$AddPhotoCopyWithImpl(AddPhoto _value, $Res Function(AddPhoto) _then)
-      : super(_value, (v) => _then(v as AddPhoto));
+class __$$AddPhotoCopyWithImpl<$Res>
+    extends _$ProfileEventCopyWithImpl<$Res, _$AddPhoto>
+    implements _$$AddPhotoCopyWith<$Res> {
+  __$$AddPhotoCopyWithImpl(_$AddPhoto _value, $Res Function(_$AddPhoto) _then)
+      : super(_value, _then);
 
-  @override
-  AddPhoto get _value => super._value as AddPhoto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? file = freezed,
+    Object? file = null,
   }) {
-    return _then(AddPhoto(
-      file == freezed
+    return _then(_$AddPhoto(
+      null == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File,
@@ -134,6 +123,7 @@ class _$AddPhotoCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$AddPhoto implements AddPhoto {
   const _$AddPhoto(this.file);
 
@@ -148,19 +138,19 @@ class _$AddPhoto implements AddPhoto {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is AddPhoto &&
-            (identical(other.file, file) ||
-                const DeepCollectionEquality().equals(other.file, file)));
+        (other.runtimeType == runtimeType &&
+            other is _$AddPhoto &&
+            (identical(other.file, file) || other.file == file));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(file);
+  int get hashCode => Object.hash(runtimeType, file);
 
   @JsonKey(ignore: true)
   @override
-  $AddPhotoCopyWith<AddPhoto> get copyWith =>
-      _$AddPhotoCopyWithImpl<AddPhoto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AddPhotoCopyWith<_$AddPhoto> get copyWith =>
+      __$$AddPhotoCopyWithImpl<_$AddPhoto>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -172,6 +162,18 @@ class _$AddPhoto implements AddPhoto {
     required TResult Function() delete,
   }) {
     return addPhoto(file);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(File file)? addPhoto,
+    TResult? Function(int id)? delPhoto,
+    TResult? Function(CurrentUser currentUser)? updateUser,
+    TResult? Function()? reloadUser,
+    TResult? Function()? delete,
+  }) {
+    return addPhoto?.call(file);
   }
 
   @override
@@ -204,6 +206,18 @@ class _$AddPhoto implements AddPhoto {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AddPhoto value)? addPhoto,
+    TResult? Function(DelPhoto value)? delPhoto,
+    TResult? Function(UpdateUser value)? updateUser,
+    TResult? Function(ReloadUser value)? reloadUser,
+    TResult? Function(Delete value)? delete,
+  }) {
+    return addPhoto?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AddPhoto value)? addPhoto,
     TResult Function(DelPhoto value)? delPhoto,
@@ -220,36 +234,37 @@ class _$AddPhoto implements AddPhoto {
 }
 
 abstract class AddPhoto implements ProfileEvent {
-  const factory AddPhoto(File file) = _$AddPhoto;
+  const factory AddPhoto(final File file) = _$AddPhoto;
 
-  File get file => throw _privateConstructorUsedError;
+  File get file;
   @JsonKey(ignore: true)
-  $AddPhotoCopyWith<AddPhoto> get copyWith =>
+  _$$AddPhotoCopyWith<_$AddPhoto> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DelPhotoCopyWith<$Res> {
-  factory $DelPhotoCopyWith(DelPhoto value, $Res Function(DelPhoto) then) =
-      _$DelPhotoCopyWithImpl<$Res>;
+abstract class _$$DelPhotoCopyWith<$Res> {
+  factory _$$DelPhotoCopyWith(
+          _$DelPhoto value, $Res Function(_$DelPhoto) then) =
+      __$$DelPhotoCopyWithImpl<$Res>;
+  @useResult
   $Res call({int id});
 }
 
 /// @nodoc
-class _$DelPhotoCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
-    implements $DelPhotoCopyWith<$Res> {
-  _$DelPhotoCopyWithImpl(DelPhoto _value, $Res Function(DelPhoto) _then)
-      : super(_value, (v) => _then(v as DelPhoto));
+class __$$DelPhotoCopyWithImpl<$Res>
+    extends _$ProfileEventCopyWithImpl<$Res, _$DelPhoto>
+    implements _$$DelPhotoCopyWith<$Res> {
+  __$$DelPhotoCopyWithImpl(_$DelPhoto _value, $Res Function(_$DelPhoto) _then)
+      : super(_value, _then);
 
-  @override
-  DelPhoto get _value => super._value as DelPhoto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
   }) {
-    return _then(DelPhoto(
-      id == freezed
+    return _then(_$DelPhoto(
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
@@ -258,6 +273,7 @@ class _$DelPhotoCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$DelPhoto implements DelPhoto {
   const _$DelPhoto(this.id);
 
@@ -272,19 +288,19 @@ class _$DelPhoto implements DelPhoto {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is DelPhoto &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)));
+        (other.runtimeType == runtimeType &&
+            other is _$DelPhoto &&
+            (identical(other.id, id) || other.id == id));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(id);
+  int get hashCode => Object.hash(runtimeType, id);
 
   @JsonKey(ignore: true)
   @override
-  $DelPhotoCopyWith<DelPhoto> get copyWith =>
-      _$DelPhotoCopyWithImpl<DelPhoto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DelPhotoCopyWith<_$DelPhoto> get copyWith =>
+      __$$DelPhotoCopyWithImpl<_$DelPhoto>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -296,6 +312,18 @@ class _$DelPhoto implements DelPhoto {
     required TResult Function() delete,
   }) {
     return delPhoto(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(File file)? addPhoto,
+    TResult? Function(int id)? delPhoto,
+    TResult? Function(CurrentUser currentUser)? updateUser,
+    TResult? Function()? reloadUser,
+    TResult? Function()? delete,
+  }) {
+    return delPhoto?.call(id);
   }
 
   @override
@@ -328,6 +356,18 @@ class _$DelPhoto implements DelPhoto {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AddPhoto value)? addPhoto,
+    TResult? Function(DelPhoto value)? delPhoto,
+    TResult? Function(UpdateUser value)? updateUser,
+    TResult? Function(ReloadUser value)? reloadUser,
+    TResult? Function(Delete value)? delete,
+  }) {
+    return delPhoto?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AddPhoto value)? addPhoto,
     TResult Function(DelPhoto value)? delPhoto,
@@ -344,37 +384,38 @@ class _$DelPhoto implements DelPhoto {
 }
 
 abstract class DelPhoto implements ProfileEvent {
-  const factory DelPhoto(int id) = _$DelPhoto;
+  const factory DelPhoto(final int id) = _$DelPhoto;
 
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @JsonKey(ignore: true)
-  $DelPhotoCopyWith<DelPhoto> get copyWith =>
+  _$$DelPhotoCopyWith<_$DelPhoto> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UpdateUserCopyWith<$Res> {
-  factory $UpdateUserCopyWith(
-          UpdateUser value, $Res Function(UpdateUser) then) =
-      _$UpdateUserCopyWithImpl<$Res>;
+abstract class _$$UpdateUserCopyWith<$Res> {
+  factory _$$UpdateUserCopyWith(
+          _$UpdateUser value, $Res Function(_$UpdateUser) then) =
+      __$$UpdateUserCopyWithImpl<$Res>;
+  @useResult
   $Res call({CurrentUser currentUser});
 }
 
 /// @nodoc
-class _$UpdateUserCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
-    implements $UpdateUserCopyWith<$Res> {
-  _$UpdateUserCopyWithImpl(UpdateUser _value, $Res Function(UpdateUser) _then)
-      : super(_value, (v) => _then(v as UpdateUser));
+class __$$UpdateUserCopyWithImpl<$Res>
+    extends _$ProfileEventCopyWithImpl<$Res, _$UpdateUser>
+    implements _$$UpdateUserCopyWith<$Res> {
+  __$$UpdateUserCopyWithImpl(
+      _$UpdateUser _value, $Res Function(_$UpdateUser) _then)
+      : super(_value, _then);
 
-  @override
-  UpdateUser get _value => super._value as UpdateUser;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? currentUser = freezed,
+    Object? currentUser = null,
   }) {
-    return _then(UpdateUser(
-      currentUser == freezed
+    return _then(_$UpdateUser(
+      null == currentUser
           ? _value.currentUser
           : currentUser // ignore: cast_nullable_to_non_nullable
               as CurrentUser,
@@ -383,6 +424,7 @@ class _$UpdateUserCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$UpdateUser implements UpdateUser {
   const _$UpdateUser(this.currentUser);
 
@@ -397,20 +439,20 @@ class _$UpdateUser implements UpdateUser {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is UpdateUser &&
+        (other.runtimeType == runtimeType &&
+            other is _$UpdateUser &&
             (identical(other.currentUser, currentUser) ||
-                const DeepCollectionEquality()
-                    .equals(other.currentUser, currentUser)));
+                other.currentUser == currentUser));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(currentUser);
+  int get hashCode => Object.hash(runtimeType, currentUser);
 
   @JsonKey(ignore: true)
   @override
-  $UpdateUserCopyWith<UpdateUser> get copyWith =>
-      _$UpdateUserCopyWithImpl<UpdateUser>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpdateUserCopyWith<_$UpdateUser> get copyWith =>
+      __$$UpdateUserCopyWithImpl<_$UpdateUser>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -422,6 +464,18 @@ class _$UpdateUser implements UpdateUser {
     required TResult Function() delete,
   }) {
     return updateUser(currentUser);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(File file)? addPhoto,
+    TResult? Function(int id)? delPhoto,
+    TResult? Function(CurrentUser currentUser)? updateUser,
+    TResult? Function()? reloadUser,
+    TResult? Function()? delete,
+  }) {
+    return updateUser?.call(currentUser);
   }
 
   @override
@@ -454,6 +508,18 @@ class _$UpdateUser implements UpdateUser {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AddPhoto value)? addPhoto,
+    TResult? Function(DelPhoto value)? delPhoto,
+    TResult? Function(UpdateUser value)? updateUser,
+    TResult? Function(ReloadUser value)? reloadUser,
+    TResult? Function(Delete value)? delete,
+  }) {
+    return updateUser?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AddPhoto value)? addPhoto,
     TResult Function(DelPhoto value)? delPhoto,
@@ -470,32 +536,32 @@ class _$UpdateUser implements UpdateUser {
 }
 
 abstract class UpdateUser implements ProfileEvent {
-  const factory UpdateUser(CurrentUser currentUser) = _$UpdateUser;
+  const factory UpdateUser(final CurrentUser currentUser) = _$UpdateUser;
 
-  CurrentUser get currentUser => throw _privateConstructorUsedError;
+  CurrentUser get currentUser;
   @JsonKey(ignore: true)
-  $UpdateUserCopyWith<UpdateUser> get copyWith =>
+  _$$UpdateUserCopyWith<_$UpdateUser> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ReloadUserCopyWith<$Res> {
-  factory $ReloadUserCopyWith(
-          ReloadUser value, $Res Function(ReloadUser) then) =
-      _$ReloadUserCopyWithImpl<$Res>;
+abstract class _$$ReloadUserCopyWith<$Res> {
+  factory _$$ReloadUserCopyWith(
+          _$ReloadUser value, $Res Function(_$ReloadUser) then) =
+      __$$ReloadUserCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ReloadUserCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
-    implements $ReloadUserCopyWith<$Res> {
-  _$ReloadUserCopyWithImpl(ReloadUser _value, $Res Function(ReloadUser) _then)
-      : super(_value, (v) => _then(v as ReloadUser));
-
-  @override
-  ReloadUser get _value => super._value as ReloadUser;
+class __$$ReloadUserCopyWithImpl<$Res>
+    extends _$ProfileEventCopyWithImpl<$Res, _$ReloadUser>
+    implements _$$ReloadUserCopyWith<$Res> {
+  __$$ReloadUserCopyWithImpl(
+      _$ReloadUser _value, $Res Function(_$ReloadUser) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$ReloadUser implements ReloadUser {
   const _$ReloadUser();
 
@@ -506,7 +572,8 @@ class _$ReloadUser implements ReloadUser {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is ReloadUser);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ReloadUser);
   }
 
   @override
@@ -522,6 +589,18 @@ class _$ReloadUser implements ReloadUser {
     required TResult Function() delete,
   }) {
     return reloadUser();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(File file)? addPhoto,
+    TResult? Function(int id)? delPhoto,
+    TResult? Function(CurrentUser currentUser)? updateUser,
+    TResult? Function()? reloadUser,
+    TResult? Function()? delete,
+  }) {
+    return reloadUser?.call();
   }
 
   @override
@@ -554,6 +633,18 @@ class _$ReloadUser implements ReloadUser {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AddPhoto value)? addPhoto,
+    TResult? Function(DelPhoto value)? delPhoto,
+    TResult? Function(UpdateUser value)? updateUser,
+    TResult? Function(ReloadUser value)? reloadUser,
+    TResult? Function(Delete value)? delete,
+  }) {
+    return reloadUser?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(AddPhoto value)? addPhoto,
     TResult Function(DelPhoto value)? delPhoto,
@@ -574,22 +665,21 @@ abstract class ReloadUser implements ProfileEvent {
 }
 
 /// @nodoc
-abstract class $DeleteCopyWith<$Res> {
-  factory $DeleteCopyWith(Delete value, $Res Function(Delete) then) =
-      _$DeleteCopyWithImpl<$Res>;
+abstract class _$$DeleteCopyWith<$Res> {
+  factory _$$DeleteCopyWith(_$Delete value, $Res Function(_$Delete) then) =
+      __$$DeleteCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$DeleteCopyWithImpl<$Res> extends _$ProfileEventCopyWithImpl<$Res>
-    implements $DeleteCopyWith<$Res> {
-  _$DeleteCopyWithImpl(Delete _value, $Res Function(Delete) _then)
-      : super(_value, (v) => _then(v as Delete));
-
-  @override
-  Delete get _value => super._value as Delete;
+class __$$DeleteCopyWithImpl<$Res>
+    extends _$ProfileEventCopyWithImpl<$Res, _$Delete>
+    implements _$$DeleteCopyWith<$Res> {
+  __$$DeleteCopyWithImpl(_$Delete _value, $Res Function(_$Delete) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Delete implements Delete {
   const _$Delete();
 
@@ -600,7 +690,8 @@ class _$Delete implements Delete {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Delete);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Delete);
   }
 
   @override
@@ -616,6 +707,18 @@ class _$Delete implements Delete {
     required TResult Function() delete,
   }) {
     return delete();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(File file)? addPhoto,
+    TResult? Function(int id)? delPhoto,
+    TResult? Function(CurrentUser currentUser)? updateUser,
+    TResult? Function()? reloadUser,
+    TResult? Function()? delete,
+  }) {
+    return delete?.call();
   }
 
   @override
@@ -644,6 +747,18 @@ class _$Delete implements Delete {
     required TResult Function(Delete value) delete,
   }) {
     return delete(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AddPhoto value)? addPhoto,
+    TResult? Function(DelPhoto value)? delPhoto,
+    TResult? Function(UpdateUser value)? updateUser,
+    TResult? Function(ReloadUser value)? reloadUser,
+    TResult? Function(Delete value)? delete,
+  }) {
+    return delete?.call(this);
   }
 
   @override

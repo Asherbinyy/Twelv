@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'authentication_state.dart';
 
@@ -10,41 +12,7 @@ part of 'authentication_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AuthenticationStateTearOff {
-  const _$AuthenticationStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  SmsVerification smsVerification() {
-    return const SmsVerification();
-  }
-
-  TokenReceived tokenReceived({required String authenticationToken}) {
-    return TokenReceived(
-      authenticationToken: authenticationToken,
-    );
-  }
-
-  AuthenticationStateError error(AuthenticationError error,
-      {DateTime? occurredAt}) {
-    return AuthenticationStateError(
-      error,
-      occurredAt: occurredAt,
-    );
-  }
-}
-
-/// @nodoc
-const $AuthenticationState = _$AuthenticationStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$AuthenticationState {
@@ -56,6 +24,15 @@ mixin _$AuthenticationState {
     required TResult Function(String authenticationToken) tokenReceived,
     required TResult Function(AuthenticationError error, DateTime? occurredAt)
         error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? smsVerification,
+    TResult? Function(String authenticationToken)? tokenReceived,
+    TResult? Function(AuthenticationError error, DateTime? occurredAt)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -78,6 +55,15 @@ mixin _$AuthenticationState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(SmsVerification value)? smsVerification,
+    TResult? Function(TokenReceived value)? tokenReceived,
+    TResult? Function(AuthenticationStateError value)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -93,37 +79,36 @@ mixin _$AuthenticationState {
 abstract class $AuthenticationStateCopyWith<$Res> {
   factory $AuthenticationStateCopyWith(
           AuthenticationState value, $Res Function(AuthenticationState) then) =
-      _$AuthenticationStateCopyWithImpl<$Res>;
+      _$AuthenticationStateCopyWithImpl<$Res, AuthenticationState>;
 }
 
 /// @nodoc
-class _$AuthenticationStateCopyWithImpl<$Res>
+class _$AuthenticationStateCopyWithImpl<$Res, $Val extends AuthenticationState>
     implements $AuthenticationStateCopyWith<$Res> {
   _$AuthenticationStateCopyWithImpl(this._value, this._then);
 
-  final AuthenticationState _value;
   // ignore: unused_field
-  final $Res Function(AuthenticationState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res>
-    extends _$AuthenticationStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$AuthenticationStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial with DiagnosticableTreeMixin implements Initial {
   const _$Initial();
 
@@ -135,12 +120,13 @@ class _$Initial with DiagnosticableTreeMixin implements Initial {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthenticationState.initial'));
+    properties.add(DiagnosticsProperty('type', 'AuthenticationState.initial'));
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -157,6 +143,18 @@ class _$Initial with DiagnosticableTreeMixin implements Initial {
         error,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? smsVerification,
+    TResult? Function(String authenticationToken)? tokenReceived,
+    TResult? Function(AuthenticationError error, DateTime? occurredAt)? error,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -189,6 +187,18 @@ class _$Initial with DiagnosticableTreeMixin implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(SmsVerification value)? smsVerification,
+    TResult? Function(TokenReceived value)? tokenReceived,
+    TResult? Function(AuthenticationStateError value)? error,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -209,23 +219,21 @@ abstract class Initial implements AuthenticationState {
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res>
-    extends _$AuthenticationStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$AuthenticationStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading with DiagnosticableTreeMixin implements Loading {
   const _$Loading();
 
@@ -237,12 +245,13 @@ class _$Loading with DiagnosticableTreeMixin implements Loading {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'AuthenticationState.loading'));
+    properties.add(DiagnosticsProperty('type', 'AuthenticationState.loading'));
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -259,6 +268,18 @@ class _$Loading with DiagnosticableTreeMixin implements Loading {
         error,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? smsVerification,
+    TResult? Function(String authenticationToken)? tokenReceived,
+    TResult? Function(AuthenticationError error, DateTime? occurredAt)? error,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -291,6 +312,18 @@ class _$Loading with DiagnosticableTreeMixin implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(SmsVerification value)? smsVerification,
+    TResult? Function(TokenReceived value)? tokenReceived,
+    TResult? Function(AuthenticationStateError value)? error,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -311,25 +344,23 @@ abstract class Loading implements AuthenticationState {
 }
 
 /// @nodoc
-abstract class $SmsVerificationCopyWith<$Res> {
-  factory $SmsVerificationCopyWith(
-          SmsVerification value, $Res Function(SmsVerification) then) =
-      _$SmsVerificationCopyWithImpl<$Res>;
+abstract class _$$SmsVerificationCopyWith<$Res> {
+  factory _$$SmsVerificationCopyWith(
+          _$SmsVerification value, $Res Function(_$SmsVerification) then) =
+      __$$SmsVerificationCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SmsVerificationCopyWithImpl<$Res>
-    extends _$AuthenticationStateCopyWithImpl<$Res>
-    implements $SmsVerificationCopyWith<$Res> {
-  _$SmsVerificationCopyWithImpl(
-      SmsVerification _value, $Res Function(SmsVerification) _then)
-      : super(_value, (v) => _then(v as SmsVerification));
-
-  @override
-  SmsVerification get _value => super._value as SmsVerification;
+class __$$SmsVerificationCopyWithImpl<$Res>
+    extends _$AuthenticationStateCopyWithImpl<$Res, _$SmsVerification>
+    implements _$$SmsVerificationCopyWith<$Res> {
+  __$$SmsVerificationCopyWithImpl(
+      _$SmsVerification _value, $Res Function(_$SmsVerification) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$SmsVerification
     with DiagnosticableTreeMixin
     implements SmsVerification {
@@ -343,13 +374,14 @@ class _$SmsVerification
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'AuthenticationState.smsVerification'));
+    properties.add(
+        DiagnosticsProperty('type', 'AuthenticationState.smsVerification'));
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is SmsVerification);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SmsVerification);
   }
 
   @override
@@ -366,6 +398,18 @@ class _$SmsVerification
         error,
   }) {
     return smsVerification();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? smsVerification,
+    TResult? Function(String authenticationToken)? tokenReceived,
+    TResult? Function(AuthenticationError error, DateTime? occurredAt)? error,
+  }) {
+    return smsVerification?.call();
   }
 
   @override
@@ -398,6 +442,18 @@ class _$SmsVerification
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(SmsVerification value)? smsVerification,
+    TResult? Function(TokenReceived value)? tokenReceived,
+    TResult? Function(AuthenticationStateError value)? error,
+  }) {
+    return smsVerification?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -418,30 +474,29 @@ abstract class SmsVerification implements AuthenticationState {
 }
 
 /// @nodoc
-abstract class $TokenReceivedCopyWith<$Res> {
-  factory $TokenReceivedCopyWith(
-          TokenReceived value, $Res Function(TokenReceived) then) =
-      _$TokenReceivedCopyWithImpl<$Res>;
+abstract class _$$TokenReceivedCopyWith<$Res> {
+  factory _$$TokenReceivedCopyWith(
+          _$TokenReceived value, $Res Function(_$TokenReceived) then) =
+      __$$TokenReceivedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String authenticationToken});
 }
 
 /// @nodoc
-class _$TokenReceivedCopyWithImpl<$Res>
-    extends _$AuthenticationStateCopyWithImpl<$Res>
-    implements $TokenReceivedCopyWith<$Res> {
-  _$TokenReceivedCopyWithImpl(
-      TokenReceived _value, $Res Function(TokenReceived) _then)
-      : super(_value, (v) => _then(v as TokenReceived));
+class __$$TokenReceivedCopyWithImpl<$Res>
+    extends _$AuthenticationStateCopyWithImpl<$Res, _$TokenReceived>
+    implements _$$TokenReceivedCopyWith<$Res> {
+  __$$TokenReceivedCopyWithImpl(
+      _$TokenReceived _value, $Res Function(_$TokenReceived) _then)
+      : super(_value, _then);
 
-  @override
-  TokenReceived get _value => super._value as TokenReceived;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? authenticationToken = freezed,
+    Object? authenticationToken = null,
   }) {
-    return _then(TokenReceived(
-      authenticationToken: authenticationToken == freezed
+    return _then(_$TokenReceived(
+      authenticationToken: null == authenticationToken
           ? _value.authenticationToken
           : authenticationToken // ignore: cast_nullable_to_non_nullable
               as String,
@@ -450,6 +505,7 @@ class _$TokenReceivedCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$TokenReceived with DiagnosticableTreeMixin implements TokenReceived {
   const _$TokenReceived({required this.authenticationToken});
 
@@ -472,21 +528,20 @@ class _$TokenReceived with DiagnosticableTreeMixin implements TokenReceived {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is TokenReceived &&
+        (other.runtimeType == runtimeType &&
+            other is _$TokenReceived &&
             (identical(other.authenticationToken, authenticationToken) ||
-                const DeepCollectionEquality()
-                    .equals(other.authenticationToken, authenticationToken)));
+                other.authenticationToken == authenticationToken));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(authenticationToken);
+  int get hashCode => Object.hash(runtimeType, authenticationToken);
 
   @JsonKey(ignore: true)
   @override
-  $TokenReceivedCopyWith<TokenReceived> get copyWith =>
-      _$TokenReceivedCopyWithImpl<TokenReceived>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TokenReceivedCopyWith<_$TokenReceived> get copyWith =>
+      __$$TokenReceivedCopyWithImpl<_$TokenReceived>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -499,6 +554,18 @@ class _$TokenReceived with DiagnosticableTreeMixin implements TokenReceived {
         error,
   }) {
     return tokenReceived(authenticationToken);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? smsVerification,
+    TResult? Function(String authenticationToken)? tokenReceived,
+    TResult? Function(AuthenticationError error, DateTime? occurredAt)? error,
+  }) {
+    return tokenReceived?.call(authenticationToken);
   }
 
   @override
@@ -531,6 +598,18 @@ class _$TokenReceived with DiagnosticableTreeMixin implements TokenReceived {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(SmsVerification value)? smsVerification,
+    TResult? Function(TokenReceived value)? tokenReceived,
+    TResult? Function(AuthenticationStateError value)? error,
+  }) {
+    return tokenReceived?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -547,46 +626,44 @@ class _$TokenReceived with DiagnosticableTreeMixin implements TokenReceived {
 }
 
 abstract class TokenReceived implements AuthenticationState {
-  const factory TokenReceived({required String authenticationToken}) =
+  const factory TokenReceived({required final String authenticationToken}) =
       _$TokenReceived;
 
-  String get authenticationToken => throw _privateConstructorUsedError;
+  String get authenticationToken;
   @JsonKey(ignore: true)
-  $TokenReceivedCopyWith<TokenReceived> get copyWith =>
+  _$$TokenReceivedCopyWith<_$TokenReceived> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $AuthenticationStateErrorCopyWith<$Res> {
-  factory $AuthenticationStateErrorCopyWith(AuthenticationStateError value,
-          $Res Function(AuthenticationStateError) then) =
-      _$AuthenticationStateErrorCopyWithImpl<$Res>;
+abstract class _$$AuthenticationStateErrorCopyWith<$Res> {
+  factory _$$AuthenticationStateErrorCopyWith(_$AuthenticationStateError value,
+          $Res Function(_$AuthenticationStateError) then) =
+      __$$AuthenticationStateErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({AuthenticationError error, DateTime? occurredAt});
 }
 
 /// @nodoc
-class _$AuthenticationStateErrorCopyWithImpl<$Res>
-    extends _$AuthenticationStateCopyWithImpl<$Res>
-    implements $AuthenticationStateErrorCopyWith<$Res> {
-  _$AuthenticationStateErrorCopyWithImpl(AuthenticationStateError _value,
-      $Res Function(AuthenticationStateError) _then)
-      : super(_value, (v) => _then(v as AuthenticationStateError));
+class __$$AuthenticationStateErrorCopyWithImpl<$Res>
+    extends _$AuthenticationStateCopyWithImpl<$Res, _$AuthenticationStateError>
+    implements _$$AuthenticationStateErrorCopyWith<$Res> {
+  __$$AuthenticationStateErrorCopyWithImpl(_$AuthenticationStateError _value,
+      $Res Function(_$AuthenticationStateError) _then)
+      : super(_value, _then);
 
-  @override
-  AuthenticationStateError get _value =>
-      super._value as AuthenticationStateError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
     Object? occurredAt = freezed,
   }) {
-    return _then(AuthenticationStateError(
-      error == freezed
+    return _then(_$AuthenticationStateError(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as AuthenticationError,
-      occurredAt: occurredAt == freezed
+      occurredAt: freezed == occurredAt
           ? _value.occurredAt
           : occurredAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -595,6 +672,7 @@ class _$AuthenticationStateErrorCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$AuthenticationStateError
     with DiagnosticableTreeMixin
     implements AuthenticationStateError {
@@ -622,25 +700,23 @@ class _$AuthenticationStateError
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is AuthenticationStateError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$AuthenticationStateError &&
+            (identical(other.error, error) || other.error == error) &&
             (identical(other.occurredAt, occurredAt) ||
-                const DeepCollectionEquality()
-                    .equals(other.occurredAt, occurredAt)));
+                other.occurredAt == occurredAt));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(error) ^
-      const DeepCollectionEquality().hash(occurredAt);
+  int get hashCode => Object.hash(runtimeType, error, occurredAt);
 
   @JsonKey(ignore: true)
   @override
-  $AuthenticationStateErrorCopyWith<AuthenticationStateError> get copyWith =>
-      _$AuthenticationStateErrorCopyWithImpl<AuthenticationStateError>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AuthenticationStateErrorCopyWith<_$AuthenticationStateError>
+      get copyWith =>
+          __$$AuthenticationStateErrorCopyWithImpl<_$AuthenticationStateError>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -653,6 +729,18 @@ class _$AuthenticationStateError
         error,
   }) {
     return error(this.error, occurredAt);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? smsVerification,
+    TResult? Function(String authenticationToken)? tokenReceived,
+    TResult? Function(AuthenticationError error, DateTime? occurredAt)? error,
+  }) {
+    return error?.call(this.error, occurredAt);
   }
 
   @override
@@ -685,6 +773,18 @@ class _$AuthenticationStateError
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(SmsVerification value)? smsVerification,
+    TResult? Function(TokenReceived value)? tokenReceived,
+    TResult? Function(AuthenticationStateError value)? error,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -701,12 +801,12 @@ class _$AuthenticationStateError
 }
 
 abstract class AuthenticationStateError implements AuthenticationState {
-  const factory AuthenticationStateError(AuthenticationError error,
-      {DateTime? occurredAt}) = _$AuthenticationStateError;
+  const factory AuthenticationStateError(final AuthenticationError error,
+      {final DateTime? occurredAt}) = _$AuthenticationStateError;
 
-  AuthenticationError get error => throw _privateConstructorUsedError;
-  DateTime? get occurredAt => throw _privateConstructorUsedError;
+  AuthenticationError get error;
+  DateTime? get occurredAt;
   @JsonKey(ignore: true)
-  $AuthenticationStateErrorCopyWith<AuthenticationStateError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AuthenticationStateErrorCopyWith<_$AuthenticationStateError>
+      get copyWith => throw _privateConstructorUsedError;
 }

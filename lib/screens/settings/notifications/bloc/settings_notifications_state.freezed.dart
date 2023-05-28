@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'settings_notifications_state.dart';
 
@@ -10,31 +12,7 @@ part of 'settings_notifications_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$SettingsNotificationsStateTearOff {
-  const _$SettingsNotificationsStateTearOff();
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  ApiError apiError(Exception error) {
-    return ApiError(
-      error,
-    );
-  }
-
-  Settings settings(NotificationSettings notificationSettings) {
-    return Settings(
-      notificationSettings,
-    );
-  }
-}
-
-/// @nodoc
-const $SettingsNotificationsState = _$SettingsNotificationsStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$SettingsNotificationsState {
@@ -44,6 +22,13 @@ mixin _$SettingsNotificationsState {
     required TResult Function(Exception error) apiError,
     required TResult Function(NotificationSettings notificationSettings)
         settings,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(NotificationSettings notificationSettings)? settings,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -62,6 +47,13 @@ mixin _$SettingsNotificationsState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Settings value)? settings,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -75,37 +67,38 @@ mixin _$SettingsNotificationsState {
 abstract class $SettingsNotificationsStateCopyWith<$Res> {
   factory $SettingsNotificationsStateCopyWith(SettingsNotificationsState value,
           $Res Function(SettingsNotificationsState) then) =
-      _$SettingsNotificationsStateCopyWithImpl<$Res>;
+      _$SettingsNotificationsStateCopyWithImpl<$Res,
+          SettingsNotificationsState>;
 }
 
 /// @nodoc
-class _$SettingsNotificationsStateCopyWithImpl<$Res>
+class _$SettingsNotificationsStateCopyWithImpl<$Res,
+        $Val extends SettingsNotificationsState>
     implements $SettingsNotificationsStateCopyWith<$Res> {
   _$SettingsNotificationsStateCopyWithImpl(this._value, this._then);
 
-  final SettingsNotificationsState _value;
   // ignore: unused_field
-  final $Res Function(SettingsNotificationsState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res>
-    extends _$SettingsNotificationsStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$SettingsNotificationsStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -116,7 +109,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -131,6 +125,16 @@ class _$Loading implements Loading {
         settings,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(NotificationSettings notificationSettings)? settings,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -159,6 +163,16 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Settings value)? settings,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -177,28 +191,28 @@ abstract class Loading implements SettingsNotificationsState {
 }
 
 /// @nodoc
-abstract class $ApiErrorCopyWith<$Res> {
-  factory $ApiErrorCopyWith(ApiError value, $Res Function(ApiError) then) =
-      _$ApiErrorCopyWithImpl<$Res>;
+abstract class _$$ApiErrorCopyWith<$Res> {
+  factory _$$ApiErrorCopyWith(
+          _$ApiError value, $Res Function(_$ApiError) then) =
+      __$$ApiErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class _$ApiErrorCopyWithImpl<$Res>
-    extends _$SettingsNotificationsStateCopyWithImpl<$Res>
-    implements $ApiErrorCopyWith<$Res> {
-  _$ApiErrorCopyWithImpl(ApiError _value, $Res Function(ApiError) _then)
-      : super(_value, (v) => _then(v as ApiError));
+class __$$ApiErrorCopyWithImpl<$Res>
+    extends _$SettingsNotificationsStateCopyWithImpl<$Res, _$ApiError>
+    implements _$$ApiErrorCopyWith<$Res> {
+  __$$ApiErrorCopyWithImpl(_$ApiError _value, $Res Function(_$ApiError) _then)
+      : super(_value, _then);
 
-  @override
-  ApiError get _value => super._value as ApiError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(ApiError(
-      error == freezed
+    return _then(_$ApiError(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -207,6 +221,7 @@ class _$ApiErrorCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ApiError implements ApiError {
   const _$ApiError(this.error);
 
@@ -221,19 +236,19 @@ class _$ApiError implements ApiError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ApiError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$ApiError &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $ApiErrorCopyWith<ApiError> get copyWith =>
-      _$ApiErrorCopyWithImpl<ApiError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
+      __$$ApiErrorCopyWithImpl<_$ApiError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -244,6 +259,16 @@ class _$ApiError implements ApiError {
         settings,
   }) {
     return apiError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(NotificationSettings notificationSettings)? settings,
+  }) {
+    return apiError?.call(error);
   }
 
   @override
@@ -272,6 +297,16 @@ class _$ApiError implements ApiError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Settings value)? settings,
+  }) {
+    return apiError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -286,37 +321,37 @@ class _$ApiError implements ApiError {
 }
 
 abstract class ApiError implements SettingsNotificationsState {
-  const factory ApiError(Exception error) = _$ApiError;
+  const factory ApiError(final Exception error) = _$ApiError;
 
-  Exception get error => throw _privateConstructorUsedError;
+  Exception get error;
   @JsonKey(ignore: true)
-  $ApiErrorCopyWith<ApiError> get copyWith =>
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SettingsCopyWith<$Res> {
-  factory $SettingsCopyWith(Settings value, $Res Function(Settings) then) =
-      _$SettingsCopyWithImpl<$Res>;
+abstract class _$$SettingsCopyWith<$Res> {
+  factory _$$SettingsCopyWith(
+          _$Settings value, $Res Function(_$Settings) then) =
+      __$$SettingsCopyWithImpl<$Res>;
+  @useResult
   $Res call({NotificationSettings notificationSettings});
 }
 
 /// @nodoc
-class _$SettingsCopyWithImpl<$Res>
-    extends _$SettingsNotificationsStateCopyWithImpl<$Res>
-    implements $SettingsCopyWith<$Res> {
-  _$SettingsCopyWithImpl(Settings _value, $Res Function(Settings) _then)
-      : super(_value, (v) => _then(v as Settings));
+class __$$SettingsCopyWithImpl<$Res>
+    extends _$SettingsNotificationsStateCopyWithImpl<$Res, _$Settings>
+    implements _$$SettingsCopyWith<$Res> {
+  __$$SettingsCopyWithImpl(_$Settings _value, $Res Function(_$Settings) _then)
+      : super(_value, _then);
 
-  @override
-  Settings get _value => super._value as Settings;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notificationSettings = freezed,
+    Object? notificationSettings = null,
   }) {
-    return _then(Settings(
-      notificationSettings == freezed
+    return _then(_$Settings(
+      null == notificationSettings
           ? _value.notificationSettings
           : notificationSettings // ignore: cast_nullable_to_non_nullable
               as NotificationSettings,
@@ -325,6 +360,7 @@ class _$SettingsCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Settings implements Settings {
   const _$Settings(this.notificationSettings);
 
@@ -339,21 +375,20 @@ class _$Settings implements Settings {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Settings &&
+        (other.runtimeType == runtimeType &&
+            other is _$Settings &&
             (identical(other.notificationSettings, notificationSettings) ||
-                const DeepCollectionEquality()
-                    .equals(other.notificationSettings, notificationSettings)));
+                other.notificationSettings == notificationSettings));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(notificationSettings);
+  int get hashCode => Object.hash(runtimeType, notificationSettings);
 
   @JsonKey(ignore: true)
   @override
-  $SettingsCopyWith<Settings> get copyWith =>
-      _$SettingsCopyWithImpl<Settings>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SettingsCopyWith<_$Settings> get copyWith =>
+      __$$SettingsCopyWithImpl<_$Settings>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -364,6 +399,16 @@ class _$Settings implements Settings {
         settings,
   }) {
     return settings(notificationSettings);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(NotificationSettings notificationSettings)? settings,
+  }) {
+    return settings?.call(notificationSettings);
   }
 
   @override
@@ -392,6 +437,16 @@ class _$Settings implements Settings {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Settings value)? settings,
+  }) {
+    return settings?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -406,12 +461,11 @@ class _$Settings implements Settings {
 }
 
 abstract class Settings implements SettingsNotificationsState {
-  const factory Settings(NotificationSettings notificationSettings) =
+  const factory Settings(final NotificationSettings notificationSettings) =
       _$Settings;
 
-  NotificationSettings get notificationSettings =>
-      throw _privateConstructorUsedError;
+  NotificationSettings get notificationSettings;
   @JsonKey(ignore: true)
-  $SettingsCopyWith<Settings> get copyWith =>
+  _$$SettingsCopyWith<_$Settings> get copyWith =>
       throw _privateConstructorUsedError;
 }

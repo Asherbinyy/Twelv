@@ -7,11 +7,10 @@ part of 'unmatch_with_profile_request.dart';
 // **************************************************************************
 
 UnmatchWithProfileRequest _$UnmatchWithProfileRequestFromJson(
-    Map<String, dynamic> json) {
-  return UnmatchWithProfileRequest(
-    userId: json['user_id'] as int,
-  );
-}
+        Map<String, dynamic> json) =>
+    UnmatchWithProfileRequest(
+      userId: json['user_id'] as int,
+    );
 
 Map<String, dynamic> _$UnmatchWithProfileRequestToJson(
         UnmatchWithProfileRequest instance) =>

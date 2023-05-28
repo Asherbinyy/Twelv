@@ -6,14 +6,12 @@ part of 'user_consent.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-UserConsent _$UserConsentFromJson(Map<String, dynamic> json) {
-  return UserConsent(
-    termsOfUse: json['terms_of_use'] as bool?,
-    sensitiveData: json['sensitive_data'] as bool?,
-    analytics: json['firebase_analytics'] as bool?,
-    errorTracking: json['firebase_crashlytics'] as bool?,
-  );
-}
+UserConsent _$UserConsentFromJson(Map<String, dynamic> json) => UserConsent(
+      termsOfUse: json['terms_of_use'] as bool?,
+      sensitiveData: json['sensitive_data'] as bool?,
+      analytics: json['firebase_analytics'] as bool?,
+      errorTracking: json['firebase_crashlytics'] as bool?,
+    );
 
 Map<String, dynamic> _$UserConsentToJson(UserConsent instance) {
   final val = <String, dynamic>{};

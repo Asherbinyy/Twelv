@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'location_event.dart';
 
@@ -10,25 +12,7 @@ part of 'location_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LocationEventTearOff {
-  const _$LocationEventTearOff();
-
-  UserAsked userAsked() {
-    return const UserAsked();
-  }
-
-  UpdateApi updateApi({required bool askAgain}) {
-    return UpdateApi(
-      askAgain: askAgain,
-    );
-  }
-}
-
-/// @nodoc
-const $LocationEvent = _$LocationEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LocationEvent {
@@ -36,6 +20,12 @@ mixin _$LocationEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() userAsked,
     required TResult Function(bool askAgain) updateApi,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? userAsked,
+    TResult? Function(bool askAgain)? updateApi,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -52,6 +42,12 @@ mixin _$LocationEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(UserAsked value)? userAsked,
+    TResult? Function(UpdateApi value)? updateApi,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(UserAsked value)? userAsked,
     TResult Function(UpdateApi value)? updateApi,
@@ -64,36 +60,38 @@ mixin _$LocationEvent {
 abstract class $LocationEventCopyWith<$Res> {
   factory $LocationEventCopyWith(
           LocationEvent value, $Res Function(LocationEvent) then) =
-      _$LocationEventCopyWithImpl<$Res>;
+      _$LocationEventCopyWithImpl<$Res, LocationEvent>;
 }
 
 /// @nodoc
-class _$LocationEventCopyWithImpl<$Res>
+class _$LocationEventCopyWithImpl<$Res, $Val extends LocationEvent>
     implements $LocationEventCopyWith<$Res> {
   _$LocationEventCopyWithImpl(this._value, this._then);
 
-  final LocationEvent _value;
   // ignore: unused_field
-  final $Res Function(LocationEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $UserAskedCopyWith<$Res> {
-  factory $UserAskedCopyWith(UserAsked value, $Res Function(UserAsked) then) =
-      _$UserAskedCopyWithImpl<$Res>;
+abstract class _$$UserAskedCopyWith<$Res> {
+  factory _$$UserAskedCopyWith(
+          _$UserAsked value, $Res Function(_$UserAsked) then) =
+      __$$UserAskedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$UserAskedCopyWithImpl<$Res> extends _$LocationEventCopyWithImpl<$Res>
-    implements $UserAskedCopyWith<$Res> {
-  _$UserAskedCopyWithImpl(UserAsked _value, $Res Function(UserAsked) _then)
-      : super(_value, (v) => _then(v as UserAsked));
-
-  @override
-  UserAsked get _value => super._value as UserAsked;
+class __$$UserAskedCopyWithImpl<$Res>
+    extends _$LocationEventCopyWithImpl<$Res, _$UserAsked>
+    implements _$$UserAskedCopyWith<$Res> {
+  __$$UserAskedCopyWithImpl(
+      _$UserAsked _value, $Res Function(_$UserAsked) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$UserAsked implements UserAsked {
   const _$UserAsked();
 
@@ -104,7 +102,8 @@ class _$UserAsked implements UserAsked {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is UserAsked);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$UserAsked);
   }
 
   @override
@@ -117,6 +116,15 @@ class _$UserAsked implements UserAsked {
     required TResult Function(bool askAgain) updateApi,
   }) {
     return userAsked();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? userAsked,
+    TResult? Function(bool askAgain)? updateApi,
+  }) {
+    return userAsked?.call();
   }
 
   @override
@@ -143,6 +151,15 @@ class _$UserAsked implements UserAsked {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(UserAsked value)? userAsked,
+    TResult? Function(UpdateApi value)? updateApi,
+  }) {
+    return userAsked?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(UserAsked value)? userAsked,
     TResult Function(UpdateApi value)? updateApi,
@@ -160,27 +177,29 @@ abstract class UserAsked implements LocationEvent {
 }
 
 /// @nodoc
-abstract class $UpdateApiCopyWith<$Res> {
-  factory $UpdateApiCopyWith(UpdateApi value, $Res Function(UpdateApi) then) =
-      _$UpdateApiCopyWithImpl<$Res>;
+abstract class _$$UpdateApiCopyWith<$Res> {
+  factory _$$UpdateApiCopyWith(
+          _$UpdateApi value, $Res Function(_$UpdateApi) then) =
+      __$$UpdateApiCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool askAgain});
 }
 
 /// @nodoc
-class _$UpdateApiCopyWithImpl<$Res> extends _$LocationEventCopyWithImpl<$Res>
-    implements $UpdateApiCopyWith<$Res> {
-  _$UpdateApiCopyWithImpl(UpdateApi _value, $Res Function(UpdateApi) _then)
-      : super(_value, (v) => _then(v as UpdateApi));
+class __$$UpdateApiCopyWithImpl<$Res>
+    extends _$LocationEventCopyWithImpl<$Res, _$UpdateApi>
+    implements _$$UpdateApiCopyWith<$Res> {
+  __$$UpdateApiCopyWithImpl(
+      _$UpdateApi _value, $Res Function(_$UpdateApi) _then)
+      : super(_value, _then);
 
-  @override
-  UpdateApi get _value => super._value as UpdateApi;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? askAgain = freezed,
+    Object? askAgain = null,
   }) {
-    return _then(UpdateApi(
-      askAgain: askAgain == freezed
+    return _then(_$UpdateApi(
+      askAgain: null == askAgain
           ? _value.askAgain
           : askAgain // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -189,6 +208,7 @@ class _$UpdateApiCopyWithImpl<$Res> extends _$LocationEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$UpdateApi implements UpdateApi {
   const _$UpdateApi({required this.askAgain});
 
@@ -203,20 +223,20 @@ class _$UpdateApi implements UpdateApi {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is UpdateApi &&
+        (other.runtimeType == runtimeType &&
+            other is _$UpdateApi &&
             (identical(other.askAgain, askAgain) ||
-                const DeepCollectionEquality()
-                    .equals(other.askAgain, askAgain)));
+                other.askAgain == askAgain));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(askAgain);
+  int get hashCode => Object.hash(runtimeType, askAgain);
 
   @JsonKey(ignore: true)
   @override
-  $UpdateApiCopyWith<UpdateApi> get copyWith =>
-      _$UpdateApiCopyWithImpl<UpdateApi>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpdateApiCopyWith<_$UpdateApi> get copyWith =>
+      __$$UpdateApiCopyWithImpl<_$UpdateApi>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -225,6 +245,15 @@ class _$UpdateApi implements UpdateApi {
     required TResult Function(bool askAgain) updateApi,
   }) {
     return updateApi(askAgain);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? userAsked,
+    TResult? Function(bool askAgain)? updateApi,
+  }) {
+    return updateApi?.call(askAgain);
   }
 
   @override
@@ -251,6 +280,15 @@ class _$UpdateApi implements UpdateApi {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(UserAsked value)? userAsked,
+    TResult? Function(UpdateApi value)? updateApi,
+  }) {
+    return updateApi?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(UserAsked value)? userAsked,
     TResult Function(UpdateApi value)? updateApi,
@@ -264,10 +302,10 @@ class _$UpdateApi implements UpdateApi {
 }
 
 abstract class UpdateApi implements LocationEvent {
-  const factory UpdateApi({required bool askAgain}) = _$UpdateApi;
+  const factory UpdateApi({required final bool askAgain}) = _$UpdateApi;
 
-  bool get askAgain => throw _privateConstructorUsedError;
+  bool get askAgain;
   @JsonKey(ignore: true)
-  $UpdateApiCopyWith<UpdateApi> get copyWith =>
+  _$$UpdateApiCopyWith<_$UpdateApi> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -63,7 +63,7 @@ void main() {
         // when interceptor with refresh token gets 401
         authInterceptor.observeAuthState(refreshTokenStream);
         await Future<void>.delayed(const Duration(milliseconds: 5));
-        authInterceptor.onError(unauthorized, handler);
+        authInterceptor.onError(unauthorized, ErrorInterceptorHandler());
         await Future<void>.delayed(const Duration(milliseconds: 100));
 
         // then the original request is resolved silently
@@ -80,7 +80,7 @@ void main() {
         // when interceptor without refresh token gets 401
         authInterceptor.observeAuthState(emptyRefreshTokenStream);
         await Future<void>.delayed(const Duration(milliseconds: 5));
-        authInterceptor.onError(unauthorized, handler);
+        authInterceptor.onError(unauthorized, ErrorInterceptorHandler());
         await Future<void>.delayed(const Duration(milliseconds: 100));
 
         // then the original request is rejected and never resolved
@@ -98,7 +98,7 @@ void main() {
         // when interceptor without refresh token gets 401
         authInterceptor.observeAuthState(refreshTokenStream);
         await Future<void>.delayed(const Duration(milliseconds: 5));
-        authInterceptor.onError(unauthorized, handler);
+        authInterceptor.onError(unauthorized, ErrorInterceptorHandler());
         await Future<void>.delayed(const Duration(milliseconds: 100));
 
         // then the original request is rejected and never resolved
@@ -115,7 +115,7 @@ void main() {
         // when interceptor without refresh token gets 401
         authInterceptor.observeAuthState(refreshTokenStream);
         await Future<void>.delayed(const Duration(milliseconds: 5));
-        authInterceptor.onError(unauthorized, handler);
+        authInterceptor.onError(unauthorized, ErrorInterceptorHandler());
         await Future<void>.delayed(const Duration(milliseconds: 100));
 
         // then the original request is rejected and never resolved

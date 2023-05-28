@@ -76,7 +76,7 @@ class _ChatChannelViewState extends State<ChatChannelView> {
                       height: double.infinity,
                       width: double.infinity, // ignore: no-equal-arguments
                     ),
-                    MessageListView(
+                    StreamMessageListView(
                       showFloatingDateDivider: false,
                       dateDividerBuilder: (DateTime dateTime) =>
                           ChatDateDivider(dateTime: dateTime),
@@ -87,14 +87,13 @@ class _ChatChannelViewState extends State<ChatChannelView> {
                           align: TextAlign.center,
                         ),
                       ),
-                      messageBuilder: (BuildContext context, MessageDetails message, _,
-                              MessageWidget defaultMessageWidget) =>
-                          _buildMessageWidget(context, message, defaultMessageWidget),
+                      messageBuilder: (BuildContext context, MessageDetails message, _, StreamMessageWidget defaultMessageWidget) =>
+                          _buildMessageWidget(context, message, ),
                     ),
                     if (showChannelActions) _buildChannelActions(context),
                   ]),
                 ),
-                MessageInput(
+                StreamMessageInput(
                   preMessageSending: (Message message) async => message.copyWith(
                       text: await context
                           .read<ChatBloc>()
@@ -185,17 +184,16 @@ class _ChatChannelViewState extends State<ChatChannelView> {
   Widget _buildMessageWidget(
     BuildContext context,
     MessageDetails message,
-    MessageWidget defaultMessageWidget,
   ) =>
       FutureBuilder<String>(
         future: context
             .read<ChatBloc>()
             .decrypt(encryptedMessage: message.message.text!, senderUuid: message.message.user?.id),
         builder: (BuildContext context, AsyncSnapshot<String> snapshot) =>
-            defaultMessageWidget.copyWith(
-          textBuilder: (BuildContext context, Message message) {
+            StreamMessageListView(
+          threadBuilder: (BuildContext context, Message? message) {
             return snapshot.connectionState == ConnectionState.done
-                ? Text(snapshot.data ?? message.text ?? "")
+                ? Text(snapshot.data ?? message?.text ?? "")
                 : const Center(
                     child: SizedBox(
                       height: 8,

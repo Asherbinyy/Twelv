@@ -26,8 +26,10 @@ class MockOnboardingBloc extends MockBloc<OnboardingEvent, OnboardingState>
     customMocks: <MockSpec<dynamic>>[MockSpec<NavigationService>(returnNullOnMissingStub: true)])
 void main() {
   setUpAll(() {
-    mocktail.registerFallbackValue<OnboardingState>(OnboardingState());
-    mocktail.registerFallbackValue<OnboardingEvent>(OnboardingEvent.nameEntered(name: ''));
+
+    // mocktail.registerFallbackValue<OnboardingState>(OnboardingState());
+    mocktail.registerFallbackValue(OnboardingState());
+    mocktail.registerFallbackValue(OnboardingEvent.nameEntered(name: ''));
   });
 
   group('OnboardingNameView', () {

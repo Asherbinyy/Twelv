@@ -6,13 +6,11 @@ part of 'swipe_action.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-SwipeAction _$SwipeActionFromJson(Map<String, dynamic> json) {
-  return SwipeAction(
-    toUser: json['to_user'] as int,
-    like: json['like'] as bool,
-    superlike: json['superlike'] as bool,
-  );
-}
+SwipeAction _$SwipeActionFromJson(Map<String, dynamic> json) => SwipeAction(
+      toUser: json['to_user'] as int,
+      like: json['like'] as bool,
+      superlike: json['superlike'] as bool,
+    );
 
 Map<String, dynamic> _$SwipeActionToJson(SwipeAction instance) =>
     <String, dynamic>{

@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'cookies_event.dart';
 
@@ -10,26 +12,7 @@ part of 'cookies_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$CookiesEventTearOff {
-  const _$CookiesEventTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Update update({required bool analytics, required bool errorTracking}) {
-    return Update(
-      analytics: analytics,
-      errorTracking: errorTracking,
-    );
-  }
-}
-
-/// @nodoc
-const $CookiesEvent = _$CookiesEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$CookiesEvent {
@@ -37,6 +20,12 @@ mixin _$CookiesEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(bool analytics, bool errorTracking) update,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(bool analytics, bool errorTracking)? update,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -53,6 +42,12 @@ mixin _$CookiesEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Update value)? update,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Update value)? update,
@@ -65,35 +60,36 @@ mixin _$CookiesEvent {
 abstract class $CookiesEventCopyWith<$Res> {
   factory $CookiesEventCopyWith(
           CookiesEvent value, $Res Function(CookiesEvent) then) =
-      _$CookiesEventCopyWithImpl<$Res>;
+      _$CookiesEventCopyWithImpl<$Res, CookiesEvent>;
 }
 
 /// @nodoc
-class _$CookiesEventCopyWithImpl<$Res> implements $CookiesEventCopyWith<$Res> {
+class _$CookiesEventCopyWithImpl<$Res, $Val extends CookiesEvent>
+    implements $CookiesEventCopyWith<$Res> {
   _$CookiesEventCopyWithImpl(this._value, this._then);
 
-  final CookiesEvent _value;
   // ignore: unused_field
-  final $Res Function(CookiesEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$CookiesEventCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$CookiesEventCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -104,7 +100,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -117,6 +114,15 @@ class _$Initial implements Initial {
     required TResult Function(bool analytics, bool errorTracking) update,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(bool analytics, bool errorTracking)? update,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -143,6 +149,15 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Update value)? update,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Update value)? update,
@@ -160,32 +175,32 @@ abstract class Initial implements CookiesEvent {
 }
 
 /// @nodoc
-abstract class $UpdateCopyWith<$Res> {
-  factory $UpdateCopyWith(Update value, $Res Function(Update) then) =
-      _$UpdateCopyWithImpl<$Res>;
+abstract class _$$UpdateCopyWith<$Res> {
+  factory _$$UpdateCopyWith(_$Update value, $Res Function(_$Update) then) =
+      __$$UpdateCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool analytics, bool errorTracking});
 }
 
 /// @nodoc
-class _$UpdateCopyWithImpl<$Res> extends _$CookiesEventCopyWithImpl<$Res>
-    implements $UpdateCopyWith<$Res> {
-  _$UpdateCopyWithImpl(Update _value, $Res Function(Update) _then)
-      : super(_value, (v) => _then(v as Update));
+class __$$UpdateCopyWithImpl<$Res>
+    extends _$CookiesEventCopyWithImpl<$Res, _$Update>
+    implements _$$UpdateCopyWith<$Res> {
+  __$$UpdateCopyWithImpl(_$Update _value, $Res Function(_$Update) _then)
+      : super(_value, _then);
 
-  @override
-  Update get _value => super._value as Update;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? analytics = freezed,
-    Object? errorTracking = freezed,
+    Object? analytics = null,
+    Object? errorTracking = null,
   }) {
-    return _then(Update(
-      analytics: analytics == freezed
+    return _then(_$Update(
+      analytics: null == analytics
           ? _value.analytics
           : analytics // ignore: cast_nullable_to_non_nullable
               as bool,
-      errorTracking: errorTracking == freezed
+      errorTracking: null == errorTracking
           ? _value.errorTracking
           : errorTracking // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -194,6 +209,7 @@ class _$UpdateCopyWithImpl<$Res> extends _$CookiesEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Update implements Update {
   const _$Update({required this.analytics, required this.errorTracking});
 
@@ -210,25 +226,22 @@ class _$Update implements Update {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Update &&
+        (other.runtimeType == runtimeType &&
+            other is _$Update &&
             (identical(other.analytics, analytics) ||
-                const DeepCollectionEquality()
-                    .equals(other.analytics, analytics)) &&
+                other.analytics == analytics) &&
             (identical(other.errorTracking, errorTracking) ||
-                const DeepCollectionEquality()
-                    .equals(other.errorTracking, errorTracking)));
+                other.errorTracking == errorTracking));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(analytics) ^
-      const DeepCollectionEquality().hash(errorTracking);
+  int get hashCode => Object.hash(runtimeType, analytics, errorTracking);
 
   @JsonKey(ignore: true)
   @override
-  $UpdateCopyWith<Update> get copyWith =>
-      _$UpdateCopyWithImpl<Update>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpdateCopyWith<_$Update> get copyWith =>
+      __$$UpdateCopyWithImpl<_$Update>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -237,6 +250,15 @@ class _$Update implements Update {
     required TResult Function(bool analytics, bool errorTracking) update,
   }) {
     return update(analytics, errorTracking);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(bool analytics, bool errorTracking)? update,
+  }) {
+    return update?.call(analytics, errorTracking);
   }
 
   @override
@@ -263,6 +285,15 @@ class _$Update implements Update {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Update value)? update,
+  }) {
+    return update?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Update value)? update,
@@ -276,11 +307,13 @@ class _$Update implements Update {
 }
 
 abstract class Update implements CookiesEvent {
-  const factory Update({required bool analytics, required bool errorTracking}) =
-      _$Update;
+  const factory Update(
+      {required final bool analytics,
+      required final bool errorTracking}) = _$Update;
 
-  bool get analytics => throw _privateConstructorUsedError;
-  bool get errorTracking => throw _privateConstructorUsedError;
+  bool get analytics;
+  bool get errorTracking;
   @JsonKey(ignore: true)
-  $UpdateCopyWith<Update> get copyWith => throw _privateConstructorUsedError;
+  _$$UpdateCopyWith<_$Update> get copyWith =>
+      throw _privateConstructorUsedError;
 }

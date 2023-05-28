@@ -52,13 +52,12 @@ class RecommendationsFiltersAdapter
 // **************************************************************************
 
 RecommendationsFilters _$RecommendationsFiltersFromJson(
-    Map<String, dynamic> json) {
-  return RecommendationsFilters(
-    ageMin: json['age_min'] as int,
-    ageMax: json['age_max'] as int,
-    distance: json['distance'] as int,
-  );
-}
+        Map<String, dynamic> json) =>
+    RecommendationsFilters(
+      ageMin: json['age_min'] as int,
+      ageMax: json['age_max'] as int,
+      distance: json['distance'] as int,
+    );
 
 Map<String, dynamic> _$RecommendationsFiltersToJson(
         RecommendationsFilters instance) =>

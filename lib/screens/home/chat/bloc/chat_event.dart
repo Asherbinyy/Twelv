@@ -15,10 +15,10 @@ class ChatEvent with _$ChatEvent {
 
   const factory ChatEvent.error(Object error) = ChatError;
 
-  @Implements(ChatEventStartConversation)
+  @Implements()
   const factory ChatEvent.connectWithProfile({required String userId}) = ConnectWithProfile;
 
-  @Implements(ChatEventStartConversation)
+  @Implements()
   const factory ChatEvent.onProfileClicked({required String userId}) = ChatWithProfile;
 
   const factory ChatEvent.unmatch(Channel channel) = Unmatch;

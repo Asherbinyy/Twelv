@@ -7,5 +7,5 @@ class CreatedChannel {
   CreatedChannel({required this.channel, required this.channelState});
 
   bool containsUserAsMember({required String uid}) =>
-      channelState.members.where((Member member) => member.userId == uid).isNotEmpty;
+      channelState.members!.where((Member member) => member.userId == uid).isNotEmpty;
 }

@@ -7,15 +7,14 @@ part of 'onboarding_birth_data_request.dart';
 // **************************************************************************
 
 OnboardingBirthDataRequest _$OnboardingBirthDataRequestFromJson(
-    Map<String, dynamic> json) {
-  return OnboardingBirthDataRequest(
-    name: json['name'] as String?,
-    dateTimeOfBirth: json['datetime_of_birth'] as String?,
-    latitudeBirth: (json['birth_location_lat'] as num?)?.toDouble(),
-    longitudeBirth: (json['birth_location_lon'] as num?)?.toDouble(),
-    placeOfBirth: json['place_of_birth'] as String?,
-  );
-}
+        Map<String, dynamic> json) =>
+    OnboardingBirthDataRequest(
+      name: json['name'] as String?,
+      dateTimeOfBirth: json['datetime_of_birth'] as String?,
+      latitudeBirth: (json['birth_location_lat'] as num?)?.toDouble(),
+      longitudeBirth: (json['birth_location_lon'] as num?)?.toDouble(),
+      placeOfBirth: json['place_of_birth'] as String?,
+    );
 
 Map<String, dynamic> _$OnboardingBirthDataRequestToJson(
         OnboardingBirthDataRequest instance) =>

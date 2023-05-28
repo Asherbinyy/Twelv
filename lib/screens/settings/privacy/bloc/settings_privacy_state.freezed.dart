@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'settings_privacy_state.dart';
 
@@ -10,39 +12,7 @@ part of 'settings_privacy_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$SettingsPrivacyStateTearOff {
-  const _$SettingsPrivacyStateTearOff();
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  ApiError apiError(Exception error) {
-    return ApiError(
-      error,
-    );
-  }
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Succeeded succeeded() {
-    return const Succeeded();
-  }
-
-  Data data(UserConsent data) {
-    return Data(
-      data,
-    );
-  }
-}
-
-/// @nodoc
-const $SettingsPrivacyState = _$SettingsPrivacyStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$SettingsPrivacyState {
@@ -53,6 +23,15 @@ mixin _$SettingsPrivacyState {
     required TResult Function() initial,
     required TResult Function() succeeded,
     required TResult Function(UserConsent data) data,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function()? initial,
+    TResult? Function()? succeeded,
+    TResult? Function(UserConsent data)? data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -75,6 +54,15 @@ mixin _$SettingsPrivacyState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Succeeded value)? succeeded,
+    TResult? Function(Data value)? data,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -90,37 +78,37 @@ mixin _$SettingsPrivacyState {
 abstract class $SettingsPrivacyStateCopyWith<$Res> {
   factory $SettingsPrivacyStateCopyWith(SettingsPrivacyState value,
           $Res Function(SettingsPrivacyState) then) =
-      _$SettingsPrivacyStateCopyWithImpl<$Res>;
+      _$SettingsPrivacyStateCopyWithImpl<$Res, SettingsPrivacyState>;
 }
 
 /// @nodoc
-class _$SettingsPrivacyStateCopyWithImpl<$Res>
+class _$SettingsPrivacyStateCopyWithImpl<$Res,
+        $Val extends SettingsPrivacyState>
     implements $SettingsPrivacyStateCopyWith<$Res> {
   _$SettingsPrivacyStateCopyWithImpl(this._value, this._then);
 
-  final SettingsPrivacyState _value;
   // ignore: unused_field
-  final $Res Function(SettingsPrivacyState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res>
-    extends _$SettingsPrivacyStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$SettingsPrivacyStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -131,7 +119,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -147,6 +136,18 @@ class _$Loading implements Loading {
     required TResult Function(UserConsent data) data,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function()? initial,
+    TResult? Function()? succeeded,
+    TResult? Function(UserConsent data)? data,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -179,6 +180,18 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Succeeded value)? succeeded,
+    TResult? Function(Data value)? data,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -199,28 +212,28 @@ abstract class Loading implements SettingsPrivacyState {
 }
 
 /// @nodoc
-abstract class $ApiErrorCopyWith<$Res> {
-  factory $ApiErrorCopyWith(ApiError value, $Res Function(ApiError) then) =
-      _$ApiErrorCopyWithImpl<$Res>;
+abstract class _$$ApiErrorCopyWith<$Res> {
+  factory _$$ApiErrorCopyWith(
+          _$ApiError value, $Res Function(_$ApiError) then) =
+      __$$ApiErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class _$ApiErrorCopyWithImpl<$Res>
-    extends _$SettingsPrivacyStateCopyWithImpl<$Res>
-    implements $ApiErrorCopyWith<$Res> {
-  _$ApiErrorCopyWithImpl(ApiError _value, $Res Function(ApiError) _then)
-      : super(_value, (v) => _then(v as ApiError));
+class __$$ApiErrorCopyWithImpl<$Res>
+    extends _$SettingsPrivacyStateCopyWithImpl<$Res, _$ApiError>
+    implements _$$ApiErrorCopyWith<$Res> {
+  __$$ApiErrorCopyWithImpl(_$ApiError _value, $Res Function(_$ApiError) _then)
+      : super(_value, _then);
 
-  @override
-  ApiError get _value => super._value as ApiError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(ApiError(
-      error == freezed
+    return _then(_$ApiError(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -229,6 +242,7 @@ class _$ApiErrorCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ApiError implements ApiError {
   const _$ApiError(this.error);
 
@@ -243,19 +257,19 @@ class _$ApiError implements ApiError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ApiError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$ApiError &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $ApiErrorCopyWith<ApiError> get copyWith =>
-      _$ApiErrorCopyWithImpl<ApiError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
+      __$$ApiErrorCopyWithImpl<_$ApiError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -267,6 +281,18 @@ class _$ApiError implements ApiError {
     required TResult Function(UserConsent data) data,
   }) {
     return apiError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function()? initial,
+    TResult? Function()? succeeded,
+    TResult? Function(UserConsent data)? data,
+  }) {
+    return apiError?.call(error);
   }
 
   @override
@@ -299,6 +325,18 @@ class _$ApiError implements ApiError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Succeeded value)? succeeded,
+    TResult? Function(Data value)? data,
+  }) {
+    return apiError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -315,32 +353,30 @@ class _$ApiError implements ApiError {
 }
 
 abstract class ApiError implements SettingsPrivacyState {
-  const factory ApiError(Exception error) = _$ApiError;
+  const factory ApiError(final Exception error) = _$ApiError;
 
-  Exception get error => throw _privateConstructorUsedError;
+  Exception get error;
   @JsonKey(ignore: true)
-  $ApiErrorCopyWith<ApiError> get copyWith =>
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res>
-    extends _$SettingsPrivacyStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$SettingsPrivacyStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -351,7 +387,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -367,6 +404,18 @@ class _$Initial implements Initial {
     required TResult Function(UserConsent data) data,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function()? initial,
+    TResult? Function()? succeeded,
+    TResult? Function(UserConsent data)? data,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -399,6 +448,18 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Succeeded value)? succeeded,
+    TResult? Function(Data value)? data,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -419,23 +480,23 @@ abstract class Initial implements SettingsPrivacyState {
 }
 
 /// @nodoc
-abstract class $SucceededCopyWith<$Res> {
-  factory $SucceededCopyWith(Succeeded value, $Res Function(Succeeded) then) =
-      _$SucceededCopyWithImpl<$Res>;
+abstract class _$$SucceededCopyWith<$Res> {
+  factory _$$SucceededCopyWith(
+          _$Succeeded value, $Res Function(_$Succeeded) then) =
+      __$$SucceededCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SucceededCopyWithImpl<$Res>
-    extends _$SettingsPrivacyStateCopyWithImpl<$Res>
-    implements $SucceededCopyWith<$Res> {
-  _$SucceededCopyWithImpl(Succeeded _value, $Res Function(Succeeded) _then)
-      : super(_value, (v) => _then(v as Succeeded));
-
-  @override
-  Succeeded get _value => super._value as Succeeded;
+class __$$SucceededCopyWithImpl<$Res>
+    extends _$SettingsPrivacyStateCopyWithImpl<$Res, _$Succeeded>
+    implements _$$SucceededCopyWith<$Res> {
+  __$$SucceededCopyWithImpl(
+      _$Succeeded _value, $Res Function(_$Succeeded) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Succeeded implements Succeeded {
   const _$Succeeded();
 
@@ -446,7 +507,8 @@ class _$Succeeded implements Succeeded {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Succeeded);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Succeeded);
   }
 
   @override
@@ -462,6 +524,18 @@ class _$Succeeded implements Succeeded {
     required TResult Function(UserConsent data) data,
   }) {
     return succeeded();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function()? initial,
+    TResult? Function()? succeeded,
+    TResult? Function(UserConsent data)? data,
+  }) {
+    return succeeded?.call();
   }
 
   @override
@@ -494,6 +568,18 @@ class _$Succeeded implements Succeeded {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Succeeded value)? succeeded,
+    TResult? Function(Data value)? data,
+  }) {
+    return succeeded?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -514,27 +600,27 @@ abstract class Succeeded implements SettingsPrivacyState {
 }
 
 /// @nodoc
-abstract class $DataCopyWith<$Res> {
-  factory $DataCopyWith(Data value, $Res Function(Data) then) =
-      _$DataCopyWithImpl<$Res>;
+abstract class _$$DataCopyWith<$Res> {
+  factory _$$DataCopyWith(_$Data value, $Res Function(_$Data) then) =
+      __$$DataCopyWithImpl<$Res>;
+  @useResult
   $Res call({UserConsent data});
 }
 
 /// @nodoc
-class _$DataCopyWithImpl<$Res> extends _$SettingsPrivacyStateCopyWithImpl<$Res>
-    implements $DataCopyWith<$Res> {
-  _$DataCopyWithImpl(Data _value, $Res Function(Data) _then)
-      : super(_value, (v) => _then(v as Data));
+class __$$DataCopyWithImpl<$Res>
+    extends _$SettingsPrivacyStateCopyWithImpl<$Res, _$Data>
+    implements _$$DataCopyWith<$Res> {
+  __$$DataCopyWithImpl(_$Data _value, $Res Function(_$Data) _then)
+      : super(_value, _then);
 
-  @override
-  Data get _value => super._value as Data;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? data = freezed,
+    Object? data = null,
   }) {
-    return _then(Data(
-      data == freezed
+    return _then(_$Data(
+      null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as UserConsent,
@@ -543,6 +629,7 @@ class _$DataCopyWithImpl<$Res> extends _$SettingsPrivacyStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Data implements Data {
   const _$Data(this.data);
 
@@ -557,19 +644,19 @@ class _$Data implements Data {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Data &&
-            (identical(other.data, data) ||
-                const DeepCollectionEquality().equals(other.data, data)));
+        (other.runtimeType == runtimeType &&
+            other is _$Data &&
+            (identical(other.data, data) || other.data == data));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(data);
+  int get hashCode => Object.hash(runtimeType, data);
 
   @JsonKey(ignore: true)
   @override
-  $DataCopyWith<Data> get copyWith =>
-      _$DataCopyWithImpl<Data>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DataCopyWith<_$Data> get copyWith =>
+      __$$DataCopyWithImpl<_$Data>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -581,6 +668,18 @@ class _$Data implements Data {
     required TResult Function(UserConsent data) data,
   }) {
     return data(this.data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function()? initial,
+    TResult? Function()? succeeded,
+    TResult? Function(UserConsent data)? data,
+  }) {
+    return data?.call(this.data);
   }
 
   @override
@@ -613,6 +712,18 @@ class _$Data implements Data {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Succeeded value)? succeeded,
+    TResult? Function(Data value)? data,
+  }) {
+    return data?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Loading value)? loading,
     TResult Function(ApiError value)? apiError,
@@ -629,9 +740,9 @@ class _$Data implements Data {
 }
 
 abstract class Data implements SettingsPrivacyState {
-  const factory Data(UserConsent data) = _$Data;
+  const factory Data(final UserConsent data) = _$Data;
 
-  UserConsent get data => throw _privateConstructorUsedError;
+  UserConsent get data;
   @JsonKey(ignore: true)
-  $DataCopyWith<Data> get copyWith => throw _privateConstructorUsedError;
+  _$$DataCopyWith<_$Data> get copyWith => throw _privateConstructorUsedError;
 }

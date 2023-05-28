@@ -11,10 +11,10 @@ abstract class ProfileCurrentUserState {
 @freezed
 @immutable
 class ProfileState with _$ProfileState {
-  @Implements(ProfileCurrentUserState)
+  @Implements()
   const factory ProfileState.initial({required CurrentUser user}) = Initial;
 
-  @Implements(ProfileCurrentUserState)
+  @Implements()
   const factory ProfileState.user({required CurrentUser user}) = User;
 
   const factory ProfileState.loading() = Loading;

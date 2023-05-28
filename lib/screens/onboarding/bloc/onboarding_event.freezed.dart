@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'onboarding_event.dart';
 
@@ -10,70 +12,7 @@ part of 'onboarding_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$OnboardingEventTearOff {
-  const _$OnboardingEventTearOff();
-
-  NameEntered nameEntered({required String? name}) {
-    return NameEntered(
-      name: name,
-    );
-  }
-
-  BirthDataEntered birthDataEntered(
-      {required DateTime? birthDate,
-      required TimeOfDay? birthTime,
-      required PlacesDetails? birthLocation}) {
-    return BirthDataEntered(
-      birthDate: birthDate,
-      birthTime: birthTime,
-      birthLocation: birthLocation,
-    );
-  }
-
-  GenderEntered genderEntered(
-      {required Gender? gender, required Gender? interestedIn}) {
-    return GenderEntered(
-      gender: gender,
-      interestedIn: interestedIn,
-    );
-  }
-
-  PhotoAdd photoAdd({required File? file}) {
-    return PhotoAdd(
-      file: file,
-    );
-  }
-
-  PhotoDelete photoDelete({required int? index}) {
-    return PhotoDelete(
-      index: index,
-    );
-  }
-
-  DescriptionEntered descriptionEntered({required String? description}) {
-    return DescriptionEntered(
-      description: description,
-    );
-  }
-
-  LocationEntered locationEntered(
-      {required double? lat, required double? lon}) {
-    return LocationEntered(
-      lat: lat,
-      lon: lon,
-    );
-  }
-
-  Finished finished() {
-    return const Finished();
-  }
-}
-
-/// @nodoc
-const $OnboardingEvent = _$OnboardingEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$OnboardingEvent {
@@ -90,6 +29,20 @@ mixin _$OnboardingEvent {
     required TResult Function(String? description) descriptionEntered,
     required TResult Function(double? lat, double? lon) locationEntered,
     required TResult Function() finished,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -120,6 +73,18 @@ mixin _$OnboardingEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -138,44 +103,44 @@ mixin _$OnboardingEvent {
 abstract class $OnboardingEventCopyWith<$Res> {
   factory $OnboardingEventCopyWith(
           OnboardingEvent value, $Res Function(OnboardingEvent) then) =
-      _$OnboardingEventCopyWithImpl<$Res>;
+      _$OnboardingEventCopyWithImpl<$Res, OnboardingEvent>;
 }
 
 /// @nodoc
-class _$OnboardingEventCopyWithImpl<$Res>
+class _$OnboardingEventCopyWithImpl<$Res, $Val extends OnboardingEvent>
     implements $OnboardingEventCopyWith<$Res> {
   _$OnboardingEventCopyWithImpl(this._value, this._then);
 
-  final OnboardingEvent _value;
   // ignore: unused_field
-  final $Res Function(OnboardingEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $NameEnteredCopyWith<$Res> {
-  factory $NameEnteredCopyWith(
-          NameEntered value, $Res Function(NameEntered) then) =
-      _$NameEnteredCopyWithImpl<$Res>;
+abstract class _$$NameEnteredCopyWith<$Res> {
+  factory _$$NameEnteredCopyWith(
+          _$NameEntered value, $Res Function(_$NameEntered) then) =
+      __$$NameEnteredCopyWithImpl<$Res>;
+  @useResult
   $Res call({String? name});
 }
 
 /// @nodoc
-class _$NameEnteredCopyWithImpl<$Res>
-    extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $NameEnteredCopyWith<$Res> {
-  _$NameEnteredCopyWithImpl(
-      NameEntered _value, $Res Function(NameEntered) _then)
-      : super(_value, (v) => _then(v as NameEntered));
+class __$$NameEnteredCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$NameEntered>
+    implements _$$NameEnteredCopyWith<$Res> {
+  __$$NameEnteredCopyWithImpl(
+      _$NameEntered _value, $Res Function(_$NameEntered) _then)
+      : super(_value, _then);
 
-  @override
-  NameEntered get _value => super._value as NameEntered;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? name = freezed,
   }) {
-    return _then(NameEntered(
-      name: name == freezed
+    return _then(_$NameEntered(
+      name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -184,6 +149,7 @@ class _$NameEnteredCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$NameEntered implements NameEntered {
   const _$NameEntered({required this.name});
 
@@ -198,19 +164,19 @@ class _$NameEntered implements NameEntered {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is NameEntered &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)));
+        (other.runtimeType == runtimeType &&
+            other is _$NameEntered &&
+            (identical(other.name, name) || other.name == name));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(name);
+  int get hashCode => Object.hash(runtimeType, name);
 
   @JsonKey(ignore: true)
   @override
-  $NameEnteredCopyWith<NameEntered> get copyWith =>
-      _$NameEnteredCopyWithImpl<NameEntered>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NameEnteredCopyWith<_$NameEntered> get copyWith =>
+      __$$NameEnteredCopyWithImpl<_$NameEntered>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -228,6 +194,23 @@ class _$NameEntered implements NameEntered {
     required TResult Function() finished,
   }) {
     return nameEntered(name);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return nameEntered?.call(name);
   }
 
   @override
@@ -268,6 +251,21 @@ class _$NameEntered implements NameEntered {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return nameEntered?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -287,19 +285,20 @@ class _$NameEntered implements NameEntered {
 }
 
 abstract class NameEntered implements OnboardingEvent {
-  const factory NameEntered({required String? name}) = _$NameEntered;
+  const factory NameEntered({required final String? name}) = _$NameEntered;
 
-  String? get name => throw _privateConstructorUsedError;
+  String? get name;
   @JsonKey(ignore: true)
-  $NameEnteredCopyWith<NameEntered> get copyWith =>
+  _$$NameEnteredCopyWith<_$NameEntered> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $BirthDataEnteredCopyWith<$Res> {
-  factory $BirthDataEnteredCopyWith(
-          BirthDataEntered value, $Res Function(BirthDataEntered) then) =
-      _$BirthDataEnteredCopyWithImpl<$Res>;
+abstract class _$$BirthDataEnteredCopyWith<$Res> {
+  factory _$$BirthDataEnteredCopyWith(
+          _$BirthDataEntered value, $Res Function(_$BirthDataEntered) then) =
+      __$$BirthDataEnteredCopyWithImpl<$Res>;
+  @useResult
   $Res call(
       {DateTime? birthDate,
       TimeOfDay? birthTime,
@@ -307,32 +306,30 @@ abstract class $BirthDataEnteredCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BirthDataEnteredCopyWithImpl<$Res>
-    extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $BirthDataEnteredCopyWith<$Res> {
-  _$BirthDataEnteredCopyWithImpl(
-      BirthDataEntered _value, $Res Function(BirthDataEntered) _then)
-      : super(_value, (v) => _then(v as BirthDataEntered));
+class __$$BirthDataEnteredCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$BirthDataEntered>
+    implements _$$BirthDataEnteredCopyWith<$Res> {
+  __$$BirthDataEnteredCopyWithImpl(
+      _$BirthDataEntered _value, $Res Function(_$BirthDataEntered) _then)
+      : super(_value, _then);
 
-  @override
-  BirthDataEntered get _value => super._value as BirthDataEntered;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? birthDate = freezed,
     Object? birthTime = freezed,
     Object? birthLocation = freezed,
   }) {
-    return _then(BirthDataEntered(
-      birthDate: birthDate == freezed
+    return _then(_$BirthDataEntered(
+      birthDate: freezed == birthDate
           ? _value.birthDate
           : birthDate // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      birthTime: birthTime == freezed
+      birthTime: freezed == birthTime
           ? _value.birthTime
           : birthTime // ignore: cast_nullable_to_non_nullable
               as TimeOfDay?,
-      birthLocation: birthLocation == freezed
+      birthLocation: freezed == birthLocation
           ? _value.birthLocation
           : birthLocation // ignore: cast_nullable_to_non_nullable
               as PlacesDetails?,
@@ -341,6 +338,7 @@ class _$BirthDataEnteredCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$BirthDataEntered implements BirthDataEntered {
   const _$BirthDataEntered(
       {required this.birthDate,
@@ -362,29 +360,25 @@ class _$BirthDataEntered implements BirthDataEntered {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is BirthDataEntered &&
+        (other.runtimeType == runtimeType &&
+            other is _$BirthDataEntered &&
             (identical(other.birthDate, birthDate) ||
-                const DeepCollectionEquality()
-                    .equals(other.birthDate, birthDate)) &&
+                other.birthDate == birthDate) &&
             (identical(other.birthTime, birthTime) ||
-                const DeepCollectionEquality()
-                    .equals(other.birthTime, birthTime)) &&
+                other.birthTime == birthTime) &&
             (identical(other.birthLocation, birthLocation) ||
-                const DeepCollectionEquality()
-                    .equals(other.birthLocation, birthLocation)));
+                other.birthLocation == birthLocation));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(birthDate) ^
-      const DeepCollectionEquality().hash(birthTime) ^
-      const DeepCollectionEquality().hash(birthLocation);
+      Object.hash(runtimeType, birthDate, birthTime, birthLocation);
 
   @JsonKey(ignore: true)
   @override
-  $BirthDataEnteredCopyWith<BirthDataEntered> get copyWith =>
-      _$BirthDataEnteredCopyWithImpl<BirthDataEntered>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$BirthDataEnteredCopyWith<_$BirthDataEntered> get copyWith =>
+      __$$BirthDataEnteredCopyWithImpl<_$BirthDataEntered>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -402,6 +396,23 @@ class _$BirthDataEntered implements BirthDataEntered {
     required TResult Function() finished,
   }) {
     return birthDataEntered(birthDate, birthTime, birthLocation);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return birthDataEntered?.call(birthDate, birthTime, birthLocation);
   }
 
   @override
@@ -442,6 +453,21 @@ class _$BirthDataEntered implements BirthDataEntered {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return birthDataEntered?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -462,48 +488,47 @@ class _$BirthDataEntered implements BirthDataEntered {
 
 abstract class BirthDataEntered implements OnboardingEvent {
   const factory BirthDataEntered(
-      {required DateTime? birthDate,
-      required TimeOfDay? birthTime,
-      required PlacesDetails? birthLocation}) = _$BirthDataEntered;
+      {required final DateTime? birthDate,
+      required final TimeOfDay? birthTime,
+      required final PlacesDetails? birthLocation}) = _$BirthDataEntered;
 
-  DateTime? get birthDate => throw _privateConstructorUsedError;
-  TimeOfDay? get birthTime => throw _privateConstructorUsedError;
-  PlacesDetails? get birthLocation => throw _privateConstructorUsedError;
+  DateTime? get birthDate;
+  TimeOfDay? get birthTime;
+  PlacesDetails? get birthLocation;
   @JsonKey(ignore: true)
-  $BirthDataEnteredCopyWith<BirthDataEntered> get copyWith =>
+  _$$BirthDataEnteredCopyWith<_$BirthDataEntered> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $GenderEnteredCopyWith<$Res> {
-  factory $GenderEnteredCopyWith(
-          GenderEntered value, $Res Function(GenderEntered) then) =
-      _$GenderEnteredCopyWithImpl<$Res>;
+abstract class _$$GenderEnteredCopyWith<$Res> {
+  factory _$$GenderEnteredCopyWith(
+          _$GenderEntered value, $Res Function(_$GenderEntered) then) =
+      __$$GenderEnteredCopyWithImpl<$Res>;
+  @useResult
   $Res call({Gender? gender, Gender? interestedIn});
 }
 
 /// @nodoc
-class _$GenderEnteredCopyWithImpl<$Res>
-    extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $GenderEnteredCopyWith<$Res> {
-  _$GenderEnteredCopyWithImpl(
-      GenderEntered _value, $Res Function(GenderEntered) _then)
-      : super(_value, (v) => _then(v as GenderEntered));
+class __$$GenderEnteredCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$GenderEntered>
+    implements _$$GenderEnteredCopyWith<$Res> {
+  __$$GenderEnteredCopyWithImpl(
+      _$GenderEntered _value, $Res Function(_$GenderEntered) _then)
+      : super(_value, _then);
 
-  @override
-  GenderEntered get _value => super._value as GenderEntered;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? gender = freezed,
     Object? interestedIn = freezed,
   }) {
-    return _then(GenderEntered(
-      gender: gender == freezed
+    return _then(_$GenderEntered(
+      gender: freezed == gender
           ? _value.gender
           : gender // ignore: cast_nullable_to_non_nullable
               as Gender?,
-      interestedIn: interestedIn == freezed
+      interestedIn: freezed == interestedIn
           ? _value.interestedIn
           : interestedIn // ignore: cast_nullable_to_non_nullable
               as Gender?,
@@ -512,6 +537,7 @@ class _$GenderEnteredCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$GenderEntered implements GenderEntered {
   const _$GenderEntered({required this.gender, required this.interestedIn});
 
@@ -528,24 +554,21 @@ class _$GenderEntered implements GenderEntered {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is GenderEntered &&
-            (identical(other.gender, gender) ||
-                const DeepCollectionEquality().equals(other.gender, gender)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$GenderEntered &&
+            (identical(other.gender, gender) || other.gender == gender) &&
             (identical(other.interestedIn, interestedIn) ||
-                const DeepCollectionEquality()
-                    .equals(other.interestedIn, interestedIn)));
+                other.interestedIn == interestedIn));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(gender) ^
-      const DeepCollectionEquality().hash(interestedIn);
+  int get hashCode => Object.hash(runtimeType, gender, interestedIn);
 
   @JsonKey(ignore: true)
   @override
-  $GenderEnteredCopyWith<GenderEntered> get copyWith =>
-      _$GenderEnteredCopyWithImpl<GenderEntered>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GenderEnteredCopyWith<_$GenderEntered> get copyWith =>
+      __$$GenderEnteredCopyWithImpl<_$GenderEntered>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -563,6 +586,23 @@ class _$GenderEntered implements GenderEntered {
     required TResult Function() finished,
   }) {
     return genderEntered(gender, interestedIn);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return genderEntered?.call(gender, interestedIn);
   }
 
   @override
@@ -603,6 +643,21 @@ class _$GenderEntered implements GenderEntered {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return genderEntered?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -623,38 +678,39 @@ class _$GenderEntered implements GenderEntered {
 
 abstract class GenderEntered implements OnboardingEvent {
   const factory GenderEntered(
-      {required Gender? gender,
-      required Gender? interestedIn}) = _$GenderEntered;
+      {required final Gender? gender,
+      required final Gender? interestedIn}) = _$GenderEntered;
 
-  Gender? get gender => throw _privateConstructorUsedError;
-  Gender? get interestedIn => throw _privateConstructorUsedError;
+  Gender? get gender;
+  Gender? get interestedIn;
   @JsonKey(ignore: true)
-  $GenderEnteredCopyWith<GenderEntered> get copyWith =>
+  _$$GenderEnteredCopyWith<_$GenderEntered> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PhotoAddCopyWith<$Res> {
-  factory $PhotoAddCopyWith(PhotoAdd value, $Res Function(PhotoAdd) then) =
-      _$PhotoAddCopyWithImpl<$Res>;
+abstract class _$$PhotoAddCopyWith<$Res> {
+  factory _$$PhotoAddCopyWith(
+          _$PhotoAdd value, $Res Function(_$PhotoAdd) then) =
+      __$$PhotoAddCopyWithImpl<$Res>;
+  @useResult
   $Res call({File? file});
 }
 
 /// @nodoc
-class _$PhotoAddCopyWithImpl<$Res> extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $PhotoAddCopyWith<$Res> {
-  _$PhotoAddCopyWithImpl(PhotoAdd _value, $Res Function(PhotoAdd) _then)
-      : super(_value, (v) => _then(v as PhotoAdd));
+class __$$PhotoAddCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$PhotoAdd>
+    implements _$$PhotoAddCopyWith<$Res> {
+  __$$PhotoAddCopyWithImpl(_$PhotoAdd _value, $Res Function(_$PhotoAdd) _then)
+      : super(_value, _then);
 
-  @override
-  PhotoAdd get _value => super._value as PhotoAdd;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? file = freezed,
   }) {
-    return _then(PhotoAdd(
-      file: file == freezed
+    return _then(_$PhotoAdd(
+      file: freezed == file
           ? _value.file
           : file // ignore: cast_nullable_to_non_nullable
               as File?,
@@ -663,6 +719,7 @@ class _$PhotoAddCopyWithImpl<$Res> extends _$OnboardingEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PhotoAdd implements PhotoAdd {
   const _$PhotoAdd({required this.file});
 
@@ -677,19 +734,19 @@ class _$PhotoAdd implements PhotoAdd {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PhotoAdd &&
-            (identical(other.file, file) ||
-                const DeepCollectionEquality().equals(other.file, file)));
+        (other.runtimeType == runtimeType &&
+            other is _$PhotoAdd &&
+            (identical(other.file, file) || other.file == file));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(file);
+  int get hashCode => Object.hash(runtimeType, file);
 
   @JsonKey(ignore: true)
   @override
-  $PhotoAddCopyWith<PhotoAdd> get copyWith =>
-      _$PhotoAddCopyWithImpl<PhotoAdd>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoAddCopyWith<_$PhotoAdd> get copyWith =>
+      __$$PhotoAddCopyWithImpl<_$PhotoAdd>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -707,6 +764,23 @@ class _$PhotoAdd implements PhotoAdd {
     required TResult Function() finished,
   }) {
     return photoAdd(file);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return photoAdd?.call(file);
   }
 
   @override
@@ -747,6 +821,21 @@ class _$PhotoAdd implements PhotoAdd {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return photoAdd?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -766,39 +855,38 @@ class _$PhotoAdd implements PhotoAdd {
 }
 
 abstract class PhotoAdd implements OnboardingEvent {
-  const factory PhotoAdd({required File? file}) = _$PhotoAdd;
+  const factory PhotoAdd({required final File? file}) = _$PhotoAdd;
 
-  File? get file => throw _privateConstructorUsedError;
+  File? get file;
   @JsonKey(ignore: true)
-  $PhotoAddCopyWith<PhotoAdd> get copyWith =>
+  _$$PhotoAddCopyWith<_$PhotoAdd> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PhotoDeleteCopyWith<$Res> {
-  factory $PhotoDeleteCopyWith(
-          PhotoDelete value, $Res Function(PhotoDelete) then) =
-      _$PhotoDeleteCopyWithImpl<$Res>;
+abstract class _$$PhotoDeleteCopyWith<$Res> {
+  factory _$$PhotoDeleteCopyWith(
+          _$PhotoDelete value, $Res Function(_$PhotoDelete) then) =
+      __$$PhotoDeleteCopyWithImpl<$Res>;
+  @useResult
   $Res call({int? index});
 }
 
 /// @nodoc
-class _$PhotoDeleteCopyWithImpl<$Res>
-    extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $PhotoDeleteCopyWith<$Res> {
-  _$PhotoDeleteCopyWithImpl(
-      PhotoDelete _value, $Res Function(PhotoDelete) _then)
-      : super(_value, (v) => _then(v as PhotoDelete));
+class __$$PhotoDeleteCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$PhotoDelete>
+    implements _$$PhotoDeleteCopyWith<$Res> {
+  __$$PhotoDeleteCopyWithImpl(
+      _$PhotoDelete _value, $Res Function(_$PhotoDelete) _then)
+      : super(_value, _then);
 
-  @override
-  PhotoDelete get _value => super._value as PhotoDelete;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? index = freezed,
   }) {
-    return _then(PhotoDelete(
-      index: index == freezed
+    return _then(_$PhotoDelete(
+      index: freezed == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -807,6 +895,7 @@ class _$PhotoDeleteCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PhotoDelete implements PhotoDelete {
   const _$PhotoDelete({required this.index});
 
@@ -821,19 +910,19 @@ class _$PhotoDelete implements PhotoDelete {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PhotoDelete &&
-            (identical(other.index, index) ||
-                const DeepCollectionEquality().equals(other.index, index)));
+        (other.runtimeType == runtimeType &&
+            other is _$PhotoDelete &&
+            (identical(other.index, index) || other.index == index));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(index);
+  int get hashCode => Object.hash(runtimeType, index);
 
   @JsonKey(ignore: true)
   @override
-  $PhotoDeleteCopyWith<PhotoDelete> get copyWith =>
-      _$PhotoDeleteCopyWithImpl<PhotoDelete>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoDeleteCopyWith<_$PhotoDelete> get copyWith =>
+      __$$PhotoDeleteCopyWithImpl<_$PhotoDelete>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -851,6 +940,23 @@ class _$PhotoDelete implements PhotoDelete {
     required TResult Function() finished,
   }) {
     return photoDelete(index);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return photoDelete?.call(index);
   }
 
   @override
@@ -891,6 +997,21 @@ class _$PhotoDelete implements PhotoDelete {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return photoDelete?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -910,39 +1031,38 @@ class _$PhotoDelete implements PhotoDelete {
 }
 
 abstract class PhotoDelete implements OnboardingEvent {
-  const factory PhotoDelete({required int? index}) = _$PhotoDelete;
+  const factory PhotoDelete({required final int? index}) = _$PhotoDelete;
 
-  int? get index => throw _privateConstructorUsedError;
+  int? get index;
   @JsonKey(ignore: true)
-  $PhotoDeleteCopyWith<PhotoDelete> get copyWith =>
+  _$$PhotoDeleteCopyWith<_$PhotoDelete> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DescriptionEnteredCopyWith<$Res> {
-  factory $DescriptionEnteredCopyWith(
-          DescriptionEntered value, $Res Function(DescriptionEntered) then) =
-      _$DescriptionEnteredCopyWithImpl<$Res>;
+abstract class _$$DescriptionEnteredCopyWith<$Res> {
+  factory _$$DescriptionEnteredCopyWith(_$DescriptionEntered value,
+          $Res Function(_$DescriptionEntered) then) =
+      __$$DescriptionEnteredCopyWithImpl<$Res>;
+  @useResult
   $Res call({String? description});
 }
 
 /// @nodoc
-class _$DescriptionEnteredCopyWithImpl<$Res>
-    extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $DescriptionEnteredCopyWith<$Res> {
-  _$DescriptionEnteredCopyWithImpl(
-      DescriptionEntered _value, $Res Function(DescriptionEntered) _then)
-      : super(_value, (v) => _then(v as DescriptionEntered));
+class __$$DescriptionEnteredCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$DescriptionEntered>
+    implements _$$DescriptionEnteredCopyWith<$Res> {
+  __$$DescriptionEnteredCopyWithImpl(
+      _$DescriptionEntered _value, $Res Function(_$DescriptionEntered) _then)
+      : super(_value, _then);
 
-  @override
-  DescriptionEntered get _value => super._value as DescriptionEntered;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? description = freezed,
   }) {
-    return _then(DescriptionEntered(
-      description: description == freezed
+    return _then(_$DescriptionEntered(
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -951,6 +1071,7 @@ class _$DescriptionEnteredCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$DescriptionEntered implements DescriptionEntered {
   const _$DescriptionEntered({required this.description});
 
@@ -965,20 +1086,21 @@ class _$DescriptionEntered implements DescriptionEntered {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is DescriptionEntered &&
+        (other.runtimeType == runtimeType &&
+            other is _$DescriptionEntered &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality()
-                    .equals(other.description, description)));
+                other.description == description));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(description);
+  int get hashCode => Object.hash(runtimeType, description);
 
   @JsonKey(ignore: true)
   @override
-  $DescriptionEnteredCopyWith<DescriptionEntered> get copyWith =>
-      _$DescriptionEnteredCopyWithImpl<DescriptionEntered>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DescriptionEnteredCopyWith<_$DescriptionEntered> get copyWith =>
+      __$$DescriptionEnteredCopyWithImpl<_$DescriptionEntered>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -996,6 +1118,23 @@ class _$DescriptionEntered implements DescriptionEntered {
     required TResult Function() finished,
   }) {
     return descriptionEntered(description);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return descriptionEntered?.call(description);
   }
 
   @override
@@ -1036,6 +1175,21 @@ class _$DescriptionEntered implements DescriptionEntered {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return descriptionEntered?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -1055,45 +1209,44 @@ class _$DescriptionEntered implements DescriptionEntered {
 }
 
 abstract class DescriptionEntered implements OnboardingEvent {
-  const factory DescriptionEntered({required String? description}) =
+  const factory DescriptionEntered({required final String? description}) =
       _$DescriptionEntered;
 
-  String? get description => throw _privateConstructorUsedError;
+  String? get description;
   @JsonKey(ignore: true)
-  $DescriptionEnteredCopyWith<DescriptionEntered> get copyWith =>
+  _$$DescriptionEnteredCopyWith<_$DescriptionEntered> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LocationEnteredCopyWith<$Res> {
-  factory $LocationEnteredCopyWith(
-          LocationEntered value, $Res Function(LocationEntered) then) =
-      _$LocationEnteredCopyWithImpl<$Res>;
+abstract class _$$LocationEnteredCopyWith<$Res> {
+  factory _$$LocationEnteredCopyWith(
+          _$LocationEntered value, $Res Function(_$LocationEntered) then) =
+      __$$LocationEnteredCopyWithImpl<$Res>;
+  @useResult
   $Res call({double? lat, double? lon});
 }
 
 /// @nodoc
-class _$LocationEnteredCopyWithImpl<$Res>
-    extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $LocationEnteredCopyWith<$Res> {
-  _$LocationEnteredCopyWithImpl(
-      LocationEntered _value, $Res Function(LocationEntered) _then)
-      : super(_value, (v) => _then(v as LocationEntered));
+class __$$LocationEnteredCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$LocationEntered>
+    implements _$$LocationEnteredCopyWith<$Res> {
+  __$$LocationEnteredCopyWithImpl(
+      _$LocationEntered _value, $Res Function(_$LocationEntered) _then)
+      : super(_value, _then);
 
-  @override
-  LocationEntered get _value => super._value as LocationEntered;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? lat = freezed,
     Object? lon = freezed,
   }) {
-    return _then(LocationEntered(
-      lat: lat == freezed
+    return _then(_$LocationEntered(
+      lat: freezed == lat
           ? _value.lat
           : lat // ignore: cast_nullable_to_non_nullable
               as double?,
-      lon: lon == freezed
+      lon: freezed == lon
           ? _value.lon
           : lon // ignore: cast_nullable_to_non_nullable
               as double?,
@@ -1102,6 +1255,7 @@ class _$LocationEnteredCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$LocationEntered implements LocationEntered {
   const _$LocationEntered({required this.lat, required this.lon});
 
@@ -1118,23 +1272,20 @@ class _$LocationEntered implements LocationEntered {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is LocationEntered &&
-            (identical(other.lat, lat) ||
-                const DeepCollectionEquality().equals(other.lat, lat)) &&
-            (identical(other.lon, lon) ||
-                const DeepCollectionEquality().equals(other.lon, lon)));
+        (other.runtimeType == runtimeType &&
+            other is _$LocationEntered &&
+            (identical(other.lat, lat) || other.lat == lat) &&
+            (identical(other.lon, lon) || other.lon == lon));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(lat) ^
-      const DeepCollectionEquality().hash(lon);
+  int get hashCode => Object.hash(runtimeType, lat, lon);
 
   @JsonKey(ignore: true)
   @override
-  $LocationEnteredCopyWith<LocationEntered> get copyWith =>
-      _$LocationEnteredCopyWithImpl<LocationEntered>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LocationEnteredCopyWith<_$LocationEntered> get copyWith =>
+      __$$LocationEnteredCopyWithImpl<_$LocationEntered>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1152,6 +1303,23 @@ class _$LocationEntered implements LocationEntered {
     required TResult Function() finished,
   }) {
     return locationEntered(lat, lon);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return locationEntered?.call(lat, lon);
   }
 
   @override
@@ -1192,6 +1360,21 @@ class _$LocationEntered implements LocationEntered {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return locationEntered?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NameEntered value)? nameEntered,
     TResult Function(BirthDataEntered value)? birthDataEntered,
@@ -1211,33 +1394,34 @@ class _$LocationEntered implements LocationEntered {
 }
 
 abstract class LocationEntered implements OnboardingEvent {
-  const factory LocationEntered({required double? lat, required double? lon}) =
-      _$LocationEntered;
+  const factory LocationEntered(
+      {required final double? lat,
+      required final double? lon}) = _$LocationEntered;
 
-  double? get lat => throw _privateConstructorUsedError;
-  double? get lon => throw _privateConstructorUsedError;
+  double? get lat;
+  double? get lon;
   @JsonKey(ignore: true)
-  $LocationEnteredCopyWith<LocationEntered> get copyWith =>
+  _$$LocationEnteredCopyWith<_$LocationEntered> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FinishedCopyWith<$Res> {
-  factory $FinishedCopyWith(Finished value, $Res Function(Finished) then) =
-      _$FinishedCopyWithImpl<$Res>;
+abstract class _$$FinishedCopyWith<$Res> {
+  factory _$$FinishedCopyWith(
+          _$Finished value, $Res Function(_$Finished) then) =
+      __$$FinishedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$FinishedCopyWithImpl<$Res> extends _$OnboardingEventCopyWithImpl<$Res>
-    implements $FinishedCopyWith<$Res> {
-  _$FinishedCopyWithImpl(Finished _value, $Res Function(Finished) _then)
-      : super(_value, (v) => _then(v as Finished));
-
-  @override
-  Finished get _value => super._value as Finished;
+class __$$FinishedCopyWithImpl<$Res>
+    extends _$OnboardingEventCopyWithImpl<$Res, _$Finished>
+    implements _$$FinishedCopyWith<$Res> {
+  __$$FinishedCopyWithImpl(_$Finished _value, $Res Function(_$Finished) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Finished implements Finished {
   const _$Finished();
 
@@ -1248,7 +1432,8 @@ class _$Finished implements Finished {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Finished);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Finished);
   }
 
   @override
@@ -1270,6 +1455,23 @@ class _$Finished implements Finished {
     required TResult Function() finished,
   }) {
     return finished();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? name)? nameEntered,
+    TResult? Function(DateTime? birthDate, TimeOfDay? birthTime,
+            PlacesDetails? birthLocation)?
+        birthDataEntered,
+    TResult? Function(Gender? gender, Gender? interestedIn)? genderEntered,
+    TResult? Function(File? file)? photoAdd,
+    TResult? Function(int? index)? photoDelete,
+    TResult? Function(String? description)? descriptionEntered,
+    TResult? Function(double? lat, double? lon)? locationEntered,
+    TResult? Function()? finished,
+  }) {
+    return finished?.call();
   }
 
   @override
@@ -1306,6 +1508,21 @@ class _$Finished implements Finished {
     required TResult Function(Finished value) finished,
   }) {
     return finished(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NameEntered value)? nameEntered,
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+    TResult? Function(GenderEntered value)? genderEntered,
+    TResult? Function(PhotoAdd value)? photoAdd,
+    TResult? Function(PhotoDelete value)? photoDelete,
+    TResult? Function(DescriptionEntered value)? descriptionEntered,
+    TResult? Function(LocationEntered value)? locationEntered,
+    TResult? Function(Finished value)? finished,
+  }) {
+    return finished?.call(this);
   }
 
   @override

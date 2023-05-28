@@ -1,8 +1,10 @@
 // ignore_for_file: no-equal-arguments, no-magic-number
 
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/shims/dart_ui_real.dart';
+// import 'package:flutter_html/shims/dart_ui_real.dart';
 import 'package:twelv/assets/theme/app_theme.dart';
 import 'package:twelv/components/app_paint_pie_chart_circle_border_view.dart';
 import 'package:twelv/components/app_text.dart';
@@ -77,10 +79,7 @@ class AppCompatibilityIndicatorView extends StatelessWidget {
                   height: 10,
                 ),
                 BackdropFilter(
-                  filter: ImageFilter.blur(
-                    sigmaX: blurSigma,
-                    sigmaY: blurSigma,
-                  ),
+                  filter: ImageFilter.blur(sigmaX: blurSigma, sigmaY: blurSigma),
                   child: Text(name,
                       style: context.theme.textTheme.bodyText2!.copyWith(
                           fontWeight: FontWeight.w600, color: context.theme.textDarkColor)),

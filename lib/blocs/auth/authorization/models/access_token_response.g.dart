@@ -6,12 +6,11 @@ part of 'access_token_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-AccessTokenResponse _$AccessTokenResponseFromJson(Map<String, dynamic> json) {
-  return AccessTokenResponse(
-    accessToken: json['access_token'] as String,
-    isOnboarded: json['is_onboarded'] as bool,
-  );
-}
+AccessTokenResponse _$AccessTokenResponseFromJson(Map<String, dynamic> json) =>
+    AccessTokenResponse(
+      accessToken: json['access_token'] as String,
+      isOnboarded: json['is_onboarded'] as bool,
+    );
 
 Map<String, dynamic> _$AccessTokenResponseToJson(
         AccessTokenResponse instance) =>

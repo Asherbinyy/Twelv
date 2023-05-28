@@ -12,15 +12,15 @@ part 'explorer_event.freezed.dart';
 abstract class ExplorerEvent with _$ExplorerEvent {
   const factory ExplorerEvent.fetch() = ExplorerFetchData;
 
-  @Implements(SwipeEvent)
+  @Implements()
   const factory ExplorerEvent.like({required Profile user, required bool delay, bool? useCredit}) =
       Like;
 
-  @Implements(SwipeEvent)
+  @Implements()
   const factory ExplorerEvent.dislike(
       {required Profile user, required bool delay, bool? useCredit}) = Dislike;
 
-  @Implements(SwipeEvent)
+  @Implements()
   const factory ExplorerEvent.superlike(
       {required Profile user, required bool delay, bool? useCredit}) = Superlike;
 

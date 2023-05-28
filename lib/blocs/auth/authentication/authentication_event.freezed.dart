@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'authentication_event.dart';
 
@@ -10,68 +12,7 @@ part of 'authentication_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AuthenticationEventTearOff {
-  const _$AuthenticationEventTearOff();
-
-  ByPhone authenticateByPhone({required String phoneNumber}) {
-    return ByPhone(
-      phoneNumber: phoneNumber,
-    );
-  }
-
-  ByFacebook authenticateByFacebook() {
-    return const ByFacebook();
-  }
-
-  ByApple authenticateByApple() {
-    return const ByApple();
-  }
-
-  VerifyPhoneNum verifyPhoneNum() {
-    return const VerifyPhoneNum();
-  }
-
-  ConfirmSmsCode confirmSmsCode({required String smsCode}) {
-    return ConfirmSmsCode(
-      smsCode: smsCode,
-    );
-  }
-
-  ResendSmsCode resendSmsCode() {
-    return const ResendSmsCode();
-  }
-
-  AuthenticationCompleted authenticationCompleted(
-      {required String authenticationToken}) {
-    return AuthenticationCompleted(
-      authenticationToken: authenticationToken,
-    );
-  }
-
-  SignOut signOut() {
-    return const SignOut();
-  }
-
-  ReAuthenticate reauthenticate() {
-    return const ReAuthenticate();
-  }
-
-  Canceled canceled() {
-    return const Canceled();
-  }
-
-  Error error(AuthenticationError error) {
-    return Error(
-      error,
-    );
-  }
-}
-
-/// @nodoc
-const $AuthenticationEvent = _$AuthenticationEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$AuthenticationEvent {
@@ -89,6 +30,21 @@ mixin _$AuthenticationEvent {
     required TResult Function() reauthenticate,
     required TResult Function() canceled,
     required TResult Function(AuthenticationError error) error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -124,6 +80,21 @@ mixin _$AuthenticationEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -145,42 +116,42 @@ mixin _$AuthenticationEvent {
 abstract class $AuthenticationEventCopyWith<$Res> {
   factory $AuthenticationEventCopyWith(
           AuthenticationEvent value, $Res Function(AuthenticationEvent) then) =
-      _$AuthenticationEventCopyWithImpl<$Res>;
+      _$AuthenticationEventCopyWithImpl<$Res, AuthenticationEvent>;
 }
 
 /// @nodoc
-class _$AuthenticationEventCopyWithImpl<$Res>
+class _$AuthenticationEventCopyWithImpl<$Res, $Val extends AuthenticationEvent>
     implements $AuthenticationEventCopyWith<$Res> {
   _$AuthenticationEventCopyWithImpl(this._value, this._then);
 
-  final AuthenticationEvent _value;
   // ignore: unused_field
-  final $Res Function(AuthenticationEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $ByPhoneCopyWith<$Res> {
-  factory $ByPhoneCopyWith(ByPhone value, $Res Function(ByPhone) then) =
-      _$ByPhoneCopyWithImpl<$Res>;
+abstract class _$$ByPhoneCopyWith<$Res> {
+  factory _$$ByPhoneCopyWith(_$ByPhone value, $Res Function(_$ByPhone) then) =
+      __$$ByPhoneCopyWithImpl<$Res>;
+  @useResult
   $Res call({String phoneNumber});
 }
 
 /// @nodoc
-class _$ByPhoneCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $ByPhoneCopyWith<$Res> {
-  _$ByPhoneCopyWithImpl(ByPhone _value, $Res Function(ByPhone) _then)
-      : super(_value, (v) => _then(v as ByPhone));
+class __$$ByPhoneCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$ByPhone>
+    implements _$$ByPhoneCopyWith<$Res> {
+  __$$ByPhoneCopyWithImpl(_$ByPhone _value, $Res Function(_$ByPhone) _then)
+      : super(_value, _then);
 
-  @override
-  ByPhone get _value => super._value as ByPhone;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? phoneNumber = freezed,
+    Object? phoneNumber = null,
   }) {
-    return _then(ByPhone(
-      phoneNumber: phoneNumber == freezed
+    return _then(_$ByPhone(
+      phoneNumber: null == phoneNumber
           ? _value.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
               as String,
@@ -189,6 +160,7 @@ class _$ByPhoneCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ByPhone implements ByPhone {
   const _$ByPhone({required this.phoneNumber});
 
@@ -203,20 +175,20 @@ class _$ByPhone implements ByPhone {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ByPhone &&
+        (other.runtimeType == runtimeType &&
+            other is _$ByPhone &&
             (identical(other.phoneNumber, phoneNumber) ||
-                const DeepCollectionEquality()
-                    .equals(other.phoneNumber, phoneNumber)));
+                other.phoneNumber == phoneNumber));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(phoneNumber);
+  int get hashCode => Object.hash(runtimeType, phoneNumber);
 
   @JsonKey(ignore: true)
   @override
-  $ByPhoneCopyWith<ByPhone> get copyWith =>
-      _$ByPhoneCopyWithImpl<ByPhone>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ByPhoneCopyWith<_$ByPhone> get copyWith =>
+      __$$ByPhoneCopyWithImpl<_$ByPhone>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -235,6 +207,24 @@ class _$ByPhone implements ByPhone {
     required TResult Function(AuthenticationError error) error,
   }) {
     return authenticateByPhone(phoneNumber);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return authenticateByPhone?.call(phoneNumber);
   }
 
   @override
@@ -280,6 +270,24 @@ class _$ByPhone implements ByPhone {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return authenticateByPhone?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -302,32 +310,32 @@ class _$ByPhone implements ByPhone {
 }
 
 abstract class ByPhone implements AuthenticationEvent {
-  const factory ByPhone({required String phoneNumber}) = _$ByPhone;
+  const factory ByPhone({required final String phoneNumber}) = _$ByPhone;
 
-  String get phoneNumber => throw _privateConstructorUsedError;
+  String get phoneNumber;
   @JsonKey(ignore: true)
-  $ByPhoneCopyWith<ByPhone> get copyWith => throw _privateConstructorUsedError;
+  _$$ByPhoneCopyWith<_$ByPhone> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ByFacebookCopyWith<$Res> {
-  factory $ByFacebookCopyWith(
-          ByFacebook value, $Res Function(ByFacebook) then) =
-      _$ByFacebookCopyWithImpl<$Res>;
+abstract class _$$ByFacebookCopyWith<$Res> {
+  factory _$$ByFacebookCopyWith(
+          _$ByFacebook value, $Res Function(_$ByFacebook) then) =
+      __$$ByFacebookCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ByFacebookCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $ByFacebookCopyWith<$Res> {
-  _$ByFacebookCopyWithImpl(ByFacebook _value, $Res Function(ByFacebook) _then)
-      : super(_value, (v) => _then(v as ByFacebook));
-
-  @override
-  ByFacebook get _value => super._value as ByFacebook;
+class __$$ByFacebookCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$ByFacebook>
+    implements _$$ByFacebookCopyWith<$Res> {
+  __$$ByFacebookCopyWithImpl(
+      _$ByFacebook _value, $Res Function(_$ByFacebook) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$ByFacebook implements ByFacebook {
   const _$ByFacebook();
 
@@ -338,7 +346,8 @@ class _$ByFacebook implements ByFacebook {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is ByFacebook);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ByFacebook);
   }
 
   @override
@@ -361,6 +370,24 @@ class _$ByFacebook implements ByFacebook {
     required TResult Function(AuthenticationError error) error,
   }) {
     return authenticateByFacebook();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return authenticateByFacebook?.call();
   }
 
   @override
@@ -406,6 +433,24 @@ class _$ByFacebook implements ByFacebook {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return authenticateByFacebook?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -432,23 +477,21 @@ abstract class ByFacebook implements AuthenticationEvent {
 }
 
 /// @nodoc
-abstract class $ByAppleCopyWith<$Res> {
-  factory $ByAppleCopyWith(ByApple value, $Res Function(ByApple) then) =
-      _$ByAppleCopyWithImpl<$Res>;
+abstract class _$$ByAppleCopyWith<$Res> {
+  factory _$$ByAppleCopyWith(_$ByApple value, $Res Function(_$ByApple) then) =
+      __$$ByAppleCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ByAppleCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $ByAppleCopyWith<$Res> {
-  _$ByAppleCopyWithImpl(ByApple _value, $Res Function(ByApple) _then)
-      : super(_value, (v) => _then(v as ByApple));
-
-  @override
-  ByApple get _value => super._value as ByApple;
+class __$$ByAppleCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$ByApple>
+    implements _$$ByAppleCopyWith<$Res> {
+  __$$ByAppleCopyWithImpl(_$ByApple _value, $Res Function(_$ByApple) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$ByApple implements ByApple {
   const _$ByApple();
 
@@ -459,7 +502,8 @@ class _$ByApple implements ByApple {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is ByApple);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ByApple);
   }
 
   @override
@@ -482,6 +526,24 @@ class _$ByApple implements ByApple {
     required TResult Function(AuthenticationError error) error,
   }) {
     return authenticateByApple();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return authenticateByApple?.call();
   }
 
   @override
@@ -527,6 +589,24 @@ class _$ByApple implements ByApple {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return authenticateByApple?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -553,25 +633,23 @@ abstract class ByApple implements AuthenticationEvent {
 }
 
 /// @nodoc
-abstract class $VerifyPhoneNumCopyWith<$Res> {
-  factory $VerifyPhoneNumCopyWith(
-          VerifyPhoneNum value, $Res Function(VerifyPhoneNum) then) =
-      _$VerifyPhoneNumCopyWithImpl<$Res>;
+abstract class _$$VerifyPhoneNumCopyWith<$Res> {
+  factory _$$VerifyPhoneNumCopyWith(
+          _$VerifyPhoneNum value, $Res Function(_$VerifyPhoneNum) then) =
+      __$$VerifyPhoneNumCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$VerifyPhoneNumCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $VerifyPhoneNumCopyWith<$Res> {
-  _$VerifyPhoneNumCopyWithImpl(
-      VerifyPhoneNum _value, $Res Function(VerifyPhoneNum) _then)
-      : super(_value, (v) => _then(v as VerifyPhoneNum));
-
-  @override
-  VerifyPhoneNum get _value => super._value as VerifyPhoneNum;
+class __$$VerifyPhoneNumCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$VerifyPhoneNum>
+    implements _$$VerifyPhoneNumCopyWith<$Res> {
+  __$$VerifyPhoneNumCopyWithImpl(
+      _$VerifyPhoneNum _value, $Res Function(_$VerifyPhoneNum) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$VerifyPhoneNum implements VerifyPhoneNum {
   const _$VerifyPhoneNum();
 
@@ -582,7 +660,8 @@ class _$VerifyPhoneNum implements VerifyPhoneNum {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is VerifyPhoneNum);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$VerifyPhoneNum);
   }
 
   @override
@@ -605,6 +684,24 @@ class _$VerifyPhoneNum implements VerifyPhoneNum {
     required TResult Function(AuthenticationError error) error,
   }) {
     return verifyPhoneNum();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return verifyPhoneNum?.call();
   }
 
   @override
@@ -650,6 +747,24 @@ class _$VerifyPhoneNum implements VerifyPhoneNum {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return verifyPhoneNum?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -676,30 +791,29 @@ abstract class VerifyPhoneNum implements AuthenticationEvent {
 }
 
 /// @nodoc
-abstract class $ConfirmSmsCodeCopyWith<$Res> {
-  factory $ConfirmSmsCodeCopyWith(
-          ConfirmSmsCode value, $Res Function(ConfirmSmsCode) then) =
-      _$ConfirmSmsCodeCopyWithImpl<$Res>;
+abstract class _$$ConfirmSmsCodeCopyWith<$Res> {
+  factory _$$ConfirmSmsCodeCopyWith(
+          _$ConfirmSmsCode value, $Res Function(_$ConfirmSmsCode) then) =
+      __$$ConfirmSmsCodeCopyWithImpl<$Res>;
+  @useResult
   $Res call({String smsCode});
 }
 
 /// @nodoc
-class _$ConfirmSmsCodeCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $ConfirmSmsCodeCopyWith<$Res> {
-  _$ConfirmSmsCodeCopyWithImpl(
-      ConfirmSmsCode _value, $Res Function(ConfirmSmsCode) _then)
-      : super(_value, (v) => _then(v as ConfirmSmsCode));
+class __$$ConfirmSmsCodeCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$ConfirmSmsCode>
+    implements _$$ConfirmSmsCodeCopyWith<$Res> {
+  __$$ConfirmSmsCodeCopyWithImpl(
+      _$ConfirmSmsCode _value, $Res Function(_$ConfirmSmsCode) _then)
+      : super(_value, _then);
 
-  @override
-  ConfirmSmsCode get _value => super._value as ConfirmSmsCode;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? smsCode = freezed,
+    Object? smsCode = null,
   }) {
-    return _then(ConfirmSmsCode(
-      smsCode: smsCode == freezed
+    return _then(_$ConfirmSmsCode(
+      smsCode: null == smsCode
           ? _value.smsCode
           : smsCode // ignore: cast_nullable_to_non_nullable
               as String,
@@ -708,6 +822,7 @@ class _$ConfirmSmsCodeCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ConfirmSmsCode implements ConfirmSmsCode {
   const _$ConfirmSmsCode({required this.smsCode});
 
@@ -722,19 +837,19 @@ class _$ConfirmSmsCode implements ConfirmSmsCode {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ConfirmSmsCode &&
-            (identical(other.smsCode, smsCode) ||
-                const DeepCollectionEquality().equals(other.smsCode, smsCode)));
+        (other.runtimeType == runtimeType &&
+            other is _$ConfirmSmsCode &&
+            (identical(other.smsCode, smsCode) || other.smsCode == smsCode));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(smsCode);
+  int get hashCode => Object.hash(runtimeType, smsCode);
 
   @JsonKey(ignore: true)
   @override
-  $ConfirmSmsCodeCopyWith<ConfirmSmsCode> get copyWith =>
-      _$ConfirmSmsCodeCopyWithImpl<ConfirmSmsCode>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ConfirmSmsCodeCopyWith<_$ConfirmSmsCode> get copyWith =>
+      __$$ConfirmSmsCodeCopyWithImpl<_$ConfirmSmsCode>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -753,6 +868,24 @@ class _$ConfirmSmsCode implements ConfirmSmsCode {
     required TResult Function(AuthenticationError error) error,
   }) {
     return confirmSmsCode(smsCode);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return confirmSmsCode?.call(smsCode);
   }
 
   @override
@@ -798,6 +931,24 @@ class _$ConfirmSmsCode implements ConfirmSmsCode {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return confirmSmsCode?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -820,34 +971,33 @@ class _$ConfirmSmsCode implements ConfirmSmsCode {
 }
 
 abstract class ConfirmSmsCode implements AuthenticationEvent {
-  const factory ConfirmSmsCode({required String smsCode}) = _$ConfirmSmsCode;
+  const factory ConfirmSmsCode({required final String smsCode}) =
+      _$ConfirmSmsCode;
 
-  String get smsCode => throw _privateConstructorUsedError;
+  String get smsCode;
   @JsonKey(ignore: true)
-  $ConfirmSmsCodeCopyWith<ConfirmSmsCode> get copyWith =>
+  _$$ConfirmSmsCodeCopyWith<_$ConfirmSmsCode> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ResendSmsCodeCopyWith<$Res> {
-  factory $ResendSmsCodeCopyWith(
-          ResendSmsCode value, $Res Function(ResendSmsCode) then) =
-      _$ResendSmsCodeCopyWithImpl<$Res>;
+abstract class _$$ResendSmsCodeCopyWith<$Res> {
+  factory _$$ResendSmsCodeCopyWith(
+          _$ResendSmsCode value, $Res Function(_$ResendSmsCode) then) =
+      __$$ResendSmsCodeCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ResendSmsCodeCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $ResendSmsCodeCopyWith<$Res> {
-  _$ResendSmsCodeCopyWithImpl(
-      ResendSmsCode _value, $Res Function(ResendSmsCode) _then)
-      : super(_value, (v) => _then(v as ResendSmsCode));
-
-  @override
-  ResendSmsCode get _value => super._value as ResendSmsCode;
+class __$$ResendSmsCodeCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$ResendSmsCode>
+    implements _$$ResendSmsCodeCopyWith<$Res> {
+  __$$ResendSmsCodeCopyWithImpl(
+      _$ResendSmsCode _value, $Res Function(_$ResendSmsCode) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$ResendSmsCode implements ResendSmsCode {
   const _$ResendSmsCode();
 
@@ -858,7 +1008,8 @@ class _$ResendSmsCode implements ResendSmsCode {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is ResendSmsCode);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ResendSmsCode);
   }
 
   @override
@@ -881,6 +1032,24 @@ class _$ResendSmsCode implements ResendSmsCode {
     required TResult Function(AuthenticationError error) error,
   }) {
     return resendSmsCode();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return resendSmsCode?.call();
   }
 
   @override
@@ -926,6 +1095,24 @@ class _$ResendSmsCode implements ResendSmsCode {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return resendSmsCode?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -952,30 +1139,29 @@ abstract class ResendSmsCode implements AuthenticationEvent {
 }
 
 /// @nodoc
-abstract class $AuthenticationCompletedCopyWith<$Res> {
-  factory $AuthenticationCompletedCopyWith(AuthenticationCompleted value,
-          $Res Function(AuthenticationCompleted) then) =
-      _$AuthenticationCompletedCopyWithImpl<$Res>;
+abstract class _$$AuthenticationCompletedCopyWith<$Res> {
+  factory _$$AuthenticationCompletedCopyWith(_$AuthenticationCompleted value,
+          $Res Function(_$AuthenticationCompleted) then) =
+      __$$AuthenticationCompletedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String authenticationToken});
 }
 
 /// @nodoc
-class _$AuthenticationCompletedCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $AuthenticationCompletedCopyWith<$Res> {
-  _$AuthenticationCompletedCopyWithImpl(AuthenticationCompleted _value,
-      $Res Function(AuthenticationCompleted) _then)
-      : super(_value, (v) => _then(v as AuthenticationCompleted));
+class __$$AuthenticationCompletedCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$AuthenticationCompleted>
+    implements _$$AuthenticationCompletedCopyWith<$Res> {
+  __$$AuthenticationCompletedCopyWithImpl(_$AuthenticationCompleted _value,
+      $Res Function(_$AuthenticationCompleted) _then)
+      : super(_value, _then);
 
-  @override
-  AuthenticationCompleted get _value => super._value as AuthenticationCompleted;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? authenticationToken = freezed,
+    Object? authenticationToken = null,
   }) {
-    return _then(AuthenticationCompleted(
-      authenticationToken: authenticationToken == freezed
+    return _then(_$AuthenticationCompleted(
+      authenticationToken: null == authenticationToken
           ? _value.authenticationToken
           : authenticationToken // ignore: cast_nullable_to_non_nullable
               as String,
@@ -984,6 +1170,7 @@ class _$AuthenticationCompletedCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$AuthenticationCompleted implements AuthenticationCompleted {
   const _$AuthenticationCompleted({required this.authenticationToken});
 
@@ -998,21 +1185,20 @@ class _$AuthenticationCompleted implements AuthenticationCompleted {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is AuthenticationCompleted &&
+        (other.runtimeType == runtimeType &&
+            other is _$AuthenticationCompleted &&
             (identical(other.authenticationToken, authenticationToken) ||
-                const DeepCollectionEquality()
-                    .equals(other.authenticationToken, authenticationToken)));
+                other.authenticationToken == authenticationToken));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(authenticationToken);
+  int get hashCode => Object.hash(runtimeType, authenticationToken);
 
   @JsonKey(ignore: true)
   @override
-  $AuthenticationCompletedCopyWith<AuthenticationCompleted> get copyWith =>
-      _$AuthenticationCompletedCopyWithImpl<AuthenticationCompleted>(
+  @pragma('vm:prefer-inline')
+  _$$AuthenticationCompletedCopyWith<_$AuthenticationCompleted> get copyWith =>
+      __$$AuthenticationCompletedCopyWithImpl<_$AuthenticationCompleted>(
           this, _$identity);
 
   @override
@@ -1032,6 +1218,24 @@ class _$AuthenticationCompleted implements AuthenticationCompleted {
     required TResult Function(AuthenticationError error) error,
   }) {
     return authenticationCompleted(authenticationToken);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return authenticationCompleted?.call(authenticationToken);
   }
 
   @override
@@ -1077,6 +1281,24 @@ class _$AuthenticationCompleted implements AuthenticationCompleted {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return authenticationCompleted?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -1099,33 +1321,31 @@ class _$AuthenticationCompleted implements AuthenticationCompleted {
 }
 
 abstract class AuthenticationCompleted implements AuthenticationEvent {
-  const factory AuthenticationCompleted({required String authenticationToken}) =
-      _$AuthenticationCompleted;
+  const factory AuthenticationCompleted(
+      {required final String authenticationToken}) = _$AuthenticationCompleted;
 
-  String get authenticationToken => throw _privateConstructorUsedError;
+  String get authenticationToken;
   @JsonKey(ignore: true)
-  $AuthenticationCompletedCopyWith<AuthenticationCompleted> get copyWith =>
+  _$$AuthenticationCompletedCopyWith<_$AuthenticationCompleted> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SignOutCopyWith<$Res> {
-  factory $SignOutCopyWith(SignOut value, $Res Function(SignOut) then) =
-      _$SignOutCopyWithImpl<$Res>;
+abstract class _$$SignOutCopyWith<$Res> {
+  factory _$$SignOutCopyWith(_$SignOut value, $Res Function(_$SignOut) then) =
+      __$$SignOutCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SignOutCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $SignOutCopyWith<$Res> {
-  _$SignOutCopyWithImpl(SignOut _value, $Res Function(SignOut) _then)
-      : super(_value, (v) => _then(v as SignOut));
-
-  @override
-  SignOut get _value => super._value as SignOut;
+class __$$SignOutCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$SignOut>
+    implements _$$SignOutCopyWith<$Res> {
+  __$$SignOutCopyWithImpl(_$SignOut _value, $Res Function(_$SignOut) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$SignOut implements SignOut {
   const _$SignOut();
 
@@ -1136,7 +1356,8 @@ class _$SignOut implements SignOut {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is SignOut);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SignOut);
   }
 
   @override
@@ -1159,6 +1380,24 @@ class _$SignOut implements SignOut {
     required TResult Function(AuthenticationError error) error,
   }) {
     return signOut();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return signOut?.call();
   }
 
   @override
@@ -1204,6 +1443,24 @@ class _$SignOut implements SignOut {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return signOut?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -1230,25 +1487,23 @@ abstract class SignOut implements AuthenticationEvent {
 }
 
 /// @nodoc
-abstract class $ReAuthenticateCopyWith<$Res> {
-  factory $ReAuthenticateCopyWith(
-          ReAuthenticate value, $Res Function(ReAuthenticate) then) =
-      _$ReAuthenticateCopyWithImpl<$Res>;
+abstract class _$$ReAuthenticateCopyWith<$Res> {
+  factory _$$ReAuthenticateCopyWith(
+          _$ReAuthenticate value, $Res Function(_$ReAuthenticate) then) =
+      __$$ReAuthenticateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ReAuthenticateCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $ReAuthenticateCopyWith<$Res> {
-  _$ReAuthenticateCopyWithImpl(
-      ReAuthenticate _value, $Res Function(ReAuthenticate) _then)
-      : super(_value, (v) => _then(v as ReAuthenticate));
-
-  @override
-  ReAuthenticate get _value => super._value as ReAuthenticate;
+class __$$ReAuthenticateCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$ReAuthenticate>
+    implements _$$ReAuthenticateCopyWith<$Res> {
+  __$$ReAuthenticateCopyWithImpl(
+      _$ReAuthenticate _value, $Res Function(_$ReAuthenticate) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$ReAuthenticate implements ReAuthenticate {
   const _$ReAuthenticate();
 
@@ -1259,7 +1514,8 @@ class _$ReAuthenticate implements ReAuthenticate {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is ReAuthenticate);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ReAuthenticate);
   }
 
   @override
@@ -1282,6 +1538,24 @@ class _$ReAuthenticate implements ReAuthenticate {
     required TResult Function(AuthenticationError error) error,
   }) {
     return reauthenticate();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return reauthenticate?.call();
   }
 
   @override
@@ -1327,6 +1601,24 @@ class _$ReAuthenticate implements ReAuthenticate {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return reauthenticate?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -1353,23 +1645,22 @@ abstract class ReAuthenticate implements AuthenticationEvent {
 }
 
 /// @nodoc
-abstract class $CanceledCopyWith<$Res> {
-  factory $CanceledCopyWith(Canceled value, $Res Function(Canceled) then) =
-      _$CanceledCopyWithImpl<$Res>;
+abstract class _$$CanceledCopyWith<$Res> {
+  factory _$$CanceledCopyWith(
+          _$Canceled value, $Res Function(_$Canceled) then) =
+      __$$CanceledCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$CanceledCopyWithImpl<$Res>
-    extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $CanceledCopyWith<$Res> {
-  _$CanceledCopyWithImpl(Canceled _value, $Res Function(Canceled) _then)
-      : super(_value, (v) => _then(v as Canceled));
-
-  @override
-  Canceled get _value => super._value as Canceled;
+class __$$CanceledCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$Canceled>
+    implements _$$CanceledCopyWith<$Res> {
+  __$$CanceledCopyWithImpl(_$Canceled _value, $Res Function(_$Canceled) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Canceled implements Canceled {
   const _$Canceled();
 
@@ -1380,7 +1671,8 @@ class _$Canceled implements Canceled {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Canceled);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Canceled);
   }
 
   @override
@@ -1403,6 +1695,24 @@ class _$Canceled implements Canceled {
     required TResult Function(AuthenticationError error) error,
   }) {
     return canceled();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return canceled?.call();
   }
 
   @override
@@ -1448,6 +1758,24 @@ class _$Canceled implements Canceled {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return canceled?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -1474,27 +1802,27 @@ abstract class Canceled implements AuthenticationEvent {
 }
 
 /// @nodoc
-abstract class $ErrorCopyWith<$Res> {
-  factory $ErrorCopyWith(Error value, $Res Function(Error) then) =
-      _$ErrorCopyWithImpl<$Res>;
+abstract class _$$ErrorCopyWith<$Res> {
+  factory _$$ErrorCopyWith(_$Error value, $Res Function(_$Error) then) =
+      __$$ErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({AuthenticationError error});
 }
 
 /// @nodoc
-class _$ErrorCopyWithImpl<$Res> extends _$AuthenticationEventCopyWithImpl<$Res>
-    implements $ErrorCopyWith<$Res> {
-  _$ErrorCopyWithImpl(Error _value, $Res Function(Error) _then)
-      : super(_value, (v) => _then(v as Error));
+class __$$ErrorCopyWithImpl<$Res>
+    extends _$AuthenticationEventCopyWithImpl<$Res, _$Error>
+    implements _$$ErrorCopyWith<$Res> {
+  __$$ErrorCopyWithImpl(_$Error _value, $Res Function(_$Error) _then)
+      : super(_value, _then);
 
-  @override
-  Error get _value => super._value as Error;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(Error(
-      error == freezed
+    return _then(_$Error(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as AuthenticationError,
@@ -1503,6 +1831,7 @@ class _$ErrorCopyWithImpl<$Res> extends _$AuthenticationEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Error implements Error {
   const _$Error(this.error);
 
@@ -1517,19 +1846,19 @@ class _$Error implements Error {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Error &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$Error &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $ErrorCopyWith<Error> get copyWith =>
-      _$ErrorCopyWithImpl<Error>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorCopyWith<_$Error> get copyWith =>
+      __$$ErrorCopyWithImpl<_$Error>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1548,6 +1877,24 @@ class _$Error implements Error {
     required TResult Function(AuthenticationError error) error,
   }) {
     return error(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String phoneNumber)? authenticateByPhone,
+    TResult? Function()? authenticateByFacebook,
+    TResult? Function()? authenticateByApple,
+    TResult? Function()? verifyPhoneNum,
+    TResult? Function(String smsCode)? confirmSmsCode,
+    TResult? Function()? resendSmsCode,
+    TResult? Function(String authenticationToken)? authenticationCompleted,
+    TResult? Function()? signOut,
+    TResult? Function()? reauthenticate,
+    TResult? Function()? canceled,
+    TResult? Function(AuthenticationError error)? error,
+  }) {
+    return error?.call(this.error);
   }
 
   @override
@@ -1593,6 +1940,24 @@ class _$Error implements Error {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ByPhone value)? authenticateByPhone,
+    TResult? Function(ByFacebook value)? authenticateByFacebook,
+    TResult? Function(ByApple value)? authenticateByApple,
+    TResult? Function(VerifyPhoneNum value)? verifyPhoneNum,
+    TResult? Function(ConfirmSmsCode value)? confirmSmsCode,
+    TResult? Function(ResendSmsCode value)? resendSmsCode,
+    TResult? Function(AuthenticationCompleted value)? authenticationCompleted,
+    TResult? Function(SignOut value)? signOut,
+    TResult? Function(ReAuthenticate value)? reauthenticate,
+    TResult? Function(Canceled value)? canceled,
+    TResult? Function(Error value)? error,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(ByPhone value)? authenticateByPhone,
     TResult Function(ByFacebook value)? authenticateByFacebook,
@@ -1615,9 +1980,9 @@ class _$Error implements Error {
 }
 
 abstract class Error implements AuthenticationEvent {
-  const factory Error(AuthenticationError error) = _$Error;
+  const factory Error(final AuthenticationError error) = _$Error;
 
-  AuthenticationError get error => throw _privateConstructorUsedError;
+  AuthenticationError get error;
   @JsonKey(ignore: true)
-  $ErrorCopyWith<Error> get copyWith => throw _privateConstructorUsedError;
+  _$$ErrorCopyWith<_$Error> get copyWith => throw _privateConstructorUsedError;
 }

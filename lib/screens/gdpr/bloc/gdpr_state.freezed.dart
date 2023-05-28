@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'gdpr_state.dart';
 
@@ -10,37 +12,7 @@ part of 'gdpr_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$GdprStateTearOff {
-  const _$GdprStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Accepted accepted() {
-    return const Accepted();
-  }
-
-  NotAccepted notAccepted() {
-    return const NotAccepted();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  ApiError apiError(Exception e) {
-    return ApiError(
-      e,
-    );
-  }
-}
-
-/// @nodoc
-const $GdprState = _$GdprStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$GdprState {
@@ -51,6 +23,15 @@ mixin _$GdprState {
     required TResult Function() notAccepted,
     required TResult Function() loading,
     required TResult Function(Exception e) apiError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? accepted,
+    TResult? Function()? notAccepted,
+    TResult? Function()? loading,
+    TResult? Function(Exception e)? apiError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -73,6 +54,15 @@ mixin _$GdprState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Accepted value)? accepted,
+    TResult? Function(NotAccepted value)? notAccepted,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Accepted value)? accepted,
@@ -87,35 +77,36 @@ mixin _$GdprState {
 /// @nodoc
 abstract class $GdprStateCopyWith<$Res> {
   factory $GdprStateCopyWith(GdprState value, $Res Function(GdprState) then) =
-      _$GdprStateCopyWithImpl<$Res>;
+      _$GdprStateCopyWithImpl<$Res, GdprState>;
 }
 
 /// @nodoc
-class _$GdprStateCopyWithImpl<$Res> implements $GdprStateCopyWith<$Res> {
+class _$GdprStateCopyWithImpl<$Res, $Val extends GdprState>
+    implements $GdprStateCopyWith<$Res> {
   _$GdprStateCopyWithImpl(this._value, this._then);
 
-  final GdprState _value;
   // ignore: unused_field
-  final $Res Function(GdprState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$GdprStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$GdprStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -126,7 +117,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -142,6 +134,18 @@ class _$Initial implements Initial {
     required TResult Function(Exception e) apiError,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? accepted,
+    TResult? Function()? notAccepted,
+    TResult? Function()? loading,
+    TResult? Function(Exception e)? apiError,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -174,6 +178,18 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Accepted value)? accepted,
+    TResult? Function(NotAccepted value)? notAccepted,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Accepted value)? accepted,
@@ -194,22 +210,22 @@ abstract class Initial implements GdprState {
 }
 
 /// @nodoc
-abstract class $AcceptedCopyWith<$Res> {
-  factory $AcceptedCopyWith(Accepted value, $Res Function(Accepted) then) =
-      _$AcceptedCopyWithImpl<$Res>;
+abstract class _$$AcceptedCopyWith<$Res> {
+  factory _$$AcceptedCopyWith(
+          _$Accepted value, $Res Function(_$Accepted) then) =
+      __$$AcceptedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AcceptedCopyWithImpl<$Res> extends _$GdprStateCopyWithImpl<$Res>
-    implements $AcceptedCopyWith<$Res> {
-  _$AcceptedCopyWithImpl(Accepted _value, $Res Function(Accepted) _then)
-      : super(_value, (v) => _then(v as Accepted));
-
-  @override
-  Accepted get _value => super._value as Accepted;
+class __$$AcceptedCopyWithImpl<$Res>
+    extends _$GdprStateCopyWithImpl<$Res, _$Accepted>
+    implements _$$AcceptedCopyWith<$Res> {
+  __$$AcceptedCopyWithImpl(_$Accepted _value, $Res Function(_$Accepted) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Accepted implements Accepted {
   const _$Accepted();
 
@@ -220,7 +236,8 @@ class _$Accepted implements Accepted {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Accepted);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Accepted);
   }
 
   @override
@@ -236,6 +253,18 @@ class _$Accepted implements Accepted {
     required TResult Function(Exception e) apiError,
   }) {
     return accepted();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? accepted,
+    TResult? Function()? notAccepted,
+    TResult? Function()? loading,
+    TResult? Function(Exception e)? apiError,
+  }) {
+    return accepted?.call();
   }
 
   @override
@@ -268,6 +297,18 @@ class _$Accepted implements Accepted {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Accepted value)? accepted,
+    TResult? Function(NotAccepted value)? notAccepted,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+  }) {
+    return accepted?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Accepted value)? accepted,
@@ -288,24 +329,23 @@ abstract class Accepted implements GdprState {
 }
 
 /// @nodoc
-abstract class $NotAcceptedCopyWith<$Res> {
-  factory $NotAcceptedCopyWith(
-          NotAccepted value, $Res Function(NotAccepted) then) =
-      _$NotAcceptedCopyWithImpl<$Res>;
+abstract class _$$NotAcceptedCopyWith<$Res> {
+  factory _$$NotAcceptedCopyWith(
+          _$NotAccepted value, $Res Function(_$NotAccepted) then) =
+      __$$NotAcceptedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$NotAcceptedCopyWithImpl<$Res> extends _$GdprStateCopyWithImpl<$Res>
-    implements $NotAcceptedCopyWith<$Res> {
-  _$NotAcceptedCopyWithImpl(
-      NotAccepted _value, $Res Function(NotAccepted) _then)
-      : super(_value, (v) => _then(v as NotAccepted));
-
-  @override
-  NotAccepted get _value => super._value as NotAccepted;
+class __$$NotAcceptedCopyWithImpl<$Res>
+    extends _$GdprStateCopyWithImpl<$Res, _$NotAccepted>
+    implements _$$NotAcceptedCopyWith<$Res> {
+  __$$NotAcceptedCopyWithImpl(
+      _$NotAccepted _value, $Res Function(_$NotAccepted) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$NotAccepted implements NotAccepted {
   const _$NotAccepted();
 
@@ -316,7 +356,8 @@ class _$NotAccepted implements NotAccepted {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is NotAccepted);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$NotAccepted);
   }
 
   @override
@@ -332,6 +373,18 @@ class _$NotAccepted implements NotAccepted {
     required TResult Function(Exception e) apiError,
   }) {
     return notAccepted();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? accepted,
+    TResult? Function()? notAccepted,
+    TResult? Function()? loading,
+    TResult? Function(Exception e)? apiError,
+  }) {
+    return notAccepted?.call();
   }
 
   @override
@@ -364,6 +417,18 @@ class _$NotAccepted implements NotAccepted {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Accepted value)? accepted,
+    TResult? Function(NotAccepted value)? notAccepted,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+  }) {
+    return notAccepted?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Accepted value)? accepted,
@@ -384,22 +449,21 @@ abstract class NotAccepted implements GdprState {
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$GdprStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$GdprStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -410,7 +474,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -426,6 +491,18 @@ class _$Loading implements Loading {
     required TResult Function(Exception e) apiError,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? accepted,
+    TResult? Function()? notAccepted,
+    TResult? Function()? loading,
+    TResult? Function(Exception e)? apiError,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -458,6 +535,18 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Accepted value)? accepted,
+    TResult? Function(NotAccepted value)? notAccepted,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Accepted value)? accepted,
@@ -478,27 +567,28 @@ abstract class Loading implements GdprState {
 }
 
 /// @nodoc
-abstract class $ApiErrorCopyWith<$Res> {
-  factory $ApiErrorCopyWith(ApiError value, $Res Function(ApiError) then) =
-      _$ApiErrorCopyWithImpl<$Res>;
+abstract class _$$ApiErrorCopyWith<$Res> {
+  factory _$$ApiErrorCopyWith(
+          _$ApiError value, $Res Function(_$ApiError) then) =
+      __$$ApiErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception e});
 }
 
 /// @nodoc
-class _$ApiErrorCopyWithImpl<$Res> extends _$GdprStateCopyWithImpl<$Res>
-    implements $ApiErrorCopyWith<$Res> {
-  _$ApiErrorCopyWithImpl(ApiError _value, $Res Function(ApiError) _then)
-      : super(_value, (v) => _then(v as ApiError));
+class __$$ApiErrorCopyWithImpl<$Res>
+    extends _$GdprStateCopyWithImpl<$Res, _$ApiError>
+    implements _$$ApiErrorCopyWith<$Res> {
+  __$$ApiErrorCopyWithImpl(_$ApiError _value, $Res Function(_$ApiError) _then)
+      : super(_value, _then);
 
-  @override
-  ApiError get _value => super._value as ApiError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? e = freezed,
+    Object? e = null,
   }) {
-    return _then(ApiError(
-      e == freezed
+    return _then(_$ApiError(
+      null == e
           ? _value.e
           : e // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -507,6 +597,7 @@ class _$ApiErrorCopyWithImpl<$Res> extends _$GdprStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ApiError implements ApiError {
   const _$ApiError(this.e);
 
@@ -521,19 +612,19 @@ class _$ApiError implements ApiError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ApiError &&
-            (identical(other.e, e) ||
-                const DeepCollectionEquality().equals(other.e, e)));
+        (other.runtimeType == runtimeType &&
+            other is _$ApiError &&
+            (identical(other.e, e) || other.e == e));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(e);
+  int get hashCode => Object.hash(runtimeType, e);
 
   @JsonKey(ignore: true)
   @override
-  $ApiErrorCopyWith<ApiError> get copyWith =>
-      _$ApiErrorCopyWithImpl<ApiError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
+      __$$ApiErrorCopyWithImpl<_$ApiError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -545,6 +636,18 @@ class _$ApiError implements ApiError {
     required TResult Function(Exception e) apiError,
   }) {
     return apiError(e);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? accepted,
+    TResult? Function()? notAccepted,
+    TResult? Function()? loading,
+    TResult? Function(Exception e)? apiError,
+  }) {
+    return apiError?.call(e);
   }
 
   @override
@@ -577,6 +680,18 @@ class _$ApiError implements ApiError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Accepted value)? accepted,
+    TResult? Function(NotAccepted value)? notAccepted,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+  }) {
+    return apiError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Accepted value)? accepted,
@@ -593,10 +708,10 @@ class _$ApiError implements ApiError {
 }
 
 abstract class ApiError implements GdprState {
-  const factory ApiError(Exception e) = _$ApiError;
+  const factory ApiError(final Exception e) = _$ApiError;
 
-  Exception get e => throw _privateConstructorUsedError;
+  Exception get e;
   @JsonKey(ignore: true)
-  $ApiErrorCopyWith<ApiError> get copyWith =>
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -7,16 +7,15 @@ part of 'payment_finalize_success_response.dart';
 // **************************************************************************
 
 PaymentFinalizeSuccessResponse _$PaymentFinalizeSuccessResponseFromJson(
-    Map<String, dynamic> json) {
-  return PaymentFinalizeSuccessResponse(
-    json['added_credits'] as int,
-    json['has_credits'] as int,
-    json['switched_to_premium'] as bool,
-    json['plan_ends_at'] == null
-        ? null
-        : DateTime.parse(json['plan_ends_at'] as String),
-  );
-}
+        Map<String, dynamic> json) =>
+    PaymentFinalizeSuccessResponse(
+      json['added_credits'] as int,
+      json['has_credits'] as int,
+      json['switched_to_premium'] as bool,
+      json['plan_ends_at'] == null
+          ? null
+          : DateTime.parse(json['plan_ends_at'] as String),
+    );
 
 Map<String, dynamic> _$PaymentFinalizeSuccessResponseToJson(
         PaymentFinalizeSuccessResponse instance) =>

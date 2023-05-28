@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'document_state.dart';
 
@@ -10,35 +12,7 @@ part of 'document_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DocumentStateTearOff {
-  const _$DocumentStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  ApiError apiError(Exception error) {
-    return ApiError(
-      error,
-    );
-  }
-
-  Document document(HtmlDocumentContent documentContent) {
-    return Document(
-      documentContent,
-    );
-  }
-}
-
-/// @nodoc
-const $DocumentState = _$DocumentStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$DocumentState {
@@ -48,6 +22,14 @@ mixin _$DocumentState {
     required TResult Function() loading,
     required TResult Function(Exception error) apiError,
     required TResult Function(HtmlDocumentContent documentContent) document,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(HtmlDocumentContent documentContent)? document,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,6 +50,14 @@ mixin _$DocumentState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Document value)? document,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -82,36 +72,36 @@ mixin _$DocumentState {
 abstract class $DocumentStateCopyWith<$Res> {
   factory $DocumentStateCopyWith(
           DocumentState value, $Res Function(DocumentState) then) =
-      _$DocumentStateCopyWithImpl<$Res>;
+      _$DocumentStateCopyWithImpl<$Res, DocumentState>;
 }
 
 /// @nodoc
-class _$DocumentStateCopyWithImpl<$Res>
+class _$DocumentStateCopyWithImpl<$Res, $Val extends DocumentState>
     implements $DocumentStateCopyWith<$Res> {
   _$DocumentStateCopyWithImpl(this._value, this._then);
 
-  final DocumentState _value;
   // ignore: unused_field
-  final $Res Function(DocumentState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$DocumentStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$DocumentStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -122,7 +112,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -137,6 +128,17 @@ class _$Initial implements Initial {
     required TResult Function(HtmlDocumentContent documentContent) document,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(HtmlDocumentContent documentContent)? document,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -167,6 +169,17 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Document value)? document,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -186,22 +199,21 @@ abstract class Initial implements DocumentState {
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$DocumentStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$DocumentStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -212,7 +224,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -227,6 +240,17 @@ class _$Loading implements Loading {
     required TResult Function(HtmlDocumentContent documentContent) document,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(HtmlDocumentContent documentContent)? document,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -257,6 +281,17 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Document value)? document,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -276,27 +311,28 @@ abstract class Loading implements DocumentState {
 }
 
 /// @nodoc
-abstract class $ApiErrorCopyWith<$Res> {
-  factory $ApiErrorCopyWith(ApiError value, $Res Function(ApiError) then) =
-      _$ApiErrorCopyWithImpl<$Res>;
+abstract class _$$ApiErrorCopyWith<$Res> {
+  factory _$$ApiErrorCopyWith(
+          _$ApiError value, $Res Function(_$ApiError) then) =
+      __$$ApiErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class _$ApiErrorCopyWithImpl<$Res> extends _$DocumentStateCopyWithImpl<$Res>
-    implements $ApiErrorCopyWith<$Res> {
-  _$ApiErrorCopyWithImpl(ApiError _value, $Res Function(ApiError) _then)
-      : super(_value, (v) => _then(v as ApiError));
+class __$$ApiErrorCopyWithImpl<$Res>
+    extends _$DocumentStateCopyWithImpl<$Res, _$ApiError>
+    implements _$$ApiErrorCopyWith<$Res> {
+  __$$ApiErrorCopyWithImpl(_$ApiError _value, $Res Function(_$ApiError) _then)
+      : super(_value, _then);
 
-  @override
-  ApiError get _value => super._value as ApiError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(ApiError(
-      error == freezed
+    return _then(_$ApiError(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -305,6 +341,7 @@ class _$ApiErrorCopyWithImpl<$Res> extends _$DocumentStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$ApiError implements ApiError {
   const _$ApiError(this.error);
 
@@ -319,19 +356,19 @@ class _$ApiError implements ApiError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is ApiError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$ApiError &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $ApiErrorCopyWith<ApiError> get copyWith =>
-      _$ApiErrorCopyWithImpl<ApiError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
+      __$$ApiErrorCopyWithImpl<_$ApiError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -342,6 +379,17 @@ class _$ApiError implements ApiError {
     required TResult Function(HtmlDocumentContent documentContent) document,
   }) {
     return apiError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(HtmlDocumentContent documentContent)? document,
+  }) {
+    return apiError?.call(error);
   }
 
   @override
@@ -372,6 +420,17 @@ class _$ApiError implements ApiError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Document value)? document,
+  }) {
+    return apiError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -387,36 +446,37 @@ class _$ApiError implements ApiError {
 }
 
 abstract class ApiError implements DocumentState {
-  const factory ApiError(Exception error) = _$ApiError;
+  const factory ApiError(final Exception error) = _$ApiError;
 
-  Exception get error => throw _privateConstructorUsedError;
+  Exception get error;
   @JsonKey(ignore: true)
-  $ApiErrorCopyWith<ApiError> get copyWith =>
+  _$$ApiErrorCopyWith<_$ApiError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DocumentCopyWith<$Res> {
-  factory $DocumentCopyWith(Document value, $Res Function(Document) then) =
-      _$DocumentCopyWithImpl<$Res>;
+abstract class _$$DocumentCopyWith<$Res> {
+  factory _$$DocumentCopyWith(
+          _$Document value, $Res Function(_$Document) then) =
+      __$$DocumentCopyWithImpl<$Res>;
+  @useResult
   $Res call({HtmlDocumentContent documentContent});
 }
 
 /// @nodoc
-class _$DocumentCopyWithImpl<$Res> extends _$DocumentStateCopyWithImpl<$Res>
-    implements $DocumentCopyWith<$Res> {
-  _$DocumentCopyWithImpl(Document _value, $Res Function(Document) _then)
-      : super(_value, (v) => _then(v as Document));
+class __$$DocumentCopyWithImpl<$Res>
+    extends _$DocumentStateCopyWithImpl<$Res, _$Document>
+    implements _$$DocumentCopyWith<$Res> {
+  __$$DocumentCopyWithImpl(_$Document _value, $Res Function(_$Document) _then)
+      : super(_value, _then);
 
-  @override
-  Document get _value => super._value as Document;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? documentContent = freezed,
+    Object? documentContent = null,
   }) {
-    return _then(Document(
-      documentContent == freezed
+    return _then(_$Document(
+      null == documentContent
           ? _value.documentContent
           : documentContent // ignore: cast_nullable_to_non_nullable
               as HtmlDocumentContent,
@@ -425,6 +485,7 @@ class _$DocumentCopyWithImpl<$Res> extends _$DocumentStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Document implements Document {
   const _$Document(this.documentContent);
 
@@ -439,21 +500,20 @@ class _$Document implements Document {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Document &&
+        (other.runtimeType == runtimeType &&
+            other is _$Document &&
             (identical(other.documentContent, documentContent) ||
-                const DeepCollectionEquality()
-                    .equals(other.documentContent, documentContent)));
+                other.documentContent == documentContent));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(documentContent);
+  int get hashCode => Object.hash(runtimeType, documentContent);
 
   @JsonKey(ignore: true)
   @override
-  $DocumentCopyWith<Document> get copyWith =>
-      _$DocumentCopyWithImpl<Document>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DocumentCopyWith<_$Document> get copyWith =>
+      __$$DocumentCopyWithImpl<_$Document>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -464,6 +524,17 @@ class _$Document implements Document {
     required TResult Function(HtmlDocumentContent documentContent) document,
   }) {
     return document(documentContent);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(HtmlDocumentContent documentContent)? document,
+  }) {
+    return document?.call(documentContent);
   }
 
   @override
@@ -494,6 +565,17 @@ class _$Document implements Document {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(ApiError value)? apiError,
+    TResult? Function(Document value)? document,
+  }) {
+    return document?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -509,10 +591,11 @@ class _$Document implements Document {
 }
 
 abstract class Document implements DocumentState {
-  const factory Document(HtmlDocumentContent documentContent) = _$Document;
+  const factory Document(final HtmlDocumentContent documentContent) =
+      _$Document;
 
-  HtmlDocumentContent get documentContent => throw _privateConstructorUsedError;
+  HtmlDocumentContent get documentContent;
   @JsonKey(ignore: true)
-  $DocumentCopyWith<Document> get copyWith =>
+  _$$DocumentCopyWith<_$Document> get copyWith =>
       throw _privateConstructorUsedError;
 }

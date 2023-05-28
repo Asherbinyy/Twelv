@@ -6,60 +6,58 @@ part of 'current_user.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-CurrentUser _$CurrentUserFromJson(Map<String, dynamic> json) {
-  return CurrentUser(
-    id: json['id'] as int,
-    name: json['name'] as String?,
-    dateTimeOfBirth: json['datetime_of_birth'] == null
-        ? null
-        : DateTime.parse(json['datetime_of_birth'] as String),
-    sunSign: _$enumDecodeNullable(_$ZodiacSignEnumMap, json['sun_sign']),
-    astrologicalSign:
-        _$enumDecodeNullable(_$ZodiacSignEnumMap, json['astrological_sign']),
-    zodiacText: json['zodiac_text'] as String?,
-    interestedIn: _$enumDecodeNullable(_$GenderEnumMap, json['interested_in']),
-    gender: _$enumDecodeNullable(_$GenderEnumMap, json['gender']),
-    about: json['about'] as String?,
-    images: (json['images'] as List<dynamic>?)
-            ?.map((e) => ImageDto.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        [],
-    blurred: (json['blurred'] as List<dynamic>?)
-            ?.map((e) => ImageDto.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        [],
-    isPremium: json['is_premium'] as bool? ?? false,
-    spotlight: json['spotlight'] as bool? ?? false,
-    isVisible: json['is_visible'] as bool? ?? true,
-    notificationToken: json['notification_token'] as String?,
-    notificationSettings: json['notificationSettings'] == null
-        ? null
-        : NotificationSettings.fromJson(
-            json['notificationSettings'] as Map<String, dynamic>),
-    getStreamUUID: json['get_stream_UUID'] as String?,
-    getStreamAPIToken: json['get_stream_API_Token'] as String?,
-    virgilApiToken: json['virgil_API_Token'] as String?,
-    lat: (json['lat'] as num?)?.toDouble(),
-    lon: (json['lon'] as num?)?.toDouble(),
-    isOnboarded: json['is_onboarded'] as bool?,
-    consentTermsOfUse: json['consent_terms_of_use'] as bool?,
-    consentTermsOfUseTimestamp: json['consent_terms_of_use_timestamp'] == null
-        ? null
-        : DateTime.parse(json['consent_terms_of_use_timestamp'] as String),
-    consentSensitiveData: json['consent_sensitive_data'] as bool?,
-    consentFirebaseAnalytics: json['consent_firebase_analytics'] as bool?,
-    consentFirebaseCrashlytics: json['consent_firebase_crashlytics'] as bool?,
-    consentFirebaseTimestamp: json['consent_firebase_timestamp'] == null
-        ? null
-        : DateTime.parse(json['consent_firebase_timestamp'] as String),
-    subscriptionEndsAt: json['subscription_ends_at'] == null
-        ? null
-        : DateTime.parse(json['subscription_ends_at'] as String),
-    birthLocationLat: (json['birth_location_lat'] as num?)?.toDouble(),
-    birthLocationLon: (json['birth_location_lon'] as num?)?.toDouble(),
-    credits: json['credits'] as int,
-  )..placeOfBirth = json['place_of_birth'] as String?;
-}
+CurrentUser _$CurrentUserFromJson(Map<String, dynamic> json) => CurrentUser(
+      id: json['id'] as int,
+      name: json['name'] as String?,
+      dateTimeOfBirth: json['datetime_of_birth'] == null
+          ? null
+          : DateTime.parse(json['datetime_of_birth'] as String),
+      sunSign: $enumDecodeNullable(_$ZodiacSignEnumMap, json['sun_sign']),
+      astrologicalSign:
+          $enumDecodeNullable(_$ZodiacSignEnumMap, json['astrological_sign']),
+      zodiacText: json['zodiac_text'] as String?,
+      interestedIn: $enumDecodeNullable(_$GenderEnumMap, json['interested_in']),
+      gender: $enumDecodeNullable(_$GenderEnumMap, json['gender']),
+      about: json['about'] as String?,
+      images: (json['images'] as List<dynamic>?)
+              ?.map((e) => ImageDto.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          [],
+      blurred: (json['blurred'] as List<dynamic>?)
+              ?.map((e) => ImageDto.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          [],
+      isPremium: json['is_premium'] as bool? ?? false,
+      spotlight: json['spotlight'] as bool? ?? false,
+      isVisible: json['is_visible'] as bool? ?? true,
+      notificationToken: json['notification_token'] as String?,
+      notificationSettings: json['notificationSettings'] == null
+          ? null
+          : NotificationSettings.fromJson(
+              json['notificationSettings'] as Map<String, dynamic>),
+      getStreamUUID: json['get_stream_UUID'] as String?,
+      getStreamAPIToken: json['get_stream_API_Token'] as String?,
+      virgilApiToken: json['virgil_API_Token'] as String?,
+      lat: (json['lat'] as num?)?.toDouble(),
+      lon: (json['lon'] as num?)?.toDouble(),
+      isOnboarded: json['is_onboarded'] as bool?,
+      consentTermsOfUse: json['consent_terms_of_use'] as bool?,
+      consentTermsOfUseTimestamp: json['consent_terms_of_use_timestamp'] == null
+          ? null
+          : DateTime.parse(json['consent_terms_of_use_timestamp'] as String),
+      consentSensitiveData: json['consent_sensitive_data'] as bool?,
+      consentFirebaseAnalytics: json['consent_firebase_analytics'] as bool?,
+      consentFirebaseCrashlytics: json['consent_firebase_crashlytics'] as bool?,
+      consentFirebaseTimestamp: json['consent_firebase_timestamp'] == null
+          ? null
+          : DateTime.parse(json['consent_firebase_timestamp'] as String),
+      subscriptionEndsAt: json['subscription_ends_at'] == null
+          ? null
+          : DateTime.parse(json['subscription_ends_at'] as String),
+      birthLocationLat: (json['birth_location_lat'] as num?)?.toDouble(),
+      birthLocationLon: (json['birth_location_lon'] as num?)?.toDouble(),
+      credits: json['credits'] as int? ?? 0,
+    )..placeOfBirth = json['place_of_birth'] as String?;
 
 Map<String, dynamic> _$CurrentUserToJson(CurrentUser instance) =>
     <String, dynamic>{
@@ -99,43 +97,6 @@ Map<String, dynamic> _$CurrentUserToJson(CurrentUser instance) =>
       'birth_location_lon': instance.birthLocationLon,
       'credits': instance.credits,
     };
-
-K _$enumDecode<K, V>(
-  Map<K, V> enumValues,
-  Object? source, {
-  K? unknownValue,
-}) {
-  if (source == null) {
-    throw ArgumentError(
-      'A value must be provided. Supported values: '
-      '${enumValues.values.join(', ')}',
-    );
-  }
-
-  return enumValues.entries.singleWhere(
-    (e) => e.value == source,
-    orElse: () {
-      if (unknownValue == null) {
-        throw ArgumentError(
-          '`$source` is not one of the supported values: '
-          '${enumValues.values.join(', ')}',
-        );
-      }
-      return MapEntry(unknownValue, enumValues.values.first);
-    },
-  ).key;
-}
-
-K? _$enumDecodeNullable<K, V>(
-  Map<K, V> enumValues,
-  dynamic source, {
-  K? unknownValue,
-}) {
-  if (source == null) {
-    return null;
-  }
-  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
-}
 
 const _$ZodiacSignEnumMap = {
   ZodiacSign.belier: 'belier',

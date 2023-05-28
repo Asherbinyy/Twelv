@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'location_state.dart';
 
@@ -10,39 +12,7 @@ part of 'location_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$LocationStateTearOff {
-  const _$LocationStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  APIError apiError(Exception error) {
-    return APIError(
-      error,
-    );
-  }
-
-  GPSDenied gpsDenied(Exception error) {
-    return GPSDenied(
-      error,
-    );
-  }
-
-  Success success() {
-    return const Success();
-  }
-}
-
-/// @nodoc
-const $LocationState = _$LocationStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$LocationState {
@@ -53,6 +23,15 @@ mixin _$LocationState {
     required TResult Function(Exception error) apiError,
     required TResult Function(Exception error) gpsDenied,
     required TResult Function() success,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Exception error)? gpsDenied,
+    TResult? Function()? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -75,6 +54,15 @@ mixin _$LocationState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(APIError value)? apiError,
+    TResult? Function(GPSDenied value)? gpsDenied,
+    TResult? Function(Success value)? success,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -90,36 +78,36 @@ mixin _$LocationState {
 abstract class $LocationStateCopyWith<$Res> {
   factory $LocationStateCopyWith(
           LocationState value, $Res Function(LocationState) then) =
-      _$LocationStateCopyWithImpl<$Res>;
+      _$LocationStateCopyWithImpl<$Res, LocationState>;
 }
 
 /// @nodoc
-class _$LocationStateCopyWithImpl<$Res>
+class _$LocationStateCopyWithImpl<$Res, $Val extends LocationState>
     implements $LocationStateCopyWith<$Res> {
   _$LocationStateCopyWithImpl(this._value, this._then);
 
-  final LocationState _value;
   // ignore: unused_field
-  final $Res Function(LocationState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$LocationStateCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -130,7 +118,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -146,6 +135,18 @@ class _$Initial implements Initial {
     required TResult Function() success,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Exception error)? gpsDenied,
+    TResult? Function()? success,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -178,6 +179,18 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(APIError value)? apiError,
+    TResult? Function(GPSDenied value)? gpsDenied,
+    TResult? Function(Success value)? success,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -198,22 +211,21 @@ abstract class Initial implements LocationState {
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingCopyWith<$Res> {
+  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
+      __$$LoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingCopyWithImpl<$Res>
+    extends _$LocationStateCopyWithImpl<$Res, _$Loading>
+    implements _$$LoadingCopyWith<$Res> {
+  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -224,7 +236,8 @@ class _$Loading implements Loading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading);
   }
 
   @override
@@ -240,6 +253,18 @@ class _$Loading implements Loading {
     required TResult Function() success,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Exception error)? gpsDenied,
+    TResult? Function()? success,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -272,6 +297,18 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(APIError value)? apiError,
+    TResult? Function(GPSDenied value)? gpsDenied,
+    TResult? Function(Success value)? success,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -292,27 +329,28 @@ abstract class Loading implements LocationState {
 }
 
 /// @nodoc
-abstract class $APIErrorCopyWith<$Res> {
-  factory $APIErrorCopyWith(APIError value, $Res Function(APIError) then) =
-      _$APIErrorCopyWithImpl<$Res>;
+abstract class _$$APIErrorCopyWith<$Res> {
+  factory _$$APIErrorCopyWith(
+          _$APIError value, $Res Function(_$APIError) then) =
+      __$$APIErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class _$APIErrorCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res>
-    implements $APIErrorCopyWith<$Res> {
-  _$APIErrorCopyWithImpl(APIError _value, $Res Function(APIError) _then)
-      : super(_value, (v) => _then(v as APIError));
+class __$$APIErrorCopyWithImpl<$Res>
+    extends _$LocationStateCopyWithImpl<$Res, _$APIError>
+    implements _$$APIErrorCopyWith<$Res> {
+  __$$APIErrorCopyWithImpl(_$APIError _value, $Res Function(_$APIError) _then)
+      : super(_value, _then);
 
-  @override
-  APIError get _value => super._value as APIError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(APIError(
-      error == freezed
+    return _then(_$APIError(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -321,6 +359,7 @@ class _$APIErrorCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$APIError implements APIError {
   const _$APIError(this.error);
 
@@ -335,19 +374,19 @@ class _$APIError implements APIError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is APIError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$APIError &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $APIErrorCopyWith<APIError> get copyWith =>
-      _$APIErrorCopyWithImpl<APIError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$APIErrorCopyWith<_$APIError> get copyWith =>
+      __$$APIErrorCopyWithImpl<_$APIError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -359,6 +398,18 @@ class _$APIError implements APIError {
     required TResult Function() success,
   }) {
     return apiError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Exception error)? gpsDenied,
+    TResult? Function()? success,
+  }) {
+    return apiError?.call(error);
   }
 
   @override
@@ -391,6 +442,18 @@ class _$APIError implements APIError {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(APIError value)? apiError,
+    TResult? Function(GPSDenied value)? gpsDenied,
+    TResult? Function(Success value)? success,
+  }) {
+    return apiError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -407,36 +470,38 @@ class _$APIError implements APIError {
 }
 
 abstract class APIError implements LocationState {
-  const factory APIError(Exception error) = _$APIError;
+  const factory APIError(final Exception error) = _$APIError;
 
-  Exception get error => throw _privateConstructorUsedError;
+  Exception get error;
   @JsonKey(ignore: true)
-  $APIErrorCopyWith<APIError> get copyWith =>
+  _$$APIErrorCopyWith<_$APIError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $GPSDeniedCopyWith<$Res> {
-  factory $GPSDeniedCopyWith(GPSDenied value, $Res Function(GPSDenied) then) =
-      _$GPSDeniedCopyWithImpl<$Res>;
+abstract class _$$GPSDeniedCopyWith<$Res> {
+  factory _$$GPSDeniedCopyWith(
+          _$GPSDenied value, $Res Function(_$GPSDenied) then) =
+      __$$GPSDeniedCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception error});
 }
 
 /// @nodoc
-class _$GPSDeniedCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res>
-    implements $GPSDeniedCopyWith<$Res> {
-  _$GPSDeniedCopyWithImpl(GPSDenied _value, $Res Function(GPSDenied) _then)
-      : super(_value, (v) => _then(v as GPSDenied));
+class __$$GPSDeniedCopyWithImpl<$Res>
+    extends _$LocationStateCopyWithImpl<$Res, _$GPSDenied>
+    implements _$$GPSDeniedCopyWith<$Res> {
+  __$$GPSDeniedCopyWithImpl(
+      _$GPSDenied _value, $Res Function(_$GPSDenied) _then)
+      : super(_value, _then);
 
-  @override
-  GPSDenied get _value => super._value as GPSDenied;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
   }) {
-    return _then(GPSDenied(
-      error == freezed
+    return _then(_$GPSDenied(
+      null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -445,6 +510,7 @@ class _$GPSDeniedCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$GPSDenied implements GPSDenied {
   const _$GPSDenied(this.error);
 
@@ -459,19 +525,19 @@ class _$GPSDenied implements GPSDenied {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is GPSDenied &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _$GPSDenied &&
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
-  $GPSDeniedCopyWith<GPSDenied> get copyWith =>
-      _$GPSDeniedCopyWithImpl<GPSDenied>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GPSDeniedCopyWith<_$GPSDenied> get copyWith =>
+      __$$GPSDeniedCopyWithImpl<_$GPSDenied>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -483,6 +549,18 @@ class _$GPSDenied implements GPSDenied {
     required TResult Function() success,
   }) {
     return gpsDenied(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Exception error)? gpsDenied,
+    TResult? Function()? success,
+  }) {
+    return gpsDenied?.call(error);
   }
 
   @override
@@ -515,6 +593,18 @@ class _$GPSDenied implements GPSDenied {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(APIError value)? apiError,
+    TResult? Function(GPSDenied value)? gpsDenied,
+    TResult? Function(Success value)? success,
+  }) {
+    return gpsDenied?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
@@ -531,31 +621,30 @@ class _$GPSDenied implements GPSDenied {
 }
 
 abstract class GPSDenied implements LocationState {
-  const factory GPSDenied(Exception error) = _$GPSDenied;
+  const factory GPSDenied(final Exception error) = _$GPSDenied;
 
-  Exception get error => throw _privateConstructorUsedError;
+  Exception get error;
   @JsonKey(ignore: true)
-  $GPSDeniedCopyWith<GPSDenied> get copyWith =>
+  _$$GPSDeniedCopyWith<_$GPSDenied> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SuccessCopyWith<$Res> {
-  factory $SuccessCopyWith(Success value, $Res Function(Success) then) =
-      _$SuccessCopyWithImpl<$Res>;
+abstract class _$$SuccessCopyWith<$Res> {
+  factory _$$SuccessCopyWith(_$Success value, $Res Function(_$Success) then) =
+      __$$SuccessCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SuccessCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res>
-    implements $SuccessCopyWith<$Res> {
-  _$SuccessCopyWithImpl(Success _value, $Res Function(Success) _then)
-      : super(_value, (v) => _then(v as Success));
-
-  @override
-  Success get _value => super._value as Success;
+class __$$SuccessCopyWithImpl<$Res>
+    extends _$LocationStateCopyWithImpl<$Res, _$Success>
+    implements _$$SuccessCopyWith<$Res> {
+  __$$SuccessCopyWithImpl(_$Success _value, $Res Function(_$Success) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Success implements Success {
   const _$Success();
 
@@ -566,7 +655,8 @@ class _$Success implements Success {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Success);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Success);
   }
 
   @override
@@ -582,6 +672,18 @@ class _$Success implements Success {
     required TResult Function() success,
   }) {
     return success();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(Exception error)? apiError,
+    TResult? Function(Exception error)? gpsDenied,
+    TResult? Function()? success,
+  }) {
+    return success?.call();
   }
 
   @override
@@ -610,6 +712,18 @@ class _$Success implements Success {
     required TResult Function(Success value) success,
   }) {
     return success(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(APIError value)? apiError,
+    TResult? Function(GPSDenied value)? gpsDenied,
+    TResult? Function(Success value)? success,
+  }) {
+    return success?.call(this);
   }
 
   @override

@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'onboarding_birth_data_event.dart';
 
@@ -10,25 +12,18 @@ part of 'onboarding_birth_data_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$OnboardingBirthDataEventTearOff {
-  const _$OnboardingBirthDataEventTearOff();
-
-  BirthDataEntered birthDataEntered() {
-    return const BirthDataEntered();
-  }
-}
-
-/// @nodoc
-const $OnboardingBirthDataEvent = _$OnboardingBirthDataEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$OnboardingBirthDataEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() birthDataEntered,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? birthDataEntered,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -43,6 +38,11 @@ mixin _$OnboardingBirthDataEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(BirthDataEntered value)? birthDataEntered,
     required TResult orElse(),
@@ -54,39 +54,39 @@ mixin _$OnboardingBirthDataEvent {
 abstract class $OnboardingBirthDataEventCopyWith<$Res> {
   factory $OnboardingBirthDataEventCopyWith(OnboardingBirthDataEvent value,
           $Res Function(OnboardingBirthDataEvent) then) =
-      _$OnboardingBirthDataEventCopyWithImpl<$Res>;
+      _$OnboardingBirthDataEventCopyWithImpl<$Res, OnboardingBirthDataEvent>;
 }
 
 /// @nodoc
-class _$OnboardingBirthDataEventCopyWithImpl<$Res>
+class _$OnboardingBirthDataEventCopyWithImpl<$Res,
+        $Val extends OnboardingBirthDataEvent>
     implements $OnboardingBirthDataEventCopyWith<$Res> {
   _$OnboardingBirthDataEventCopyWithImpl(this._value, this._then);
 
-  final OnboardingBirthDataEvent _value;
   // ignore: unused_field
-  final $Res Function(OnboardingBirthDataEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $BirthDataEnteredCopyWith<$Res> {
-  factory $BirthDataEnteredCopyWith(
-          BirthDataEntered value, $Res Function(BirthDataEntered) then) =
-      _$BirthDataEnteredCopyWithImpl<$Res>;
+abstract class _$$BirthDataEnteredCopyWith<$Res> {
+  factory _$$BirthDataEnteredCopyWith(
+          _$BirthDataEntered value, $Res Function(_$BirthDataEntered) then) =
+      __$$BirthDataEnteredCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$BirthDataEnteredCopyWithImpl<$Res>
-    extends _$OnboardingBirthDataEventCopyWithImpl<$Res>
-    implements $BirthDataEnteredCopyWith<$Res> {
-  _$BirthDataEnteredCopyWithImpl(
-      BirthDataEntered _value, $Res Function(BirthDataEntered) _then)
-      : super(_value, (v) => _then(v as BirthDataEntered));
-
-  @override
-  BirthDataEntered get _value => super._value as BirthDataEntered;
+class __$$BirthDataEnteredCopyWithImpl<$Res>
+    extends _$OnboardingBirthDataEventCopyWithImpl<$Res, _$BirthDataEntered>
+    implements _$$BirthDataEnteredCopyWith<$Res> {
+  __$$BirthDataEnteredCopyWithImpl(
+      _$BirthDataEntered _value, $Res Function(_$BirthDataEntered) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$BirthDataEntered implements BirthDataEntered {
   const _$BirthDataEntered();
 
@@ -97,7 +97,8 @@ class _$BirthDataEntered implements BirthDataEntered {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is BirthDataEntered);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$BirthDataEntered);
   }
 
   @override
@@ -109,6 +110,14 @@ class _$BirthDataEntered implements BirthDataEntered {
     required TResult Function() birthDataEntered,
   }) {
     return birthDataEntered();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? birthDataEntered,
+  }) {
+    return birthDataEntered?.call();
   }
 
   @override
@@ -129,6 +138,14 @@ class _$BirthDataEntered implements BirthDataEntered {
     required TResult Function(BirthDataEntered value) birthDataEntered,
   }) {
     return birthDataEntered(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(BirthDataEntered value)? birthDataEntered,
+  }) {
+    return birthDataEntered?.call(this);
   }
 
   @override

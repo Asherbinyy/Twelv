@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'horoscope_event.dart';
 
@@ -10,25 +12,18 @@ part of 'horoscope_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$HoroscopeEventTearOff {
-  const _$HoroscopeEventTearOff();
-
-  GetHoroscope getHoroscope() {
-    return const GetHoroscope();
-  }
-}
-
-/// @nodoc
-const $HoroscopeEvent = _$HoroscopeEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$HoroscopeEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() getHoroscope,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getHoroscope,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -43,6 +38,11 @@ mixin _$HoroscopeEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetHoroscope value)? getHoroscope,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(GetHoroscope value)? getHoroscope,
     required TResult orElse(),
@@ -54,39 +54,38 @@ mixin _$HoroscopeEvent {
 abstract class $HoroscopeEventCopyWith<$Res> {
   factory $HoroscopeEventCopyWith(
           HoroscopeEvent value, $Res Function(HoroscopeEvent) then) =
-      _$HoroscopeEventCopyWithImpl<$Res>;
+      _$HoroscopeEventCopyWithImpl<$Res, HoroscopeEvent>;
 }
 
 /// @nodoc
-class _$HoroscopeEventCopyWithImpl<$Res>
+class _$HoroscopeEventCopyWithImpl<$Res, $Val extends HoroscopeEvent>
     implements $HoroscopeEventCopyWith<$Res> {
   _$HoroscopeEventCopyWithImpl(this._value, this._then);
 
-  final HoroscopeEvent _value;
   // ignore: unused_field
-  final $Res Function(HoroscopeEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $GetHoroscopeCopyWith<$Res> {
-  factory $GetHoroscopeCopyWith(
-          GetHoroscope value, $Res Function(GetHoroscope) then) =
-      _$GetHoroscopeCopyWithImpl<$Res>;
+abstract class _$$GetHoroscopeCopyWith<$Res> {
+  factory _$$GetHoroscopeCopyWith(
+          _$GetHoroscope value, $Res Function(_$GetHoroscope) then) =
+      __$$GetHoroscopeCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$GetHoroscopeCopyWithImpl<$Res>
-    extends _$HoroscopeEventCopyWithImpl<$Res>
-    implements $GetHoroscopeCopyWith<$Res> {
-  _$GetHoroscopeCopyWithImpl(
-      GetHoroscope _value, $Res Function(GetHoroscope) _then)
-      : super(_value, (v) => _then(v as GetHoroscope));
-
-  @override
-  GetHoroscope get _value => super._value as GetHoroscope;
+class __$$GetHoroscopeCopyWithImpl<$Res>
+    extends _$HoroscopeEventCopyWithImpl<$Res, _$GetHoroscope>
+    implements _$$GetHoroscopeCopyWith<$Res> {
+  __$$GetHoroscopeCopyWithImpl(
+      _$GetHoroscope _value, $Res Function(_$GetHoroscope) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$GetHoroscope implements GetHoroscope {
   const _$GetHoroscope();
 
@@ -97,7 +96,8 @@ class _$GetHoroscope implements GetHoroscope {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is GetHoroscope);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetHoroscope);
   }
 
   @override
@@ -109,6 +109,14 @@ class _$GetHoroscope implements GetHoroscope {
     required TResult Function() getHoroscope,
   }) {
     return getHoroscope();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getHoroscope,
+  }) {
+    return getHoroscope?.call();
   }
 
   @override
@@ -129,6 +137,14 @@ class _$GetHoroscope implements GetHoroscope {
     required TResult Function(GetHoroscope value) getHoroscope,
   }) {
     return getHoroscope(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GetHoroscope value)? getHoroscope,
+  }) {
+    return getHoroscope?.call(this);
   }
 
   @override

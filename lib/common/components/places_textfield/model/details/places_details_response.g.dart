@@ -7,13 +7,12 @@ part of 'places_details_response.dart';
 // **************************************************************************
 
 PlacesDetailsResponse _$PlacesDetailsResponseFromJson(
-    Map<String, dynamic> json) {
-  return PlacesDetailsResponse(
-    status: json['status'] as String,
-    result:
-        PlacesDetailsResult.fromJson(json['result'] as Map<String, dynamic>),
-  );
-}
+        Map<String, dynamic> json) =>
+    PlacesDetailsResponse(
+      status: json['status'] as String,
+      result:
+          PlacesDetailsResult.fromJson(json['result'] as Map<String, dynamic>),
+    );
 
 Map<String, dynamic> _$PlacesDetailsResponseToJson(
         PlacesDetailsResponse instance) =>

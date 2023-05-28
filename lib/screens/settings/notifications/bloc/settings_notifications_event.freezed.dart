@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'settings_notifications_event.dart';
 
@@ -10,25 +12,7 @@ part of 'settings_notifications_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$SettingsNotificationsEventTearOff {
-  const _$SettingsNotificationsEventTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Update update({required NotificationSettings notificationSettings}) {
-    return Update(
-      notificationSettings: notificationSettings,
-    );
-  }
-}
-
-/// @nodoc
-const $SettingsNotificationsEvent = _$SettingsNotificationsEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$SettingsNotificationsEvent {
@@ -36,6 +20,12 @@ mixin _$SettingsNotificationsEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(NotificationSettings notificationSettings) update,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(NotificationSettings notificationSettings)? update,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -52,6 +42,12 @@ mixin _$SettingsNotificationsEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Update value)? update,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Update value)? update,
@@ -64,37 +60,38 @@ mixin _$SettingsNotificationsEvent {
 abstract class $SettingsNotificationsEventCopyWith<$Res> {
   factory $SettingsNotificationsEventCopyWith(SettingsNotificationsEvent value,
           $Res Function(SettingsNotificationsEvent) then) =
-      _$SettingsNotificationsEventCopyWithImpl<$Res>;
+      _$SettingsNotificationsEventCopyWithImpl<$Res,
+          SettingsNotificationsEvent>;
 }
 
 /// @nodoc
-class _$SettingsNotificationsEventCopyWithImpl<$Res>
+class _$SettingsNotificationsEventCopyWithImpl<$Res,
+        $Val extends SettingsNotificationsEvent>
     implements $SettingsNotificationsEventCopyWith<$Res> {
   _$SettingsNotificationsEventCopyWithImpl(this._value, this._then);
 
-  final SettingsNotificationsEvent _value;
   // ignore: unused_field
-  final $Res Function(SettingsNotificationsEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialCopyWith<$Res> {
+  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
+      __$$InitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res>
-    extends _$SettingsNotificationsEventCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialCopyWithImpl<$Res>
+    extends _$SettingsNotificationsEventCopyWithImpl<$Res, _$Initial>
+    implements _$$InitialCopyWith<$Res> {
+  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
+
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -105,7 +102,8 @@ class _$Initial implements Initial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Initial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Initial);
   }
 
   @override
@@ -118,6 +116,15 @@ class _$Initial implements Initial {
     required TResult Function(NotificationSettings notificationSettings) update,
   }) {
     return initial();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(NotificationSettings notificationSettings)? update,
+  }) {
+    return initial?.call();
   }
 
   @override
@@ -144,6 +151,15 @@ class _$Initial implements Initial {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Update value)? update,
+  }) {
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Update value)? update,
@@ -161,28 +177,27 @@ abstract class Initial implements SettingsNotificationsEvent {
 }
 
 /// @nodoc
-abstract class $UpdateCopyWith<$Res> {
-  factory $UpdateCopyWith(Update value, $Res Function(Update) then) =
-      _$UpdateCopyWithImpl<$Res>;
+abstract class _$$UpdateCopyWith<$Res> {
+  factory _$$UpdateCopyWith(_$Update value, $Res Function(_$Update) then) =
+      __$$UpdateCopyWithImpl<$Res>;
+  @useResult
   $Res call({NotificationSettings notificationSettings});
 }
 
 /// @nodoc
-class _$UpdateCopyWithImpl<$Res>
-    extends _$SettingsNotificationsEventCopyWithImpl<$Res>
-    implements $UpdateCopyWith<$Res> {
-  _$UpdateCopyWithImpl(Update _value, $Res Function(Update) _then)
-      : super(_value, (v) => _then(v as Update));
+class __$$UpdateCopyWithImpl<$Res>
+    extends _$SettingsNotificationsEventCopyWithImpl<$Res, _$Update>
+    implements _$$UpdateCopyWith<$Res> {
+  __$$UpdateCopyWithImpl(_$Update _value, $Res Function(_$Update) _then)
+      : super(_value, _then);
 
-  @override
-  Update get _value => super._value as Update;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notificationSettings = freezed,
+    Object? notificationSettings = null,
   }) {
-    return _then(Update(
-      notificationSettings: notificationSettings == freezed
+    return _then(_$Update(
+      notificationSettings: null == notificationSettings
           ? _value.notificationSettings
           : notificationSettings // ignore: cast_nullable_to_non_nullable
               as NotificationSettings,
@@ -191,6 +206,7 @@ class _$UpdateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Update implements Update {
   const _$Update({required this.notificationSettings});
 
@@ -205,21 +221,20 @@ class _$Update implements Update {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Update &&
+        (other.runtimeType == runtimeType &&
+            other is _$Update &&
             (identical(other.notificationSettings, notificationSettings) ||
-                const DeepCollectionEquality()
-                    .equals(other.notificationSettings, notificationSettings)));
+                other.notificationSettings == notificationSettings));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(notificationSettings);
+  int get hashCode => Object.hash(runtimeType, notificationSettings);
 
   @JsonKey(ignore: true)
   @override
-  $UpdateCopyWith<Update> get copyWith =>
-      _$UpdateCopyWithImpl<Update>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpdateCopyWith<_$Update> get copyWith =>
+      __$$UpdateCopyWithImpl<_$Update>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -228,6 +243,15 @@ class _$Update implements Update {
     required TResult Function(NotificationSettings notificationSettings) update,
   }) {
     return update(notificationSettings);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function(NotificationSettings notificationSettings)? update,
+  }) {
+    return update?.call(notificationSettings);
   }
 
   @override
@@ -254,6 +278,15 @@ class _$Update implements Update {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Update value)? update,
+  }) {
+    return update?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
     TResult Function(Update value)? update,
@@ -267,11 +300,11 @@ class _$Update implements Update {
 }
 
 abstract class Update implements SettingsNotificationsEvent {
-  const factory Update({required NotificationSettings notificationSettings}) =
-      _$Update;
+  const factory Update(
+      {required final NotificationSettings notificationSettings}) = _$Update;
 
-  NotificationSettings get notificationSettings =>
-      throw _privateConstructorUsedError;
+  NotificationSettings get notificationSettings;
   @JsonKey(ignore: true)
-  $UpdateCopyWith<Update> get copyWith => throw _privateConstructorUsedError;
+  _$$UpdateCopyWith<_$Update> get copyWith =>
+      throw _privateConstructorUsedError;
 }

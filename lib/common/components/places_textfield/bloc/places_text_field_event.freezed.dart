@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'places_text_field_event.dart';
 
@@ -10,35 +12,7 @@ part of 'places_text_field_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PlacesTextFieldEventTearOff {
-  const _$PlacesTextFieldEventTearOff();
-
-  InitialLocation initialLocation({required PlacesDetails? location}) {
-    return InitialLocation(
-      location: location,
-    );
-  }
-
-  SearchTextEntered searchTextEntered({required String? searchText}) {
-    return SearchTextEntered(
-      searchText: searchText,
-    );
-  }
-
-  PredictionSelected predictionSelected(
-      {required String id, required String name}) {
-    return PredictionSelected(
-      id: id,
-      name: name,
-    );
-  }
-}
-
-/// @nodoc
-const $PlacesTextFieldEvent = _$PlacesTextFieldEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$PlacesTextFieldEvent {
@@ -47,6 +21,13 @@ mixin _$PlacesTextFieldEvent {
     required TResult Function(PlacesDetails? location) initialLocation,
     required TResult Function(String? searchText) searchTextEntered,
     required TResult Function(String id, String name) predictionSelected,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(PlacesDetails? location)? initialLocation,
+    TResult? Function(String? searchText)? searchTextEntered,
+    TResult? Function(String id, String name)? predictionSelected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -65,6 +46,13 @@ mixin _$PlacesTextFieldEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(InitialLocation value)? initialLocation,
+    TResult? Function(SearchTextEntered value)? searchTextEntered,
+    TResult? Function(PredictionSelected value)? predictionSelected,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitialLocation value)? initialLocation,
     TResult Function(SearchTextEntered value)? searchTextEntered,
@@ -78,44 +66,45 @@ mixin _$PlacesTextFieldEvent {
 abstract class $PlacesTextFieldEventCopyWith<$Res> {
   factory $PlacesTextFieldEventCopyWith(PlacesTextFieldEvent value,
           $Res Function(PlacesTextFieldEvent) then) =
-      _$PlacesTextFieldEventCopyWithImpl<$Res>;
+      _$PlacesTextFieldEventCopyWithImpl<$Res, PlacesTextFieldEvent>;
 }
 
 /// @nodoc
-class _$PlacesTextFieldEventCopyWithImpl<$Res>
+class _$PlacesTextFieldEventCopyWithImpl<$Res,
+        $Val extends PlacesTextFieldEvent>
     implements $PlacesTextFieldEventCopyWith<$Res> {
   _$PlacesTextFieldEventCopyWithImpl(this._value, this._then);
 
-  final PlacesTextFieldEvent _value;
   // ignore: unused_field
-  final $Res Function(PlacesTextFieldEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialLocationCopyWith<$Res> {
-  factory $InitialLocationCopyWith(
-          InitialLocation value, $Res Function(InitialLocation) then) =
-      _$InitialLocationCopyWithImpl<$Res>;
+abstract class _$$InitialLocationCopyWith<$Res> {
+  factory _$$InitialLocationCopyWith(
+          _$InitialLocation value, $Res Function(_$InitialLocation) then) =
+      __$$InitialLocationCopyWithImpl<$Res>;
+  @useResult
   $Res call({PlacesDetails? location});
 }
 
 /// @nodoc
-class _$InitialLocationCopyWithImpl<$Res>
-    extends _$PlacesTextFieldEventCopyWithImpl<$Res>
-    implements $InitialLocationCopyWith<$Res> {
-  _$InitialLocationCopyWithImpl(
-      InitialLocation _value, $Res Function(InitialLocation) _then)
-      : super(_value, (v) => _then(v as InitialLocation));
+class __$$InitialLocationCopyWithImpl<$Res>
+    extends _$PlacesTextFieldEventCopyWithImpl<$Res, _$InitialLocation>
+    implements _$$InitialLocationCopyWith<$Res> {
+  __$$InitialLocationCopyWithImpl(
+      _$InitialLocation _value, $Res Function(_$InitialLocation) _then)
+      : super(_value, _then);
 
-  @override
-  InitialLocation get _value => super._value as InitialLocation;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? location = freezed,
   }) {
-    return _then(InitialLocation(
-      location: location == freezed
+    return _then(_$InitialLocation(
+      location: freezed == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
               as PlacesDetails?,
@@ -124,6 +113,7 @@ class _$InitialLocationCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$InitialLocation implements InitialLocation {
   const _$InitialLocation({required this.location});
 
@@ -138,20 +128,20 @@ class _$InitialLocation implements InitialLocation {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is InitialLocation &&
+        (other.runtimeType == runtimeType &&
+            other is _$InitialLocation &&
             (identical(other.location, location) ||
-                const DeepCollectionEquality()
-                    .equals(other.location, location)));
+                other.location == location));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(location);
+  int get hashCode => Object.hash(runtimeType, location);
 
   @JsonKey(ignore: true)
   @override
-  $InitialLocationCopyWith<InitialLocation> get copyWith =>
-      _$InitialLocationCopyWithImpl<InitialLocation>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InitialLocationCopyWith<_$InitialLocation> get copyWith =>
+      __$$InitialLocationCopyWithImpl<_$InitialLocation>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -161,6 +151,16 @@ class _$InitialLocation implements InitialLocation {
     required TResult Function(String id, String name) predictionSelected,
   }) {
     return initialLocation(location);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(PlacesDetails? location)? initialLocation,
+    TResult? Function(String? searchText)? searchTextEntered,
+    TResult? Function(String id, String name)? predictionSelected,
+  }) {
+    return initialLocation?.call(location);
   }
 
   @override
@@ -189,6 +189,16 @@ class _$InitialLocation implements InitialLocation {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(InitialLocation value)? initialLocation,
+    TResult? Function(SearchTextEntered value)? searchTextEntered,
+    TResult? Function(PredictionSelected value)? predictionSelected,
+  }) {
+    return initialLocation?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitialLocation value)? initialLocation,
     TResult Function(SearchTextEntered value)? searchTextEntered,
@@ -203,40 +213,39 @@ class _$InitialLocation implements InitialLocation {
 }
 
 abstract class InitialLocation implements PlacesTextFieldEvent {
-  const factory InitialLocation({required PlacesDetails? location}) =
+  const factory InitialLocation({required final PlacesDetails? location}) =
       _$InitialLocation;
 
-  PlacesDetails? get location => throw _privateConstructorUsedError;
+  PlacesDetails? get location;
   @JsonKey(ignore: true)
-  $InitialLocationCopyWith<InitialLocation> get copyWith =>
+  _$$InitialLocationCopyWith<_$InitialLocation> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SearchTextEnteredCopyWith<$Res> {
-  factory $SearchTextEnteredCopyWith(
-          SearchTextEntered value, $Res Function(SearchTextEntered) then) =
-      _$SearchTextEnteredCopyWithImpl<$Res>;
+abstract class _$$SearchTextEnteredCopyWith<$Res> {
+  factory _$$SearchTextEnteredCopyWith(
+          _$SearchTextEntered value, $Res Function(_$SearchTextEntered) then) =
+      __$$SearchTextEnteredCopyWithImpl<$Res>;
+  @useResult
   $Res call({String? searchText});
 }
 
 /// @nodoc
-class _$SearchTextEnteredCopyWithImpl<$Res>
-    extends _$PlacesTextFieldEventCopyWithImpl<$Res>
-    implements $SearchTextEnteredCopyWith<$Res> {
-  _$SearchTextEnteredCopyWithImpl(
-      SearchTextEntered _value, $Res Function(SearchTextEntered) _then)
-      : super(_value, (v) => _then(v as SearchTextEntered));
+class __$$SearchTextEnteredCopyWithImpl<$Res>
+    extends _$PlacesTextFieldEventCopyWithImpl<$Res, _$SearchTextEntered>
+    implements _$$SearchTextEnteredCopyWith<$Res> {
+  __$$SearchTextEnteredCopyWithImpl(
+      _$SearchTextEntered _value, $Res Function(_$SearchTextEntered) _then)
+      : super(_value, _then);
 
-  @override
-  SearchTextEntered get _value => super._value as SearchTextEntered;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? searchText = freezed,
   }) {
-    return _then(SearchTextEntered(
-      searchText: searchText == freezed
+    return _then(_$SearchTextEntered(
+      searchText: freezed == searchText
           ? _value.searchText
           : searchText // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -245,6 +254,7 @@ class _$SearchTextEnteredCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$SearchTextEntered implements SearchTextEntered {
   const _$SearchTextEntered({required this.searchText});
 
@@ -259,20 +269,20 @@ class _$SearchTextEntered implements SearchTextEntered {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is SearchTextEntered &&
+        (other.runtimeType == runtimeType &&
+            other is _$SearchTextEntered &&
             (identical(other.searchText, searchText) ||
-                const DeepCollectionEquality()
-                    .equals(other.searchText, searchText)));
+                other.searchText == searchText));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(searchText);
+  int get hashCode => Object.hash(runtimeType, searchText);
 
   @JsonKey(ignore: true)
   @override
-  $SearchTextEnteredCopyWith<SearchTextEntered> get copyWith =>
-      _$SearchTextEnteredCopyWithImpl<SearchTextEntered>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SearchTextEnteredCopyWith<_$SearchTextEntered> get copyWith =>
+      __$$SearchTextEnteredCopyWithImpl<_$SearchTextEntered>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -282,6 +292,16 @@ class _$SearchTextEntered implements SearchTextEntered {
     required TResult Function(String id, String name) predictionSelected,
   }) {
     return searchTextEntered(searchText);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(PlacesDetails? location)? initialLocation,
+    TResult? Function(String? searchText)? searchTextEntered,
+    TResult? Function(String id, String name)? predictionSelected,
+  }) {
+    return searchTextEntered?.call(searchText);
   }
 
   @override
@@ -310,6 +330,16 @@ class _$SearchTextEntered implements SearchTextEntered {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(InitialLocation value)? initialLocation,
+    TResult? Function(SearchTextEntered value)? searchTextEntered,
+    TResult? Function(PredictionSelected value)? predictionSelected,
+  }) {
+    return searchTextEntered?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitialLocation value)? initialLocation,
     TResult Function(SearchTextEntered value)? searchTextEntered,
@@ -324,45 +354,44 @@ class _$SearchTextEntered implements SearchTextEntered {
 }
 
 abstract class SearchTextEntered implements PlacesTextFieldEvent {
-  const factory SearchTextEntered({required String? searchText}) =
+  const factory SearchTextEntered({required final String? searchText}) =
       _$SearchTextEntered;
 
-  String? get searchText => throw _privateConstructorUsedError;
+  String? get searchText;
   @JsonKey(ignore: true)
-  $SearchTextEnteredCopyWith<SearchTextEntered> get copyWith =>
+  _$$SearchTextEnteredCopyWith<_$SearchTextEntered> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PredictionSelectedCopyWith<$Res> {
-  factory $PredictionSelectedCopyWith(
-          PredictionSelected value, $Res Function(PredictionSelected) then) =
-      _$PredictionSelectedCopyWithImpl<$Res>;
+abstract class _$$PredictionSelectedCopyWith<$Res> {
+  factory _$$PredictionSelectedCopyWith(_$PredictionSelected value,
+          $Res Function(_$PredictionSelected) then) =
+      __$$PredictionSelectedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String id, String name});
 }
 
 /// @nodoc
-class _$PredictionSelectedCopyWithImpl<$Res>
-    extends _$PlacesTextFieldEventCopyWithImpl<$Res>
-    implements $PredictionSelectedCopyWith<$Res> {
-  _$PredictionSelectedCopyWithImpl(
-      PredictionSelected _value, $Res Function(PredictionSelected) _then)
-      : super(_value, (v) => _then(v as PredictionSelected));
+class __$$PredictionSelectedCopyWithImpl<$Res>
+    extends _$PlacesTextFieldEventCopyWithImpl<$Res, _$PredictionSelected>
+    implements _$$PredictionSelectedCopyWith<$Res> {
+  __$$PredictionSelectedCopyWithImpl(
+      _$PredictionSelected _value, $Res Function(_$PredictionSelected) _then)
+      : super(_value, _then);
 
-  @override
-  PredictionSelected get _value => super._value as PredictionSelected;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
   }) {
-    return _then(PredictionSelected(
-      id: id == freezed
+    return _then(_$PredictionSelected(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
@@ -371,6 +400,7 @@ class _$PredictionSelectedCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$PredictionSelected implements PredictionSelected {
   const _$PredictionSelected({required this.id, required this.name});
 
@@ -387,23 +417,21 @@ class _$PredictionSelected implements PredictionSelected {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is PredictionSelected &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)));
+        (other.runtimeType == runtimeType &&
+            other is _$PredictionSelected &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name);
+  int get hashCode => Object.hash(runtimeType, id, name);
 
   @JsonKey(ignore: true)
   @override
-  $PredictionSelectedCopyWith<PredictionSelected> get copyWith =>
-      _$PredictionSelectedCopyWithImpl<PredictionSelected>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PredictionSelectedCopyWith<_$PredictionSelected> get copyWith =>
+      __$$PredictionSelectedCopyWithImpl<_$PredictionSelected>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -413,6 +441,16 @@ class _$PredictionSelected implements PredictionSelected {
     required TResult Function(String id, String name) predictionSelected,
   }) {
     return predictionSelected(id, name);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(PlacesDetails? location)? initialLocation,
+    TResult? Function(String? searchText)? searchTextEntered,
+    TResult? Function(String id, String name)? predictionSelected,
+  }) {
+    return predictionSelected?.call(id, name);
   }
 
   @override
@@ -441,6 +479,16 @@ class _$PredictionSelected implements PredictionSelected {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(InitialLocation value)? initialLocation,
+    TResult? Function(SearchTextEntered value)? searchTextEntered,
+    TResult? Function(PredictionSelected value)? predictionSelected,
+  }) {
+    return predictionSelected?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(InitialLocation value)? initialLocation,
     TResult Function(SearchTextEntered value)? searchTextEntered,
@@ -455,12 +503,13 @@ class _$PredictionSelected implements PredictionSelected {
 }
 
 abstract class PredictionSelected implements PlacesTextFieldEvent {
-  const factory PredictionSelected({required String id, required String name}) =
-      _$PredictionSelected;
+  const factory PredictionSelected(
+      {required final String id,
+      required final String name}) = _$PredictionSelected;
 
-  String get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
+  String get id;
+  String get name;
   @JsonKey(ignore: true)
-  $PredictionSelectedCopyWith<PredictionSelected> get copyWith =>
+  _$$PredictionSelectedCopyWith<_$PredictionSelected> get copyWith =>
       throw _privateConstructorUsedError;
 }

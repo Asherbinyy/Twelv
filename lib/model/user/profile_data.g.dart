@@ -6,11 +6,9 @@ part of 'profile_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-ProfileData _$ProfileDataFromJson(Map<String, dynamic> json) {
-  return ProfileData(
-    Profile.fromJson(json['data'] as Map<String, dynamic>),
-  );
-}
+ProfileData _$ProfileDataFromJson(Map<String, dynamic> json) => ProfileData(
+      Profile.fromJson(json['data'] as Map<String, dynamic>),
+    );
 
 Map<String, dynamic> _$ProfileDataToJson(ProfileData instance) =>
     <String, dynamic>{

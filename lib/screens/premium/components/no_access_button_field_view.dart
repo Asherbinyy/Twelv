@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/shims/dart_ui.dart';
+// import 'package:flutter_html/shims/dart_ui.dart';
 import 'package:twelv/common/utils/widget_utils.dart';
 import 'package:twelv/components/app_button_filled.dart';
 import 'package:twelv/components/app_text.dart';

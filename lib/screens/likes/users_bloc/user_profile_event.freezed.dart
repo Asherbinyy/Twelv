@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'user_profile_event.dart';
 
@@ -10,31 +12,20 @@ part of 'user_profile_event.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$UserProfileEventTearOff {
-  const _$UserProfileEventTearOff();
-
-  Fetch fetch({required int userId, bool? useCredit}) {
-    return Fetch(
-      userId: userId,
-      useCredit: useCredit,
-    );
-  }
-}
-
-/// @nodoc
-const $UserProfileEvent = _$UserProfileEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$UserProfileEvent {
   int get userId => throw _privateConstructorUsedError;
   bool? get useCredit => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(int userId, bool? useCredit) fetch,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(int userId, bool? useCredit)? fetch,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -46,6 +37,11 @@ mixin _$UserProfileEvent {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Fetch value) fetch,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Fetch value)? fetch,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -64,65 +60,69 @@ mixin _$UserProfileEvent {
 abstract class $UserProfileEventCopyWith<$Res> {
   factory $UserProfileEventCopyWith(
           UserProfileEvent value, $Res Function(UserProfileEvent) then) =
-      _$UserProfileEventCopyWithImpl<$Res>;
+      _$UserProfileEventCopyWithImpl<$Res, UserProfileEvent>;
+  @useResult
   $Res call({int userId, bool? useCredit});
 }
 
 /// @nodoc
-class _$UserProfileEventCopyWithImpl<$Res>
+class _$UserProfileEventCopyWithImpl<$Res, $Val extends UserProfileEvent>
     implements $UserProfileEventCopyWith<$Res> {
   _$UserProfileEventCopyWithImpl(this._value, this._then);
 
-  final UserProfileEvent _value;
   // ignore: unused_field
-  final $Res Function(UserProfileEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? userId = freezed,
+    Object? userId = null,
     Object? useCredit = freezed,
   }) {
     return _then(_value.copyWith(
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      useCredit: useCredit == freezed
+      useCredit: freezed == useCredit
           ? _value.useCredit
           : useCredit // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class $FetchCopyWith<$Res> implements $UserProfileEventCopyWith<$Res> {
-  factory $FetchCopyWith(Fetch value, $Res Function(Fetch) then) =
-      _$FetchCopyWithImpl<$Res>;
+abstract class _$$FetchCopyWith<$Res>
+    implements $UserProfileEventCopyWith<$Res> {
+  factory _$$FetchCopyWith(_$Fetch value, $Res Function(_$Fetch) then) =
+      __$$FetchCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int userId, bool? useCredit});
 }
 
 /// @nodoc
-class _$FetchCopyWithImpl<$Res> extends _$UserProfileEventCopyWithImpl<$Res>
-    implements $FetchCopyWith<$Res> {
-  _$FetchCopyWithImpl(Fetch _value, $Res Function(Fetch) _then)
-      : super(_value, (v) => _then(v as Fetch));
+class __$$FetchCopyWithImpl<$Res>
+    extends _$UserProfileEventCopyWithImpl<$Res, _$Fetch>
+    implements _$$FetchCopyWith<$Res> {
+  __$$FetchCopyWithImpl(_$Fetch _value, $Res Function(_$Fetch) _then)
+      : super(_value, _then);
 
-  @override
-  Fetch get _value => super._value as Fetch;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? userId = freezed,
+    Object? userId = null,
     Object? useCredit = freezed,
   }) {
-    return _then(Fetch(
-      userId: userId == freezed
+    return _then(_$Fetch(
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      useCredit: useCredit == freezed
+      useCredit: freezed == useCredit
           ? _value.useCredit
           : useCredit // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -131,6 +131,7 @@ class _$FetchCopyWithImpl<$Res> extends _$UserProfileEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$Fetch implements Fetch {
   const _$Fetch({required this.userId, this.useCredit});
 
@@ -147,24 +148,21 @@ class _$Fetch implements Fetch {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Fetch &&
-            (identical(other.userId, userId) ||
-                const DeepCollectionEquality().equals(other.userId, userId)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$Fetch &&
+            (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.useCredit, useCredit) ||
-                const DeepCollectionEquality()
-                    .equals(other.useCredit, useCredit)));
+                other.useCredit == useCredit));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(userId) ^
-      const DeepCollectionEquality().hash(useCredit);
+  int get hashCode => Object.hash(runtimeType, userId, useCredit);
 
   @JsonKey(ignore: true)
   @override
-  $FetchCopyWith<Fetch> get copyWith =>
-      _$FetchCopyWithImpl<Fetch>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FetchCopyWith<_$Fetch> get copyWith =>
+      __$$FetchCopyWithImpl<_$Fetch>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -172,6 +170,14 @@ class _$Fetch implements Fetch {
     required TResult Function(int userId, bool? useCredit) fetch,
   }) {
     return fetch(userId, useCredit);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(int userId, bool? useCredit)? fetch,
+  }) {
+    return fetch?.call(userId, useCredit);
   }
 
   @override
@@ -196,6 +202,14 @@ class _$Fetch implements Fetch {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Fetch value)? fetch,
+  }) {
+    return fetch?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Fetch value)? fetch,
     required TResult orElse(),
@@ -208,13 +222,14 @@ class _$Fetch implements Fetch {
 }
 
 abstract class Fetch implements UserProfileEvent {
-  const factory Fetch({required int userId, bool? useCredit}) = _$Fetch;
+  const factory Fetch({required final int userId, final bool? useCredit}) =
+      _$Fetch;
 
   @override
-  int get userId => throw _privateConstructorUsedError;
+  int get userId;
   @override
-  bool? get useCredit => throw _privateConstructorUsedError;
+  bool? get useCredit;
   @override
   @JsonKey(ignore: true)
-  $FetchCopyWith<Fetch> get copyWith => throw _privateConstructorUsedError;
+  _$$FetchCopyWith<_$Fetch> get copyWith => throw _privateConstructorUsedError;
 }

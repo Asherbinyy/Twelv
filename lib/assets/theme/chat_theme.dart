@@ -13,7 +13,7 @@ StreamChatThemeData createChatTheme(BuildContext context) {
   final StreamChatThemeData theme = StreamChatThemeData.fromTheme(fromTheme);
   return theme.copyWith(
     channelPreviewTheme: theme.channelPreviewTheme.copyWith(
-      avatarTheme: AvatarThemeData(
+      avatarTheme: StreamAvatarThemeData(
         constraints: const BoxConstraints.expand(width: _avatarSize, height: _avatarSize),
         borderRadius: BorderRadius.circular(_avatarSize),
       ),
@@ -62,7 +62,7 @@ StreamChatThemeData createChatTheme(BuildContext context) {
 }
 
 Future<void> chatBackgroundEvent(Event e, StreamChatClient client) async {
-  final String? currentUserId = client.state.user?.id;
+  final String? currentUserId = client.state.currentUser?.id;
   assert(currentUserId != null);
 
   if (!<String>[

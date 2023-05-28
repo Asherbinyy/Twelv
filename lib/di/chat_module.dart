@@ -20,7 +20,8 @@ class ChatModule extends Module {
     final Environment env = di.get();
     di.registerLazySingleton<StreamChatClient>(() => StreamChatClient(
           env.chatApiKey,
-          location: Location.euWest,
+          ///ToDO: add location
+          // location: Location.euWest,
           logLevel: env.chatLogLevel,
         ));
     di.registerLazySingleton<E2eeService>(() => E2eeServiceTweaksProxy(E2eeService()));

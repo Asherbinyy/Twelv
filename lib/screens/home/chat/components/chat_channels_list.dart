@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:jiffy/jiffy.dart';
@@ -15,7 +16,7 @@ import 'package:twelv/services/navigation/navigation.dart';
 class ChatChannelsList extends StatelessWidget {
   final ChannelsSettings settings;
 
-  const ChatChannelsList({required this.settings, Key? key}) : super(key: key);
+  const ChatChannelsList({required this.settings, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,13 +25,13 @@ class ChatChannelsList extends StatelessWidget {
         builder: (_, AsyncSnapshot<void> snapshot) {
           return snapshot.connectionState != ConnectionState.done
               ? Container()
-              : ChannelsBloc(
-                  child: ChannelListView(
-                    filter: settings.filter,
-                    sort: settings.sortOptions,
-                    pagination: const PaginationParams(
-                      limit: 30,
-                    ),
+              : Scaffold(
+                  body: StreamChannelListView(
+                    // filter: settings.filter,
+                    // sort: settings.sortOptions,
+                    // pagination: const PaginationParams(
+                    //   limit: 30,
+                    // ),
                     errorBuilder: (BuildContext context, Object error) {
                       logger().e("Cannot load list of chats because of error", error);
                       context.read<ChatBloc>().add(ChatEvent.error(error));
@@ -42,21 +43,29 @@ class ChatChannelsList extends StatelessWidget {
                         align: TextAlign.center,
                       ),
                     ),
-                    onChannelTap: (Channel channel, _) {
+
+                    onChannelTap: (Channel channel) {
                       navigator(NavigationService.home)
                           .navigateTo(HomeRoutes.chatChannel, args: channel);
                     },
-                    channelPreviewBuilder: (BuildContext context, Channel channel) => DecoratedBox(
-                      decoration: BoxDecoration(
-                        color: StreamChatTheme.of(context).channelListViewTheme.backgroundColor,
-                      ),
-                      child: ChatDecryptedChannelPreview(
-                        channel: channel,
-                        onTap: (Channel channel) => navigator(NavigationService.home)
-                            .navigateTo(HomeRoutes.chatChannel, args: channel),
-                      ),
+                    ///ToDo: Add custom channel preview
+                    // channelPreviewBuilder: (BuildContext context, Channel channel) => DecoratedBox(
+                    //   decoration: BoxDecoration(
+                    //     color: StreamChatTheme.of(context).channelListViewTheme.backgroundColor,
+                    //   ),
+                    //   child: ChatDecryptedChannelPreview(
+                    //     channel: channel,
+                    //     onTap: (Channel channel) => navigator(NavigationService.home)
+                    //         .navigateTo(HomeRoutes.chatChannel, args: channel),
+                    //   ),
+                    // ),
+                    controller: StreamChannelListController(
+                    client: StreamChat.of(context).client,
+                        filter: settings.filter,
+                 sort: settings.sortOptions,
+                    // channelStateSort: const [SortOption('last_message_at')],
+                    limit: 30,
                     ),
-                    separatorBuilder: (_, __) => const SizedBox(height: 12.5),
                   ),
                 );
         });
