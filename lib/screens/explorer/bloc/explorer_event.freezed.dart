@@ -414,7 +414,7 @@ class _$Like implements Like {
   }
 }
 
-abstract class Like implements ExplorerEvent, dynamic {
+abstract class Like implements ExplorerEvent{
   const factory Like(
       {required final Profile user,
       required final bool delay,
@@ -599,7 +599,7 @@ class _$Dislike implements Dislike {
   }
 }
 
-abstract class Dislike implements ExplorerEvent, dynamic {
+abstract class Dislike implements ExplorerEvent {
   const factory Dislike(
       {required final Profile user,
       required final bool delay,
@@ -787,7 +787,7 @@ class _$Superlike implements Superlike {
   }
 }
 
-abstract class Superlike implements ExplorerEvent, dynamic {
+abstract class Superlike implements ExplorerEvent {
   const factory Superlike(
       {required final Profile user,
       required final bool delay,

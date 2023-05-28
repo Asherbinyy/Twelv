@@ -551,7 +551,7 @@ class _$ConnectWithProfile implements ConnectWithProfile {
   }
 }
 
-abstract class ConnectWithProfile implements ChatEvent, dynamic {
+abstract class ConnectWithProfile implements ChatEvent {
   const factory ConnectWithProfile({required final String userId}) =
       _$ConnectWithProfile;
 
@@ -715,7 +715,7 @@ class _$ChatWithProfile implements ChatWithProfile {
   }
 }
 
-abstract class ChatWithProfile implements ChatEvent, dynamic {
+abstract class ChatWithProfile implements ChatEvent{
   const factory ChatWithProfile({required final String userId}) =
       _$ChatWithProfile;
 

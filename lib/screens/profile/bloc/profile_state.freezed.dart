@@ -220,7 +220,7 @@ class _$Initial implements Initial {
   }
 }
 
-abstract class Initial implements ProfileState, dynamic {
+abstract class Initial implements ProfileState {
   const factory Initial({required final CurrentUser user}) = _$Initial;
 
   CurrentUser get user;
@@ -363,7 +363,7 @@ class _$User implements User {
   }
 }
 
-abstract class User implements ProfileState, dynamic {
+abstract class User implements ProfileState{
   const factory User({required final CurrentUser user}) = _$User;
 
   CurrentUser get user;

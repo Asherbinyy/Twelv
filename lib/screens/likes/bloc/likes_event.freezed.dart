@@ -360,18 +360,15 @@ class _$Like implements Like {
   }
 }
 
-abstract class Like implements LikesEvent {
-const factory Like({
-required Profile user,
-bool? useCredit,
-}) = _$Like;
+abstract class Like implements LikesEvent{
+  const factory Like({required final Profile user, final bool? useCredit}) =
+      _$Like;
 
-Profile get user;
-bool? get useCredit;
-@JsonKey(ignore: true)
-_$LikeCopyWith<Like> get copyWith => throw _privateConstructorUsedError;
+  Profile get user;
+  bool? get useCredit;
+  @JsonKey(ignore: true)
+  _$$LikeCopyWith<_$Like> get copyWith => throw _privateConstructorUsedError;
 }
-
 
 /// @nodoc
 abstract class _$$DislikeCopyWith<$Res> {
@@ -522,7 +519,7 @@ class _$Dislike implements Dislike {
   }
 }
 
-abstract class Dislike implements LikesEvent, dynamic {
+abstract class Dislike implements LikesEvent {
   const factory Dislike({required final Profile user, final bool? useCredit}) =
       _$Dislike;
 
@@ -684,7 +681,7 @@ class _$Superlike implements Superlike {
   }
 }
 
-abstract class Superlike implements LikesEvent, dynamic {
+abstract class Superlike implements LikesEvent {
   const factory Superlike(
       {required final Profile user, final bool? useCredit}) = _$Superlike;
 
